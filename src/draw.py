@@ -117,7 +117,7 @@ def __draw_graph(hierarchy, ax, left, height, length, size, node, pcoor, v):
             print '(x, y)', (x, y)
             print 'points to (x, y)', (newx, newy)
             print
-            arrow = patches.FancyArrowPatch(posA=(x, y), posB=(newx, newy), shrinkB=2, zorder=7)
+            arrow = patches.FancyArrowPatch(posA=(x, y), posB=(newx, newy), shrinkB=2, zorder=1)
             
             # arrow = ax.arrow(x, y, dx , dy, length_includes_head=True, head_width=.001, head_length=.002, fc='k', ec='k', zorder=7)
             ax.add_artist(arrow)
