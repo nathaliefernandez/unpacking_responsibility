@@ -1,5 +1,7 @@
 
 import matplotlib.pyplot as plt
+from math import atan, sin, cos
+import matplotlib.patches as patches
 
 def draw(hierarchy, filename, **attr):
     # create figure
@@ -9,11 +11,11 @@ def draw(hierarchy, filename, **attr):
     # turn axis on or off
     ax.axis('on')
     # draw the graph
-    draw_graph(hierarchy, ax, .9, .1, .9, .1, .015)
+    draw_graph(hierarchy, ax, .9, .1, .9, .1)
 
     fig.savefig(filename)
 
-    if attr.has_key('show') and attr['show']:
+    if 'show' in attr and attr['show']:
         plt.show()
 
     return None
@@ -30,9 +32,10 @@ parameters:
 return:
     None
 '''
-def draw_graph(hierarchy, ax, right, left, top, bottom, size=.015):
-    if not hierarchy.graph.has_key('paths'):
+def draw_graph(hierarchy, ax, right, left, top, bottom, size=.05):
+    if 'paths' not in hierarchy.graph:
         hierarchy.paths()
+    print 'draw', size
 
     height = float(top - bottom)
     length = float(right - left)
@@ -41,13 +44,13 @@ def draw_graph(hierarchy, ax, right, left, top, bottom, size=.015):
     y = bottom + .1
 
     # Circle(x coordinate, y coordinate, radius, color, edge color, zorder)
-    circle = plt.Circle((x, y), size, color='w', ec='k', zorder=4)
+    circle = plt.Circle((x, y), radius=size, color='w', ec='k', zorder=4)
     # add circle to 'axes' has to be added, it is an object of axes
     ax.add_artist(circle)
-
-    ax.text(x-size, y-(size/3), hierarchy.nodes()[0], zorder=5)
-    if hierarchy.node[hierarchy.nodes()[0]].has_key('threshold'):
-        ax.text(x-.04, y-.006, hierarchy.node[hierarchy.nodes()[0]]['threshold'], zorder=5)
+    print '1st (x, y)', (x, y)
+    ax.text(x, y, hierarchy.nodes()[0], zorder=5)
+    if 'threshold' in hierarchy.node[hierarchy.nodes()[0]]:
+        ax.text(x, y, hierarchy.node[hierarchy.nodes()[0]]['threshold'], zorder=5)
     
     # node
     __draw_graph(hierarchy, ax, left, height-bottom, length/len(hierarchy.predecessors(hierarchy.nodes()[0])), size, hierarchy.nodes()[0], (x, y), 0)
@@ -73,7 +76,7 @@ def __draw_graph(hierarchy, ax, left, height, length, size, node, pcoor, v):
             # print 'pred %s' % pred
             c_spacing = length/2
 
-            if hierarchy.graph['paths'].has_key(hierarchy.predecessors(node)[pred]):
+            if hierarchy.predecessors(node)[pred] in hierarchy.graph['paths']:
                 v = (height-pcoor[1])/float(len(hierarchy.graph['paths'][hierarchy.predecessors(node)[pred]]))
                 x = c_spacing + length*pred + left
                 y = pcoor[1] + v
@@ -83,15 +86,40 @@ def __draw_graph(hierarchy, ax, left, height, length, size, node, pcoor, v):
                 y = pcoor[1] + v
                 v = 0
 
-            circle = plt.Circle((x, y), size, color='w', ec='k', zorder=4)
+            circle = plt.Circle((x, y), radius=size, color='w', ec='k', zorder=4)
             # add circle to 'axes' has to be added, it is an object of axes
             ax.add_artist(circle)
 
-            ax.text(x-size, y-(size/3), hierarchy.predecessors(node)[pred], zorder=5)
-            if hierarchy.node[hierarchy.predecessors(node)[pred]].has_key('threshold'):
+            ax.text(x, y, hierarchy.predecessors(node)[pred], zorder=5)
+            if 'threshold' in hierarchy.node[hierarchy.predecessors(node)[pred]]:
                 ax.text(x-.04, y-.006, hierarchy.node[hierarchy.predecessors(node)[pred]]['threshold'], zorder=5)
+
+
+            dx = pcoor[0] - x 
+            dy = pcoor[1] - y 
+
+            newx = pcoor[0] 
+            newy = pcoor[1]
+
+            slope = dx/dy
+            print hierarchy.predecessors(node)[pred]
+            if dx != 0:
+                newy += (size+.002)*sin(atan(1/slope))*(-1 if slope < 0 else 1)
+                print size
+                print '0', (size+.002)*sin(atan(1/slope))*(-1 if slope < 0 else 1)
+                newx += cos(atan(1/slope))*(size+.002)*(-1 if slope < 0 else 1)
+
+            else:
+                newy += size+.002
+                print 'else', size
+
+
+            print '(x, y)', (x, y)
+            print 'points to (x, y)', (newx, newy)
+            print
+            arrow = patches.FancyArrowPatch(posA=(x, y), posB=(newx, newy), shrinkB=2, zorder=7)
             
-            arrow = ax.arrow(x, y, pcoor[0] - x, pcoor[1] - y, length_includes_head=True, head_width=.01, head_length=.03, fc='k', ec='k')
+            # arrow = ax.arrow(x, y, dx , dy, length_includes_head=True, head_width=.001, head_length=.002, fc='k', ec='k', zorder=7)
             ax.add_artist(arrow)
             
             if hierarchy.predecessors(hierarchy.predecessors(node)[pred]) != []:

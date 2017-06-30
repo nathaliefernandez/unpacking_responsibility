@@ -24,7 +24,7 @@ class Hierarchy(DiGraph):
         # add threshold attributes
         self.assign_thresholds()
 
-        if self.graph.has_key('values'):
+        if 'values' in self.graph:
             self.assign_values(self.graph['values'])
 
         return None
@@ -99,7 +99,7 @@ class Hierarchy(DiGraph):
     '''
     def clear_values(self):
         for node in self.nodes():
-            if self.node[node].has_key('value') and self.predecessors(node) != []:
+            if 'value' in self.node[node] and self.predecessors(node) != []:
                 self.clear_value(node)
         return None
 
@@ -122,15 +122,15 @@ class Hierarchy(DiGraph):
             if 'value' in self.node[event]:
                 return self.value(event)
             else:
-                return self.sample_value(event, self.node[event].get('prior') if self.node[event].has_key('prior') else .5)
+                return self.sample_value(event, self.node[event].get('prior') if 'prior' in self.node[event] else .5)
 
         # recursively call evaluate on predecessors until dict of values is complete
         for pred in self.predecessors(event):
             value = self.evaluate(pred, **attr)
-            values[pred] = value*self.node[pred]['multiplier'] if self.node[pred].has_key('multiplier') else value*1
+            values[pred] = value*self.node[pred]['multiplier'] if 'multiplier' in self.node[pred] else value*1
         
         
-        if not self.node[event].has_key('value'):
+        if 'value' not in self.node[event]:
             self.node[event]['func'] = lambda values:sum(values.values()) >= self.node[event]['threshold']
             self.node[event]['value'] = int(self.node[event].get('func')(values))
 
@@ -140,7 +140,7 @@ class Hierarchy(DiGraph):
     def situation(self):
         roots = []
         for node in self.nodes():
-            if self.node[node].has_key('value'):
+            if 'value' in self.node[node]:
                 if self.predecessors(node) == []:
                     roots.append((node, self.node[node]['value']))
                 else:
@@ -185,7 +185,7 @@ class Hierarchy(DiGraph):
             if copy.longest_path() != []:
                 subgraph = copy.longest_path()
 
-                if not self.graph['paths'].has_key(list(copy.longest_path())[0]):
+                if list(copy.longest_path())[0] not in self.graph['paths']:
                     self.node[subgraph[0]]['level'] = len(subgraph)
                     self.graph['paths'][list(copy.longest_path())[0]] = subgraph
 

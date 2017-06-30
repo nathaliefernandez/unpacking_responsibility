@@ -22,8 +22,8 @@ def simulate(case, file, **attr):
 
 	hierarchy = Hierarchy(structure, priors=priors, thresholds=thresholds)
 
-	if attr.has_key('draw'):
-		if attr.has_key('show'):
+	if 'draw' in attr:
+		if 'show' in attr:
 			draw(hierarchy, attr['draw'], show=attr['show'])
 		else:
 			draw(hierarchy, attr['draw'])
