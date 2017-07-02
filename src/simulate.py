@@ -1,4 +1,3 @@
-
 from hierarchy import Hierarchy
 from evaluate import pivotal, pivotality, criticality, prob_pivotal
 from draw import draw

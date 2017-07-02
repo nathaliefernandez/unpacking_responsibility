@@ -63,8 +63,6 @@ def pivotality(hierarchy, cause, effect, **attr):
     if cause in exogenous:
         exogenous.remove(cause)
 
-    print exogenous
-
     actual_values = map(hierarchy.value, exogenous)
 
     def distance(values):
