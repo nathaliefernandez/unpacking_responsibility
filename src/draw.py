@@ -53,10 +53,11 @@ def draw_graph(hierarchy, ax, right, left, top, bottom, size=.05):
     x = length/2. + left
     y = bottom + .1
 
+    add_node(hierarchy, ax, x, y, size, None, hierarchy.nodes()[0], None)
     # Circle(x coordinate, y coordinate, radius, color, edge color, zorder)
-    circle = plt.Circle((x, y), radius=size, color='w', ec='k', zorder=4)
-    # add circle to 'axes' has to be added, it is an object of axes
-    ax.add_artist(circle)
+    # circle = plt.Circle((x, y), radius=size, color='w', ec='k', zorder=4)
+    # # add circle to 'axes' has to be added, it is an object of axes
+    # ax.add_artist(circle)
 
     label_node(hierarchy, ax, x, y, size, 0, None)
 
@@ -95,7 +96,7 @@ def __draw_graph(hierarchy, ax, left, height, length, size, node, pcoor, v, colo
                 y = pcoor[1] + v
                 v = 0
 
-            add_node(hierarchy, ax, x, y, node, pred, size, color[pred] if type(color[pred]) == tuple else color)
+            add_node(hierarchy, ax, x, y, size, color[pred] if type(color[pred]) == tuple else color, node, pred)
 
             label_node(hierarchy, ax, x, y, size, node, pred)
 
@@ -135,14 +136,15 @@ parameters:
 return :
     None
 '''
-def add_node(hierarchy, ax, x, y, node, pred, size, color):
-    print 'add node'
-    print hierarchy.predecessors(node)[pred]
-    print 'color', color
-    circle = plt.Circle((x, y), radius=size, color=get_color(hierarchy, color, node, pred), ec='k', zorder=4)
-        
-    # add circle to 'axes' has to be added, it is an object of axes
-    ax.add_artist(circle)
+def add_node(hierarchy, ax, x, y, size, color, node, pred):
+    if pred == None:
+        circle = plt.Circle((x, y), radius=size, color='w', ec='k', zorder=4)
+        # add circle to 'axes' has to be added, it is an object of axes
+        ax.add_artist(circle)
+    else:
+        circle = plt.Circle((x, y), radius=size, color=get_color(hierarchy, color, node, pred), ec='k', zorder=4)
+        # add circle to 'axes' has to be added, it is an object of axes
+        ax.add_artist(circle)
     return None
 
 '''
