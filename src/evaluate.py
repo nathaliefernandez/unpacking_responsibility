@@ -63,6 +63,11 @@ def pivotality(hierarchy, cause, effect, **attr):
     if cause in exogenous:
         exogenous.remove(cause)
 
+<<<<<<< HEAD
+=======
+    print exogenous
+
+>>>>>>> d8d5659f3d1012540de7533f715b57d8160863a6
     actual_values = map(hierarchy.value, exogenous)
 
     def distance(values):
@@ -190,4 +195,8 @@ def unpacked_pivotality(hierarchy, cause, effect, **attr):
 
         return sum(piv)/float(len(piv))
     else:
+<<<<<<< HEAD
         return 'cannot be unpacked'
+=======
+        return 'cannot be unpacked'
+>>>>>>> d8d5659f3d1012540de7533f715b57d8160863a6

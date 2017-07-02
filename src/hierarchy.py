@@ -148,6 +148,26 @@ class Hierarchy(DiGraph):
         return roots
 
     '''
+<<<<<<< HEAD
+=======
+    finds path from root node to effect
+    return:
+        list            path
+    '''
+    def longest_path_from(self, cause, effect, p):
+        if self.successors(cause) == []:
+            print 'path', p
+            self.node[p[-1]]['path'] = p
+            return None
+        print 'suc', self.successors(cause)
+        for c in self.successors(cause):
+            
+            p.append(c)
+            self.longest_path_from(c, effect, p)
+
+
+    '''
+>>>>>>> d8d5659f3d1012540de7533f715b57d8160863a6
     return:
         list    longest path in directed acyclic DiGraph, reversed
     '''
@@ -176,4 +196,9 @@ class Hierarchy(DiGraph):
         for node in self.nodes():
             if not self.node[node].get('level'):
                 self.node[node]['level'] = 1
+<<<<<<< HEAD
         return None
+=======
+        return None
+
+>>>>>>> d8d5659f3d1012540de7533f715b57d8160863a6

@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> d8d5659f3d1012540de7533f715b57d8160863a6
 from hierarchy import Hierarchy
 from evaluate import pivotal, pivotality, criticality, prob_pivotal
 from draw import draw
@@ -27,4 +31,8 @@ def simulate(case, file, **attr):
 		else:
 			draw(hierarchy, attr['draw'])
 
+<<<<<<< HEAD
 	return hierarchy
+=======
+	return hierarchy
+>>>>>>> d8d5659f3d1012540de7533f715b57d8160863a6
