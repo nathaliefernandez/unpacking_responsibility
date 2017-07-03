@@ -1,4 +1,4 @@
-from hierarchy import Hierarchy
+from situation import Situation
 from evaluate import pivotal, pivotality, criticality, prob_pivotal
 from draw import draw
 
@@ -19,7 +19,7 @@ def simulate(case, file, **attr):
 	priors = [(str(u), float(v)) for u,v in file['experiments'][case]['priors']]
 	thresholds = [(str(u), int(v)) for u,v in file['experiments'][case]['thresholds']]
 
-	hierarchy = Hierarchy(structure, priors=priors, thresholds=thresholds)
+	hierarchy = Situation(structure, priors=priors, thresholds=thresholds)
 
 	if 'draw' in attr:
 		if 'show' in attr:

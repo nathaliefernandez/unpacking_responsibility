@@ -20,9 +20,13 @@ def draw(hierarchy, filename, **attr):
     # get current axes (creating one if needed)
     ax = fig.gca()
     # turn axis on or off
-    ax.axis('on')
+    ax.axis('off')
     # draw the graph
-    draw_graph(hierarchy, ax, .9, .1, .9, .1)
+    if 'values' in hierarchy.graph:
+        print 'here'
+        draw_hierarchy(hierarchy, ax, .9, .1, .9, .1)
+    # else:
+    #     draw_situation(hierarchy,ax, .9, .1, .9, .1)
 
     fig.savefig(filename)
 
@@ -43,7 +47,7 @@ parameters:
 return:
     None
 '''
-def draw_graph(hierarchy, ax, right, left, top, bottom, size=.05):
+def draw_hierarchy(hierarchy, ax, right, left, top, bottom, size=.05):
     if 'paths' not in hierarchy.graph:
         hierarchy.paths()
 
@@ -54,17 +58,13 @@ def draw_graph(hierarchy, ax, right, left, top, bottom, size=.05):
     y = bottom + .1
 
     add_node(hierarchy, ax, x, y, size, None, hierarchy.nodes()[0], None)
-    # Circle(x coordinate, y coordinate, radius, color, edge color, zorder)
-    # circle = plt.Circle((x, y), radius=size, color='w', ec='k', zorder=4)
-    # # add circle to 'axes' has to be added, it is an object of axes
-    # ax.add_artist(circle)
 
-    label_node(hierarchy, ax, x, y, size, 0, None)
+    # label_node(hierarchy, ax, x, y, size, 0, None)
 
     label_threshold(hierarchy, ax, x, y, size, 0, None)
     
     # node
-    __draw_graph(hierarchy, ax, left, height-bottom, length/len(hierarchy.predecessors(hierarchy.nodes()[0])), size, hierarchy.nodes()[0], (x, y), 0, COLOR)
+    __draw_hierarchy(hierarchy, ax, left, height-bottom, length/len(hierarchy.predecessors(hierarchy.nodes()[0])), size, hierarchy.nodes()[0], (x, y), 0, COLOR)
 
     return None
 '''
@@ -81,7 +81,7 @@ parameters:
 return:
     None
 '''
-def __draw_graph(hierarchy, ax, left, height, length, size, node, pcoor, v, color):
+def __draw_hierarchy(hierarchy, ax, left, height, length, size, node, pcoor, v, color):
     if hierarchy.predecessors(node) != []:
         for pred in xrange(len(hierarchy.predecessors(node))):
             c_spacing = length/2
@@ -98,7 +98,7 @@ def __draw_graph(hierarchy, ax, left, height, length, size, node, pcoor, v, colo
 
             add_node(hierarchy, ax, x, y, size, color[pred] if type(color[pred]) == tuple else color, node, pred)
 
-            label_node(hierarchy, ax, x, y, size, node, pred)
+            # label_node(hierarchy, ax, x, y, size, node, pred)
 
             label_threshold(hierarchy, ax, x, y, size, node, pred)
 
@@ -120,7 +120,7 @@ def __draw_graph(hierarchy, ax, left, height, length, size, node, pcoor, v, colo
             
             if hierarchy.predecessors(hierarchy.predecessors(node)[pred]) != []:
             
-                __draw_graph(hierarchy, ax, left + length*pred, height, length/len(hierarchy.predecessors(hierarchy.predecessors(node)[pred])),
+                __draw_hierarchy(hierarchy, ax, left + length*pred, height, length/len(hierarchy.predecessors(hierarchy.predecessors(node)[pred])),
                                     size, hierarchy.predecessors(node)[pred], (x, y), v, color[pred] if type(color[pred]) == tuple else color)
         return None
     else:
@@ -166,13 +166,9 @@ def get_color(hierarchy, color, node, pred):
         s = color[1]
 
         levels = hierarchy.node[hierarchy.nodes()[0]]['level']
-        lightness = 60/levels
+        lightness = 70/levels
 
-        print 'level', hierarchy.node[hierarchy.predecessors(node)[pred]]['level']
-        l = (levels- hierarchy.node[hierarchy.predecessors(node)[pred]]['level'])*lightness
-        print 
-        print hierarchy.predecessors(node)[pred]
-        print (h, s, l)
+        l = (levels- hierarchy.node[hierarchy.predecessors(node)[pred]]['level'])*lightness + 10
         return hsl_to_rgb(h, s, l)
 
 '''
@@ -211,7 +207,7 @@ def label_threshold(hierarchy, ax, x, y, size, node, pred):
         print hierarchy.node[hierarchy.nodes()[node]]
         ax.text(x - 2*size, y, hierarchy.node[hierarchy.nodes()[node]]['threshold'], zorder=5)
     elif 'threshold' in hierarchy.node[hierarchy.predecessors(node)[pred]]:
-        ax.text(x - size, y, hierarchy.node[hierarchy.predecessors(node)[pred]]['threshold'], zorder=5)
+        ax.text(x - 2*size, y, hierarchy.node[hierarchy.predecessors(node)[pred]]['threshold'], fontsize=12, zorder=5)
 
 '''
 draw arrow from pred to node

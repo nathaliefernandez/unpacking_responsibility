@@ -137,15 +137,7 @@ class Hierarchy(DiGraph):
 
         return self.value(event)
 
-    def situation(self):
-        roots = []
-        for node in self.nodes():
-            if 'value' in self.node[node]:
-                if self.predecessors(node) == []:
-                    roots.append((node, self.node[node]['value']))
-                else:
-                    print 'aggregate %s' % node, self.node[node]['value']
-        return roots
+
 
     '''
     return:
