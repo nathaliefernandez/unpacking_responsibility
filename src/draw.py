@@ -295,8 +295,8 @@ def draw_outcomes(situation, fig, **attr):
     return None
 
 def positive(situation, ax, x, y, size):
-    check = patches.Rectangle((x - (.25*size*cos(pi/4)), y - (.5*size*sin(pi/4)) - (.01*sin(pi/4))), size, .01, color='k', angle=45, zorder=10)
-    mark = patches.Rectangle((x - (.25*size*cos(pi/4)), y - (.5*size*sin(pi/4)) - (.01*sin(pi/4))), .01, .5*size, color='k', angle=45, zorder=10)
+    check = patches.Rectangle((x - (.25*size*cos(pi/4)), y - (.5*size*sin(pi/4)) - (.01*sin(pi/4))), size, .01, color='k', angle=45, zorder=6)
+    mark = patches.Rectangle((x - (.25*size*cos(pi/4)), y - (.5*size*sin(pi/4)) - (.01*sin(pi/4))), .01, .5*size, color='k', angle=45, zorder=6)
     # plt.plot(x+.5*size, y+.5*size, x-.5*size, y-.5*size, linewidth=5, color='w', linestyle='solid', zorder=1)
     
     ax.add_artist(check)
@@ -304,9 +304,25 @@ def positive(situation, ax, x, y, size):
     return None
 
 def negative(situation, ax, x, y, size):
-    right = patches.Rectangle((x - (.5*size*cos(pi/4)) + (.5*.01*cos(pi/4)), y - (.5*size*sin(pi/4)) - (.5*.01*sin(pi/4))), size, .01, color='k', angle=45, zorder=10)
-    left = patches.Rectangle((x + (.5*size*cos(pi/4)) - (.5*.01*cos(pi/4)), y - (.5*size*sin(pi/4)) - (.5*.01*sin(pi/4))), .01, size, color='k', angle=45, zorder=10)
+    right = patches.Rectangle((x - (.5*size*cos(pi/4)) + (.5*.01*cos(pi/4)), y - (.5*size*sin(pi/4)) - (.5*.01*sin(pi/4))), size, .01, color='k', angle=45, zorder=6)
+    left = patches.Rectangle((x + (.5*size*cos(pi/4)) - (.5*.01*cos(pi/4)), y - (.5*size*sin(pi/4)) - (.5*.01*sin(pi/4))), .01, size, color='k', angle=45, zorder=6)
 
     ax.add_artist(left)
     ax.add_artist(right)
     return None
+
+def highlight_cause_effect(hierarchy, fig, cause, effect, size=.05, **attr):
+    ax = fig.gca()
+
+    coord = hierarchy.node[cause]['coord']
+    print coord
+    circle = plt.Circle((coord[0], coord[1]), radius=size, alpha=0, lw=.2,  ec='k', zorder=10)
+
+    ax.add_artist(circle)
+    coord = hierarchy.node[cause]['coord']
+
+    effect = plt.Circle((coord[0], coord[1]), radius=size, lw=10, ec='k', zorder=7)
+    ax.add_artist(effect)
+    fig.savefig('images/highlighted%d.png' % attr['ID'])
+
+    return fig
