@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 
-from math import atan, sin, cos
+from math import atan, sin, cos, pi
 from random import shuffle
 
 # list of color hue and saturation for each group
@@ -16,8 +16,7 @@ parameters:
 return:
     None
 '''
-def draw(hierarchy, filename, **attr):
-    list1 = range(5)
+def draw(hierarchy, **attr):
     # shuffle(COLOR)
 
     # create figure
@@ -27,17 +26,25 @@ def draw(hierarchy, filename, **attr):
     # turn axis on or off
     ax.axis('off')
 
-    # draw the graph
     draw_hierarchy(hierarchy, ax, .9, .1, .9, .1)
-    # else:
-    #     draw_situation(hierarchy,ax, .9, .1, .9, .1)
 
-    fig.savefig(filename)
+    if 'ID' in attr:
+        ID = attr['ID']
+        fig.savefig('images/hierarchy%d.png' % ID)
+    else:
+        fig.savefig('images/hierarchy%d.png' % 0)
+
+    if 'situation'  in attr:
+        draw_situation(hierarchy, ax, .9, .1, .9, .1)
+        if 'ID' in attr:
+            fig.savefig('images/situation%d.png' % ID)
+        else:
+            fig.savefig('images/situation%d.png' % 0)
 
     if 'show' in attr and attr['show']:
         plt.show()
 
-    return None
+    return ax
 
 '''
 draws first node and calls recursive call to draw the others
@@ -63,7 +70,7 @@ def draw_hierarchy(hierarchy, ax, right, left, top, bottom, size=.05):
 
     add_node(hierarchy, ax, x, y, size, None, hierarchy.nodes()[0], None)
 
-    # label_node(hierarchy, ax, x, y, size, 0, None)
+    label_node(hierarchy, ax, x, y, size, 0, None)
 
     label_threshold(hierarchy, ax, x, y, size, 0, None)
     
@@ -103,9 +110,8 @@ def __draw_hierarchy(hierarchy, ax, left, height, length, size, node, pcoor, v, 
             add_node(hierarchy, ax, x, y, size, color[pred] if type(color) != tuple else color, node, pred)
 
             label_node(hierarchy, ax, x, y, size, node, pred)
-            print hierarchy.predecessors(node)[pred]
-            label_threshold(hierarchy, ax, x, y, size, node, pred)
 
+            label_threshold(hierarchy, ax, x, y, size, node, pred)
 
             dx = pcoor[0] - x 
             dy = pcoor[1] - y 
@@ -186,11 +192,9 @@ parameters:
     pred        int         index of node pred to be drawn
 '''
 def label_node(hierarchy, ax, x, y, size, node, pred):
-    if pred == None:
-        ax.text(x, y, hierarchy.nodes()[0], size=18, zorder=5)
-    else:
+    if pred != None:
+        # ax.text(x, y, hierarchy.nodes()[0], size=18, zorder=5)
         if hierarchy.predecessors(hierarchy.predecessors(node)[pred]) == []:
-            print hierarchy.predecessors(node)[pred]
             ax.text(x, y+1.5*size, hierarchy.node[hierarchy.predecessors(node)[pred]]['name'], size=18, horizontalalignment='center', verticalalignment='center', zorder=5)
     return None
 
@@ -270,13 +274,7 @@ def hsl_to_rgb(h, s, l):
     g = hue_to_rgb(p, q, h);
     b = hue_to_rgb(p, q, h - 1.0/3.0)
 
-    print (r, g, b)
-    print
     return (r, g, b)
-
-def checkmark(hierarchy, ax, x, y, size):
-    ax.plt.plot(x+.5*size, y+.5*size, x-.5*size, y-.5*size, linewidth=.02, color='w', linestyle='solid')
-    return None
 
 '''
 draws first node and calls recursive call to draw the others
@@ -290,9 +288,9 @@ parameters:
 return:
     None
 '''
-def draw_situation(hierarchy, ax, right, left, top, bottom, size=.05):
-    if 'paths' not in hierarchy.graph:
-        hierarchy.paths()
+def draw_situation(situation, ax, right, left, top, bottom, size=.05):
+    if 'paths' not in situation.graph:
+        situation.paths()
 
     height = float(top - bottom)
     length = float(right - left)
@@ -300,9 +298,12 @@ def draw_situation(hierarchy, ax, right, left, top, bottom, size=.05):
     x = length/2. + left
     y = bottom + .1
 
-    add_node(hierarchy, ax, x, y, size, None, hierarchy.nodes()[0], None)
-    
-    __draw_situation(hierarchy, ax, left, height-bottom, length/len(hierarchy.predecessors(hierarchy.nodes()[0])), size, hierarchy.nodes()[0], (x, y), 0, COLOR)
+    if situation.node[situation.nodes()[0]]['value'] == True:
+        positive(situation, ax, x, y, size)
+    else:
+        negative(situation, ax, x, y, size)
+
+    __draw_situation(situation, ax, left, height-bottom, length/len(situation.predecessors(situation.nodes()[0])), size, situation.nodes()[0], (x, y), 0, COLOR)
 
     return None
 '''
@@ -319,13 +320,13 @@ parameters:
 return:
     None
 '''
-def __draw_situation(hierarchy, ax, left, height, length, size, node, pcoor, v, color):
-    if hierarchy.predecessors(node) != []:
-        for pred in xrange(len(hierarchy.predecessors(node))):
+def __draw_situation(situation, ax, left, height, length, size, node, pcoor, v, color):
+    if situation.predecessors(node) != []:
+        for pred in xrange(len(situation.predecessors(node))):
             c_spacing = length/2
 
-            if hierarchy.predecessors(node)[pred] in hierarchy.graph['paths']:
-                v = (height-pcoor[1])/float(len(hierarchy.graph['paths'][hierarchy.predecessors(node)[pred]]))
+            if situation.predecessors(node)[pred] in situation.graph['paths']:
+                v = (height-pcoor[1])/float(len(situation.graph['paths'][situation.predecessors(node)[pred]]))
                 x = c_spacing + length*pred + left
                 y = pcoor[1] + v
             else:
@@ -333,12 +334,27 @@ def __draw_situation(hierarchy, ax, left, height, length, size, node, pcoor, v, 
                 x = c_spacing + length*pred + left
                 y = pcoor[1] + v
                 v = 0
-
-            add_node(hierarchy, ax, x, y, size, color[pred] if type(color) != tuple else color, node, pred)
             
-            if hierarchy.predecessors(hierarchy.predecessors(node)[pred]) != []:
-                __draw_situation(hierarchy, ax, left + length*pred, height, length/len(hierarchy.predecessors(hierarchy.predecessors(node)[pred])),
-                                    size, hierarchy.predecessors(node)[pred], (x, y), v, color[pred] if type(color) != tuple else color)
+            if situation.predecessors(situation.predecessors(node)[pred]) != []:
+                __draw_situation(situation, ax, left + length*pred, height, length/len(situation.predecessors(situation.predecessors(node)[pred])),
+                                    size, situation.predecessors(node)[pred], (x, y), v, color[pred] if type(color) != tuple else color)
         return None
     else:
         return None
+
+def positive(situation, ax, x, y, size):
+    check = patches.Rectangle((x - (.25*size*cos(pi/4)), y - (.5*size*sin(pi/4)) - (.01*sin(pi/4))), size, .01, color='k', angle=45, zorder=10)
+    mark = patches.Rectangle((x - (.25*size*cos(pi/4)), y - (.5*size*sin(pi/4)) - (.01*sin(pi/4))), .01, .5*size, color='k', angle=45, zorder=10)
+    # plt.plot(x+.5*size, y+.5*size, x-.5*size, y-.5*size, linewidth=5, color='w', linestyle='solid', zorder=1)
+    
+    ax.add_artist(check)
+    ax.add_artist(mark)
+    return None
+
+def negative(situation, ax, x, y, size):
+    right = patches.Rectangle((x - (.5*size*cos(pi/4)) + (.5*.01*cos(pi/4)), y - (.5*size*sin(pi/4)) - (.5*.01*sin(pi/4))), size, .01, color='k', angle=45, zorder=10)
+    left = patches.Rectangle((x + (.5*size*cos(pi/4)) - (.5*.01*cos(pi/4)), y - (.5*size*sin(pi/4)) - (.5*.01*sin(pi/4))), .01, size, color='k', angle=45, zorder=10)
+
+    ax.add_artist(left)
+    ax.add_artist(right)
+    return None

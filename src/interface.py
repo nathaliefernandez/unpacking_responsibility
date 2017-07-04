@@ -11,22 +11,22 @@ import json
 '''
 open input file and save to a dict
 '''
-with open('experiments.json', 'r') as data:
+with open('test.json', 'r') as data:
 	file = json.load(data)
 data.close()
 
 # list of cases to run
-cases = range(1, 6)
+cases = range(1, 5)
+
 
 for case in cases:
-	print
 	print 'case', case
 	# simulate the case and return the hierarchy
-	hierarchy = simulate(case, file, draw='images/graph%d.png' % case)
-	values = [('0_0', 0), ('0_1', 0), ('0_2', 0), ('0_3', 0), ('0_4', 0)]
+	hierarchy = simulate(file['experiments'][case], draw=True)
+	# values = [('0_0', 0), ('0_1', 0), ('0_2', 0), ('0_3', 0), ('0_4', 0)]
 
-	hierarchy.assign_values(values)
-
+	# hierarchy.assign_values(values)
+	
 	node = '0_4'
 
 	effect = hierarchy.nodes()[0]

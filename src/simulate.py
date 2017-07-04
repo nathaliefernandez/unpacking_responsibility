@@ -14,25 +14,30 @@ parameters:
 return:
 	None
 '''
-def simulate(case, file, **attr):
-	hierarchy = {}
+def simulate(file, **attr):
+	data = {}
 
-	hierarchy['structure'] = [(str(u), str(v)) for u,v in file['experiments'][case]['hierarchy']['structure']]
-	hierarchy['priors'] = [(str(u), float(v)) for u,v in file['experiments'][case]['hierarchy']['priors']]
-	hierarchy['thresholds'] = [(str(u), int(v)) for u,v in file['experiments'][case]['hierarchy']['thresholds']]
+	if unicode('ID') in file:
+		data['ID'] = file['ID']
 
-	if 'situation' in attr:
+	data['structure'] = [(str(u), str(v)) for u,v in file['hierarchy']['structure']]
+	data['priors'] = [(str(u), float(v)) for u,v in file['hierarchy']['priors']]
+	data['thresholds'] = [(str(u), int(v)) for u,v in file['hierarchy']['thresholds']]
+
+	if unicode('situation') in file:
 		situation = {}
-		situation['values'] = [(str(u), int(v)) for u,v in file['experiments'][case]['situation']['values']]
+		situation['values'] = [(str(u), int(v)) for u,v in file['situation']['values']]
 		
-		hierarchy = Situation(hierarchy=hierarchy, situation=situation)
+		hierarchy = Situation(hierarchy=data, situation=situation)
+		hierarchy.evaluate(hierarchy.nodes()[0])
 	else: 
 		hierarchy = Situation(hierarchy=hierarchy)
 
-	if 'draw' in attr:
-		if 'show' in attr:
-			draw(hierarchy, attr['draw'], show=attr['show'])
-		else:
-			draw(hierarchy, attr['draw'])
+		
 
+	if 'draw' in attr:
+		ax = draw(hierarchy, data=data)
+		if unicode('situation') in file or 'situation' in attr:
+			draw(hierarchy, situation=situation, ID=data['ID'])
+	
 	return hierarchy

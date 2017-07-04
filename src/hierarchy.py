@@ -26,9 +26,9 @@ class Hierarchy(DiGraph):
         self.assign_thresholds()
 
         self.assign_names()
-
-        if 'values' in self.graph:
-            self.assign_values(self.graph['values'])
+        if 'sample' in attr:
+            if 'values' in self.graph:
+                self.assign_values(self.graph['values'])
 
         return None
 
@@ -143,7 +143,6 @@ class Hierarchy(DiGraph):
         if 'value' not in self.node[event]:
             self.node[event]['func'] = lambda values:sum(values.values()) >= self.node[event]['threshold']
             self.node[event]['value'] = int(self.node[event].get('func')(values))
-
 
         return self.value(event)
 
