@@ -15,11 +15,19 @@ return:
 	None
 '''
 def simulate(case, file, **attr):
-	structure = [(str(u), str(v)) for u,v in file['experiments'][case]['structure']]
-	priors = [(str(u), float(v)) for u,v in file['experiments'][case]['priors']]
-	thresholds = [(str(u), int(v)) for u,v in file['experiments'][case]['thresholds']]
+	hierarchy = {}
 
-	hierarchy = Situation(structure, priors=priors, thresholds=thresholds)
+	hierarchy['structure'] = [(str(u), str(v)) for u,v in file['experiments'][case]['hierarchy']['structure']]
+	hierarchy['priors'] = [(str(u), float(v)) for u,v in file['experiments'][case]['hierarchy']['priors']]
+	hierarchy['thresholds'] = [(str(u), int(v)) for u,v in file['experiments'][case]['hierarchy']['thresholds']]
+
+	if 'situation' in attr:
+		situation = {}
+		situation['values'] = [(str(u), int(v)) for u,v in file['experiments'][case]['situation']['values']]
+		
+		hierarchy = Situation(hierarchy=hierarchy, situation=situation)
+	else: 
+		hierarchy = Situation(hierarchy=hierarchy)
 
 	if 'draw' in attr:
 		if 'show' in attr:

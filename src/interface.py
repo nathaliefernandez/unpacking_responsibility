@@ -16,29 +16,31 @@ with open('experiments.json', 'r') as data:
 data.close()
 
 # list of cases to run
-cases = [28]
+cases = range(1, 3)
 
 
 
 
 for case in cases:
+	print
 	print 'case', case
 	# simulate the case and return the hierarchy
-	hierarchy = simulate(case, file, draw='graph%d.png' % case)
+	hierarchy = simulate(case, file, draw='images/graph%d.png' % case)
 	values = [('0_0', 0), ('0_1', 0), ('0_2', 0), ('0_3', 0), ('0_4', 0)]
 
 	hierarchy.assign_values(values)
 
 	node = '0_4'
 
-	print node
 	effect = hierarchy.nodes()[0]
+	hierarchy.evaluate(effect)
+
 	copy = hierarchy.copy()
 
 	pivr = pivotality(copy, node, effect, root=True)
 	piv = pivotality(copy, node, effect)
-	print hierarchy.situation()
-	print 'piv roots', pivr
-	print 'piv', piv
+	# print hierarchy.situation()
+	# print 'piv roots', pivr
+	# print 'piv', piv
 
 

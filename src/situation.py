@@ -5,15 +5,19 @@ class Situation(Hierarchy):
 	'''
 	'''
 	def __init__(self, data=None, **attr):
-		Hierarchy.__init__(self, data, **attr)
+		if 'hierarchy' in attr:
+			attr = attr['hierarchy']
+			Hierarchy.__init__(self, data, **attr)
+
+		elif 'situation' in attr:
+			if 'values' in attr['situation']:
+				self.assign_values(attr['situation']['values'])
 
 	def situation(self):
 		roots = []
-		print self.nodes()
 		for node in self.nodes():
-			if self.predecessors(node) == None:
+			if self.predecessors(node) == []:
 				roots.append((node, self.node[node]['value']))
 			else:
-				print 'node', node
 				print 'aggregate %s' % node, self.node[node]['value']
 		return roots

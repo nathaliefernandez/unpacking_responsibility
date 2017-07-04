@@ -17,12 +17,15 @@ class Hierarchy(DiGraph):
         Hierarchy
     '''
     def __init__(self, data=None, **attr):
+        data = attr['structure']
         DiGraph.__init__(self, data, **attr)
 
         # add prior attributes
         self.assign_priors()
         # add threshold attributes
         self.assign_thresholds()
+
+        self.assign_names()
 
         if 'values' in self.graph:
             self.assign_values(self.graph['values'])
@@ -62,6 +65,11 @@ class Hierarchy(DiGraph):
         self.node[node]['value'] = value
         return None
 
+    def assign_names(self):
+        names = ['Tom', 'Phill', 'John', 'Dan', 'Joe']
+        for i, node in enumerate(self.nodes()):
+            if self.predecessors(node) == []:
+                self.node[node]['name'] = names[i-1]
     '''
     samples values and assigns them to each node
     return:
