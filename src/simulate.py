@@ -1,6 +1,6 @@
 from situation import Situation
 from evaluate import pivotal, pivotality, criticality, prob_pivotal
-from draw import draw
+from draw import draw, draw_outcomes
 
 
 import matplotlib.pyplot as plt
@@ -36,8 +36,9 @@ def simulate(file, **attr):
 		
 
 	if 'draw' in attr:
-		ax = draw(hierarchy, data=data)
+		fig = draw(hierarchy, data=data)
 		if unicode('situation') in file or 'situation' in attr:
-			draw(hierarchy, situation=situation, ID=data['ID'])
+			draw_outcomes(hierarchy, fig, ID=data['ID'])
+			# draw(hierarchy, situation=situation, ID=data['ID'])
 	
 	return hierarchy

@@ -34,17 +34,17 @@ def draw(hierarchy, **attr):
     else:
         fig.savefig('images/hierarchy%d.png' % 0)
 
-    if 'situation'  in attr:
-        draw_situation(hierarchy, ax, .9, .1, .9, .1)
-        if 'ID' in attr:
-            fig.savefig('images/situation%d.png' % ID)
-        else:
-            fig.savefig('images/situation%d.png' % 0)
+    # if 'situation'  in attr:
+    #     draw_situation(hierarchy, ax, .9, .1, .9, .1)
+    #     if 'ID' in attr:
+    #         fig.savefig('images/situation%d.png' % ID)
+    #     else:
+    #         fig.savefig('images/situation%d.png' % 0)
 
     if 'show' in attr and attr['show']:
         plt.show()
 
-    return ax
+    return fig
 
 '''
 draws first node and calls recursive call to draw the others
@@ -67,6 +67,8 @@ def draw_hierarchy(hierarchy, ax, right, left, top, bottom, size=.05):
 
     x = length/2. + left
     y = bottom + .1
+
+    hierarchy.node[hierarchy.nodes()[0]]['coord'] = (x, y)
 
     add_node(hierarchy, ax, x, y, size, None, hierarchy.nodes()[0], None)
 
@@ -106,6 +108,8 @@ def __draw_hierarchy(hierarchy, ax, left, height, length, size, node, pcoor, v, 
                 x = c_spacing + length*pred + left
                 y = pcoor[1] + v
                 v = 0
+
+            hierarchy.node[hierarchy.predecessors(node)[pred]]['coord'] = (x, y)
 
             add_node(hierarchy, ax, x, y, size, color[pred] if type(color) != tuple else color, node, pred)
 
@@ -276,71 +280,19 @@ def hsl_to_rgb(h, s, l):
 
     return (r, g, b)
 
-'''
-draws first node and calls recursive call to draw the others
-parameters:
-    ax          Axes instance       axes figure is drawn on
-    right       tuple               x coordinate of right border
-    left        tuple               x coordinate of left border
-    top         tuple               y coordinate of top border
-    bottom      tuple               y coordinate of bottom border
-    size        tuple               diameter of node
-return:
-    None
-'''
-def draw_situation(situation, ax, right, left, top, bottom, size=.05):
-    if 'paths' not in situation.graph:
-        situation.paths()
+def draw_outcomes(situation, fig, **attr):
+    ax = fig.gca()
 
-    height = float(top - bottom)
-    length = float(right - left)
+    # get current axes (creating one if needed)
+    for node in situation.nodes():
+        coord = situation.node[node]['coord']
+        if situation.node[node]['value'] == True:
+            positive(situation, ax, coord[0], coord[1], size=.05)
+        else:
+            negative(situation, ax, coord[0], coord[1], size=.05)
 
-    x = length/2. + left
-    y = bottom + .1
-
-    if situation.node[situation.nodes()[0]]['value'] == True:
-        positive(situation, ax, x, y, size)
-    else:
-        negative(situation, ax, x, y, size)
-
-    __draw_situation(situation, ax, left, height-bottom, length/len(situation.predecessors(situation.nodes()[0])), size, situation.nodes()[0], (x, y), 0, COLOR)
-
+    fig.savefig('images/situation%d.png' % attr['ID'])
     return None
-'''
-draws a node and arrow to previous node(child node)
-parameters:
-    ax      Axes instance   axes figure is drawn on
-    left    float           left border x coordinate
-    height  float           height of figure
-    length  float           length across figure
-    size    float           diameter of nodes
-    node    str             previously drawn node name
-    pcoor   float           coordinates of previous node
-    v       float           vertical spacing for previous node
-return:
-    None
-'''
-def __draw_situation(situation, ax, left, height, length, size, node, pcoor, v, color):
-    if situation.predecessors(node) != []:
-        for pred in xrange(len(situation.predecessors(node))):
-            c_spacing = length/2
-
-            if situation.predecessors(node)[pred] in situation.graph['paths']:
-                v = (height-pcoor[1])/float(len(situation.graph['paths'][situation.predecessors(node)[pred]]))
-                x = c_spacing + length*pred + left
-                y = pcoor[1] + v
-            else:
-                v = height - pcoor[1]
-                x = c_spacing + length*pred + left
-                y = pcoor[1] + v
-                v = 0
-            
-            if situation.predecessors(situation.predecessors(node)[pred]) != []:
-                __draw_situation(situation, ax, left + length*pred, height, length/len(situation.predecessors(situation.predecessors(node)[pred])),
-                                    size, situation.predecessors(node)[pred], (x, y), v, color[pred] if type(color) != tuple else color)
-        return None
-    else:
-        return None
 
 def positive(situation, ax, x, y, size):
     check = patches.Rectangle((x - (.25*size*cos(pi/4)), y - (.5*size*sin(pi/4)) - (.01*sin(pi/4))), size, .01, color='k', angle=45, zorder=10)
