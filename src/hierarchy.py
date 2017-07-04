@@ -67,8 +67,10 @@ class Hierarchy(DiGraph):
 
     def assign_names(self):
         names = ['Tom', 'Phill', 'John', 'Dan', 'Joe']
-        for i, node in enumerate(self.nodes()):
+        i = 0
+        for node in self.nodes():
             if self.predecessors(node) == []:
+                i += 1
                 self.node[node]['name'] = names[i-1]
     '''
     samples values and assigns them to each node

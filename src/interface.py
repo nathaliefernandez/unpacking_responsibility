@@ -16,10 +16,7 @@ with open('experiments.json', 'r') as data:
 data.close()
 
 # list of cases to run
-cases = range(1, 3)
-
-
-
+cases = range(1, 6)
 
 for case in cases:
 	print

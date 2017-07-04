@@ -4,7 +4,6 @@ import matplotlib.patches as patches
 from math import atan, sin, cos
 from random import shuffle
 
-
 # list of color hue and saturation for each group
 # [green, blue, red, orange]
 COLOR = [(0, 100), (220, 100), (120, 60), (60, 100), (24, 100)]
@@ -18,6 +17,9 @@ return:
     None
 '''
 def draw(hierarchy, filename, **attr):
+    list1 = range(5)
+    # shuffle(COLOR)
+
     # create figure
     fig = plt.figure(figsize=(12, 12))
     # get current axes (creating one if needed)
@@ -66,7 +68,7 @@ def draw_hierarchy(hierarchy, ax, right, left, top, bottom, size=.05):
     label_threshold(hierarchy, ax, x, y, size, 0, None)
     
     # node
-    __draw_hierarchy(hierarchy, ax, left, height-bottom, length/len(hierarchy.predecessors(hierarchy.nodes()[0])), size, hierarchy.nodes()[0], (x, y), 0, shuffle(COLOR))
+    __draw_hierarchy(hierarchy, ax, left, height-bottom, length/len(hierarchy.predecessors(hierarchy.nodes()[0])), size, hierarchy.nodes()[0], (x, y), 0, COLOR)
 
     return None
 '''
@@ -84,7 +86,6 @@ return:
     None
 '''
 def __draw_hierarchy(hierarchy, ax, left, height, length, size, node, pcoor, v, color):
-    print 'color', color
     if hierarchy.predecessors(node) != []:
         for pred in xrange(len(hierarchy.predecessors(node))):
             c_spacing = length/2
@@ -170,7 +171,7 @@ def get_color(hierarchy, color, node, pred):
         levels = hierarchy.node[hierarchy.nodes()[0]]['level']
         lightness = 70/levels
 
-        l = (levels- hierarchy.node[hierarchy.predecessors(node)[pred]]['level'])*lightness + 10
+        l = (levels- hierarchy.node[hierarchy.predecessors(node)[pred]]['level'])*lightness + 12
         return hsl_to_rgb(h, s, l)
 
 '''
@@ -188,8 +189,9 @@ def label_node(hierarchy, ax, x, y, size, node, pred):
     if pred == None:
         ax.text(x, y, hierarchy.nodes()[0], size=18, zorder=5)
     else:
-        print hierarchy.predecessors(node)[pred]
-        ax.text(x, y+1.5*size, hierarchy.node[hierarchy.predecessors(node)[pred]]['name'], size=18, horizontalalignment='center', verticalalignment='center', zorder=5)
+        if hierarchy.predecessors(hierarchy.predecessors(node)[pred]) == []:
+            print hierarchy.predecessors(node)[pred]
+            ax.text(x, y+1.5*size, hierarchy.node[hierarchy.predecessors(node)[pred]]['name'], size=18, horizontalalignment='center', verticalalignment='center', zorder=5)
     return None
 
 '''
