@@ -22,7 +22,8 @@ def draw(hierarchy, **attr):
     # create figure
     fig = plt.figure(figsize=(12, 12))
     # get current axes (creating one if needed)
-    ax = fig.gca()
+    # ax = fig.gca()
+    ax = plt.axes([0.025,0.025,0.95,0.95])
     # turn axis on or off
     ax.axis('off')
 
@@ -40,6 +41,7 @@ def draw(hierarchy, **attr):
     #         fig.savefig('images/situation%d.png' % ID)
     #     else:
     #         fig.savefig('images/situation%d.png' % 0)
+
 
     if 'show' in attr and attr['show']:
         plt.show()
@@ -286,6 +288,7 @@ def draw_outcomes(situation, fig, **attr):
     # get current axes (creating one if needed)
     for node in situation.nodes():
         coord = situation.node[node]['coord']
+        print node
         if situation.node[node]['value'] == True:
             positive(situation, ax, coord[0], coord[1], size=.05)
         else:
@@ -315,14 +318,14 @@ def highlight_cause_effect(hierarchy, fig, cause, effect, size=.05, **attr):
     ax = fig.gca()
 
     coord = hierarchy.node[cause]['coord']
+    circle = patches.Circle((coord[0], coord[1]), radius=size, fILL=False, lw=10,  ec='k', zorder=1)
+
+    ax.add_patch(circle)
     print coord
-    circle = plt.Circle((coord[0], coord[1]), radius=size, alpha=0, lw=.2,  ec='k', zorder=10)
-
-    ax.add_artist(circle)
-    coord = hierarchy.node[cause]['coord']
-
-    effect = plt.Circle((coord[0], coord[1]), radius=size, lw=10, ec='k', zorder=7)
-    ax.add_artist(effect)
+    coord = hierarchy.node[effect]['coord']
+    print coord
+    effect = patches.Circle((coord[0], coord[1]), radius=size, fill=False,  lw=10, ec='k', zorder=1)
+    ax.add_patch(effect)
     fig.savefig('images/highlighted%d.png' % attr['ID'])
 
     return fig
