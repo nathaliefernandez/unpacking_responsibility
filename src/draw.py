@@ -7,7 +7,7 @@ from random import shuffle
 # list of color hue and saturation for each group
 # [green, blue, red, orange]
 COLOR = [(0, 100), (220, 100), (120, 60), (60, 100), (24, 100)]
-
+ABC = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 '''
 draw hierarchy
 parameters:
@@ -28,9 +28,9 @@ def draw(hierarchy, **attr):
     ax.axis('off')
 
     draw_hierarchy(hierarchy, ax, .9, .1, .9, .1)
-
-    if 'ID' in attr:
-        ID = attr['ID']
+    print attr['data']['ID']
+    if 'ID' in attr['data']:
+        ID = attr['data']['ID']
         fig.savefig('images/hierarchy%d.png' % ID)
     else:
         fig.savefig('images/hierarchy%d.png' % 0)
@@ -153,13 +153,17 @@ return :
 '''
 def add_node(hierarchy, ax, x, y, size, color, node, pred):
     if pred == None:
-        circle = plt.Circle((x, y), radius=size, color='w', ec='k', zorder=4)
+        circle = plt.Circle((x, y), radius=size, aa=True, lw=2, color='.3', ec='k', zorder=4)
         # add circle to 'axes' has to be added, it is an object of axes
         ax.add_artist(circle)
     else:
-        circle = plt.Circle((x, y), radius=size, color=get_color(hierarchy, color, node, pred), ec='k', zorder=4)
+        color = get_color(hierarchy, color, node, pred)
+        circle = plt.Circle((x, y), radius=size, aa=True, lw=3, color=color[0], ec=color[1], zorder=4)
         # add circle to 'axes' has to be added, it is an object of axes
         ax.add_artist(circle)
+
+        # circle = plt.Circle((x, y), radius=size, aa=True, lw=3, color=color[0], alpha=.5, ec=color[1], zorder=7)
+        # ax.add_artist(circle)
     return None
 
 '''
@@ -173,7 +177,6 @@ return:
     None
 '''
 def get_color(hierarchy, color, node, pred):
-
     if pred == None:
         return 'w'
     else:
@@ -181,10 +184,12 @@ def get_color(hierarchy, color, node, pred):
         s = color[1]
 
         levels = hierarchy.node[hierarchy.nodes()[0]]['level']
-        lightness = 70/levels
+        lightness = 80/levels
 
         l = (levels- hierarchy.node[hierarchy.predecessors(node)[pred]]['level'])*lightness + 12
-        return hsl_to_rgb(h, s, l)
+
+
+        return (hsl_to_rgb(h, s, l), hsl_to_rgb(h, s, l-32))
 
 '''
 label name of node
@@ -201,7 +206,13 @@ def label_node(hierarchy, ax, x, y, size, node, pred):
     if pred != None:
         # ax.text(x, y, hierarchy.nodes()[0], size=18, zorder=5)
         if hierarchy.predecessors(hierarchy.predecessors(node)[pred]) == []:
-            ax.text(x, y+1.5*size, hierarchy.node[hierarchy.predecessors(node)[pred]]['name'], size=18, horizontalalignment='center', verticalalignment='center', zorder=5)
+            ax.text(x, y+1.5*size, hierarchy.node[hierarchy.predecessors(node)[pred]]['name'], fontsize=24, weight='medium', horizontalalignment='center', verticalalignment='center', zorder=5)
+        else:
+            ax.text(x, y+2*size, 'Team %s' % ABC[pred-1], fontsize=24, weight='medium', bbox=dict(facecolor='w', ec='w'), horizontalalignment='center', verticalalignment='center', zorder=5)
+    elif node == 0:
+        print
+        ax.text(x, y+2*size, 'Outcome', fontsize=24, weight='medium', bbox=dict(facecolor='w', ec='w'), horizontalalignment='center', verticalalignment='center', zorder=5)
+
     return None
 
 '''
@@ -219,9 +230,9 @@ return:
 '''
 def label_threshold(hierarchy, ax, x, y, size, node, pred):
     if pred == None:
-        ax.text(x-1.5*size, y, hierarchy.node[hierarchy.nodes()[node]]['threshold'], size=18, horizontalalignment='center', verticalalignment='center', zorder=5)
+        ax.text(x-1.5*size, y, hierarchy.node[hierarchy.nodes()[node]]['threshold'], size=26, horizontalalignment='center', verticalalignment='center', zorder=5)
     elif 'threshold' in hierarchy.node[hierarchy.predecessors(node)[pred]]:
-        ax.text(x-1.5*size, y, hierarchy.node[hierarchy.predecessors(node)[pred]]['threshold'], fontsize=18, horizontalalignment='center', verticalalignment='center', zorder=5)
+        ax.text(x-1.5*size, y, hierarchy.node[hierarchy.predecessors(node)[pred]]['threshold'], fontsize=26, horizontalalignment='center', verticalalignment='center', zorder=5)
     return None
 '''
 draw arrow from pred to node
@@ -238,7 +249,7 @@ def draw_arrow(ax, x, y, dx, dy):
     newy = dy + y
     #arrow = patches.FancyArrowPatch(posA=(x, y), posB=(newx, newy), shrinkB=2, zorder=1)
 
-    arrow = ax.arrow(x, y, dx , dy, length_includes_head=True, head_width=.01, head_length=.02, fc='k', ec='k', zorder=3)
+    arrow = ax.arrow(x, y, dx , dy, length_includes_head=True, head_width=.015, head_length=.02, fc='k', ec='k', zorder=1)
     ax.add_artist(arrow)
     return None
 
@@ -290,25 +301,25 @@ def draw_outcomes(situation, fig, **attr):
         coord = situation.node[node]['coord']
         print node
         if situation.node[node]['value'] == True:
-            positive(situation, ax, coord[0], coord[1], size=.05)
+            positive(situation, ax, node, coord[0], coord[1], size=.05)
         else:
-            negative(situation, ax, coord[0], coord[1], size=.05)
+            negative(situation, ax, node, coord[0], coord[1], size=.05)
 
     fig.savefig('images/situation%d.png' % attr['ID'])
     return None
 
-def positive(situation, ax, x, y, size):
-    check = patches.Rectangle((x - (.25*size*cos(pi/4)), y - (.5*size*sin(pi/4)) - (.01*sin(pi/4))), size, .01, color='k', angle=45, zorder=6)
-    mark = patches.Rectangle((x - (.25*size*cos(pi/4)), y - (.5*size*sin(pi/4)) - (.01*sin(pi/4))), .01, .5*size, color='k', angle=45, zorder=6)
+def positive(situation, ax, node, x, y, size):
+    check = patches.Rectangle((x - (.25*size*cos(pi/4)), y - (.5*size*sin(pi/4)) - (.01*sin(pi/4))), size, .01, color='w', angle=45, zorder=6)
+    mark = patches.Rectangle((x - (.25*size*cos(pi/4)), y - (.5*size*sin(pi/4)) - (.01*sin(pi/4))), .01, .5*size, color='w', angle=45, zorder=6)
     # plt.plot(x+.5*size, y+.5*size, x-.5*size, y-.5*size, linewidth=5, color='w', linestyle='solid', zorder=1)
     
     ax.add_artist(check)
     ax.add_artist(mark)
     return None
 
-def negative(situation, ax, x, y, size):
-    right = patches.Rectangle((x - (.5*size*cos(pi/4)) + (.5*.01*cos(pi/4)), y - (.5*size*sin(pi/4)) - (.5*.01*sin(pi/4))), size, .01, color='k', angle=45, zorder=6)
-    left = patches.Rectangle((x + (.5*size*cos(pi/4)) - (.5*.01*cos(pi/4)), y - (.5*size*sin(pi/4)) - (.5*.01*sin(pi/4))), .01, size, color='k', angle=45, zorder=6)
+def negative(situation, ax, node, x, y, size):
+    right = patches.Rectangle((x - (.5*size*cos(pi/4)) + (.5*.01*cos(pi/4)), y - (.5*size*sin(pi/4)) - (.5*.01*sin(pi/4))), size, .01, color='w', angle=45, zorder=10)
+    left = patches.Rectangle((x + (.5*size*cos(pi/4)) - (.5*.01*cos(pi/4)), y - (.5*size*sin(pi/4)) - (.5*.01*sin(pi/4))), .01, size, color='w', angle=45, zorder=10)
 
     ax.add_artist(left)
     ax.add_artist(right)
@@ -318,14 +329,15 @@ def highlight_cause_effect(hierarchy, fig, cause, effect, size=.05, **attr):
     ax = fig.gca()
 
     coord = hierarchy.node[cause]['coord']
-    circle = patches.Circle((coord[0], coord[1]), radius=size, fILL=False, lw=10,  ec='k', zorder=1)
+    circle = patches.Circle((coord[0], coord[1]), radius=size+.0157, aa=True, alpha=.4, lw=0, ec='.2', zorder=1)
 
     ax.add_patch(circle)
-    print coord
+
     coord = hierarchy.node[effect]['coord']
-    print coord
-    effect = patches.Circle((coord[0], coord[1]), radius=size, fill=False,  lw=10, ec='k', zorder=1)
+
+    effect = patches.Circle((coord[0], coord[1]), radius=size+.0157, aa=True, alpha=.4, lw=0, ec='.2', zorder=1)
     ax.add_patch(effect)
+
     fig.savefig('images/highlighted%d.png' % attr['ID'])
 
     return fig

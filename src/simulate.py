@@ -35,7 +35,7 @@ def simulate(file, **attr):
 
 	if 'draw' in attr:
 		fig = draw(hierarchy, data=data)
-		fig = highlight_cause_effect(hierarchy, fig, '0_4', '2_0', ID=data['ID'])
+		fig = highlight_cause_effect(hierarchy, fig, '0_2', hierarchy.nodes()[0], ID=data['ID'])
 
 		if unicode('situation') in file or 'situation' in attr:
 			draw_outcomes(hierarchy, fig, ID=data['ID'])
