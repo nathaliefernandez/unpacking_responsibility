@@ -1,7 +1,6 @@
 from situation import Situation
 from evaluate import pivotal, pivotality, criticality, prob_pivotal
-from draw import draw, draw_outcomes, highlight_cause_effect
-
+from draw import draw, highlight_cause_effect
 
 import matplotlib.pyplot as plt
 
@@ -21,24 +20,52 @@ def simulate(file, **attr):
 		data['ID'] = file['ID']
 
 	data['structure'] = [(str(u), str(v)) for u,v in file['hierarchy']['structure']]
-	data['priors'] = [(str(u), float(v)) for u,v in file['hierarchy']['priors']]
-	data['thresholds'] = [(str(u), int(v)) for u,v in file['hierarchy']['thresholds']]
+	print data['structure']
+	print
+	
+	if 'priors' in data:
+		data['priors'] = [(str(u), float(v)) for u,v in file['hierarchy']['priors']]
 
 	if unicode('situation') in file:
-		situation = {}
-		situation['values'] = [(str(u), int(v)) for u,v in file['situation']['values']]
-		
-		hierarchy = Situation(hierarchy=data, situation=situation)
-		hierarchy.evaluate(hierarchy.nodes()[0])
-	else: 
-		hierarchy = Situation(hierarchy=hierarchy)
+		if 'situation' in attr and 'op' in attr:
+			situation = {}
+			situation['values'] = [(str(u), int(v)) for u,v in file['situation'][attr['situation']]['values']]
+			situation['thresholds'] = [(str(u), int(v)) for u,v in file['situation'][attr['situation']]['thresholds'][attr['op']]]
+			
+			hierarchy = Situation(hierarchy=data, situation=situation)
+			hierarchy.evaluate(hierarchy.outcome())
 
-	if 'draw' in attr:
-		fig = draw(hierarchy, data=data)
-		fig = highlight_cause_effect(hierarchy, fig, '0_2', hierarchy.nodes()[0], ID=data['ID'])
+			if 'draw' in attr:
+				fig = draw(hierarchy, data=data, file='hierarchy.png')
+		else:
+			situation = []
+			# for s in xrange(len(file['situation'])):
+			for s in xrange(1):
+				situation.append({})
+				situation[s]['values'] = [(str(u), int(v)) for u,v in file['situation'][s]['values']]
+				for op in file['situation'][s]['thresholds']:
+					situation[s]['thresholds'] = {}
+					situation[s]['thresholds'][op] = [(str(u), int(v)) for u,v in file['situation'][s]['thresholds'][op]]
+					
+					hierarchy = Situation(hierarchy=data, situation=situation[s], op=op)
+					hierarchy.evaluate(hierarchy.outcome())
+
+					if 'draw' in attr:
+						fig = draw(hierarchy, data=data, file='hierarchy.png')
+	else: 
+		hierarchy = Situation(data)
+
+
+		fig = draw(hierarchy, data=data, file = 'hierarchy.png')
+
+		# fig = highlight_cause_effect(hierarchy, fig, '1_0', None, ID=3)
+
+		# fig = highlight_cause_effect(hierarchy, fig, 'n0', hierarchy.outcome(), ID=3)
+
+		# fig = highlight_cause_effect(hierarchy, fig, '2_0', None, ID=3)
+
 
 		if unicode('situation') in file or 'situation' in attr:
-			draw_outcomes(hierarchy, fig, ID=data['ID'])
-			# draw(hierarchy, situation=situation, ID=data['ID'])
+			draw(hierarchy, fig=fig, situation=situation, data=data)
 	
 	return hierarchy
