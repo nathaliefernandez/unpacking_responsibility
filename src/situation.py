@@ -24,8 +24,8 @@ class Situation(Hierarchy):
 					self.assign_thresholds(attr['situation']['thresholds'])
 
 		
-			self.evaluate(self.nodes()[0])
-		return
+		self.evaluate(self.outcome())
+
 
 	def outcome(self):
 		return filter(lambda a: self.successors(a) == [], self.nodes())[0]
@@ -41,8 +41,6 @@ class Situation(Hierarchy):
 			if 'thresholds' in attr['situation']:
 
 				if 'op' in attr:
-
-					print attr['situation']['thresholds']
 					self.assign_thresholds(attr['situation']['thresholds'][attr['op']])
 				else:
 					self.assign_thresholds(attr['situation']['thresholds'])
@@ -78,9 +76,6 @@ class Situation(Hierarchy):
 	def assign_thresholds(self, thresholds):
 
 		for node, threshold in thresholds:
-			print node
-			print threshold
-			print
 			self.node[node]['threshold'] = threshold
 		return None
 
@@ -212,5 +207,5 @@ class Situation(Hierarchy):
 		
 		self.node[event]['func'] = lambda values:sum(values.values()) >= self.node[event]['threshold']
 		self.node[event]['value'] = int(self.node[event].get('func')(values))
-		print self.value(event)
+		
 		return self.value(event)

@@ -1,5 +1,7 @@
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
+import _tkinter
+import matplotlib.axes as ax
 
 import os
 from subprocess import call
@@ -22,36 +24,40 @@ return:
     None
 '''
 def draw(hierarchy, **attr):
-    # shuffle(COLOR)
+
+    shuffle(COLOR)
 
     # create figure
     if 'fig' in attr:
         fig = attr['fig']
     else:
-        fig = plt.figure(figsize=(15, 15))
+        fig = plt.figure(figsize=(15, 10))
+
+    # ax.set_xlim(0, 2.0)
+
     # get current axes (creating one if needed)
     # ax = fig.gca()
-    ax = plt.axes([0, 0, 1, 1])
+    ax = plt.axes()
+    plt.axis([0, 1.5, 0, 1])
+
     # turn axis on or off
     ax.axis('off')
+
     fig.subplots_adjust(left=0,bottom=0,right=1,top=1,wspace=0,hspace=0)
-    draw_hierarchy(hierarchy, ax, .9, .1, .9, 0.1)
+
+    draw_hierarchy(hierarchy, ax, 1.4, .1, .9, 0.1)
+
     if 'file' in attr:
         fig.savefig(attr['file'])
     else:
-        if 'ID' in attr['data']:
-            ID = attr['data']['ID']
-            fig.savefig('experiment/static/images/hierarchy%d.png' % ID, bbox_inches='tight', pad_inches=0)
+        if 'ID' in attr:
+            ID = attr['ID']
+            fig.savefig('experiment/static/images/hierarchies/hierarchy%d.png' % ID)
         else:
-            fig.savefig('experiment/static/images/hierarchy%d.png' % 0, bbox_inches='tight')
-
-
-
+            fig.savefig('images/hierarchy.png')
 
     if 'show' in attr and attr['show']:
         plt.show()
-
-    plt.close()
 
     return fig
 
@@ -212,12 +218,14 @@ parameters:
 def label_node(hierarchy, ax, x, y, size, node, pred):
     if pred != None:
         # ax.text(x, y, hierarchy.outcome(), size=18, zorder=5)
+
         if hierarchy.predecessors(hierarchy.predecessors(node)[pred]) == []:
-            ax.text(x, y+1.5*size, hierarchy.node[hierarchy.predecessors(node)[pred]]['name'], fontsize=24, weight='medium', horizontalalignment='center', verticalalignment='center', zorder=5)
+            ax.text(x, y+1.5*size, hierarchy.node[hierarchy.predecessors(node)[pred]]['name'], fontsize=20, weight='medium', horizontalalignment='center', verticalalignment='center', zorder=5)
         else:
-            ax.text(x, y+2*size, 'Team %s' % ABC[pred-1], fontsize=24, weight='medium', bbox=dict(facecolor='w', ec='w'), horizontalalignment='center', verticalalignment='center', zorder=5)
+            ax.text(x, y+1.8*size, 'Team %s' % ABC[pred-1], fontsize=20, weight='medium', bbox=dict(facecolor='w', ec='w'), horizontalalignment='center', verticalalignment='center', zorder=5)
+
     elif node == 0:
-        ax.text(x, y+2*size, 'Outcome', fontsize=24, weight='medium', bbox=dict(facecolor='w', ec='w'), horizontalalignment='center', verticalalignment='center', zorder=5)
+        ax.text(x, y+1.8*size, 'Outcome', fontsize=20, weight='medium', bbox=dict(facecolor='w', ec='w'), horizontalalignment='center', verticalalignment='center', zorder=5)
 
     return None
 
@@ -236,9 +244,9 @@ return:
 '''
 def label_threshold(hierarchy, ax, x, y, size, node, pred):
     if pred == None:
-        ax.text(x-1.5*size, y, hierarchy.node[hierarchy.nodes()[node]]['threshold'], size=26, horizontalalignment='center', verticalalignment='center', zorder=5)
+        ax.text(x-1.5*size, y, hierarchy.node[hierarchy.nodes()[node]]['threshold'], size=20, horizontalalignment='center', verticalalignment='center', zorder=5)
     elif 'threshold' in hierarchy.node[hierarchy.predecessors(node)[pred]]:
-        ax.text(x-1.5*size, y, hierarchy.node[hierarchy.predecessors(node)[pred]]['threshold'], fontsize=26, horizontalalignment='center', verticalalignment='center', zorder=5)
+        ax.text(x-1.5*size, y, hierarchy.node[hierarchy.predecessors(node)[pred]]['threshold'], fontsize=20, horizontalalignment='center', verticalalignment='center', zorder=5)
     return None
 '''
 draw arrow from pred to node
@@ -255,7 +263,7 @@ def draw_arrow(ax, x, y, dx, dy):
     newy = dy + y
     #arrow = patches.FancyArrowPatch(posA=(x, y), posB=(newx, newy), shrinkB=2, zorder=1)
 
-    arrow = ax.arrow(x, y, dx , dy, length_includes_head=True, head_width=.015, head_length=.02, fc='k', ec='k', zorder=1)
+    arrow = ax.arrow(x, y, dx , dy, length_includes_head=True, head_width=.0125, head_length=.015, fc='k', ec='k', zorder=1)
     ax.add_artist(arrow)
     return None
 
@@ -313,8 +321,11 @@ def draw_outcomes(situation, fig, **attr):
 
     # fig.savefig('images/situation%d.png' % attr['data']['ID'])
     # fig.savefig('experiment/static/images/instructions/instructions%d.png' % attr['data']['ID'])
-    fig.savefig('experiment/static/images/instructions/instructions%d.png' % 3)
-    plt.close()
+    if 'ID' in attr:
+        fig.savefig('experiment/static/images/situations/situation%d.png' % attr['ID'])
+    else:
+        fig.savefig('images/situation.png')
+
     return None
 
 def positive(situation, ax, node, x, y, size):
@@ -335,7 +346,9 @@ def negative(situation, ax, node, x, y, size):
     return None
 
 def highlight_cause_effect(hierarchy, fig, cause, effect, size=.05, **attr):
+
     ax = fig.gca()
+
     if cause != None:
         coord = hierarchy.node[cause]['coord']
         circle = patches.Circle((coord[0], coord[1]), radius=size+.02, aa=True, alpha=.3, lw=0, ec='.2', zorder=1)
@@ -346,7 +359,21 @@ def highlight_cause_effect(hierarchy, fig, cause, effect, size=.05, **attr):
         effect = patches.Circle((coord[0], coord[1]), radius=size+.02, aa=True, alpha=.3, lw=0, ec='.2', zorder=1)
         ax.add_patch(effect)
 
-    fig.savefig('experiment/static/images/instructions/instructions%d.png' % attr['ID'])
+    fig.savefig('experiment/static/images/highlighted/highlighted%d.png' % attr['ID'])
 
-    plt.close()
     return fig
+
+def show_predictions(hierarchy, fig, cause, effect, **attr):
+
+    ax = fig.gca()
+
+    if 'pivotalityr' in attr:
+        if 'pivotality' in attr:
+            if 'criticality' in attr:
+                fig.suptitle('criticality: %f       pivotality: %f      pivotality*: %f' % (attr['criticality'], attr['pivotalityr'], attr['pivotality']), fontsize=26, verticalalignment='top')
+
+    fig.savefig('experiment/static/images/predictions/prediction%d.png' % attr['ID'])
+
+    return
+
+

@@ -4,7 +4,12 @@ from situation import Situation
 from fractions import Fraction
 from itertools import product
 from simulate import simulate
+from draw import draw, highlight_cause_effect, draw_outcomes, show_predictions
 
+import matplotlib.pyplot as plt
+import matplotlib.patches as patches
+
+import numpy as np
 import networkx as nx
 import json
 
@@ -12,63 +17,38 @@ import json
 '''
 open input file and save to a dict
 '''
-with open('data.json', 'r') as data:
+with open('pilot.json', 'r') as data:
 	file = json.load(data)
 data.close()
 
 # list of cases to run
 cases = len(file['experiments'])
 
-for case in xrange(1, 2):
-	print 'case', case
-	# simulate the case and return the hierarchy
+for case in xrange(cases):
+
+	cause = file['experiments'][case]['situation']['cause']
+
+	if 'effect' in file['experiments'][case]['situation']:
+		effect = file['experiments'][case]['situation']['effect']
+	else:
+		effect = 'o'
+
+	hierarchy = simulate(file['experiments'][case], cause=cause, effect=effect)
+
+
+	fig = draw(hierarchy, ID=case)
 	
-	nodes = [str(u) for u,v in file['experiments'][case]['hierarchy']['structure']]
-	roots = filter(lambda a: a[-1] == 'n', nodes)
+	fig = highlight_cause_effect(hierarchy, fig, cause, effect, ID=case)
 
-	# for situation in xrange(len(list(product(*[(0, 1) for v in xrange(len(roots))])))):
-	# 	hierarchy = simulate(file['experiments'][case], situation=situation, draw=True)
-	hierarchy = simulate(file['experiments'][case], situation=0, op='con', draw=True)
-
-	node = '0n'
-	effect = hierarchy.outcome()
-
-	hierarchy.evaluate(effect)
-
-	hierarchy.print_situation() 
-	print
-	print
-
-	copy = hierarchy.copy()
-
-	# pivr = pivotality(copy, node, effect, root=True)
-	# print 'piv roots', pivr
-	# print
-
-	# piv = pivotality(copy, node, effect)
+	situation = draw_outcomes(hierarchy, fig, ID=case)
 
 
-	# print 'piv', piv
+	pivr = pivotality(hierarchy, cause, effect, root=True)
+	piv = pivotality(hierarchy, cause, effect)
 
-	pivr = pivotality(copy, node, effect, root=True)
-	print '__piv roots', pivr
-	print
-
-	piv = pivotality(copy, node, effect)
+	crit = criticality(hierarchy, cause, effect)
 
 
-	print '__piv', piv
+	predictions = show_predictions(hierarchy, fig, cause, effect, ID=case, pivotalityr=pivr, pivotality=piv, criticality=crit)
 
-	# hierarchy = Hierarchy([["0_0", "1_0"], ["0_1", "1_0"], ["0_2", "1_0"], ["0_3", "1_1"], ["0_4", "1_1"], ["1_0", "2_0"], ["1_1", "2_0"]])
-
-	# hierarchy.assign_values([["0_0", 0], ["0_1", 0], ["0_2", 0], ["0_3", 0], ["0_4", 0], ["1_0", 0], ["1_1", 0]])
-
-	# hierarchy.assign_thresholds([["1_1", 1], ["1_0", 2], ["2_0", 2]])
-	
-	# hierarchy.evaluate('2_0')
-	
-
-	
-
-	# up = unpacked_pivotality(hierarchy, '0_0', '2_0')
-	# print up
+	plt.close()

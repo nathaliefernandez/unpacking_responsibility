@@ -140,45 +140,46 @@ def pivotality(hierarchy, cause, effect, **attr):
         exogenous.remove(cause)
     if effect in exogenous:
         exogenous.remove(effect)
-    print 'exogenous', exogenous
 
     for i in xrange(len(exogenous)+1):
         for combo in combinations(exogenous, i):
             sub = hierarchy.copy()
-            print 'combo', combo
+            # print 'combo', combo
             for c in combo:
                 sub.remove_edges_from([(e, c) for e in copy.predecessors(c)])
-                sub.node[c]['value'] = int(not sub.node[c]['value'])
+                
 
 
             if attr.has_key('e_value'):
-                piv = pivotal(hierarchy, cause, effect, subgraph=sub, e_value=attr.get('e_value'))
+                piv = pivotal(sub, cause, effect, combo=combo, e_value=attr.get('e_value'))
 
             else:
-                piv = pivotal(hierarchy, cause, effect, subgraph=sub)
+                piv = pivotal(sub, cause, effect, combo=combo)
+            # print 'piv', piv
+            # print 'distance', i
+            # print
+            # print
             if piv:
                 return Fraction(1, i + 1)
     return 0
 
 def pivotal(hierarchy, cause, effect, **attr):
     
-    # set initial outcome
-    print type(hierarchy)
-    outcome = hierarchy.evaluate(effect)
-
-
-    
-    if 'subgraph' in attr:
-        copy = attr['subgraph']
+    # hierarchy.print_situation()
+    if 'combo' in attr:
+        copy = hierarchy.copy()
+        for c in attr['combo']:
+            copy.node[c]['value'] = int(not copy.node[c]['value'])
     else:
         copy = hierarchy.copy()
-
         copy.clear_values()
 
         if attr.has_key('values'):
             copy.assign_values(attr['values'])
-    print 'before' 
-    copy.print_situation()
+
+    # set initial outcome
+    outcome = copy.evaluate(effect)
+    # copy.print_situation()
 
     if attr.has_key('e_value'):
         if outcome != attr['e_value']:
@@ -186,10 +187,11 @@ def pivotal(hierarchy, cause, effect, **attr):
     
     copy.node[cause]['value'] = int(not hierarchy.node[cause]['value'])
     
+
+
     new = copy.evaluate(effect)
-    print 'after' 
-    copy.print_situation()
-    print
+    # copy.print_situation()
+
     if outcome != new:
         return True
     else:
