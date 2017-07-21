@@ -250,9 +250,9 @@ return:
 '''
 def label_threshold(hierarchy, ax, x, y, size, node, pred):
     if pred == None:
-        ax.text(x-1.8*size, y-.005, hierarchy.node[hierarchy.nodes()[node]]['threshold'], size=20, bbox=dict(boxstyle='round, pad=0.2', facecolor='w', ec='w', zorder=2), horizontalalignment='center', verticalalignment='center', zorder=2)
+        ax.text(x-1.8*size, y-.005, '%d' % hierarchy.node[hierarchy.nodes()[node]]['threshold'], size=20, bbox=dict(boxstyle='round, pad=0.2', facecolor='w', ec='w', zorder=2), horizontalalignment='center', verticalalignment='center', zorder=2)
     elif 'threshold' in hierarchy.node[hierarchy.predecessors(node)[pred]]:
-        ax.text(x-1.8*size, y-.005, hierarchy.node[hierarchy.predecessors(node)[pred]]['threshold'], fontsize=20, bbox=dict(boxstyle='round, pad=0.2', facecolor='w', ec='w', zorder=2), horizontalalignment='center', verticalalignment='center', zorder=2)
+        ax.text(x-1.8*size, y-.005, '   %d ' % hierarchy.node[hierarchy.predecessors(node)[pred]]['threshold'], fontsize=20, bbox=dict(boxstyle='round, pad=0.2', facecolor='w', ec='w', zorder=2), horizontalalignment='center', verticalalignment='center', zorder=2)
     return None
 
 '''
