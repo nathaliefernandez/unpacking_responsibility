@@ -32,7 +32,21 @@ class Hierarchy(DiGraph):
 			if 'values' in self.graph:
 				self.assign_values(self.graph['values'])
 
-		return None
+		return 
+
+	'''
+	return:
+		list	group nodes in hierarchy
+	'''
+	def groups(self):
+		return filter(lambda a: a[-1] == 'g', self.nodes())
+
+	'''
+	return:
+		list	root nodes in hierarchy
+	'''
+	def roots(self):
+		return filter(lambda a: a[-1] == 'n', self.nodes())
 
 	'''
 	return:
