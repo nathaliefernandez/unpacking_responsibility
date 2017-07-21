@@ -28,7 +28,6 @@ class Hierarchy(DiGraph):
 		# add prior attributes
 		self.assign_priors()
 
-		self.assign_names()
 		if 'sample' in attr:
 			if 'values' in self.graph:
 				self.assign_values(self.graph['values'])

@@ -23,6 +23,8 @@ class Situation(Hierarchy):
 				else:
 					self.assign_thresholds(attr['situation']['thresholds'])
 
+			if 'names' in attr:
+				self.assign_names(attr['names'])
 		
 		self.evaluate(self.outcome())
 
@@ -92,13 +94,16 @@ class Situation(Hierarchy):
 		self.node[node]['value'] = value
 		return None
 
-	def assign_names(self):
-		names = ['Tom', 'Phil', 'John', 'Dan', 'Joe']
+	def assign_names(self, names):
+
 		i = 0
 		for node in self.nodes():
 			if self.predecessors(node) == []:
+				self.node[node]['name'] = names[i]
 				i += 1
-				self.node[node]['name'] = names[i-1]
+
+		return None
+
 	'''
 	samples values and assigns them to each node
 	return:

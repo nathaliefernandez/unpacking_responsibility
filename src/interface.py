@@ -1,17 +1,13 @@
-from hierarchy import Hierarchy
 from evaluate import pivotal, pivotality, criticality, prob_pivotal, unpacked_pivotality
-from situation import Situation
-from fractions import Fraction
 from itertools import product
-from simulate import simulate
+from simulate import *
 from draw import draw, highlight_cause_effect, draw_outcomes, show_predictions
-
-import matplotlib.pyplot as plt
-import matplotlib.patches as patches
+from names import *
 
 import numpy as np
 import networkx as nx
 import json
+
 
 
 '''
@@ -24,6 +20,25 @@ data.close()
 # list of cases to run
 cases = len(file['experiments'])
 
+names = []
+index = [0]
+
+for i in xrange(cases):
+ 
+	nodes = [u for u,v in file['experiments'][i]['situation']['values']]
+
+	index.append(index[i]+len(nodes))
+
+	count = 0
+	while count < len(nodes):
+		name = get_first_name()
+
+		if len(name) < 7 and name not in names:
+			names.append(name)
+			count += 1
+
+
+
 for case in xrange(cases):
 
 	cause = file['experiments'][case]['situation']['cause']
@@ -33,7 +48,9 @@ for case in xrange(cases):
 	else:
 		effect = 'o'
 
-	hierarchy = simulate(file['experiments'][case], cause=cause, effect=effect)
+
+
+	hierarchy = simulate(file['experiments'][case], cause=cause, effect=effect, names=names[index[case]:])
 
 
 	fig = draw(hierarchy, ID=case)

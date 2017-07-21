@@ -12,7 +12,7 @@ from hierarchy import Hierarchy
 
 # list of color hue and saturation for each group
 # [green, blue, red, orange]
-COLOR = [(0, 100), (220, 100), (120, 60), (60, 100), (24, 100)]
+COLOR = [(0, 100), (220, 100), (120, 60), (280, 100), (24, 100)]
 ABC = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 
 '''
@@ -26,6 +26,7 @@ return:
 def draw(hierarchy, **attr):
 
     shuffle(COLOR)
+    shuffle(ABC)
 
     # create figure
     if 'fig' in attr:
@@ -199,8 +200,7 @@ def get_color(hierarchy, color, node, pred):
         levels = hierarchy.node[hierarchy.outcome()]['level']
         lightness = 80/levels
 
-        l = (levels- hierarchy.node[hierarchy.predecessors(node)[pred]]['level'])*lightness + 12
-
+        l = (levels - hierarchy.node[hierarchy.predecessors(node)[pred]]['level'])*lightness + 12
 
         return (hsl_to_rgb(h, s, l), hsl_to_rgb(h, s, l-32))
 
@@ -220,12 +220,13 @@ def label_node(hierarchy, ax, x, y, size, node, pred):
         # ax.text(x, y, hierarchy.outcome(), size=18, zorder=5)
 
         if hierarchy.predecessors(hierarchy.predecessors(node)[pred]) == []:
-            ax.text(x, y+1.5*size, hierarchy.node[hierarchy.predecessors(node)[pred]]['name'], fontsize=20, weight='medium', horizontalalignment='center', verticalalignment='center', zorder=5)
+            ax.text(x, y+1.8*size, hierarchy.node[hierarchy.predecessors(node)[pred]]['name'], fontsize=20, weight='medium', horizontalalignment='center', verticalalignment='center', zorder=2)
         else:
-            ax.text(x, y+1.8*size, 'Team %s' % ABC[pred-1], fontsize=20, weight='medium', bbox=dict(facecolor='w', ec='w'), horizontalalignment='center', verticalalignment='center', zorder=5)
+            i = hierarchy.nodes().index(node)
+            ax.text(x, y+1.8*size, 'Team %s' % ABC[i], fontsize=20, weight='medium', bbox=dict(boxstyle='round, pad=0.2', facecolor='w', ec='w', zorder=2), horizontalalignment='center', verticalalignment='center', zorder=2)
 
     elif node == 0:
-        ax.text(x, y+1.8*size, 'Outcome', fontsize=20, weight='medium', bbox=dict(facecolor='w', ec='w'), horizontalalignment='center', verticalalignment='center', zorder=5)
+        ax.text(x, y+1.8*size, 'Outcome', fontsize=20, weight='medium', bbox=dict(boxstyle='round, pad=0.2', facecolor='w', ec='w', zorder=2), horizontalalignment='center', verticalalignment='center', zorder=2)
 
     return None
 
@@ -244,10 +245,11 @@ return:
 '''
 def label_threshold(hierarchy, ax, x, y, size, node, pred):
     if pred == None:
-        ax.text(x-1.5*size, y, hierarchy.node[hierarchy.nodes()[node]]['threshold'], size=20, horizontalalignment='center', verticalalignment='center', zorder=5)
+        ax.text(x-1.8*size, y, hierarchy.node[hierarchy.nodes()[node]]['threshold'], size=20, bbox=dict(boxstyle='round, pad=0.2', facecolor='w', ec='w', zorder=2), horizontalalignment='center', verticalalignment='center', zorder=2)
     elif 'threshold' in hierarchy.node[hierarchy.predecessors(node)[pred]]:
-        ax.text(x-1.5*size, y, hierarchy.node[hierarchy.predecessors(node)[pred]]['threshold'], fontsize=20, horizontalalignment='center', verticalalignment='center', zorder=5)
+        ax.text(x-1.8*size, y, hierarchy.node[hierarchy.predecessors(node)[pred]]['threshold'], fontsize=20, bbox=dict(boxstyle='round, pad=0.2', facecolor='w', ec='w', zorder=2), horizontalalignment='center', verticalalignment='center', zorder=2)
     return None
+
 '''
 draw arrow from pred to node
 parameters:
@@ -351,12 +353,12 @@ def highlight_cause_effect(hierarchy, fig, cause, effect, size=.05, **attr):
 
     if cause != None:
         coord = hierarchy.node[cause]['coord']
-        circle = patches.Circle((coord[0], coord[1]), radius=size+.02, aa=True, alpha=.3, lw=0, ec='.2', zorder=1)
+        circle = patches.Circle((coord[0], coord[1]), radius=size+.023, aa=True, alpha=.3, lw=0, ec='.2', zorder=3)
         ax.add_patch(circle)
 
     if effect != None:
         coord = hierarchy.node[effect]['coord']
-        effect = patches.Circle((coord[0], coord[1]), radius=size+.02, aa=True, alpha=.3, lw=0, ec='.2', zorder=1)
+        effect = patches.Circle((coord[0], coord[1]), radius=size+.023, aa=True, alpha=.3, lw=0, ec='.2', zorder=3)
         ax.add_patch(effect)
 
     fig.savefig('experiment/static/images/highlighted/highlighted%d.png' % attr['ID'])
