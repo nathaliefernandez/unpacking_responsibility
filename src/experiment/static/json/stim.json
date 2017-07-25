@@ -1,0 +1,184 @@
+{
+        "predict":[
+        {
+                "ID": 11,
+                "cause": "Elmer",
+                "effect": "Outcome"
+        },
+        {
+                "ID": 12,
+                "cause": "Tara",
+                "effect": "Outcome"
+        },
+        {
+                "ID": 13,
+                "cause": "Keith",
+                "effect": "Outcome"
+        },
+        {
+                "ID": 14,
+                "cause": "Bert",
+                "effect": "Outcome"
+        },
+        {
+                "ID": 21,
+                "cause": "Denise",
+                "effect": "Outcome"
+        },
+        {
+                "ID": 22,
+                "cause": "George",
+                "effect": "Outcome"
+        },
+        {
+                "ID": 23,
+                "cause": "Leslie",
+                "effect": "Outcome" 
+        },
+        {
+                "ID": 24,
+                "cause": "Dennis",
+                "effect": "Outcome" 
+        }
+        ],
+        "judgement": [
+        {
+                "ID": 0,
+                "cause": "Leroy",
+                "effect": "Outcome"
+        },
+        {
+                "ID": 1,
+                "cause": "Robert",
+                "effect": "Outcome"
+        },
+        {
+                "ID": 2,
+                "cause": "Autumn",
+                "effect": "Outcome"
+        },
+        {
+                "ID": 3,
+                "cause": "Cheryl",
+                "effect": "Outcome"
+        },
+        {
+                "ID": 4,
+                "cause": "Angel",
+                "effect": "Outcome"
+        },
+        {
+                "ID": 5,
+                "cause": "Sonja",
+                "effect": "Outcome"
+        },
+        {
+                "ID": 6,
+                "cause": "Walker",
+                "effect": "Outcome"
+        },
+        {
+                "ID": 7,
+                "cause": "Louis",
+                "effect": "Outcome"
+        },
+        {
+                "ID": 8,
+                "cause": "Amanda",
+                "effect": "Outcome"
+        },
+        {
+                "ID": 9,
+                "cause": "Ryan",
+                "effect": "Outcome"
+        },
+        {
+                "ID": 10,
+                "cause": "Kerri",
+                "effect": "Outcome"
+        },
+        {
+                "ID": 11,
+                "cause": "Elmer",
+                "effect": "Outcome"
+        },
+        {
+                "ID": 12,
+                "cause": "Tara",
+                "effect": "Outcome"
+        },
+        {
+                "ID": 13,
+                "cause": "Keith",
+                "effect": "Outcome"
+        },
+        {
+                "ID": 14,
+                "cause": "Bert",
+                "effect": "Outcome"
+        },
+        {
+                "ID": 15,
+                "cause": "John",
+                "effect": "Outcome"
+        },
+        {
+                "ID": 16,
+                "cause": "Cory",
+                "effect": "Outcome"
+        },
+        {
+                "ID": 17,
+                "cause": "Nancy",
+                "effect": "Outcome"
+        },
+        {
+                "ID": 18,
+                "cause": "Ruby",
+                "effect": "Outcome"
+        },
+        {
+                "ID": 19,
+                "cause": "Alice",
+                "effect": "Outcome"
+        },
+        {
+                "ID": 20,
+                "cause": "Darren",
+                "effect": "Outcome"
+        },
+        {
+                "ID": 21,
+                "cause": "Denise",
+                "effect": "Outcome"
+        },
+        {
+                "ID": 22,
+                "cause": "George",
+                "effect": "Outcome"
+        },
+        {
+                "ID": 23,
+                "cause": "Leslie",
+                "effect": "Outcome" 
+        },
+        {
+                "ID": 24,
+                "cause": "Dennis",
+                "effect": "Outcome" 
+        }
+        ],
+        "predict_text": "<p style = 'color:red'><b>Prediction task</b></p><p>You will see several situations. To the left of the Teams and Outcome are the thresholds needed to succeed.",
+        "judgement_text": "<p style = 'color:red'><b>Judgment task</b></p><p>You will now see the outcomes of several situations. To the left of the Teams and Outcome are the thresholds that were needed to succeed.",
+        "questions": [{
+                "q1": ["How important will <b>", "question 2", "question 3", "question 4"],
+                "q2": ["</b> be for the "],
+                "q3": ["'s success?"],
+                "l": ["<b>not</b> important at all", "<b>very</b> important"]
+        },
+        {
+                "q1": ["How responsible was <b>", "question 2", "question 3", "question 4"],
+                "q2": ["</b> for the "],
+                "l": ["<b>not</b> responsible", "unsure", "<b>very</b> responsible"]
+        }]
+}

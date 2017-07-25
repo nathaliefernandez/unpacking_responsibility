@@ -1,0 +1,180 @@
+{
+        "stim": [{
+                "ID": 1,
+                "spinner": ["low", "low", "low"],
+                "spinner_outcome": ["lost", "none", "none"],
+                "name": "John",
+                "actual_outcome": "lost",
+                "counterfactual_outcome": "won"
+        }, {
+                "ID": 2,
+                "spinner": ["high", "low", "low"],
+                "spinner_outcome": ["lost", "none", "none"],
+                "name": "William",
+                "actual_outcome": "lost",
+                "counterfactual_outcome": "won"
+        }, {
+                "ID": 3,
+                "spinner": ["low", "high", "low"],
+                "spinner_outcome": ["lost", "none", "none"],
+                "name": "Peter",
+                "actual_outcome": "lost",
+                "counterfactual_outcome": "won"
+        }, {
+                "ID": 4,
+                "spinner": ["high", "high", "low"],
+                "spinner_outcome": ["lost", "none", "none"],
+                "name": "Christopher",
+                "actual_outcome": "lost",
+                "counterfactual_outcome": "won"
+        }, {
+                "ID": 5,
+                "spinner": ["low", "low", "high"],
+                "spinner_outcome": ["lost", "none", "none"],
+                "name": "Mark",
+                "actual_outcome": "lost",
+                "counterfactual_outcome": "won"
+        }, {
+                "ID": 6,
+                "spinner": ["high", "low", "high"],
+                "spinner_outcome": ["lost", "none", "none"],
+                "name": "Kenneth",
+                "actual_outcome": "lost",
+                "counterfactual_outcome": "won"
+        }, {
+                "ID": 7,
+                "spinner": ["low", "high", "high"],
+                "spinner_outcome": ["lost", "none", "none"],
+                "name": "Brian",
+                "actual_outcome": "lost",
+                "counterfactual_outcome": "won"
+        }, {
+                "ID": 8,
+                "spinner": ["high", "high", "high"],
+                "spinner_outcome": ["lost", "none", "none"],
+                "name": "Kevin",
+                "actual_outcome": "lost",
+                "counterfactual_outcome": "won"
+        }, {
+                "ID": 9,
+                "spinner": ["low", "low", "low"],
+                "spinner_outcome": ["won", "lost", "none"],
+                "name": "Robert",
+                "actual_outcome": "lost",
+                "counterfactual_outcome": "won"
+        }, {
+                "ID": 10,
+                "spinner": ["high", "low", "low"],
+                "spinner_outcome": ["won", "lost", "none"],
+                "name": "David",
+                "actual_outcome": "lost",
+                "counterfactual_outcome": "won"
+        }, {
+                "ID": 11,
+                "spinner": ["low", "high", "low"],
+                "spinner_outcome": ["won", "lost", "none"],
+                "name": "Joseph",
+                "actual_outcome": "lost",
+                "counterfactual_outcome": "won"
+        }, {
+                "ID": 12,
+                "spinner": ["high", "high", "low"],
+                "spinner_outcome": ["won", "lost", "none"],
+                "name": "Daniel",
+                "actual_outcome": "lost",
+                "counterfactual_outcome": "won"
+        }, {
+                "ID": 13,
+                "spinner": ["low", "low", "high"],
+                "spinner_outcome": ["won", "lost", "none"],
+                "name": "Donald",
+                "actual_outcome": "lost",
+                "counterfactual_outcome": "won"
+        }, {
+                "ID": 14,
+                "spinner": ["high", "low", "high"],
+                "spinner_outcome": ["won", "lost", "none"],
+                "name": "Steven",
+                "actual_outcome": "lost",
+                "counterfactual_outcome": "won"
+        }, {
+                "ID": 15,
+                "spinner": ["low", "high", "high"],
+                "spinner_outcome": ["won", "lost", "none"],
+                "name": "Ronald",
+                "actual_outcome": "lost",
+                "counterfactual_outcome": "won"
+        }, {
+                "ID": 16,
+                "spinner": ["high", "high", "high"],
+                "spinner_outcome": ["won", "lost", "none"],
+                "name": "Jason",
+                "actual_outcome": "lost",
+                "counterfactual_outcome": "won"
+        }, {
+                "ID": 17,
+                "spinner": ["low", "low", "low"],
+                "spinner_outcome": ["won", "won", "lost"],
+                "name": "Michael",
+                "actual_outcome": "lost",
+                "counterfactual_outcome": "won"
+        }, {
+                "ID": 18,
+                "spinner": ["high", "low", "low"],
+                "spinner_outcome": ["won", "won", "lost"],
+                "name": "Richard",
+                "actual_outcome": "lost",
+                "counterfactual_outcome": "won"
+        }, {
+                "ID": 19,
+                "spinner": ["low", "high", "low"],
+                "spinner_outcome": ["won", "won", "lost"],
+                "name": "Thomas",
+                "actual_outcome": "lost",
+                "counterfactual_outcome": "won"
+        }, {
+                "ID": 20,
+                "spinner": ["high", "high", "low"],
+                "spinner_outcome": ["won", "won", "lost"],
+                "name": "Paul",
+                "actual_outcome": "lost",
+                "counterfactual_outcome": "won"
+        }, {
+                "ID": 21,
+                "spinner": ["low", "low", "high"],
+                "spinner_outcome": ["won", "won", "lost"],
+                "name": "George",
+                "actual_outcome": "lost",
+                "counterfactual_outcome": "won"
+        }, {
+                "ID": 22,
+                "spinner": ["high", "low", "high"],
+                "spinner_outcome": ["won", "won", "lost"],
+                "name": "Edward",
+                "actual_outcome": "lost",
+                "counterfactual_outcome": "won"
+        }, {
+                "ID": 23,
+                "spinner": ["low", "high", "high"],
+                "spinner_outcome": ["won", "won", "lost"],
+                "name": "Anthony",
+                "actual_outcome": "lost",
+                "counterfactual_outcome": "won"
+        }, {
+                "ID": 24,
+                "spinner": ["high", "high", "high"],
+                "spinner_outcome": ["won", "won", "lost"],
+                "name": "Matthew",
+                "actual_outcome": "lost",
+                "counterfactual_outcome": "won"
+        }],
+        "prompt": "<p><b>Instruction reminder</b></p><p>You will see the outcomes of several players who played the spinner game. A player wins the game if they manage to make all spinners land on gray. Each round is played one after the other, and the game is over if a spinner lands on white.</p><p>For each game, we'll ask you to do three things:</p><ol><li>Indicate what the chances are of someone winning this game.</li><li>Reveal the outcome of each round.</li><li>Say whether you think the player almost won the game.</li></ol>",
+        "questions": [{
+                "q": "What are the chances of someone winning this game?",
+                "l": ["very low", "very high"]
+        },
+        {
+                "q": "{{name}} almost {{counterfactual_outcome}} the game.",
+                "l": ["completely disagree", "completely agree"]
+        }]
+}

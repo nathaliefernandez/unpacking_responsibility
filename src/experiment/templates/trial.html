@@ -1,0 +1,214 @@
+<!-- INSTRUCTIONS -->
+<div class="slide" id="instructions-training-1">
+  <h1>Instructions</h1>
+  <div class="blue">
+    <p>In this experiment, your task is to evaluate outcomes in the <b>marble drop game</b>.</p>
+
+    <p>Here is how the marble drop game works:</p>
+    <ul>
+      <li>Players drop a marble through an opening in the box (see example below).</li>
+      <li>The marble game has three sections. In the top section, there is one peg. In the middle section, there are two pegs. In the bottom section, there are three pegs.</li>
+      <li>At each peg, the marble has a 50% chance to go left, and a 50% chance to go right.</li>
+      <!-- <li>In some of the games, there are barriers that prevent the marble from going in one direction.</li> -->
+      <li>The player wins if the marble lands in a red box.</li>
+      <li>Games differ in which of the boxes are red. This means that some games are easier to win than others.</li>
+    </ul>    
+    <hr>
+    <p><b>Here is an example of how a ball drops:</b></p>
+    <div class="main_block">
+
+    <div class="inner_block2">
+        <img src='static/images/plinko_drop1.png'>
+        <p style="text-align: center"><b>1</b></p>
+    </div>
+
+    <div class="inner_block2">
+        <img src='static/images/plinko_drop2.png'>
+        <p style="text-align: center"><b>2</b></p>
+    </div>   
+
+    <div class="inner_block2">
+        <img src='static/images/plinko_drop3.png'>
+        <p style="text-align: center"><b>3</b></p>
+    </div>    
+
+    <div class="inner_block2">
+        <img src='static/images/plinko_drop4.png'>
+        <p style="text-align: center"><b>4</b></p>
+    </div>
+
+    <div class="inner_block2">
+        <img src='static/images/plinko_drop5.png'>
+        <p style="text-align: center"><b>5</b></p>
+    </div>
+    <div class="spacer"></div>
+
+<p>In this example, the player won the game, because the marble ended up in one of the red boxes. The player would have also won the game if the marble had ended up in the other red box on the left.</p>
+</div>
+    
+<hr>
+
+<div class="spacer"></div>
+
+<p>The experiment has <b>two phases</b>.</p>
+
+<p><b>Prediction Phase:</b> In the prediction phase, we will show you several different marble drop games and ask you to say what the chances are of someone winning this game.</p>
+
+<p><b>Judgment Phase:</b> In the judgment phase, we will show you what actually happened for a number of different games. We will only show you situations in which players didn't end up winning the game. Your your job will be to tell us which of two sentences better describes what happened in each game.</p>
+    <br>
+    <p style="text-align: center;">Please press Start to begin with the experiment. </p>
+
+  </div>
+
+  <div class="continue">
+    <button type="button" class="next" id ="instructions-training-1-button">Start</button>
+  </div>
+</div>
+
+
+<!-- COMPREHENSION CHECK QUESTIONS -->
+<div class="slide" id="comprehension_check">
+  <h1>Check questions</h1>
+  <div class="blue">
+    <p><b>Please answer the following questions</b>:</p>
+
+     <br/>
+
+    <p>1. Based on the example below, evaluate the following. <br/> <br/>
+      <img src='static/images/instructions/comprehension1.png' style="width:40%;border: 1px solid black;">
+      <br/><br/> 
+      &nbsp;
+      Team A:
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input class = "demoQ" type="radio" name="team" value="succeeded"> succeeded
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input class = "demoQ" type="radio" name="team" value="failed"> failed<br/> 
+      &nbsp;
+      Outcome:
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input class = "demoQ" type="radio" name="outcome" value="succeeded"> succeeded
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input class = "demoQ" type="radio" name="outcome" value="failed"> failed<br/><br/> 
+    </p>
+
+    <br/>
+
+<!--     <p>2. What are the chances of a marble going left and right at a peg without obstacles? <br/> <br/> 
+      <input class = "demoQ" type="radio" name="direction" value="equal"> 50% left and 50% right<br/> 
+      <input class = "demoQ" type="radio" name="direction" value="left"> 75% left and 25% right <br/> 
+      <input class = "demoQ" type="radio" name="direction" value="right"> 25% left and 75% right <br/> 
+    </p>
+    <br/> -->
+
+    <p>2. In the example below, is the Outcome more likely to succeed or fail?<br/> <br/>
+      <img src='static/images/instructions/comprehension2.png' style="width:40%;border: 1px solid black;">
+      <br/><br/>
+      &nbsp;
+      <input class = "demoQ" type="radio" name="goal" value="succeed"> succeed <br/>
+      &nbsp;
+      <input class = "demoQ" type="radio" name="goal" value="fail"> fail <br/>
+    </p>
+ 
+ 
+    
+    <br/>
+
+    </div>
+    
+    <div class="continue">
+      <button type="button" class="next" id="comprehension">Continue</button>
+    </div>
+</div>   
+
+<div class="slide" id="comprehension_check_fail">
+  <h1>Check questions feedback</h1>
+<div class="blue">
+
+<p>Unfortunately, you didn't answer all of the comprehension check questions correctly.</p>
+
+<p>Please have another close look at the instructions! </p>
+
+</div>
+<div class="continue" >
+    <button type="button" class="next" id="comprehension_fail">Continue</button>
+  </div>
+</div>
+
+<!-- PREDICTION -->
+<div class="slide" id="prediction">
+  <div class="stim">
+    <div class ="prompt-text" style="text-align:left"></div>
+    <hr />
+    <div class="container" >
+        <img class="hierarchy" src=""/>
+        <hr />
+
+      <div class="sliders">
+        <div class = "question-prompt" style="text-align:center;font-weight:bold"></div>
+        <div class = "question_container" id = "predict_container" style="text-align:center"></div>
+      </div>
+    </div>
+    <hr /> 
+    <div class="continue">
+      <button type="button" id="trial_next1" class="next">Continue</button>
+    </div>
+  </div>   
+</div>  
+
+<!-- JUDGEMENT -->
+<div class="slide" id="judgement">
+  <div id="progress">
+    <div id="progress-text">Progress</div>
+    <div id="indicator-container">
+      <div id="indicator-outer">
+        <div id="indicator-stage"></div>
+      </div>
+    </div>
+    <div class="spacer"></div>
+  </div>
+  <hr />
+  <div class="stim">
+    <div class ="prompt-text"></div>
+    <hr />
+    <img class="hierarchy" src="" />
+    <hr />
+    <div class = "question-prompt" style="text-align:center;font-weight:bold"></div>
+    <div class = "question_container" id = "judgement_container"></div>
+    <hr /> 
+    <div class="continue">
+      <button type="button" id="trial_next2" class="next">Continue</button>
+    </div>
+  </div>   
+</div>  
+
+<!-- DEMOGRAPHICS -->
+<div class="slide" id="demographics">
+  <h1>Demographic information</h1>
+  <div class="blue">
+    <p>What factors influenced whether you said that a player almost won the game? Do you have any other comments about the experiment?</p>
+
+    <textarea name="feedback" style="width:760px; height:100px;"  ></textarea> 
+
+    <p><b>Please answer the following questions about yourself to complete the experiment</b>:</p>
+
+    <p><b>1.</b> Age:
+      <input class = "demoQ numberQ" type="number" maxlength = "3" name="age" min="18" max="100" step = "1"> years
+    </p>
+
+    <p><b>2.</b> Gender:
+      <input class = "demoQ" type="radio" name="sex" value="female">Female
+      <input class = "demoQ" type="radio" name="sex" value="male" >Male
+    </p>
+    <br/>
+
+    <br/>
+
+    <p>Please press finish to complete the experiment.</p>
+
+  </div> 
+  
+  <div class="continue">
+    <button type="button" class="next" id="trial_finish">Finish</button>
+  </div>
+</div>
+
