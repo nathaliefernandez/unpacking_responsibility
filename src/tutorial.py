@@ -23,23 +23,20 @@ situation = draw_outcomes(hierarchy, fig, arrow=['0g'], file='experiment/static/
 
 hierarchy.evaluate('0g')
 situation = draw_outcomes(hierarchy, fig, arrow=['0g'], file='experiment/static/images/instructions/image5.png')
-fig = draw(hierarchy, size=True, fig=(7.5, 5), arrow='team', file='experiment/static/images/instructions/team.png')
+fig = draw(hierarchy, size=True, fig=fig, file='experiment/static/images/instructions/image6.png')
 
-fig = draw(hierarchy, size=True, fig=(7.5, 5), file='experiment/static/images/instructions/team.png')
-
-
-
-situation = draw_outcomes(hierarchy, fig, file='experiment/static/images/instructions/structure.png')
+hierarchy.evaluate('o')
+situation = draw_outcomes(hierarchy, fig, file='experiment/static/images/instructions/image7.png')
 
 
 
 hierarchy.remove_node('0g')
 hierarchy.add_edges_from([('1n', 'o'), ('2n', 'o')])
 
-fig = draw(hierarchy, fig=(7.5, 5), arrow=[], file='experiment/static/images/instructions/image1.png')
-fig = draw(hierarchy, fig=fig, arrow=[], file='experiment/static/images/instructions/image2.png')
+fig = draw(hierarchy, fig=(7.5, 5), arrow=['0n', '1n', '2n'], file='experiment/static/images/instructions/image1.png')
+fig = draw(hierarchy, fig=fig, arrow=['0n', '1n', '2n'], file='experiment/static/images/instructions/image2.png')
 
-situation = draw_outcomes(hierarchy, fig, arrow=[], file='experiment/static/images/instructions/image3.png')
+situation = draw_outcomes(hierarchy, fig, arrow=['0n', '1n', '2n'], file='experiment/static/images/instructions/image3.png')
 
 
 

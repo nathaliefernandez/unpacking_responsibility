@@ -250,10 +250,13 @@ def label_node(hierarchy, ax, x, y, size, node, pred):
         if hierarchy.predecessors(hierarchy.predecessors(node)[pred]) == []:
             ax.text(x, y+NAME_H*size, hierarchy.node[hierarchy.predecessors(node)[pred]]['name'], fontsize=FONTSIZE, weight='medium', horizontalalignment='center', verticalalignment='center', zorder=2)
         else:
-            groups = hierarchy.groups()
-            i = groups.index(hierarchy.predecessors(node)[pred])
-            hierarchy.node[hierarchy.predecessors(node)[pred]]['team'] = abc[i]
-            ax.text(x, y+NAME_H*size, 'Team %s' % abc[i], fontsize=FONTSIZE, weight='medium', bbox=dict(boxstyle='round, pad=0.2', facecolor='w', ec='w', zorder=2), horizontalalignment='center', verticalalignment='center', zorder=2)
+            if 'team' in hierarchy.node[hierarchy.predecessors(node)[pred]]:
+                ax.text(x, y+NAME_H*size, 'Team %s' % hierarchy.node[hierarchy.predecessors(node)[pred]]['team'], fontsize=FONTSIZE, weight='medium', bbox=dict(boxstyle='round, pad=0.2', facecolor='w', ec='w', zorder=2), horizontalalignment='center', verticalalignment='center', zorder=2)
+            else:
+                groups = hierarchy.groups()
+                i = groups.index(hierarchy.predecessors(node)[pred])
+                hierarchy.node[hierarchy.predecessors(node)[pred]]['team'] = abc[i]
+                ax.text(x, y+NAME_H*size, 'Team %s' % abc[i], fontsize=FONTSIZE, weight='medium', bbox=dict(boxstyle='round, pad=0.2', facecolor='w', ec='w', zorder=2), horizontalalignment='center', verticalalignment='center', zorder=2)
 
     
     return None
