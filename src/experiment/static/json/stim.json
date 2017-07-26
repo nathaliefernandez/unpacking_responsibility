@@ -177,8 +177,8 @@
                 "l": ["<b>not</b> important at all", "<b>very</b> important"]
         },
         {
-                "q1": ["How responsible was <b>", "question 2", "question 3", "question 4"],
-                "q2": ["</b> for the "],
-                "l": ["<b>not</b> responsible", "unsure", "<b>very</b> responsible"]
+                "q1": ["To what extent was <b>", "question 2", "question 3", "question 4"],
+                "q2": ["</b> responsible for the outcome?"],
+                "l": ["<b>not</b> at all", "", "<b>very</b> much"]
         }]
 }

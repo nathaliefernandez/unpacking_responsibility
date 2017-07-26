@@ -108,7 +108,7 @@ def draw_hierarchy(hierarchy, ax, right, left, top, bottom, size=SIZE, **attr):
     label_node(hierarchy, ax, x, y, size, hierarchy.outcome(), None)
 
     label_threshold(hierarchy, ax, x, y, size, hierarchy.outcome(), None)
-    
+
     # node
     if 'arrow' in attr:
         __draw_hierarchy(hierarchy, ax, left, height-bottom, length/len(hierarchy.predecessors(hierarchy.outcome())), size, hierarchy.outcome(), (x, y), 0, COLOR, arrow=attr['arrow'])
@@ -166,15 +166,11 @@ def __draw_hierarchy(hierarchy, ax, left, height, length, size, node, pcoor, v, 
                 dy += size
 
             if 'arrow' in attr:
-                if attr['arrow'] == '0n':
-                    if hierarchy.predecessors(node)[pred] == '0n':
-                        draw_arrow(ax, x, y, dx, dy)
-                elif attr['arrow'] == 'team':
-                    if hierarchy.predecessors(node)[pred] != '0n':
-                        draw_arrow(ax, x, y, dx, dy)
+                if hierarchy.predecessors(node)[pred] not in attr['arrow']:
+                    draw_arrow(ax, x, y, dx, dy)
             else: 
                 draw_arrow(ax, x, y, dx, dy)
-            
+
             if hierarchy.predecessors(hierarchy.predecessors(node)[pred]) != []:
                 __draw_hierarchy(hierarchy, ax, left + length*pred, height, length/len(hierarchy.predecessors(hierarchy.predecessors(node)[pred])),
                                     size, hierarchy.predecessors(node)[pred], (x, y), v, color[pred] if type(color) != tuple else color)
@@ -221,15 +217,19 @@ def get_color(hierarchy, color, node, pred):
     if pred == None:
         return 'w'
     else:
-        h = color[0]
-        s = color[1]
+        if 'color' not in hierarchy.node[hierarchy.predecessors(node)[pred]]:
+        
+            h = color[0]
+            s = color[1]
 
-        levels = hierarchy.node[hierarchy.outcome()]['level']
-        lightness = 80/levels
+            levels = hierarchy.node[hierarchy.outcome()]['level']
+            lightness = 80/levels
 
-        l = (levels - hierarchy.node[hierarchy.predecessors(node)[pred]]['level'])*lightness + 12
+            l = (levels - hierarchy.node[hierarchy.predecessors(node)[pred]]['level'])*lightness + 12
+            hierarchy.node[hierarchy.predecessors(node)[pred]]['color'] = hsl_to_rgb(h, s, l)
+            hierarchy.node[hierarchy.predecessors(node)[pred]]['ec'] = hsl_to_rgb(h, s, l-32)
 
-        return (hsl_to_rgb(h, s, l), hsl_to_rgb(h, s, l-32))
+        return (hierarchy.node[hierarchy.predecessors(node)[pred]]['color'], hierarchy.node[hierarchy.predecessors(node)[pred]]['ec'])
 
 '''
 label name of node
@@ -244,7 +244,7 @@ parameters:
 '''
 def label_node(hierarchy, ax, x, y, size, node, pred):
     if pred == None:
-        ax.text(x, y+NAME_H*size, 'Outcome', fontsize=FONTSIZE, weight='medium', bbox=dict(boxstyle='round, pad=0.2', facecolor='w', ec='w', zorder=2), horizontalalignment='center', verticalalignment='center', zorder=2)
+        ax.text(x, y+NAME_H*size, 'Management', fontsize=FONTSIZE, weight='medium', bbox=dict(boxstyle='round, pad=0.2', facecolor='w', ec='w', zorder=2), horizontalalignment='center', verticalalignment='center', zorder=2)
     else:
         # ax.text(x, y, hierarchy.outcome(), size=18, zorder=5)
         if hierarchy.predecessors(hierarchy.predecessors(node)[pred]) == []:
@@ -344,10 +344,11 @@ def draw_outcomes(situation, fig, **attr):
     for node in situation.nodes():
         coord = situation.node[node]['coord']
 
-        if situation.node[node]['value'] == True:
-            positive(situation, ax, node, coord[0], coord[1], size=SIZE)
-        else:
-            negative(situation, ax, node, coord[0], coord[1], size=SIZE)
+        if 'value' in situation.node[node]:
+            if situation.node[node]['value'] == True:
+                positive(situation, ax, node, coord[0], coord[1], size=SIZE)
+            else:
+                negative(situation, ax, node, coord[0], coord[1], size=SIZE)
 
     # fig.savefig('images/situation%d.png' % attr['data']['ID'])
     # fig.savefig('experiment/static/images/instructions/instructions%d.png' % attr['data']['ID'])
