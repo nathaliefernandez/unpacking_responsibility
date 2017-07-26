@@ -86,6 +86,12 @@ div.continue {
     /*margin-top: 1%;*/
 }
 
+div.goback {
+    text-align: center;
+    width: 100%;
+    /*margin-top: 1%;*/
+}
+
 span.warn {
     font-weight: bold;
     color: blue;
@@ -342,6 +348,16 @@ label:last-child{
     margin-left: 10%;
     margin-right: 10%;
     width: 80%;
+}
+
+.tutorial{
+    display: inline-block;
+    float: center;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 100%;
 }
 
 

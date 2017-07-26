@@ -25,21 +25,69 @@ var STATE;
  * INSTRUCTIONS         
  *************************/
 
- var Instructions = function() {
-    $(".slide").hide();
-    for (var i=1; i<2; i++) {
-        var slide = $("#instructions-training-"+i);
-    }
-    slide.fadeIn($c.fade);
-    console.log('test')
 
-    slide.find('.next').click(function () {
-        // CURRENTVIEW = new TestPhase();
-        CURRENTVIEW = new Comprehension();
-        // CURRENTVIEW = new PredictionPhase();
-        // CURRENTVIEW = new JudgementPhase();
-    });
+ var Instructions = function() {
+
+    $(".slide").hide();
+
+    function slideshow(x){
+
+        var slide = $("#instructions-training-" + x);
+
+        $("#goback").hide();
+
+        if (x == 1){
+            $(".tutorial").attr("src",'/static/images/instructions/tutorial1.png');
+
+            slide.fadeIn($c.fade);
+
+            slide.find('#goback').click(function () {
+                // this.i--;
+                i = inc_i(-1);
+                if (i == 1) {
+                    $("#goback").hide();
+                }
+            });
+
+            slide.find('#continue').click(function () {
+                // this.i++;
+                i = inc_i(1);
+                if (i == 2) {
+                    $("#goback").show();
+                }
+
+                if (i > 8) {
+                    console.log(i)
+
+                    slide.fadeOut($c.fade);
+                    slideshow(2);
+                    console.log('hey')
+                };
+            });
+        }
+        if (x == 2) {
+            slide.fadeIn($c.fade);
+
+            slide.find('#start').click(function () {
+                CURRENTVIEW = new Comprehension();
+            });
+        }
+
+
+    };
+    var i = 1;
+
+    var inc_i = function(x) {
+        i += x;
+        $(".tutorial").attr("src",'/static/images/instructions/tutorial' + i + '.png');
+        return i
+    }
+
+    slideshow(1);
+
 };
+
+
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -407,9 +455,9 @@ this.finish = function() {
     // Begin the experiment phase
     if (STATE.instructions) {
         // CURRENTVIEW = new JudgementPhase();
-        // CURRENTVIEW = new Instructions();
+        CURRENTVIEW = new Instructions();
         // CURRENTVIEW = new PredictionPhase();
-        CURRENTVIEW = new Comprehension();
+        // CURRENTVIEW = new Comprehension();
 
     }
 });
