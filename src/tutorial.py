@@ -18,11 +18,19 @@ s['values'] = [['0n', 1], ['1n', 1], ['2n', 0]]
 
 hierarchy = Situation(hierarchy=h, situation=s, comprehension=True, names=['Claude', 'Barry', 'Jacob'])
 
-fig = draw(hierarchy, size=True, file='experiment/static/images/instructions/team.png')
-
-situation = draw_outcomes(hierarchy, fig, arrow='0n', file='experiment/static/images/instructions/team.png')
-
+fig = draw(hierarchy, size=True, fig=(7.5, 5), arrow='0n', file='experiment/static/images/instructions/noteam.png')
 situation = draw_outcomes(hierarchy, fig, arrow='team', file='experiment/static/images/instructions/noteam.png')
+
+fig = draw(hierarchy, size=True, fig=(7.5, 5), arrow='team', file='experiment/static/images/instructions/team.png')
+situation = draw_outcomes(hierarchy, fig, arrow='team', file='experiment/static/images/instructions/team.png')
+
+hierarchy.evaluate('0g')
+situation = draw_outcomes(hierarchy, fig, arrow='team', file='experiment/static/images/instructions/noteam.png')
+fig = draw(hierarchy, size=True, fig=(7.5, 5), arrow='team', file='experiment/static/images/instructions/team.png')
+
+fig = draw(hierarchy, size=True, fig=(7.5, 5), file='experiment/static/images/instructions/team.png')
+
+
 
 situation = draw_outcomes(hierarchy, fig, file='experiment/static/images/instructions/structure.png')
 
@@ -31,7 +39,7 @@ situation = draw_outcomes(hierarchy, fig, file='experiment/static/images/instruc
 hierarchy.remove_node('0g')
 hierarchy.add_edges_from([('1n', 'o'), ('2n', 'o')])
 
-fig = draw(hierarchy, arrow=True, file='experiment/static/images/instructions/employees.png')
+fig = draw(hierarchy, fig=(7.5, 5), arrow=True, file='experiment/static/images/instructions/employees.png')
 
 situation = draw_outcomes(hierarchy, fig, arrow=True, file='experiment/static/images/instructions/outcomes.png')
 

@@ -18,6 +18,14 @@ ABC = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O'
 
 abc = ABC[:]
 
+FONTSIZE = 16
+SIZE = .09
+LW = 3
+# + .05
+ARROW_L = .02
+ARROW_W = .0175
+NAME_H = 1.5
+
 
 '''
 draw hierarchy
@@ -33,7 +41,10 @@ def draw(hierarchy, **attr):
 
     # create figure
     if 'fig' in attr:
-        fig = attr['fig']
+        if type(attr['fig']) == tuple:
+            fig = plt.figure(figsize=(7.5, 5))
+        else:
+            fig = attr['fig']
     else:
         fig = plt.figure(figsize=(15, 10))
 
@@ -49,7 +60,10 @@ def draw(hierarchy, **attr):
 
     fig.subplots_adjust(left=0,bottom=0,right=1,top=1,wspace=0,hspace=0)
 
-    draw_hierarchy(hierarchy, ax, 1.4, .1, .9, 0.1)
+    if 'arrow' in attr:
+        draw_hierarchy(hierarchy, ax, 1.4, .1, .9, 0.1, arrow=attr['arrow'])
+    else:
+        draw_hierarchy(hierarchy, ax, 1.4, .1, .9, 0.1)
 
     if 'file' in attr:
         fig.savefig(attr['file'])
@@ -77,7 +91,7 @@ parameters:
 return:
     None
 '''
-def draw_hierarchy(hierarchy, ax, right, left, top, bottom, size=.05):
+def draw_hierarchy(hierarchy, ax, right, left, top, bottom, size=SIZE, **attr):
     if 'paths' not in hierarchy.graph:
         hierarchy.paths()
 
@@ -91,12 +105,15 @@ def draw_hierarchy(hierarchy, ax, right, left, top, bottom, size=.05):
 
     add_node(hierarchy, ax, x, y, size, None, hierarchy.outcome(), None)
 
-    label_node(hierarchy, ax, x, y, size, 0, None)
+    label_node(hierarchy, ax, x, y, size, hierarchy.outcome(), None)
 
-    label_threshold(hierarchy, ax, x, y, size, 0, None)
+    label_threshold(hierarchy, ax, x, y, size, hierarchy.outcome(), None)
     
     # node
-    __draw_hierarchy(hierarchy, ax, left, height-bottom, length/len(hierarchy.predecessors(hierarchy.outcome())), size, hierarchy.outcome(), (x, y), 0, COLOR)
+    if 'arrow' in attr:
+        __draw_hierarchy(hierarchy, ax, left, height-bottom, length/len(hierarchy.predecessors(hierarchy.outcome())), size, hierarchy.outcome(), (x, y), 0, COLOR, arrow=attr['arrow'])
+    else:
+        __draw_hierarchy(hierarchy, ax, left, height-bottom, length/len(hierarchy.predecessors(hierarchy.outcome())), size, hierarchy.outcome(), (x, y), 0, COLOR)
 
     return None
 '''
@@ -113,7 +130,7 @@ parameters:
 return:
     None
 '''
-def __draw_hierarchy(hierarchy, ax, left, height, length, size, node, pcoor, v, color):
+def __draw_hierarchy(hierarchy, ax, left, height, length, size, node, pcoor, v, color, **attr):
     if hierarchy.predecessors(node) != []:
         for pred in xrange(len(hierarchy.predecessors(node))):
             c_spacing = length/2
@@ -148,8 +165,15 @@ def __draw_hierarchy(hierarchy, ax, left, height, length, size, node, pcoor, v, 
             else:
                 dy += size
 
-            
-            draw_arrow(ax, x, y, dx, dy)
+            if 'arrow' in attr:
+                if attr['arrow'] == '0n':
+                    if hierarchy.predecessors(node)[pred] == '0n':
+                        draw_arrow(ax, x, y, dx, dy)
+                elif attr['arrow'] == 'team':
+                    if hierarchy.predecessors(node)[pred] != '0n':
+                        draw_arrow(ax, x, y, dx, dy)
+            else: 
+                draw_arrow(ax, x, y, dx, dy)
             
             if hierarchy.predecessors(hierarchy.predecessors(node)[pred]) != []:
                 __draw_hierarchy(hierarchy, ax, left + length*pred, height, length/len(hierarchy.predecessors(hierarchy.predecessors(node)[pred])),
@@ -169,13 +193,13 @@ return :
     None
 '''
 def add_node(hierarchy, ax, x, y, size, color, node, pred):
-    if pred == None:
-        circle = plt.Circle((x, y), radius=size, aa=True, lw=2, color='.3', ec='k', zorder=4)
+    if pred == None and node == hierarchy.outcome():
+        circle = plt.Circle((x, y), radius=size, aa=True, lw=LW, color='.3', ec='k', zorder=4)
         # add circle to 'axes' has to be added, it is an object of axes
         ax.add_artist(circle)
     else:
         color = get_color(hierarchy, color, node, pred)
-        circle = plt.Circle((x, y), radius=size, aa=True, lw=3, color=color[0], ec=color[1], zorder=4)
+        circle = plt.Circle((x, y), radius=size, aa=True, lw=LW, color=color[0], ec=color[1], zorder=4)
         # add circle to 'axes' has to be added, it is an object of axes
         ax.add_artist(circle)
 
@@ -219,20 +243,19 @@ parameters:
     pred        int         index of node pred to be drawn
 '''
 def label_node(hierarchy, ax, x, y, size, node, pred):
-    if pred != None:
+    if pred == None:
+        ax.text(x, y+NAME_H*size, 'Outcome', fontsize=FONTSIZE, weight='medium', bbox=dict(boxstyle='round, pad=0.2', facecolor='w', ec='w', zorder=2), horizontalalignment='center', verticalalignment='center', zorder=2)
+    else:
         # ax.text(x, y, hierarchy.outcome(), size=18, zorder=5)
-
         if hierarchy.predecessors(hierarchy.predecessors(node)[pred]) == []:
-            ax.text(x, y+1.8*size, hierarchy.node[hierarchy.predecessors(node)[pred]]['name'], fontsize=20, weight='medium', horizontalalignment='center', verticalalignment='center', zorder=2)
+            ax.text(x, y+NAME_H*size, hierarchy.node[hierarchy.predecessors(node)[pred]]['name'], fontsize=FONTSIZE, weight='medium', horizontalalignment='center', verticalalignment='center', zorder=2)
         else:
             groups = hierarchy.groups()
             i = groups.index(hierarchy.predecessors(node)[pred])
             hierarchy.node[hierarchy.predecessors(node)[pred]]['team'] = abc[i]
-            ax.text(x, y+1.8*size, 'Team %s' % abc[i], fontsize=20, weight='medium', bbox=dict(boxstyle='round, pad=0.2', facecolor='w', ec='w', zorder=2), horizontalalignment='center', verticalalignment='center', zorder=2)
+            ax.text(x, y+NAME_H*size, 'Team %s' % abc[i], fontsize=FONTSIZE, weight='medium', bbox=dict(boxstyle='round, pad=0.2', facecolor='w', ec='w', zorder=2), horizontalalignment='center', verticalalignment='center', zorder=2)
 
-    elif node == 0:
-        ax.text(x, y+1.8*size, 'Outcome', fontsize=20, weight='medium', bbox=dict(boxstyle='round, pad=0.2', facecolor='w', ec='w', zorder=2), horizontalalignment='center', verticalalignment='center', zorder=2)
-
+    
     return None
 
 '''
@@ -250,9 +273,9 @@ return:
 '''
 def label_threshold(hierarchy, ax, x, y, size, node, pred):
     if pred == None:
-        ax.text(x-1.8*size, y-.005, '%d' % hierarchy.node[hierarchy.nodes()[node]]['threshold'], size=20, bbox=dict(boxstyle='round, pad=0.2', facecolor='w', ec='w', zorder=2), horizontalalignment='center', verticalalignment='center', zorder=2)
+        ax.text(x-1.8*size, y-.005, '%d' % hierarchy.node[hierarchy.outcome()]['threshold'], size=FONTSIZE, bbox=dict(boxstyle='round, pad=0.2', facecolor='w', ec='w', zorder=2), horizontalalignment='center', verticalalignment='center', zorder=2)
     elif 'threshold' in hierarchy.node[hierarchy.predecessors(node)[pred]]:
-        ax.text(x-1.8*size, y-.005, '   %d ' % hierarchy.node[hierarchy.predecessors(node)[pred]]['threshold'], fontsize=20, bbox=dict(boxstyle='round, pad=0.2', facecolor='w', ec='w', zorder=2), horizontalalignment='center', verticalalignment='center', zorder=2)
+        ax.text(x-1.8*size, y-.005, '   %d ' % hierarchy.node[hierarchy.predecessors(node)[pred]]['threshold'], fontsize=FONTSIZE, bbox=dict(boxstyle='round, pad=0.2', facecolor='w', ec='w', zorder=2), horizontalalignment='center', verticalalignment='center', zorder=2)
     return None
 
 '''
@@ -270,7 +293,7 @@ def draw_arrow(ax, x, y, dx, dy):
     newy = dy + y
     #arrow = patches.FancyArrowPatch(posA=(x, y), posB=(newx, newy), shrinkB=2, zorder=1)
 
-    arrow = ax.arrow(x, y, dx , dy, length_includes_head=True, head_width=.0125, head_length=.015, fc='k', ec='k', zorder=1)
+    arrow = ax.arrow(x, y, dx , dy, length_includes_head=True, head_width=ARROW_W, head_length=ARROW_L, fc='k', ec='k', zorder=1)
     ax.add_artist(arrow)
     return None
 
@@ -322,13 +345,15 @@ def draw_outcomes(situation, fig, **attr):
         coord = situation.node[node]['coord']
 
         if situation.node[node]['value'] == True:
-            positive(situation, ax, node, coord[0], coord[1], size=.05)
+            positive(situation, ax, node, coord[0], coord[1], size=SIZE)
         else:
-            negative(situation, ax, node, coord[0], coord[1], size=.05)
+            negative(situation, ax, node, coord[0], coord[1], size=SIZE)
 
     # fig.savefig('images/situation%d.png' % attr['data']['ID'])
     # fig.savefig('experiment/static/images/instructions/instructions%d.png' % attr['data']['ID'])
-    if 'ID' in attr:
+    if 'file' in attr:
+        fig.savefig(attr['file'])
+    elif 'ID' in attr:
         fig.savefig('experiment/static/images/situations/situation%d.png' % attr['ID'])
     else:
         fig.savefig('images/situation.png')
@@ -336,8 +361,8 @@ def draw_outcomes(situation, fig, **attr):
     return None
 
 def positive(situation, ax, node, x, y, size):
-    check = patches.Rectangle((x - (.25*size*cos(pi/4)), y - (.5*size*sin(pi/4)) - (.01*sin(pi/4))), size, .01, color='w', angle=45, zorder=6)
-    mark = patches.Rectangle((x - (.25*size*cos(pi/4)), y - (.5*size*sin(pi/4)) - (.01*sin(pi/4))), .01, .5*size, color='w', angle=45, zorder=6)
+    check = patches.Rectangle((x - (.25*size*cos(pi/4)), y - (.5*size*sin(pi/4)) - (.02*sin(pi/4))), size, .02, color='w', angle=45, zorder=6)
+    mark = patches.Rectangle((x - (.25*size*cos(pi/4)), y - (.5*size*sin(pi/4)) - (.02*sin(pi/4))), .02, .5*size, color='w', angle=45, zorder=6)
     # plt.plot(x+.5*size, y+.5*size, x-.5*size, y-.5*size, linewidth=5, color='w', linestyle='solid', zorder=1)
     
     ax.add_artist(check)
@@ -345,8 +370,8 @@ def positive(situation, ax, node, x, y, size):
     return None
 
 def negative(situation, ax, node, x, y, size):
-    right = patches.Rectangle((x - (.5*size*cos(pi/4)) + (.5*.01*cos(pi/4)), y - (.5*size*sin(pi/4)) - (.5*.01*sin(pi/4))), size, .01, color='w', angle=45, zorder=10)
-    left = patches.Rectangle((x + (.5*size*cos(pi/4)) - (.5*.01*cos(pi/4)), y - (.5*size*sin(pi/4)) - (.5*.01*sin(pi/4))), .01, size, color='w', angle=45, zorder=10)
+    right = patches.Rectangle((x - (.5*size*cos(pi/4)) + (.5*.02*cos(pi/4)), y - (.5*size*sin(pi/4)) - (.5*.02*sin(pi/4))), size, .02, color='w', angle=45, zorder=10)
+    left = patches.Rectangle((x + (.5*size*cos(pi/4)) - (.5*.02*cos(pi/4)), y - (.5*size*sin(pi/4)) - (.5*.02*sin(pi/4))), .02, size, color='w', angle=45, zorder=10)
 
     ax.add_artist(left)
     ax.add_artist(right)

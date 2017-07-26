@@ -21,6 +21,7 @@ class Situation(Hierarchy):
 				if 'op' in attr:
 					self.assign_thresholds(attr['situation']['thresholds'][attr['op']])
 				else:
+					print 'hi'
 					self.assign_thresholds(attr['situation']['thresholds'])
 
 			if 'names' in attr:
@@ -79,6 +80,7 @@ class Situation(Hierarchy):
 
 		for node, threshold in thresholds:
 			self.node[node]['threshold'] = threshold
+			print 'node', node, 'threshold', self.node[node]['threshold']
 		return None
 
 	'''
