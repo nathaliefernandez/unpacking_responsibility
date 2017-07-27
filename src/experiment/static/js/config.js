@@ -44,7 +44,7 @@ var Config = function (condition, counterbalance) {
     // configuration
     this.parse_config = function (data) {
         this.predict = shuffle(data["predict"]); //shuffles the array 
-        this.judgement = shuffle(data["judgement"]); //shuffles the array 
+        this.judgement = shuffle(data["judgement"]); //shuffles the array
         this.predict_text = data["predict_text"] ;
         this.judgement_text = data["judgement_text"] ;
         this.questions = data["questions"] ;

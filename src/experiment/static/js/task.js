@@ -37,7 +37,7 @@ var STATE;
         $("#goback").hide();
 
         if (x == 1){
-            $(".tutorial").attr("src",'/static/images/instructions/tutorial1.png');
+            $(".tutorial").attr("src",'/static/images/instructions/tutorial0.png');
 
             slide.fadeIn($c.fade);
 
@@ -52,16 +52,13 @@ var STATE;
             slide.find('#continue').click(function () {
                 // this.i++;
                 i = inc_i(1);
-                if (i == 2) {
+                if (i == 1) {
                     $("#goback").show();
                 }
 
                 if (i > 8) {
-                    console.log(i)
-
                     slide.fadeOut($c.fade);
                     slideshow(2);
-                    console.log('hey')
                 };
             });
         }
@@ -75,7 +72,7 @@ var STATE;
 
 
     };
-    var i = 1;
+    var i = 0;
 
     var inc_i = function(x) {
         i += x;
@@ -108,9 +105,11 @@ $("#comprehension_check").fadeIn($c.fade);
 
     //checks whether all questions were answered
     $('.demoQ').change(function () {
-       if ($('input[name=team]:checked').length > 0 &&
-         $('input[name=outcome]:checked').length > 0  &&
-         $('input[name=goal]:checked').length > 0 )
+       if ($('input[name=teama]:checked').length > 0 &&
+         $('input[name=outcome1]:checked').length > 0  &&
+         $('input[name=teamb]:checked').length > 0 &&
+         $('input[name=teamc]:checked').length > 0  &&
+         $('input[name=outcome2]:checked').length > 0 )
        {
         $('#comprehension').prop('disabled', false)
     }else{
@@ -119,20 +118,25 @@ $("#comprehension_check").fadeIn($c.fade);
 });
 
   $('#comprehension').click(function () {           
-       var q1 = $('input[name=team]:checked').val();
-       var q2 = $('input[name=outcome]:checked').val();
-       var q3 = $('input[name=goal]:checked').val();
+       var q1 = $('input[name=teama]:checked').val();
+       var q2 = $('input[name=outcome1]:checked').val();
+       var q3 = $('input[name=teamb]:checked').val();
+       var q4 = $('input[name=teamc]:checked').val();
+       var q5 = $('input[name=outcome2]:checked').val();
+
 
        // correct answers 
-       answers = ["succeeded","failed","succeed"]
+       answers = ["succeeded","succeeded", "succeeded", "failed", "failed"]
 
-       if(q1 == answers[0] && q2 == answers[1] && q3 == answers[2]){
+       if(q1 == answers[0] && q2 == answers[1] && q3 == answers[2] && q4 == answers[3] && q5 == answers[4]){
             // CURRENTVIEW = new TestPhase();
             CURRENTVIEW = new PredictionPhase();
        }else{
-            $('input[name=team]').prop('checked', false);
-            $('input[name=outcome]').prop('checked', false);
-            $('input[name=goal]').prop('checked', false);
+            $('input[name=teama]').prop('checked', false);
+            $('input[name=outcome1]').prop('checked', false);
+            $('input[name=teamb]').prop('checked', false);
+            $('input[name=teamc]').prop('checked', false);
+            $('input[name=outcome2]').prop('checked', false);
             CURRENTVIEW = new ComprehensionCheckFail();
        }
    });
@@ -297,7 +301,7 @@ $('#comprehension_fail').click(function () {
             // Questions 
             var html = "" ; 
             for (var i=0; i<1; i++) {
-                var q = $c.questions[1].q1[i] + that.trialinfo.cause + $c.questions[1].q2[i] + that.trialinfo.effect
+                var q = $c.questions[1].q1[i] + that.trialinfo.cause + $c.questions[1].q2[i] + that.trialinfo.effect + $c.questions[1].q3[i]
                 html += '<p class="question-' + i + '">' + q +'</p><div class="s-1"></div><div class="l-'+i+'"></div><br />' ;
             }
             $('#judgement_container').html(html) ;

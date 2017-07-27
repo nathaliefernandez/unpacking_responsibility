@@ -244,7 +244,7 @@ parameters:
 '''
 def label_node(hierarchy, ax, x, y, size, node, pred):
     if pred == None:
-        ax.text(x, y+NAME_H*size, 'Management', fontsize=FONTSIZE, weight='medium', bbox=dict(boxstyle='round, pad=0.2', facecolor='w', ec='w', zorder=2), horizontalalignment='center', verticalalignment='center', zorder=2)
+        ax.text(x, y+NAME_H*size, 'Office Goal', fontsize=FONTSIZE, weight='medium', bbox=dict(boxstyle='round, pad=0.2', facecolor='w', ec='w', zorder=2), horizontalalignment='center', verticalalignment='center', zorder=2)
     else:
         # ax.text(x, y, hierarchy.outcome(), size=18, zorder=5)
         if hierarchy.predecessors(hierarchy.predecessors(node)[pred]) == []:
