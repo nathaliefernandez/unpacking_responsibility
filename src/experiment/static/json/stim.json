@@ -5,142 +5,142 @@
         "judgement": [
         {
                 "ID": 0,
-                "cause": "Leroy",
-                "effect": "failure</b> to meet"
+                "cause": "Wayne",
+                "effect": ["", "failure</b> to meet"]
         },
         {
                 "ID": 1,
-                "cause": "Robert",
-                "effect": "failure</b> to meet"
+                "cause": "Lillie",
+                "effect": ["", "failure</b> to meet"]
         },
         {
                 "ID": 2,
-                "cause": "Autumn",
-                "effect": "failure</b> to meet"
+                "cause": "Wilma",
+                "effect": ["", "failure</b> to meet"]
         },
         {
                 "ID": 3,
-                "cause": "Cheryl",
-                "effect": "failure</b> to meet"
+                "cause": "Robert",
+                "effect": ["", "failure</b> to meet"]
         },
         {
                 "ID": 4,
-                "cause": "Angel",
-                "effect": "success</b> in meeting"
+                "cause": "Eddie",
+                "effect": ["", "success</b> in meeting"]
         },
         {
                 "ID": 5,
-                "cause": "Sonja",
-                "effect": "success</b> in meeting"
+                "cause": "Nancey",
+                "effect": ["", "success</b> in meeting"]
         },
         {
                 "ID": 6,
-                "cause": "Walker",
-                "effect": "success</b> in meeting"
+                "cause": "Ruby",
+                "effect": ["", "success</b> in meeting"]
         },
         {
                 "ID": 7,
-                "cause": "Louis",
-                "effect": "success</b> in meeting"
+                "cause": "Sharon",
+                "effect": ["", "success</b> in meeting"]
         },
         {
                 "ID": 8,
-                "cause": "Amanda",
-                "effect": "failure</b> to meet"
+                "cause": "Kathy",
+                "effect": ["", "failure</b> to meet"]
         },
         {
                 "ID": 9,
-                "cause": "Ryan",
-                "effect": "failure</b> to meet"
+                "cause": "Beryl",
+                "effect": ["", "failure</b> to meet"]
         },
         {
                 "ID": 10,
-                "cause": "Kerri",
-                "effect": "failure</b> to meet"
+                "cause": "Cindy",
+                "effect": ["", "failure</b> to meet"]
         },
         {
                 "ID": 11,
-                "cause": "Elmer",
-                "effect": "failure</b> to meet"
+                "cause": "Janet",
+                "effect": ["", "failure</b> to meet"]
         },
         {
                 "ID": 12,
-                "cause": "Tara",
-                "effect": "failure</b> to meet"
+                "cause": "Myra",
+                "effect": ["", "failure</b> to meet"]
         },
         {
                 "ID": 13,
-                "cause": "Keith",
-                "effect": "success</b> in meeting"
+                "cause": "Eric",
+                "effect": ["", "success</b> in meeting"]
         },
         {
                 "ID": 14,
-                "cause": "Bert",
-                "effect": "success</b> in meeting"
+                "cause": "Lee",
+                "effect": ["", "success</b> in meeting"]
         },
         {
                 "ID": 15,
-                "cause": "John",
-                "effect": "success</b> in meeting"
+                "cause": "Helena",
+                "effect": ["", "success</b> in meeting"]
         },
         {
                 "ID": 16,
-                "cause": "Cory",
-                "effect": "success</b> in meeting"
+                "cause": "Ronald",
+                "effect": ["", "success</b> in meeting"]
         },
         {
                 "ID": 17,
-                "cause": "Nancy",
-                "effect": "success</b> in meeting"
+                "cause": "Bruce",
+                "effect": ["", "success</b> in meeting"]
         },
         {
                 "ID": 18,
-                "cause": "Ruby",
-                "effect": "success</b> in meeting"
+                "cause": "Brenna",
+                "effect": ["", "success</b> in meeting"]
         },
         {
                 "ID": 19,
-                "cause": "Alice",
-                "effect": "success</b> in meeting"
+                "cause": "Tawana",
+                "effect": ["", "success</b> in meeting"]
         },
         {
                 "ID": 20,
-                "cause": "Darren",
-                "effect": "success</b> in meeting"
+                "cause": "Jose",
+                "effect": ["", "success</b> in meeting"]
         },
         {
                 "ID": 21,
-                "cause": "Denise",
-                "effect": "success</b> in meeting"
+                "cause": "Jean",
+                "effect": ["", "success</b> in meeting"]
         },
         {
                 "ID": 22,
-                "cause": "George",
-                "effect": "success</b> in meeting"
+                "cause": "Beth",
+                "effect": ["", "success</b> in meeting"]
         },
         {
                 "ID": 23,
-                "cause": "Leslie",
-                "effect": "success</b> in meeting"
+                "cause": "Amanda",
+                "effect": ["", "success</b> in meeting"]
         },
         {
                 "ID": 24,
-                "cause": "Dennis",
-                "effect": "success</b> in meeting"
+                "cause": "Floyd",
+                "effect": ["", "success</b> in meeting"]
         }
         ],
         "predict_text": "<p style = 'color:red'><b>Prediction task</b></p><p>You will see several situations. To the left of the Teams and Outcome are the thresholds needed to succeed.",
-        "judgement_text": "<p style = 'color:red'><b>Judgment task</b></p><p>You will now see the outcomes of several situations. To the left of the Teams and Outcome are the thresholds that were needed to succeed.",
+        "judgement_text": "<p style = 'color:red'><b>Judgment task</b></p><p>You will now see the outcomes of several situations. To the left of the teams and Office Goal are the thresholds that are needed to succeed.",
         "questions": [{
-                "q1": ["How important will <b>", "question 2", "question 3", "question 4"],
+                "q1": ["How important will <b>"],
                 "q2": ["</b> be for the "],
-                "q3": ["'s success?"],
+                "q3": ["office's success?"],
                 "l": ["<b>not</b> important at all", "<b>very</b> important"]
         },
         {
-                "q1": ["To what extent was <b>", "question 2", "question 3", "question 4"],
+                "q1": ["To what extent was <b>"],
                 "q2": ["</b> responsible for the <b>"], 
                 "q3": [" the Office Goal?"],
-                "l": ["<b>not</b> at all", "", "<b>very</b> much"]
+                "l": ["<b>not</b> at all", "<b>very</b> much"]
         }]
 }

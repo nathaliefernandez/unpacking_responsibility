@@ -130,7 +130,9 @@ $("#comprehension_check").fadeIn($c.fade);
 
        if(q1 == answers[0] && q2 == answers[1] && q3 == answers[2] && q4 == answers[3] && q5 == answers[4]){
             // CURRENTVIEW = new TestPhase();
-            CURRENTVIEW = new PredictionPhase();
+            // CURRENTVIEW = new PredictionPhase();
+            CURRENTVIEW = new JudgementPhase();
+
        }else{
             $('input[name=teama]').prop('checked', false);
             $('input[name=outcome1]').prop('checked', false);
@@ -164,102 +166,102 @@ $('#comprehension_fail').click(function () {
  *************************/
 
  var PredictionPhase = function(){
-    var that = this;
-    this.trialinfo;    
+//     var that = this;
+//     this.trialinfo;    
 
-    this.init_trial = function () {
-        if (STATE.index >= $c.predict.length) { //change here for debugging
-            this.finish();
-            return false;
-        }
+//     this.init_trial = function () {
+//         if (STATE.index >= $c.predict.length) { //change here for debugging
+//             this.finish();
+//             return false;
+//         }
 
-        // Load the new trialinfo
-        this.trialinfo = $c.predict[STATE.index];
-        // Update progress bar
+//         // Load the new trialinfo
+//         this.trialinfo = $c.predict[STATE.index];
+//         // Update progress bar
         
-        update_progress(STATE.index, $c.predict.length);
-        return true;
-    }; 
+//         update_progress(STATE.index, $c.predict.length);
+//         return true;
+//     }; 
 
 
-    this.display_stim = function (that) {
+//     this.display_stim = function (that) {
 
-        if (that.init_trial()) {
+//         if (that.init_trial()) {
             
-            $('.prompt-text').html($c.predict_text);
+//             $('.prompt-text').html($c.predict_text);
             
-            //show image 
-            // $(".plinko_image").attr("src",'/static/images/plinko_predict_' + that.trialinfo.ID+ '.png');
-            $(".hierarchy").attr("src",'/static/images/highlighted/highlighted' + that.trialinfo.ID + '.png');
+//             //show image 
+//             // $(".plinko_image").attr("src",'/static/images/plinko_predict_' + that.trialinfo.ID+ '.png');
+//             $(".hierarchy").attr("src",'/static/images/highlighted/highlighted' + that.trialinfo.ID + '.png');
 
-            // Questions 
-            var html = "" ; 
-            for (var i=0; i<1; i++) {
-                var q = $c.questions[0].q1[i] + that.trialinfo.cause + $c.questions[0].q2[i] + that.trialinfo.effect +  $c.questions[0].q3[i]  
-                html += '<p class="question-' + i + '">' + q +'</p><div class="s-'+i+'"></div><div class="l-'+i+'"></div><br />' ;                
-            }
-            $('#predict_container').html(html) ;
+//             // Questions 
+//             var html = "" ; 
+//             for (var i=0; i<1; i++) {
+//                 var q = $c.questions[0].q1[i] + that.trialinfo.cause + $c.questions[0].q2[i] + that.trialinfo.effect +  $c.questions[0].q3[i]  
+//                 html += '<p class="question-' + i + '">' + q +'</p><div class="s-'+i+'"></div><div class="l-'+i+'"></div><br />' ;                
+//             }
+//             $('#predict_container').html(html) ;
 
-            // # of sliders
-            for (var i=0; i<1; i++) {
-                // Create the sliders
-                $('.s-'+i).slider().on("slidestart", function( event, ui ) {
-                    // Show the handle
-                    $(this).find('.ui-slider-handle').show() ;
-                });
-                $('.s-'+i).bind("slidestart", function( event, ui ) {
-                    // Show the handle
-                    $('#trial_next1').prop('disabled', false);
-                });
-                // Put labels on the sliders
-                $('.l-'+i).append("<label style='width: 33%'>" +  $c.questions[0].l[0] + "</label>") ; 
-                $('.l-'+i).append("<label style='width: 33%'></label>") ; 
-                $('.l-'+i).append("<label style='width: 33%'>" + $c.questions[0].l[1] + "</label>") ;
-            }
+//             // # of sliders
+//             for (var i=0; i<1; i++) {
+//                 // Create the sliders
+//                 $('.s-'+i).slider().on("slidestart", function( event, ui ) {
+//                     // Show the handle
+//                     $(this).find('.ui-slider-handle').show() ;
+//                 });
+//                 $('.s-'+i).bind("slidestart", function( event, ui ) {
+//                     // Show the handle
+//                     $('#trial_next1').prop('disabled', false);
+//                 });
+//                 // Put labels on the sliders
+//                 $('.l-'+i).append("<label style='width: 33%'>" +  $c.questions[0].l[0] + "</label>") ; 
+//                 $('.l-'+i).append("<label style='width: 33%'></label>") ; 
+//                 $('.l-'+i).append("<label style='width: 33%'>" + $c.questions[0].l[1] + "</label>") ;
+//             }
 
-            // Hide all the slider handles 
-            $('.ui-slider-handle').hide() ;               
-            $('#trial_next1').prop('disabled', true);
-        }       
-    };
+//             // Hide all the slider handles 
+//             $('.ui-slider-handle').hide() ;               
+//             $('#trial_next1').prop('disabled', true);
+//         }       
+//     };
 
-    this.record_response = function() {     
-        response =  $('.s-0').slider('value');   
+//     this.record_response = function() {     
+//         response =  $('.s-0').slider('value');   
         
-        psiTurk.recordTrialData([
-            'id', this.trialinfo.ID, 
-            'type', 'predict',
-            'counterbalance', 'NA', 
-            'prior',response]);
+//         psiTurk.recordTrialData([
+//             'id', this.trialinfo.ID, 
+//             'type', 'predict',
+//             'counterbalance', 'NA', 
+//             'prior',response]);
 
 
-        STATE.set_index(STATE.index + 1);
-        $('#trial_next1' ).show()
+//         STATE.set_index(STATE.index + 1);
+//         $('#trial_next1' ).show()
         
-        // Update the page with the current phase/trial
-        this.display_stim(this);
-    };
+//         // Update the page with the current phase/trial
+//         this.display_stim(this);
+//     };
 
-    this.finish = function() {
-        STATE.set_index(0); //resets the state variable 
-        CURRENTVIEW = new JudgementPhase();
-    };
+//     this.finish = function() {
+//         STATE.set_index(0); //resets the state variable 
+//         CURRENTVIEW = new JudgementPhase();
+//     };
 
-    // Load the trial html page
-    $(".slide").hide();
+//     // Load the trial html page
+//     $(".slide").hide();
 
-    // Show the slide
-    var that = this; 
-    $("#prediction").fadeIn($c.fade);
-    $('#trial_next1.next').click(function () {
-        that.record_response();
-    });
+//     // Show the slide
+//     var that = this; 
+//     $("#prediction").fadeIn($c.fade);
+//     $('#trial_next1.next').click(function () {
+//         that.record_response();
+//     });
 
-    // Initialize the current trial
-    if (this.init_trial()) {
-        // Start the test
-        this.display_stim(this) ;
-    };
+//     // Initialize the current trial
+//     if (this.init_trial()) {
+//         // Start the test
+//         this.display_stim(this) ;
+//     };
 }
 
 /*************************
@@ -283,60 +285,167 @@ $('#comprehension_fail').click(function () {
         return true;
     }; 
 
-
-    this.display_stim = function (that) {
-
+    this.trial = function(that, i){
         if (that.init_trial()) {
-            
             $('.prompt-text').html($c.judgement_text);
-            
-            // $('.question-prompt').html("To what extent do you agree with the following statement?");
 
-            flip = ['left','right']
-            flipped = flip[Math.floor(Math.random() * 2)]
-
-            //show image 
-            $(".hierarchy").attr("src",'/static/images/situations/situation' + that.trialinfo.ID  + '.png');
-
-            // Questions 
-            var html = "" ; 
-            for (var i=0; i<1; i++) {
-                var q = $c.questions[1].q1[i] + that.trialinfo.cause + $c.questions[1].q2[i] + that.trialinfo.effect + $c.questions[1].q3[i]
-                html += '<p class="question-' + i + '">' + q +'</p><div class="s-1"></div><div class="l-'+i+'"></div><br />' ;
-            }
-            $('#judgement_container').html(html) ;
-            
-                $('.s-1').slider().on("slidestart", function( event, ui ) {
-                    $(this).find('.ui-slider-handle').show() ;
-                    $('#trial_next2').prop('disabled', false);
-                });
-
-                // Put labels on the sliders
-                $('.l-0').append("<label style='width: 33%'>" +  $c.questions[1].l[0] + "</label>") ; 
-                $('.l-0').append("<label style='width: 33%'></label>") ;// + $c.questions[1].l[1] + "</label>") ; 
-                $('.l-0').append("<label style='width: 33%'>" + $c.questions[1].l[2] + "</label>") ; 
-
-            // Hide all the slider handles 
-            $('.ui-slider-handle').hide() ;            
+            $('#trial_next1').prop('disabled', true);
             $('#trial_next2').prop('disabled', true);
-        }       
+
+            $('#trial_next2').hide() ;
+
+
+
+            if (i == 0) {
+                $('#trial_next1').show()
+                $('.hierarchy').attr("src",'/static/images/highlighted/highlighted' + that.trialinfo.ID  + '.png');
+                
+            }
+            else {
+                console.log(i)
+                $('#trial_next1').hide() ;
+                $('#trial_next2').show()
+                flip = ['left','right']
+                flipped = flip[Math.floor(Math.random() * 2)]
+                $(".hierarchy").attr("src",'/static/images/situations/situation' + that.trialinfo.ID  + '.png');
+            }
+            var html = "" ; 
+
+            var q = $c.questions[i].q1[0] + that.trialinfo.cause + $c.questions[i].q2[0] + that.trialinfo.effect[i] + $c.questions[i].q3[0] ;
+
+            html += '<p class="question-' + i + '">' + q +'</p><div class="s-'+i+'"></div><div class="l-'+i+'"></div><br />' ;
+
+
+            $('#judgement_container').html(html) ;
+
+            $('.s-'+i).slider().on("slidestart", function( event, ui ) {
+
+                // Show the handle
+                $(this).find('.ui-slider-handle').show() ;
+            });
+
+            $('.s-'+i).bind("slidestart", function( event, ui ) {
+                // Show the handle
+                var x = i+1 ;
+                $('#trial_next'+x).prop('disabled', false);
+            });
+
+            $('.l-'+i).append("<label style='width: 33%'>" +  $c.questions[i].l[0] + "</label>") ; 
+            $('.l-'+i).append("<label style='width: 33%'></label>") ; 
+            $('.l-'+i).append("<label style='width: 33%'>" + $c.questions[i].l[1] + "</label>") ;
+
+            $('.ui-slider-handle').hide() ;  
+            
+
+        }
+    
+
+
+    };
+    var i = 0;
+
+    var inc_i = function(x) {
+        i += x;
+        return i;
     };
 
-    this.record_response = function() {     
-        response =  $('.s-1').slider('value');   
 
-        psiTurk.recordTrialData([
+    // this.display_stim = function (that) {
+
+    //     if (that.init_trial()) {
+            
+    //         $('.prompt-text').html($c.judgement_text);
+            
+    //         // $('.question-prompt').html("To what extent do you agree with the following statement?");
+
+    //         flip = ['left','right']
+    //         flipped = flip[Math.floor(Math.random() * 2)]
+
+    //         //show image 
+
+    //         // Questions 
+    //         var html = "" ; 
+    //         for (var i=0; i<2; i++) {
+    //             if (i == 0) {
+    //                 $(".hierarchy").attr("src",'/static/images/hierarchies/hierarchy' + that.trialinfo.ID  + '.png');
+    //             }
+    //             else {
+    //                 $(".hierarchy").attr("src",'/static/images/situations/situation' + that.trialinfo.ID  + '.png');
+    //             }
+
+    //             var q = $c.questions[i].q1[0] + that.trialinfo.cause + $c.questions[i].q2[0] + that.trialinfo.effect[i] + $c.questions[i].q3[0]
+    //             html += '<p class="question-' + i + '">' + q +'</p><div class="s-1"></div><div class="l-'+i+'"></div><br />' ;
+    //         }
+
+    //         $('#judgement_container').html(html) ;
+
+    //         for (var i=0; i<2; i++) {
+    //             // Create the sliders
+    //             $('.s-'+i).slider().on("slidestart", function( event, ui ) {
+    //                 // Show the handle
+    //                 $(this).find('.ui-slider-handle').show() ;
+    //                 $('#trial_next2').show() ;
+    //             });
+    //             $('.s-'+0).bind("slidestart", function( event, ui ) {
+    //                 // Show the handle
+    //                 $('#trial_next1').prop('disabled', false);
+    //             });
+    //             $('.s-'+1).bind("slidestart", function( event, ui ) {
+    //                 // Show the handle
+    //                 $('#trial_next2').prop('disabled', false);
+    //             });
+    //             // Put labels on the sliders
+    //             $('.l-'+i).append("<label style='width: 33%'>" +  $c.questions[i].l[0] + "</label>") ; 
+    //             $('.l-'+i).append("<label style='width: 33%'></label>") ; 
+    //             $('.l-'+i).append("<label style='width: 33%'>" + $c.questions[i].l[1] + "</label>") ;
+                
+
+    //         }
+            
+    //         //     $('.s-1').slider().on("slidestart", function( event, ui ) {
+    //         //         $(this).find('.ui-slider-handle').show() ;
+    //         //         $('#trial_next2').prop('disabled', false);
+    //         //     });
+
+    //         //     // Put labels on the sliders
+    //         //     $('.l-0').append("<label style='width: 33%'>" +  $c.questions[i].l[0] + "</label>") ; 
+    //         //     $('.l-0').append("<label style='width: 33%'></label>") ;// + $c.questions[1].l[1] + "</label>") ; 
+    //         //     $('.l-0').append("<label style='width: 33%'>" + $c.questions[i].l[2] + "</label>") ; 
+    //         // }
+            
+    //         // Hide all the slider handles 
+    //         $('.ui-slider-handle').hide() ;  
+    //         $('#trial_next2').hide() ;
+    //         $('#trial_next1').prop('disabled', true);
+    //         $('#trial_next2').prop('disabled', true);
+    //     }       
+    // };
+
+    this.record_response = function(i) {     
+        response =  $('.s-'+i).slider('value');  
+
+        if (i == 0){
+            psiTurk.recordTrialData([
+            'id', this.trialinfo.ID, 
+            'type', 'predict',
+            'counterbalance', 'NA', 
+            'prior',response]);
+
+            this.trial(this, 1) ;
+        }
+        else {
+            psiTurk.recordTrialData([
             'id', this.trialinfo.ID, 
             'type', 'judgement',
             'counterbalance', flipped, 
             'judgement',response]);
 
-
-        STATE.set_index(STATE.index + 1);
-        $('#trial_next2' ).show()
+            STATE.set_index(STATE.index + 1);
+            
         
-        // Update the page with the current phase/trial
-        this.display_stim(this);
+            // Update the page with the current phase/trial
+            this.trial(this, 0);
+        }
     };
 
     this.finish = function() {
@@ -349,14 +458,19 @@ $('#comprehension_fail').click(function () {
     // Show the slide
     var that = this; 
     $("#judgement").fadeIn($c.fade);
+
     $('#trial_next2.next').click(function () {
-        that.record_response();
+        that.record_response(1);
+    });
+    $('#trial_next1.next').click(function () {
+        that.record_response(0);
     });
 
     // Initialize the current trial
     if (this.init_trial()) {
         // Start the test
-        this.display_stim(this) ;
+        this.trial(this, 0) ;
+        // this.display_stim(this) ;
     };
 }
 

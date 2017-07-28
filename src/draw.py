@@ -17,14 +17,25 @@ ABC = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O'
 
 
 abc = ABC[:]
-
-FONTSIZE = 16
-SIZE = .09
+FIGSIZE = (15, 10)
+FONTSIZE = 20
+SIZE = .05
 LW = 3
-# + .05
-ARROW_L = .02
-ARROW_W = .0175
-NAME_H = 1.5
+MW = .011
+ARROW_L = .015
+ARROW_W = .0125
+NAME_H = 1.8
+
+# Tutorial and Comprehension
+# FIGSIZE = (7.5, 5)
+# FONTSIZE = 16
+# SIZE = .09
+# LW = 3
+# MW = .02
+# # + .05
+# ARROW_L = .02
+# ARROW_W = .0175
+# NAME_H = 1.5
 
 
 '''
@@ -42,7 +53,7 @@ def draw(hierarchy, **attr):
     # create figure
     if 'fig' in attr:
         if type(attr['fig']) == tuple:
-            fig = plt.figure(figsize=(7.5, 5))
+            fig = plt.figure(figsize=FIGSIZE)
         else:
             fig = attr['fig']
     else:
@@ -244,19 +255,19 @@ parameters:
 '''
 def label_node(hierarchy, ax, x, y, size, node, pred):
     if pred == None:
-        ax.text(x, y+NAME_H*size, 'Office Goal', fontsize=FONTSIZE, weight='medium', bbox=dict(boxstyle='round, pad=0.2', facecolor='w', ec='w', zorder=2), horizontalalignment='center', verticalalignment='center', zorder=2)
+        ax.text(x, y+NAME_H*size, 'Office Goal', fontsize=FONTSIZE, weight='medium', bbox=dict(boxstyle='round, pad=0.3, rounding_size=1.0', facecolor='w', ec='w', zorder=2), horizontalalignment='center', verticalalignment='center', zorder=2)
     else:
         # ax.text(x, y, hierarchy.outcome(), size=18, zorder=5)
         if hierarchy.predecessors(hierarchy.predecessors(node)[pred]) == []:
             ax.text(x, y+NAME_H*size, hierarchy.node[hierarchy.predecessors(node)[pred]]['name'], fontsize=FONTSIZE, weight='medium', horizontalalignment='center', verticalalignment='center', zorder=2)
         else:
             if 'team' in hierarchy.node[hierarchy.predecessors(node)[pred]]:
-                ax.text(x, y+NAME_H*size, 'Team %s' % hierarchy.node[hierarchy.predecessors(node)[pred]]['team'], fontsize=FONTSIZE, weight='medium', bbox=dict(boxstyle='round, pad=0.2', facecolor='w', ec='w', zorder=2), horizontalalignment='center', verticalalignment='center', zorder=2)
+                ax.text(x, y+NAME_H*size, 'Team %s' % hierarchy.node[hierarchy.predecessors(node)[pred]]['team'], fontsize=FONTSIZE, weight='medium', bbox=dict(boxstyle='round, pad=0.3, rounding_size=1.0', facecolor='w', ec='w', zorder=2), horizontalalignment='center', verticalalignment='center', zorder=2)
             else:
                 groups = hierarchy.groups()
                 i = groups.index(hierarchy.predecessors(node)[pred])
                 hierarchy.node[hierarchy.predecessors(node)[pred]]['team'] = abc[i]
-                ax.text(x, y+NAME_H*size, 'Team %s' % abc[i], fontsize=FONTSIZE, weight='medium', bbox=dict(boxstyle='round, pad=0.2', facecolor='w', ec='w', zorder=2), horizontalalignment='center', verticalalignment='center', zorder=2)
+                ax.text(x, y+NAME_H*size, 'Team %s' % abc[i], fontsize=FONTSIZE, weight='medium', bbox=dict(boxstyle='round, pad=0.3, rounding_size=1.0', facecolor='w', ec='w', zorder=2), horizontalalignment='center', verticalalignment='center', zorder=2)
 
     
     return None
@@ -276,9 +287,9 @@ return:
 '''
 def label_threshold(hierarchy, ax, x, y, size, node, pred):
     if pred == None:
-        ax.text(x-1.8*size, y-.005, '%d' % hierarchy.node[hierarchy.outcome()]['threshold'], size=FONTSIZE, bbox=dict(boxstyle='round, pad=0.2', facecolor='w', ec='w', zorder=2), horizontalalignment='center', verticalalignment='center', zorder=2)
+        ax.text(x-1.8*size, y-.005, '%d' % hierarchy.node[hierarchy.outcome()]['threshold'], size=FONTSIZE, bbox=dict(boxstyle='round, pad=0.3, rounding_size=1.0', facecolor='w', ec='w', zorder=2), horizontalalignment='center', verticalalignment='center', zorder=2)
     elif 'threshold' in hierarchy.node[hierarchy.predecessors(node)[pred]]:
-        ax.text(x-1.8*size, y-.005, '   %d ' % hierarchy.node[hierarchy.predecessors(node)[pred]]['threshold'], fontsize=FONTSIZE, bbox=dict(boxstyle='round, pad=0.2', facecolor='w', ec='w', zorder=2), horizontalalignment='center', verticalalignment='center', zorder=2)
+        ax.text(x-1.8*size, y-.005, '   %d ' % hierarchy.node[hierarchy.predecessors(node)[pred]]['threshold'], fontsize=FONTSIZE, bbox=dict(boxstyle='round, pad=0.3, rounding_size=1.0', facecolor='w', ec='w', zorder=2), horizontalalignment='center', verticalalignment='center', zorder=2)
     return None
 
 '''
@@ -365,8 +376,8 @@ def draw_outcomes(situation, fig, **attr):
     return None
 
 def positive(situation, ax, node, x, y, size):
-    check = patches.Rectangle((x - (.25*size*cos(pi/4)), y - (.5*size*sin(pi/4)) - (.02*sin(pi/4))), size, .02, color='w', angle=45, zorder=6)
-    mark = patches.Rectangle((x - (.25*size*cos(pi/4)), y - (.5*size*sin(pi/4)) - (.02*sin(pi/4))), .02, .5*size, color='w', angle=45, zorder=6)
+    check = patches.Rectangle((x - (.25*size*cos(pi/4)), y - (.5*size*sin(pi/4)) - (MW*sin(pi/4))), size, MW, color='w', angle=45, zorder=6)
+    mark = patches.Rectangle((x - (.25*size*cos(pi/4)), y - (.5*size*sin(pi/4)) - (MW*sin(pi/4))), MW, .5*size, color='w', angle=45, zorder=6)
     # plt.plot(x+.5*size, y+.5*size, x-.5*size, y-.5*size, linewidth=5, color='w', linestyle='solid', zorder=1)
     
     ax.add_artist(check)
@@ -374,8 +385,8 @@ def positive(situation, ax, node, x, y, size):
     return None
 
 def negative(situation, ax, node, x, y, size):
-    right = patches.Rectangle((x - (.5*size*cos(pi/4)) + (.5*.02*cos(pi/4)), y - (.5*size*sin(pi/4)) - (.5*.02*sin(pi/4))), size, .02, color='w', angle=45, zorder=10)
-    left = patches.Rectangle((x + (.5*size*cos(pi/4)) - (.5*.02*cos(pi/4)), y - (.5*size*sin(pi/4)) - (.5*.02*sin(pi/4))), .02, size, color='w', angle=45, zorder=10)
+    right = patches.Rectangle((x - (.5*size*cos(pi/4)) + (.5*MW*cos(pi/4)), y - (.5*size*sin(pi/4)) - (.5*MW*sin(pi/4))), size, MW, color='w', angle=45, zorder=10)
+    left = patches.Rectangle((x + (.5*size*cos(pi/4)) - (.5*MW*cos(pi/4)), y - (.5*size*sin(pi/4)) - (.5*MW*sin(pi/4))), MW, size, color='w', angle=45, zorder=10)
 
     ax.add_artist(left)
     ax.add_artist(right)
