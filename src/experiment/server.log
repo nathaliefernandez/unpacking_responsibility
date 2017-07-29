@@ -36018,3 +36018,544 @@ IOError: [Errno 2] No such file or directory: 'templates/ad.html'
 [2017-07-27 20:06:50 +0000] [2343] [INFO] Worker exiting (pid: 2343)
 [2017-07-27 20:06:50 +0000] [2339] [INFO] Worker exiting (pid: 2339)
 [2017-07-27 20:06:50 +0000] [2355] [INFO] Worker exiting (pid: 2355)
+[2017-07-29 02:45:59 +0000] [2085] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  statsd_host: None
+  max_requests_jitter: 0
+  post_fork: <function post_fork at 0x7f1cd6fd1de8>
+  pythonpath: None
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 3
+  suppress_ragged_eofs: True
+  syslog: False
+  syslog_facility: user
+  when_ready: <function when_ready at 0x7f1cd6fd1b18>
+  pre_fork: <function pre_fork at 0x7f1cd6fd1c80>
+  cert_reqs: 0
+  preload_app: False
+  keepalive: 2
+  accesslog: None
+  group: 1000
+  graceful_timeout: 30
+  do_handshake_on_connect: False
+  spew: False
+  workers: 9
+  proc_name: psiturk_experiment_server
+  sendfile: None
+  pidfile: None
+  umask: 0
+  on_reload: <function on_reload at 0x7f1cd6fd19b0>
+  pre_exec: <function pre_exec at 0x7f1cd6fda410>
+  worker_tmp_dir: None
+  post_worker_init: <function post_worker_init at 0x7f1cd6fd1f50>
+  limit_request_fields: 100
+  on_exit: <function on_exit at 0x7f1cd702f410>
+  config: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x7f1cd6fda578>
+  post_request: <function post_request at 0x7f1cd6fda668>
+  user: 1000
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x7f1cd6fda140>
+  threads: 1
+  max_requests: 0
+  limit_request_line: 0
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  worker_exit: <function worker_exit at 0x7f1cd6fda7d0>
+  chdir: /home/nathalie/Research/unpacking_responsibility/src/experiment
+  paste: None
+  default_proc_name: gunicorn
+  errorlog: server.log
+  loglevel: debug
+  logconfig: None
+  syslog_addr: udp://localhost:514
+  syslog_prefix: None
+  daemon: False
+  ciphers: TLSv1
+  on_starting: <function on_starting at 0x7f1cd6fd1848>
+  worker_abort: <function worker_abort at 0x7f1cd6fda2a8>
+  bind: ['0.0.0.0:22362']
+  raw_env: []
+  reload: False
+  check_config: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x7f1cd6fda938>
+  timeout: 30
+  ca_certs: None
+  django_settings: None
+  tmp_upload_dir: None
+  keyfile: None
+  backlog: 2048
+  logger_class: gunicorn.glogging.Logger
+  statsd_prefix: 
+[2017-07-29 02:45:59 +0000] [2085] [INFO] Starting gunicorn 19.4.5
+[2017-07-29 02:45:59 +0000] [2085] [DEBUG] Arbiter booted
+[2017-07-29 02:45:59 +0000] [2085] [INFO] Listening at: http://0.0.0.0:22362 (2085)
+[2017-07-29 02:45:59 +0000] [2085] [INFO] Using worker: sync
+[2017-07-29 02:45:59 +0000] [2117] [INFO] Booting worker with pid: 2117
+[2017-07-29 02:45:59 +0000] [2118] [INFO] Booting worker with pid: 2118
+[2017-07-29 02:46:00 +0000] [2119] [INFO] Booting worker with pid: 2119
+[2017-07-29 02:46:00 +0000] [2120] [INFO] Booting worker with pid: 2120
+[2017-07-29 02:46:00 +0000] [2121] [INFO] Booting worker with pid: 2121
+[2017-07-29 02:46:00 +0000] [2123] [INFO] Booting worker with pid: 2123
+[2017-07-29 02:46:00 +0000] [2130] [INFO] Booting worker with pid: 2130
+[2017-07-29 02:46:00 +0000] [2134] [INFO] Booting worker with pid: 2134
+[2017-07-29 02:46:00 +0000] [2135] [INFO] Booting worker with pid: 2135
+[2017-07-29 02:46:00 +0000] [2085] [DEBUG] 9 workers
+2017-07-29 02:46:00,795 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 02:46:00,795 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 02:46:00,796 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 02:46:00,796 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 02:46:00,797 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 02:46:00,797 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 02:46:00,797 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 02:46:00,797 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 02:46:00,811 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-07-29 02:46:00,814 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-07-29 02:46:00,816 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-07-29 02:46:00,827 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 02:46:00,827 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-07-29 02:46:00,827 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 02:46:00,830 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-07-29 02:46:00,964 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 02:46:00,964 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 02:46:00,967 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-07-29 02:46:01,008 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 02:46:01,009 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 02:46:01,011 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-07-29 02:46:01,035 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 02:46:01,036 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 02:46:01,037 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-07-29 02:46:01,110 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 02:46:01,110 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 02:46:01,112 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+[2017-07-29 02:47:40 +0000] [2180] [INFO] Booting worker with pid: 2180
+[2017-07-29 02:47:40 +0000] [2181] [INFO] Booting worker with pid: 2181
+[2017-07-29 02:47:40 +0000] [2182] [INFO] Booting worker with pid: 2182
+[2017-07-29 02:47:40 +0000] [2184] [INFO] Booting worker with pid: 2184
+[2017-07-29 02:47:40 +0000] [2189] [INFO] Booting worker with pid: 2189
+[2017-07-29 02:47:40 +0000] [2190] [INFO] Booting worker with pid: 2190
+[2017-07-29 02:47:40 +0000] [2193] [INFO] Booting worker with pid: 2193
+[2017-07-29 02:47:40 +0000] [2085] [DEBUG] 7 workers
+[2017-07-29 02:47:40 +0000] [2085] [INFO] Handling signal: hup
+[2017-07-29 02:47:40 +0000] [2085] [INFO] Hang up: Master
+[2017-07-29 02:47:40 +0000] [2085] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  statsd_host: None
+  max_requests_jitter: 0
+  post_fork: <function post_fork at 0x7f1cd6fd1de8>
+  pythonpath: None
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 3
+  suppress_ragged_eofs: True
+  syslog: False
+  syslog_facility: user
+  when_ready: <function when_ready at 0x7f1cd6fd1b18>
+  pre_fork: <function pre_fork at 0x7f1cd6fd1c80>
+  cert_reqs: 0
+  preload_app: False
+  keepalive: 2
+  accesslog: None
+  group: 1000
+  graceful_timeout: 30
+  do_handshake_on_connect: False
+  spew: False
+  workers: 9
+  proc_name: psiturk_experiment_server
+  sendfile: None
+  pidfile: None
+  umask: 0
+  on_reload: <function on_reload at 0x7f1cd6fd19b0>
+  pre_exec: <function pre_exec at 0x7f1cd6fda410>
+  worker_tmp_dir: None
+  post_worker_init: <function post_worker_init at 0x7f1cd6fd1f50>
+  limit_request_fields: 100
+  on_exit: <function on_exit at 0x7f1cd702f410>
+  config: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x7f1cd6fda578>
+  post_request: <function post_request at 0x7f1cd6fda668>
+  user: 1000
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x7f1cd6fda140>
+  threads: 1
+  max_requests: 0
+  limit_request_line: 0
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  worker_exit: <function worker_exit at 0x7f1cd6fda7d0>
+  chdir: /home/nathalie/Research/unpacking_responsibility/src/experiment
+  paste: None
+  default_proc_name: gunicorn
+  errorlog: server.log
+  loglevel: debug
+  logconfig: None
+  syslog_addr: udp://localhost:514
+  syslog_prefix: None
+  daemon: False
+  ciphers: TLSv1
+  on_starting: <function on_starting at 0x7f1cd6fd1848>
+  worker_abort: <function worker_abort at 0x7f1cd6fda2a8>
+  bind: ['0.0.0.0:22362']
+  raw_env: []
+  reload: False
+  check_config: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x7f1cd6fda938>
+  timeout: 30
+  ca_certs: None
+  django_settings: None
+  tmp_upload_dir: None
+  keyfile: None
+  backlog: 2048
+  logger_class: gunicorn.glogging.Logger
+  statsd_prefix: 
+[2017-07-29 02:47:40 +0000] [2196] [INFO] Booting worker with pid: 2196
+[2017-07-29 02:47:40 +0000] [2194] [INFO] Booting worker with pid: 2194
+[2017-07-29 02:47:40 +0000] [2195] [INFO] Booting worker with pid: 2195
+[2017-07-29 02:47:40 +0000] [2197] [INFO] Booting worker with pid: 2197
+[2017-07-29 02:47:40 +0000] [2202] [INFO] Booting worker with pid: 2202
+[2017-07-29 02:47:40 +0000] [2198] [INFO] Booting worker with pid: 2198
+[2017-07-29 02:47:40 +0000] [2201] [INFO] Booting worker with pid: 2201
+[2017-07-29 02:47:40 +0000] [2203] [INFO] Booting worker with pid: 2203
+[2017-07-29 02:47:40 +0000] [2204] [INFO] Booting worker with pid: 2204
+[2017-07-29 02:47:40 +0000] [2085] [DEBUG] 9 workers
+2017-07-29 02:47:40,651 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 02:47:40,651 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 02:47:40,654 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+[2017-07-29 02:47:40 +0000] [2180] [INFO] Worker exiting (pid: 2180)
+2017-07-29 02:47:40,753 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 02:47:40,753 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 02:47:40,772 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+[2017-07-29 02:47:40 +0000] [2181] [INFO] Worker exiting (pid: 2181)
+2017-07-29 02:47:41,021 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 02:47:41,022 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 02:47:41,049 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+[2017-07-29 02:47:41 +0000] [2182] [INFO] Worker exiting (pid: 2182)
+2017-07-29 02:47:41,127 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 02:47:41,128 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 02:47:41,143 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+[2017-07-29 02:47:41 +0000] [2184] [INFO] Worker exiting (pid: 2184)
+2017-07-29 02:47:41,599 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 02:47:41,599 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 02:47:41,605 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-07-29 02:47:41,615 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 02:47:41,615 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 02:47:41,618 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+[2017-07-29 02:47:41 +0000] [2189] [INFO] Worker exiting (pid: 2189)
+[2017-07-29 02:47:41 +0000] [2193] [INFO] Worker exiting (pid: 2193)
+2017-07-29 02:47:41,792 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 02:47:41,792 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 02:47:41,795 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-07-29 02:47:41,842 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 02:47:41,842 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 02:47:41,845 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 02:47:41,846 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 02:47:41,858 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-07-29 02:47:41,866 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+[2017-07-29 02:47:41 +0000] [2190] [INFO] Worker exiting (pid: 2190)
+2017-07-29 02:47:41,945 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 02:47:41,949 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 02:47:41,970 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 02:47:41,970 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 02:47:41,974 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-07-29 02:47:41,981 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-07-29 02:47:42,006 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 02:47:42,007 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 02:47:42,010 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-07-29 02:47:42,010 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 02:47:42,010 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 02:47:42,012 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 02:47:42,013 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 02:47:42,014 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-07-29 02:47:42,021 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-07-29 02:47:42,024 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 02:47:42,024 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 02:47:42,026 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-07-29 02:47:42,028 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 02:47:42,028 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 02:47:42,030 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+[2017-07-29 02:48:07 +0000] [2203] [DEBUG] Closing connection. 
+[2017-07-29 02:48:12 +0000] [2197] [DEBUG] Closing connection. 
+[2017-07-29 02:48:12 +0000] [2197] [DEBUG] Closing connection. 
+[2017-07-29 02:48:12 +0000] [2198] [DEBUG] Closing connection. 
+[2017-07-29 02:48:16 +0000] [2197] [DEBUG] Closing connection. 
+[2017-07-29 02:49:38 +0000] [2196] [DEBUG] Closing connection. 
+[2017-07-29 02:49:38 +0000] [2201] [DEBUG] Closing connection. 
+[2017-07-29 02:49:38 +0000] [2197] [DEBUG] Closing connection. 
+[2017-07-29 02:49:47 +0000] [2197] [INFO] Worker exiting (pid: 2197)
+[2017-07-29 02:49:47 +0000] [2195] [INFO] Worker exiting (pid: 2195)
+[2017-07-29 02:49:47 +0000] [2194] [INFO] Worker exiting (pid: 2194)
+[2017-07-29 02:49:47 +0000] [2201] [INFO] Worker exiting (pid: 2201)
+[2017-07-29 02:49:47 +0000] [2203] [INFO] Worker exiting (pid: 2203)
+[2017-07-29 02:49:47 +0000] [2198] [INFO] Worker exiting (pid: 2198)
+[2017-07-29 02:49:47 +0000] [2202] [INFO] Worker exiting (pid: 2202)
+[2017-07-29 02:49:47 +0000] [2204] [INFO] Worker exiting (pid: 2204)
+[2017-07-29 02:49:47 +0000] [2085] [INFO] Handling signal: term
+[2017-07-29 02:49:47 +0000] [2196] [INFO] Worker exiting (pid: 2196)
+[2017-07-29 02:49:47 +0000] [2085] [INFO] Shutting down: Master
+[2017-07-29 02:49:57 +0000] [2630] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  statsd_host: None
+  max_requests_jitter: 0
+  post_fork: <function post_fork at 0x7fd4ebd77de8>
+  pythonpath: None
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 3
+  suppress_ragged_eofs: True
+  syslog: False
+  syslog_facility: user
+  when_ready: <function when_ready at 0x7fd4ebd77b18>
+  pre_fork: <function pre_fork at 0x7fd4ebd77c80>
+  cert_reqs: 0
+  preload_app: False
+  keepalive: 2
+  accesslog: None
+  group: 1000
+  graceful_timeout: 30
+  do_handshake_on_connect: False
+  spew: False
+  workers: 9
+  proc_name: psiturk_experiment_server
+  sendfile: None
+  pidfile: None
+  umask: 0
+  on_reload: <function on_reload at 0x7fd4ebd779b0>
+  pre_exec: <function pre_exec at 0x7fd4ebd80410>
+  worker_tmp_dir: None
+  post_worker_init: <function post_worker_init at 0x7fd4ebd77f50>
+  limit_request_fields: 100
+  on_exit: <function on_exit at 0x7fd4ebdd6410>
+  config: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x7fd4ebd80578>
+  post_request: <function post_request at 0x7fd4ebd80668>
+  user: 1000
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x7fd4ebd80140>
+  threads: 1
+  max_requests: 0
+  limit_request_line: 0
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  worker_exit: <function worker_exit at 0x7fd4ebd807d0>
+  chdir: /home/nathalie/Research/unpacking_responsibility/src/experiment
+  paste: None
+  default_proc_name: gunicorn
+  errorlog: server.log
+  loglevel: debug
+  logconfig: None
+  syslog_addr: udp://localhost:514
+  syslog_prefix: None
+  daemon: False
+  ciphers: TLSv1
+  on_starting: <function on_starting at 0x7fd4ebd77848>
+  worker_abort: <function worker_abort at 0x7fd4ebd802a8>
+  bind: ['0.0.0.0:22362']
+  raw_env: []
+  reload: False
+  check_config: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x7fd4ebd80938>
+  timeout: 30
+  ca_certs: None
+  django_settings: None
+  tmp_upload_dir: None
+  keyfile: None
+  backlog: 2048
+  logger_class: gunicorn.glogging.Logger
+  statsd_prefix: 
+[2017-07-29 02:49:57 +0000] [2630] [INFO] Starting gunicorn 19.4.5
+[2017-07-29 02:49:57 +0000] [2630] [DEBUG] Arbiter booted
+[2017-07-29 02:49:57 +0000] [2630] [INFO] Listening at: http://0.0.0.0:22362 (2630)
+[2017-07-29 02:49:57 +0000] [2630] [INFO] Using worker: sync
+[2017-07-29 02:49:57 +0000] [2635] [INFO] Booting worker with pid: 2635
+[2017-07-29 02:49:57 +0000] [2636] [INFO] Booting worker with pid: 2636
+[2017-07-29 02:49:57 +0000] [2639] [INFO] Booting worker with pid: 2639
+[2017-07-29 02:49:57 +0000] [2642] [INFO] Booting worker with pid: 2642
+2017-07-29 02:49:57,393 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 02:49:57,393 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 02:49:57,396 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+[2017-07-29 02:49:57 +0000] [2645] [INFO] Booting worker with pid: 2645
+[2017-07-29 02:49:57 +0000] [2646] [INFO] Booting worker with pid: 2646
+2017-07-29 02:49:57,485 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 02:49:57,485 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 02:49:57,487 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+[2017-07-29 02:49:57 +0000] [2647] [INFO] Booting worker with pid: 2647
+[2017-07-29 02:49:57 +0000] [2650] [INFO] Booting worker with pid: 2650
+2017-07-29 02:49:57,629 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 02:49:57,630 Hmm... it seems no custom code (custom.py) associated                         with this project.
+[2017-07-29 02:49:57 +0000] [2653] [INFO] Booting worker with pid: 2653
+2017-07-29 02:49:57,632 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+[2017-07-29 02:49:57 +0000] [2630] [DEBUG] 9 workers
+2017-07-29 02:49:57,834 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 02:49:57,835 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 02:49:57,837 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-07-29 02:49:57,882 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 02:49:57,883 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 02:49:57,885 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-07-29 02:49:57,990 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 02:49:57,990 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 02:49:57,993 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-07-29 02:49:58,016 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 02:49:58,016 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 02:49:58,018 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-07-29 02:49:58,072 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 02:49:58,073 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 02:49:58,074 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 02:49:58,074 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-07-29 02:49:58,074 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 02:49:58,076 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+[2017-07-29 02:49:58 +0000] [2646] [DEBUG] Closing connection. 
+[2017-07-29 02:50:01 +0000] [2646] [DEBUG] Closing connection. 
+[2017-07-29 02:50:01 +0000] [2639] [DEBUG] Closing connection. 
+[2017-07-29 02:50:01 +0000] [2639] [DEBUG] Closing connection. 
+[2017-07-29 02:50:02 +0000] [2646] [DEBUG] GET /ad
+[2017-07-29 02:50:03 +0000] [2653] [DEBUG] GET /consent
+[2017-07-29 02:50:03 +0000] [2646] [DEBUG] GET /static/css/general.css
+[2017-07-29 02:50:03 +0000] [2653] [DEBUG] GET /static/js/utils.js
+[2017-07-29 02:50:04 +0000] [2653] [DEBUG] GET /exp
+2017-07-29 02:50:04,780 Accessing /exp: debugRDNBN6 debugZTXHSI debugQ8R4GY 
+2017-07-29 02:50:04,788 given Counter({(0, 0): 3}) chose (0, 0)
+[2017-07-29 02:50:05 +0000] [2650] [DEBUG] GET /static/lib/backbone-min.js
+[2017-07-29 02:50:05 +0000] [2636] [DEBUG] GET /static/lib/underscore-min.js
+[2017-07-29 02:50:05 +0000] [2645] [DEBUG] GET /static/lib/mustache.js
+[2017-07-29 02:50:05 +0000] [2642] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-07-29 02:50:05 +0000] [2647] [DEBUG] GET /ad
+[2017-07-29 02:50:05 +0000] [2639] [DEBUG] GET /static/lib/seedrandom.js
+[2017-07-29 02:50:05 +0000] [2635] [DEBUG] GET /static/lib/jquery.min.js
+[2017-07-29 02:50:05 +0000] [2653] [DEBUG] GET /static/js/task.js
+[2017-07-29 02:50:05 +0000] [2635] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-07-29 02:50:05 +0000] [2645] [DEBUG] GET /static/js/psiturk.js
+[2017-07-29 02:50:05 +0000] [2635] [DEBUG] GET /static/js/config.js
+[2017-07-29 02:50:05 +0000] [2635] [DEBUG] GET /static/json/stim.json
+[2017-07-29 02:50:05 +0000] [2636] [DEBUG] GET /sync/debugQ8R4GY%3AdebugZTXHSI
+2017-07-29 02:50:05,261 GET /sync route with id: debugQ8R4GY:debugZTXHSI
+[2017-07-29 02:50:05 +0000] [2636] [DEBUG] GET /trial.html
+[2017-07-29 02:50:05 +0000] [2645] [DEBUG] GET /submit.html
+[2017-07-29 02:50:05 +0000] [2647] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-07-29 02:50:05 +0000] [2647] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-07-29 02:50:05 +0000] [2646] [DEBUG] GET /static/images/instructions/tutorial0.png
+[2017-07-29 02:51:35 +0000] [2650] [DEBUG] GET /static/images/instructions/tutorial1.png
+[2017-07-29 02:51:58 +0000] [2646] [DEBUG] GET /static/images/instructions/tutorial2.png
+[2017-07-29 02:52:11 +0000] [2636] [DEBUG] GET /static/images/instructions/tutorial3.png
+[2017-07-29 02:52:40 +0000] [2635] [DEBUG] GET /static/images/instructions/tutorial4.png
+[2017-07-29 02:52:46 +0000] [2642] [DEBUG] GET /static/images/instructions/tutorial5.png
+[2017-07-29 02:52:50 +0000] [2636] [DEBUG] GET /static/images/instructions/tutorial6.png
+[2017-07-29 02:53:35 +0000] [2647] [DEBUG] GET /static/images/instructions/tutorial7.png
+[2017-07-29 02:54:00 +0000] [2642] [DEBUG] GET /static/images/instructions/tutorial8.png
+[2017-07-29 02:54:13 +0000] [2636] [DEBUG] GET /static/images/instructions/tutorial9.png
+[2017-07-29 02:54:49 +0000] [2653] [DEBUG] GET /static/css/images/ui-bg_highlight-soft_100_eeeeee_1x100.png
+[2017-07-29 02:54:49 +0000] [2647] [DEBUG] GET /static/css/images/ui-bg_glass_100_f6f6f6_1x400.png
+[2017-07-29 02:54:49 +0000] [2646] [DEBUG] GET /static/images/highlighted/highlighted22.png
+[2017-07-29 02:55:14 +0000] [2636] [DEBUG] GET /static/css/images/ui-bg_glass_65_ffffff_1x400.png
+[2017-07-29 02:55:14 +0000] [2636] [DEBUG] GET /static/css/images/ui-bg_glass_100_fdf5ce_1x400.png
+[2017-07-29 02:55:40 +0000] [2647] [DEBUG] GET /static/images/situations/situation22.png
+[2017-07-29 02:55:51 +0000] [2642] [DEBUG] GET /static/images/highlighted/highlighted11.png
+[2017-07-29 02:56:05 +0000] [2646] [DEBUG] GET /static/images/situations/situation11.png
+[2017-07-29 02:56:24 +0000] [2636] [DEBUG] GET /static/images/highlighted/highlighted0.png
+[2017-07-29 02:56:35 +0000] [2650] [DEBUG] GET /static/images/situations/situation0.png
+[2017-07-29 02:56:44 +0000] [2636] [DEBUG] GET /static/images/highlighted/highlighted6.png
+[2017-07-29 02:56:55 +0000] [2646] [DEBUG] GET /static/images/situations/situation6.png
+[2017-07-29 02:57:04 +0000] [2646] [DEBUG] GET /static/images/highlighted/highlighted19.png
+[2017-07-29 02:57:14 +0000] [2653] [DEBUG] GET /static/images/situations/situation19.png
+[2017-07-29 02:57:19 +0000] [2653] [DEBUG] GET /static/images/highlighted/highlighted18.png
+[2017-07-29 02:57:28 +0000] [2645] [DEBUG] GET /static/images/situations/situation18.png
+[2017-07-29 02:57:32 +0000] [2653] [DEBUG] GET /static/images/highlighted/highlighted14.png
+[2017-07-29 02:57:41 +0000] [2635] [DEBUG] GET /static/images/situations/situation14.png
+[2017-07-29 02:57:50 +0000] [2636] [DEBUG] GET /static/images/highlighted/highlighted3.png
+[2017-07-29 02:57:59 +0000] [2642] [DEBUG] GET /static/images/situations/situation3.png
+[2017-07-29 02:58:03 +0000] [2645] [DEBUG] GET /static/images/highlighted/highlighted16.png
+[2017-07-29 02:58:12 +0000] [2647] [DEBUG] GET /static/images/situations/situation16.png
+[2017-07-29 02:58:18 +0000] [2635] [DEBUG] GET /static/images/highlighted/highlighted23.png
+[2017-07-29 02:58:28 +0000] [2647] [DEBUG] GET /static/images/situations/situation23.png
+[2017-07-29 02:58:33 +0000] [2642] [DEBUG] GET /static/images/highlighted/highlighted2.png
+[2017-07-29 02:58:39 +0000] [2642] [DEBUG] GET /static/images/situations/situation2.png
+[2017-07-29 02:58:43 +0000] [2645] [DEBUG] GET /static/images/highlighted/highlighted17.png
+[2017-07-29 02:58:52 +0000] [2636] [DEBUG] GET /static/images/situations/situation17.png
+[2017-07-29 02:59:01 +0000] [2636] [DEBUG] GET /static/images/highlighted/highlighted4.png
+[2017-07-29 02:59:06 +0000] [2639] [DEBUG] GET /static/images/situations/situation4.png
+[2017-07-29 02:59:10 +0000] [2647] [DEBUG] GET /static/images/highlighted/highlighted8.png
+[2017-07-29 02:59:22 +0000] [2645] [DEBUG] GET /static/images/situations/situation8.png
+[2017-07-29 02:59:26 +0000] [2635] [DEBUG] GET /static/images/highlighted/highlighted10.png
+[2017-07-29 02:59:44 +0000] [2653] [DEBUG] GET /static/images/situations/situation10.png
+[2017-07-29 03:00:10 +0000] [2650] [DEBUG] GET /static/images/highlighted/highlighted24.png
+[2017-07-29 03:00:22 +0000] [2645] [DEBUG] GET /static/images/situations/situation24.png
+[2017-07-29 03:00:33 +0000] [2650] [DEBUG] GET /static/images/highlighted/highlighted9.png
+[2017-07-29 03:00:46 +0000] [2645] [DEBUG] GET /static/images/situations/situation9.png
+[2017-07-29 03:00:55 +0000] [2653] [DEBUG] GET /static/images/highlighted/highlighted13.png
+[2017-07-29 03:01:14 +0000] [2653] [DEBUG] GET /static/images/situations/situation13.png
+[2017-07-29 03:01:26 +0000] [2635] [DEBUG] GET /static/images/highlighted/highlighted20.png
+[2017-07-29 03:01:40 +0000] [2639] [DEBUG] GET /static/images/situations/situation20.png
+[2017-07-29 03:01:46 +0000] [2639] [DEBUG] GET /static/images/highlighted/highlighted21.png
+[2017-07-29 03:01:53 +0000] [2639] [DEBUG] GET /static/images/situations/situation21.png
+[2017-07-29 03:01:59 +0000] [2636] [DEBUG] GET /static/images/highlighted/highlighted1.png
+[2017-07-29 03:02:12 +0000] [2646] [DEBUG] GET /static/images/situations/situation1.png
+[2017-07-29 03:02:28 +0000] [2642] [DEBUG] GET /static/images/highlighted/highlighted12.png
+[2017-07-29 03:02:43 +0000] [2635] [DEBUG] GET /static/images/situations/situation12.png
+[2017-07-29 03:02:50 +0000] [2646] [DEBUG] GET /static/images/highlighted/highlighted7.png
+[2017-07-29 03:02:59 +0000] [2646] [DEBUG] GET /static/images/situations/situation7.png
+[2017-07-29 03:03:07 +0000] [2635] [DEBUG] GET /static/images/highlighted/highlighted5.png
+[2017-07-29 03:03:15 +0000] [2646] [DEBUG] GET /static/images/situations/situation5.png
+[2017-07-29 03:03:23 +0000] [2650] [DEBUG] GET /static/images/highlighted/highlighted15.png
+[2017-07-29 03:03:34 +0000] [2639] [DEBUG] GET /static/images/situations/situation15.png
+[2017-07-29 03:05:21 +0000] [2645] [DEBUG] PUT /sync/debugQ8R4GY%3AdebugZTXHSI
+2017-07-29 03:05:21,641 PUT /sync route with id: debugQ8R4GY:debugZTXHSI
+2017-07-29 03:05:21,819 saved data for debugQ8R4GY:debugZTXHSI (current trial: 50)
+[2017-07-29 03:05:21 +0000] [2645] [DEBUG] GET /complete
+[2017-07-29 03:05:22 +0000] [2645] [DEBUG] GET /static/css/general.css
+[2017-07-29 06:14:23 +0000] [2630] [CRITICAL] WORKER TIMEOUT (pid:2635)
+[2017-07-29 06:14:23 +0000] [2630] [CRITICAL] WORKER TIMEOUT (pid:2642)
+[2017-07-29 06:14:23 +0000] [2630] [CRITICAL] WORKER TIMEOUT (pid:2645)
+[2017-07-29 06:14:23 +0000] [2630] [CRITICAL] WORKER TIMEOUT (pid:2646)
+[2017-07-29 06:14:23 +0000] [2635] [INFO] Worker exiting (pid: 2635)
+[2017-07-29 06:14:23 +0000] [2642] [INFO] Worker exiting (pid: 2642)
+[2017-07-29 06:14:23 +0000] [2646] [INFO] Worker exiting (pid: 2646)
+[2017-07-29 06:14:23 +0000] [2645] [INFO] Worker exiting (pid: 2645)
+[2017-07-29 06:14:23 +0000] [2630] [CRITICAL] WORKER TIMEOUT (pid:2647)
+[2017-07-29 06:14:23 +0000] [2647] [INFO] Worker exiting (pid: 2647)
+[2017-07-29 06:14:23 +0000] [2630] [CRITICAL] WORKER TIMEOUT (pid:2650)
+[2017-07-29 06:14:23 +0000] [2630] [CRITICAL] WORKER TIMEOUT (pid:2653)
+[2017-07-29 06:14:23 +0000] [2650] [INFO] Worker exiting (pid: 2650)
+[2017-07-29 06:14:23 +0000] [2653] [INFO] Worker exiting (pid: 2653)
+[2017-07-29 06:14:23 +0000] [2630] [DEBUG] 8 workers
+[2017-07-29 06:14:23 +0000] [5086] [INFO] Booting worker with pid: 5086
+[2017-07-29 06:14:23 +0000] [5087] [INFO] Booting worker with pid: 5087
+[2017-07-29 06:14:23 +0000] [5088] [INFO] Booting worker with pid: 5088
+[2017-07-29 06:14:23 +0000] [5089] [INFO] Booting worker with pid: 5089
+[2017-07-29 06:14:23 +0000] [2630] [DEBUG] 6 workers
+[2017-07-29 06:14:23 +0000] [5090] [INFO] Booting worker with pid: 5090
+[2017-07-29 06:14:23 +0000] [5091] [INFO] Booting worker with pid: 5091
+[2017-07-29 06:14:23 +0000] [2630] [DEBUG] 9 workers
+[2017-07-29 06:14:23 +0000] [5092] [INFO] Booting worker with pid: 5092
+2017-07-29 06:14:24,150 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 06:14:24,150 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 06:14:24,153 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-07-29 06:14:24,330 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 06:14:24,331 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 06:14:24,349 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-07-29 06:14:24,461 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 06:14:24,461 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 06:14:24,464 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-07-29 06:14:24,494 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 06:14:24,494 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 06:14:24,495 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 06:14:24,495 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 06:14:24,497 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-07-29 06:14:24,498 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-07-29 06:14:24,522 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 06:14:24,523 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 06:14:24,525 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-07-29 06:14:24,526 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 06:14:24,526 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 06:14:24,528 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
