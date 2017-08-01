@@ -11,11 +11,11 @@ from hierarchy import Hierarchy
 
 
 # list of color hue and saturation for each group
-# [green, blue, red, orange]
+# [red, blue, green, purple, orange]
 COLOR = [(0, 100), (220, 100), (120, 60), (280, 100), (24, 100)]
 ABC = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 
-
+# Trials
 abc = ABC[:]
 FIGSIZE = (15, 10)
 FONTSIZE = 20
@@ -42,7 +42,11 @@ NAME_H = 1.8
 draw hierarchy
 parameters:
     hierarchy   Hierarchy 
-    filename    str         file name to save graph to
+    **attr:
+        file      str     file to save to
+        arrow     list    nodes to NOT draw arrows FROM
+        ID        int     trial ID, to save to experiment folder
+        show      bool    whether to show the image
 return:
     None
 '''
@@ -127,6 +131,7 @@ def draw_hierarchy(hierarchy, ax, right, left, top, bottom, size=SIZE, **attr):
         __draw_hierarchy(hierarchy, ax, left, height-bottom, length/len(hierarchy.predecessors(hierarchy.outcome())), size, hierarchy.outcome(), (x, y), 0, COLOR)
 
     return None
+
 '''
 draws a node and arrow to previous node(child node)
 parameters:
@@ -375,6 +380,16 @@ def draw_outcomes(situation, fig, **attr):
 
     return None
 
+'''
+draws checkmark on node 
+parameters:
+    siutation   Situation   hierarchy with outcomes
+    ax          Axis        
+    x           float       node's x position
+    y           float       node's y position
+return:
+    None
+'''
 def positive(situation, ax, node, x, y, size):
     check = patches.Rectangle((x - (.25*size*cos(pi/4)), y - (.5*size*sin(pi/4)) - (MW*sin(pi/4))), size, MW, color='w', angle=45, zorder=6)
     mark = patches.Rectangle((x - (.25*size*cos(pi/4)), y - (.5*size*sin(pi/4)) - (MW*sin(pi/4))), MW, .5*size, color='w', angle=45, zorder=6)
@@ -384,6 +399,16 @@ def positive(situation, ax, node, x, y, size):
     ax.add_artist(mark)
     return None
 
+'''
+draws X on node 
+parameters:
+    siutation   Situation   hierarchy with outcomes
+    ax          Axis        
+    x           float       node's x position
+    y           float       node's y position
+return:
+    None
+'''
 def negative(situation, ax, node, x, y, size):
     right = patches.Rectangle((x - (.5*size*cos(pi/4)) + (.5*MW*cos(pi/4)), y - (.5*size*sin(pi/4)) - (.5*MW*sin(pi/4))), size, MW, color='w', angle=45, zorder=10)
     left = patches.Rectangle((x + (.5*size*cos(pi/4)) - (.5*MW*cos(pi/4)), y - (.5*size*sin(pi/4)) - (.5*MW*sin(pi/4))), MW, size, color='w', angle=45, zorder=10)
@@ -392,6 +417,16 @@ def negative(situation, ax, node, x, y, size):
     ax.add_artist(right)
     return None
 
+'''
+highlight cause and effect nodes of interest
+parameters:
+    hierarchy   Hierarchy
+    fig         
+    cause       str     
+    effect      str
+    **attr:
+
+'''
 def highlight_cause_effect(hierarchy, fig, cause, effect, size=.05, **attr):
 
     ax = fig.gca()
@@ -406,10 +441,26 @@ def highlight_cause_effect(hierarchy, fig, cause, effect, size=.05, **attr):
         effect = patches.Circle((coord[0], coord[1]), radius=size+.023, aa=True, alpha=.3, lw=0, ec='.2', zorder=3)
         ax.add_patch(effect)
 
-    fig.savefig('experiment/static/images/highlighted/highlighted%d.png' % attr['ID'])
+    if 'file' in attr:
+        fig.savefig(attr['file'])
+    else:
+        fig.savefig('experiment/static/images/highlighted/highlighted%d.png' % attr['ID'])
 
     return fig
 
+'''
+show predictions
+parameter:
+    hierarchy   Hierarchy
+    fig
+    cause       
+    effect
+    **attr:
+        pivotalityr     pivotality from leaf nodes
+        pivotality      pivotality from all nodes
+        criticality
+        file                 
+'''
 def show_predictions(hierarchy, fig, cause, effect, **attr):
 
     ax = fig.gca()
@@ -419,7 +470,10 @@ def show_predictions(hierarchy, fig, cause, effect, **attr):
             if 'criticality' in attr:
                 fig.suptitle('criticality: %f       pivotality: %f      pivotality*: %f' % (attr['criticality'], attr['pivotalityr'], attr['pivotality']), fontsize=26, verticalalignment='top')
 
-    fig.savefig('experiment/static/images/predictions/prediction%d.png' % attr['ID'])
+    if 'file' in attr:
+        fig.savefig(attr['file'])
+    else:
+        fig.savefig('experiment/static/images/predictions/prediction%d.png' % attr['ID'])
 
     return
 

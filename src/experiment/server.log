@@ -36559,3 +36559,175 @@ IOError: [Errno 2] No such file or directory: 'templates/ad.html'
 2017-07-29 06:14:24,526 Secret key: 'this is my secret key which is hard to guess, i should change this'
 2017-07-29 06:14:24,526 Hmm... it seems no custom code (custom.py) associated                         with this project.
 2017-07-29 06:14:24,528 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+[2017-07-29 17:52:31 +0000] [4427] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  statsd_host: None
+  max_requests_jitter: 0
+  post_fork: <function post_fork at 0x7fbbe0e85de8>
+  pythonpath: None
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 3
+  suppress_ragged_eofs: True
+  syslog: False
+  syslog_facility: user
+  when_ready: <function when_ready at 0x7fbbe0e85b18>
+  pre_fork: <function pre_fork at 0x7fbbe0e85c80>
+  cert_reqs: 0
+  preload_app: False
+  keepalive: 2
+  accesslog: None
+  group: 1000
+  graceful_timeout: 30
+  do_handshake_on_connect: False
+  spew: False
+  workers: 9
+  proc_name: psiturk_experiment_server
+  sendfile: None
+  pidfile: None
+  umask: 0
+  on_reload: <function on_reload at 0x7fbbe0e859b0>
+  pre_exec: <function pre_exec at 0x7fbbe0e8e410>
+  worker_tmp_dir: None
+  post_worker_init: <function post_worker_init at 0x7fbbe0e85f50>
+  limit_request_fields: 100
+  on_exit: <function on_exit at 0x7fbbe0ee3410>
+  config: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x7fbbe0e8e578>
+  post_request: <function post_request at 0x7fbbe0e8e668>
+  user: 1000
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x7fbbe0e8e140>
+  threads: 1
+  max_requests: 0
+  limit_request_line: 0
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  worker_exit: <function worker_exit at 0x7fbbe0e8e7d0>
+  chdir: /home/nathalie/Research/unpacking_responsibility/src/experiment
+  paste: None
+  default_proc_name: gunicorn
+  errorlog: server.log
+  loglevel: debug
+  logconfig: None
+  syslog_addr: udp://localhost:514
+  syslog_prefix: None
+  daemon: False
+  ciphers: TLSv1
+  on_starting: <function on_starting at 0x7fbbe0e85848>
+  worker_abort: <function worker_abort at 0x7fbbe0e8e2a8>
+  bind: ['0.0.0.0:22362']
+  raw_env: []
+  reload: False
+  check_config: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x7fbbe0e8e938>
+  timeout: 30
+  ca_certs: None
+  django_settings: None
+  tmp_upload_dir: None
+  keyfile: None
+  backlog: 2048
+  logger_class: gunicorn.glogging.Logger
+  statsd_prefix: 
+[2017-07-29 17:52:31 +0000] [4427] [INFO] Starting gunicorn 19.4.5
+[2017-07-29 17:52:31 +0000] [4427] [DEBUG] Arbiter booted
+[2017-07-29 17:52:31 +0000] [4427] [INFO] Listening at: http://0.0.0.0:22362 (4427)
+[2017-07-29 17:52:31 +0000] [4427] [INFO] Using worker: sync
+[2017-07-29 17:52:31 +0000] [4432] [INFO] Booting worker with pid: 4432
+[2017-07-29 17:52:31 +0000] [4433] [INFO] Booting worker with pid: 4433
+[2017-07-29 17:52:31 +0000] [4434] [INFO] Booting worker with pid: 4434
+[2017-07-29 17:52:31 +0000] [4437] [INFO] Booting worker with pid: 4437
+[2017-07-29 17:52:31 +0000] [4438] [INFO] Booting worker with pid: 4438
+[2017-07-29 17:52:31 +0000] [4440] [INFO] Booting worker with pid: 4440
+[2017-07-29 17:52:31 +0000] [4444] [INFO] Booting worker with pid: 4444
+[2017-07-29 17:52:31 +0000] [4445] [INFO] Booting worker with pid: 4445
+2017-07-29 17:52:31,669 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 17:52:31,669 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 17:52:31,672 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+[2017-07-29 17:52:31 +0000] [4448] [INFO] Booting worker with pid: 4448
+[2017-07-29 17:52:31 +0000] [4427] [DEBUG] 9 workers
+2017-07-29 17:52:31,962 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 17:52:31,963 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 17:52:31,967 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 17:52:31,968 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 17:52:31,970 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-07-29 17:52:31,974 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+[2017-07-29 17:52:32 +0000] [4434] [DEBUG] Closing connection. 
+2017-07-29 17:52:32,061 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 17:52:32,061 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 17:52:32,065 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-07-29 17:52:32,157 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 17:52:32,158 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 17:52:32,160 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-07-29 17:52:32,225 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 17:52:32,225 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 17:52:32,229 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-07-29 17:52:32,245 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 17:52:32,245 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 17:52:32,247 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-07-29 17:52:32,267 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 17:52:32,267 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-07-29 17:52:32,267 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 17:52:32,267 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-07-29 17:52:32,269 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-07-29 17:52:32,269 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+[2017-07-29 17:52:35 +0000] [4448] [DEBUG] Closing connection. 
+[2017-07-29 17:52:35 +0000] [4440] [DEBUG] Closing connection. 
+[2017-07-29 17:52:35 +0000] [4445] [DEBUG] Closing connection. 
+[2017-07-29 17:52:36 +0000] [4445] [DEBUG] GET /ad
+[2017-07-29 17:52:37 +0000] [4432] [DEBUG] GET /consent
+[2017-07-29 17:52:37 +0000] [4433] [DEBUG] GET /static/js/utils.js
+[2017-07-29 17:52:37 +0000] [4434] [DEBUG] GET /static/css/general.css
+[2017-07-29 17:52:38 +0000] [4437] [DEBUG] GET /exp
+2017-07-29 17:52:38,192 Accessing /exp: debug854NBX debugVRIAMY debugNKVB9D 
+2017-07-29 17:52:38,199 given Counter({(0, 0): 4}) chose (0, 0)
+[2017-07-29 17:52:38 +0000] [4448] [DEBUG] GET /static/lib/seedrandom.js
+[2017-07-29 17:52:38 +0000] [4433] [DEBUG] GET /static/lib/underscore-min.js
+[2017-07-29 17:52:38 +0000] [4433] [DEBUG] GET /static/lib/jquery.min.js
+[2017-07-29 17:52:38 +0000] [4434] [DEBUG] GET /ad
+[2017-07-29 17:52:38 +0000] [4437] [DEBUG] GET /static/lib/backbone-min.js
+[2017-07-29 17:52:38 +0000] [4445] [DEBUG] GET /static/js/task.js
+[2017-07-29 17:52:38 +0000] [4438] [DEBUG] GET /static/lib/mustache.js
+[2017-07-29 17:52:38 +0000] [4440] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-07-29 17:52:38 +0000] [4438] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-07-29 17:52:38 +0000] [4437] [DEBUG] GET /static/js/config.js
+[2017-07-29 17:52:38 +0000] [4438] [DEBUG] GET /static/js/psiturk.js
+[2017-07-29 17:52:38 +0000] [4444] [DEBUG] GET /static/json/stim.json
+[2017-07-29 17:52:38 +0000] [4437] [DEBUG] GET /sync/debugNKVB9D%3AdebugVRIAMY
+2017-07-29 17:52:38,628 GET /sync route with id: debugNKVB9D:debugVRIAMY
+[2017-07-29 17:52:38 +0000] [4448] [DEBUG] GET /trial.html
+[2017-07-29 17:52:38 +0000] [4432] [DEBUG] GET /submit.html
+[2017-07-29 17:52:38 +0000] [4437] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-07-29 17:52:38 +0000] [4432] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-07-29 17:52:38 +0000] [4437] [DEBUG] GET /static/images/instructions/tutorial0.png
+[2017-07-29 17:52:41 +0000] [4444] [DEBUG] GET /static/images/instructions/tutorial1.png
+[2017-07-29 17:52:43 +0000] [4440] [DEBUG] GET /static/images/instructions/tutorial2.png
+[2017-07-29 17:52:50 +0000] [4433] [DEBUG] Closing connection. 
+[2017-07-29 17:52:52 +0000] [4440] [DEBUG] Closing connection. 
+[2017-07-29 17:52:52 +0000] [4438] [DEBUG] Closing connection. 
+[2017-07-29 17:52:52 +0000] [4448] [DEBUG] GET /ppid
+[2017-07-29 17:52:52 +0000] [4440] [DEBUG] Closing connection. 
+[2017-07-29 17:52:52 +0000] [4438] [INFO] Parent changed, shutting down: <Worker 4438>
+[2017-07-29 17:52:52 +0000] [4448] [INFO] Parent changed, shutting down: <Worker 4448>
+[2017-07-29 17:52:52 +0000] [4440] [INFO] Parent changed, shutting down: <Worker 4440>
+[2017-07-29 17:52:52 +0000] [4448] [INFO] Worker exiting (pid: 4448)
+[2017-07-29 17:52:52 +0000] [4438] [INFO] Worker exiting (pid: 4438)
+[2017-07-29 17:52:52 +0000] [4440] [INFO] Worker exiting (pid: 4440)
+[2017-07-29 17:52:52 +0000] [4433] [INFO] Parent changed, shutting down: <Worker 4433>
+[2017-07-29 17:52:52 +0000] [4437] [INFO] Parent changed, shutting down: <Worker 4437>
+[2017-07-29 17:52:52 +0000] [4444] [DEBUG] Closing connection. 
+[2017-07-29 17:52:52 +0000] [4437] [INFO] Worker exiting (pid: 4437)
+[2017-07-29 17:52:52 +0000] [4433] [INFO] Worker exiting (pid: 4433)
+[2017-07-29 17:52:52 +0000] [4444] [INFO] Parent changed, shutting down: <Worker 4444>
+[2017-07-29 17:52:52 +0000] [4444] [INFO] Worker exiting (pid: 4444)
+[2017-07-29 17:52:53 +0000] [4445] [INFO] Parent changed, shutting down: <Worker 4445>
+[2017-07-29 17:52:53 +0000] [4432] [INFO] Parent changed, shutting down: <Worker 4432>
+[2017-07-29 17:52:53 +0000] [4434] [DEBUG] Closing connection. 
+[2017-07-29 17:52:53 +0000] [4432] [INFO] Worker exiting (pid: 4432)
+[2017-07-29 17:52:53 +0000] [4445] [INFO] Worker exiting (pid: 4445)
+[2017-07-29 17:52:53 +0000] [4434] [INFO] Parent changed, shutting down: <Worker 4434>
+[2017-07-29 17:52:53 +0000] [4434] [INFO] Worker exiting (pid: 4434)

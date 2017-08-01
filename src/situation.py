@@ -25,6 +25,7 @@ class Situation(Hierarchy):
 
 			if 'names' in attr:
 				self.assign_names(attr['names'])
+				
 		if 'comprehension' not in attr:
 			self.evaluate(self.outcome())
 
@@ -37,11 +38,9 @@ class Situation(Hierarchy):
 		if 'situation' in attr:
 
 			if 'values' in attr['situation']:
-
 				self.assign_values(attr['situation']['values'])
 
 			if 'thresholds' in attr['situation']:
-
 				if 'op' in attr:
 					self.assign_thresholds(attr['situation']['thresholds'][attr['op']])
 				else:

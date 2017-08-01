@@ -1,12 +1,28 @@
 from copy import deepcopy, copy
 from itertools import combinations, product, permutations
 from json import dump, dumps
-import pprint 
+import pprint
+import numpy as np
+from situation import Situation
+from evaluate import pivotality
 
 
 NODES = ['0n', '1n', '2n', '3n', '4n', '0g', '1g', '2g', 'o']
 
 
+
+def json(d):
+	with open('data.json', 'w') as f:
+		dump(d, f, sort_keys=True, indent=4, separators=(',   ', ': '))
+	return None
+
+'''
+calss recursive function to generate all possible structures
+parameters:
+	nodes 	list
+return:
+	strctures 	list
+'''
 def generate(nodes):
 	structures = []
 	structure = []
@@ -18,15 +34,27 @@ def generate(nodes):
 	# for s in structures:
 	# 	print s
 
-	print 'cases', len(structures)
-
 	return structures
 
+'''
+recursively generates structures
+parameters:
+	structures 		list 		list of structures so far
+	structure 		list 		structure being created
+	left 			list 		nodes left to be used
+	node 			str 		node we are using
+return:
+	structures 		list
+
+'''
 def __generate(structures, structure, left, node):
 
 	if filter(lambda a: a[-1] == 'n', left) == [] and connected(structure):
+
+		# if structure already in structures, return
 		if structure in structures: 
 			return structures
+		# if no nodes left to add and is connected, add structure and return
 		elif left == [] and connected(structure):
 			return structures.append(structure)
 
@@ -87,14 +115,7 @@ def connected(structure):
 		return True
 	return False
 
-# print connected([('n1', '2'), ('2', '3'), ('3', '4'), ('4', 'o')])
-# print connected([('n4', 'o'), ('g1', 'o'), ('g0', 'g1'), ('n0', 'g0'), ('n1', 'g0'), ('n2', 'g0'), ('n3', 'g1')])
-
-
-
-# generate(NODES)
-
-def json(structures):
+def experiments(structures):
 
 	d = {'experiments' : []}
 
@@ -112,58 +133,52 @@ def json(structures):
 		d['experiments'][ID]['hierarchy'] = {}
 		d['experiments'][ID]['hierarchy']['structure'] = structure
 
-		d['experiments'][ID]['situation'] = []
-
-		for j, perm in enumerate(product(*[(0, 1) for v in xrange(len(roots))])):
-			case = j
-			
-			d['experiments'][ID]['situation'].append({'thresholds' : {}})
+		d['experiments'][ID]['situation'] = {}
 
 
-			for op in ['dis', 'con', 'maj']:
-				d['experiments'][ID]['situation'][case]['thresholds'][op] = thresholds(structure, op)
+		d['experiments'][ID]['situation']['thresholds'] = thresholds(structure)
 
-			d['experiments'][ID]['situation'][case]['values'] = values(roots, perm)
-		
+		d['experiments'][ID]['situation']['values'] = []
+		for case, perm in enumerate(product(*[(0, 1) for v in xrange(len(roots))])):
+			d['experiments'][ID]['situation']['values'].append(values(roots, perm))
 
-	with open('data.json', 'w') as f:
-		dump(d, f, sort_keys=True, indent=4, separators=(',   ', ': '))
 
-	return 
 
-def thresholds(structure, op):
+	return d	
+
+def thresholds(structure):
 	groups = []
-
 	for x, y in structure:
 		if x not in groups and x[-1] != 'n':
 			groups.append(x)
 		if y not in groups and y[-1] != 'n':
 			groups.append(y)
 
+	pnodes = {}
+	maxp = 0
+	for group in groups:
+		preds = 0
+		for x, y in structure:
+			if y == group:
+				preds += 1
+			pnodes[group] = preds
+			if maxp < preds:
+				maxp = preds
 
 
-	if op == 'dis':
-		thresholds = [(group, 1) for group in groups]
+	thresholds = []
+	for perm in product(range(1, maxp+1), repeat=len(groups)):
 
-	elif op == 'con':
-		thresholds = []
+		threshold = []
+		for i, group in enumerate(groups):
 
-		for group in groups:
-			preds = 0
-			for x, y in structure:
-				if y == group:
-					preds += 1
-			thresholds.append((group, preds))
+			if perm[i] > pnodes[group]:
+				break
 
-	elif op == 'maj':
-		thresholds = []
+			threshold.append((group, perm[i]))
 
-		for group in groups:
-			preds = 0
-			for x, y in structure:
-				if y == group:
-					preds += 1
-			thresholds.append((group, preds/2))
+		if len(threshold) == len(groups) and threshold not in thresholds:
+			thresholds.append(threshold)
 
 	return thresholds
 
@@ -176,7 +191,54 @@ def values(roots, values):
 		
 	return res
 
-json(generate(NODES))
-# generate(NODES)
+def sample(d, n):
 
+	leaves = filter(lambda a: a[-1] == 'n', NODES)
+
+	length = len(list(product(*[(0, 1) for v in xrange(len(leaves))])))
+
+	used = []
+	samples = {'experiments' : []}
+	for i in xrange(n):
 		
+		while len(used) < n:
+			experiment = np.random.choice(len(d['experiments']))
+			values = np.random.choice(length)
+			thresholds = np.random.choice(len(d['experiments'][experiment]['situation']['thresholds']))
+
+
+			if (experiment, values, thresholds) not in used:
+				used.append((experiment, values, thresholds))
+
+		hierarchy = d['experiments'][experiment]['hierarchy']
+		situation = {}
+		situation['thresholds'] = d['experiments'][experiment]['situation']['thresholds'][thresholds]
+		situation['values'] = d['experiments'][experiment]['situation']['values'][values]
+
+		s = Situation(hierarchy=hierarchy, situation=situation) 
+
+		s.evaluate(s.outcome())
+		cause = np.random.choice(leaves)
+
+		while pivotality(s, cause, s.outcome()) == 0:
+			cause = np.random.choice(leaves)
+
+		situation['cause'] = cause
+
+		sample = {'ID' : i+8}
+		sample['hierarchy'] = hierarchy
+		sample['situation'] = situation
+
+		samples['experiments'].append(sample)
+
+	for i in samples['experiments']:
+		print i
+
+	return 
+
+
+
+
+
+
+sample(experiments(generate(NODES)), 16)
