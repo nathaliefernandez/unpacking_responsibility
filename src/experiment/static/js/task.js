@@ -56,7 +56,7 @@ var STATE;
                     $("#goback").show();
                 }
 
-                if (i > 8) {
+                if (i > 10) {
                     slide.fadeOut($c.fade);
                     slideshow(2);
                 };

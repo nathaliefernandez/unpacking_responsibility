@@ -201,13 +201,13 @@ def sample(d, n):
 	samples = {'experiments' : []}
 	for i in xrange(n):
 		
-		while len(used) < n:
+		while len(used) == i:
 			experiment = np.random.choice(len(d['experiments']))
 			values = np.random.choice(length)
 			thresholds = np.random.choice(len(d['experiments'][experiment]['situation']['thresholds']))
 
 
-			if (experiment, values, thresholds) not in used:
+			if (experiment, values, thresholds) not in used and len(d['experiments'][experiment]['situation']['thresholds'][thresholds]) < 4:
 				used.append((experiment, values, thresholds))
 
 		hierarchy = d['experiments'][experiment]['hierarchy']
@@ -233,6 +233,8 @@ def sample(d, n):
 
 	for i in samples['experiments']:
 		print i
+
+		print ', '
 
 	return 
 

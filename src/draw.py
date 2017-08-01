@@ -17,25 +17,25 @@ ABC = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O'
 
 # Trials
 abc = ABC[:]
-FIGSIZE = (15, 10)
-FONTSIZE = 20
-SIZE = .05
-LW = 3
-MW = .011
-ARROW_L = .015
-ARROW_W = .0125
-NAME_H = 1.8
+# FIGSIZE = (15, 10)
+# FONTSIZE = 20
+# SIZE = .05
+# LW = 3
+# MW = .011
+# ARROW_L = .015
+# ARROW_W = .0125
+# NAME_H = 1.8
 
 # Tutorial and Comprehension
-# FIGSIZE = (7.5, 5)
-# FONTSIZE = 16
-# SIZE = .09
-# LW = 3
-# MW = .02
-# # + .05
-# ARROW_L = .02
-# ARROW_W = .0175
-# NAME_H = 1.5
+FIGSIZE = (7.5, 5)
+FONTSIZE = 16
+SIZE = .09
+LW = 3
+MW = .02
+# + .05
+ARROW_L = .02
+ARROW_W = .0175
+NAME_H = 1.5
 
 
 '''
@@ -242,9 +242,17 @@ def get_color(hierarchy, color, node, pred):
             lightness = 80/levels
 
             l = (levels - hierarchy.node[hierarchy.predecessors(node)[pred]]['level'])*lightness + 12
-            hierarchy.node[hierarchy.predecessors(node)[pred]]['color'] = hsl_to_rgb(h, s, l)
-            hierarchy.node[hierarchy.predecessors(node)[pred]]['ec'] = hsl_to_rgb(h, s, l-32)
 
+            print 'h, %f, s %f, l %f' % (h, s, l-32)
+
+            hierarchy.node[hierarchy.predecessors(node)[pred]]['color'] = hsl_to_rgb(h, s, l)
+            if l > 32:
+                hierarchy.node[hierarchy.predecessors(node)[pred]]['ec'] = hsl_to_rgb(h, s, l-32)
+            else:
+                hierarchy.node[hierarchy.predecessors(node)[pred]]['ec'] = hsl_to_rgb(h, s, 0)
+
+            print hierarchy.node[hierarchy.predecessors(node)[pred]]['ec']
+            print
         return (hierarchy.node[hierarchy.predecessors(node)[pred]]['color'], hierarchy.node[hierarchy.predecessors(node)[pred]]['ec'])
 
 '''
@@ -351,7 +359,7 @@ def hsl_to_rgb(h, s, l):
     p = 2 * l - q
 
     r = hue_to_rgb(p, q, h + 1.0/3.0)
-    g = hue_to_rgb(p, q, h)
+    g = hue_to_rgb(p, q, h);
     b = hue_to_rgb(p, q, h - 1.0/3.0)
 
     return (r, g, b)
