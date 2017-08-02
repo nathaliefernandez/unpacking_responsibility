@@ -5,127 +5,122 @@
         "judgement": [
         {
                 "ID": 0,
-                "cause": "Wayne",
+                "cause": "Melba",
                 "effect": ["", "<b>not being</b> met"]
         },
         {
                 "ID": 1,
-                "cause": "Lillie",
+                "cause": "Mary",
                 "effect": ["", "<b>not being</b> met"]
         },
         {
                 "ID": 2,
-                "cause": "Wilma",
+                "cause": "Jay",
                 "effect": ["", "<b>not being</b> met"]
         },
         {
                 "ID": 3,
-                "cause": "Robert",
+                "cause": "Joseph",
                 "effect": ["", "<b>not being</b> met"]
         },
         {
                 "ID": 4,
-                "cause": "Eddie",
+                "cause": "Mario",
                 "effect": ["", "<b>being</b> met"]
         },
         {
                 "ID": 5,
-                "cause": "Nancey",
+                "cause": "Brian",
                 "effect": ["", "<b>being</b> met"]
         },
         {
                 "ID": 6,
-                "cause": "Ruby",
+                "cause": "Jill",
                 "effect": ["", "<b>being</b> met"]
         },
         {
                 "ID": 7,
-                "cause": "Sharon",
+                "cause": "David",
                 "effect": ["", "<b>being</b> met"]
         },
         {
                 "ID": 8,
-                "cause": "Kathy",
-                "effect": ["", "<b>not being</b> met"]
+                "cause": "Percy",
+                "effect": ["", "<b>being</b> met"]
         },
         {
                 "ID": 9,
-                "cause": "Beryl",
-                "effect": ["", "<b>not being</b> met"]
+                "cause": "Don",
+                "effect": ["", "<b>being</b> met"]
         },
         {
                 "ID": 10,
-                "cause": "Cindy",
-                "effect": ["", "<b>not being</b> met"]
+                "cause": "George",
+                "effect": ["", "<b>being</b> met"]
         },
         {
                 "ID": 11,
-                "cause": "Janet",
+                "cause": "Vallie",
                 "effect": ["", "<b>not being</b> met"]
         },
         {
                 "ID": 12,
-                "cause": "Myra",
+                "cause": "Ariel",
                 "effect": ["", "<b>not being</b> met"]
         },
         {
                 "ID": 13,
-                "cause": "Eric",
+                "cause": "Ruth",
                 "effect": ["", "<b>being</b> met"]
         },
         {
                 "ID": 14,
-                "cause": "Lee",
-                "effect": ["", "<b>being</b> met"]
+                "cause": "Danica",
+                "effect": ["", "<b>not being</b> met"]
         },
         {
                 "ID": 15,
-                "cause": "Helena",
-                "effect": ["", "<b>being</b> met"]
+                "cause": "Keven",
+                "effect": ["", "<b>not being</b> met"]
         },
         {
                 "ID": 16,
-                "cause": "Ronald",
-                "effect": ["", "<b>being</b> met"]
+                "cause": "Robin",
+                "effect": ["", "<b>not being</b> met"]
         },
         {
                 "ID": 17,
-                "cause": "Bruce",
-                "effect": ["", "<b>being</b> met"]
+                "cause": "Bobby",
+                "effect": ["", "<b>not being</b> met"]
         },
         {
                 "ID": 18,
-                "cause": "Brenna",
-                "effect": ["", "<b>being</b> met"]
+                "cause": "Leland",
+                "effect": ["", "<b>not being</b> met"]
         },
         {
                 "ID": 19,
-                "cause": "Tawana",
+                "cause": "Ashley",
                 "effect": ["", "<b>being</b> met"]
         },
         {
                 "ID": 20,
-                "cause": "Jose",
+                "cause": "Cherie",
                 "effect": ["", "<b>being</b> met"]
         },
         {
                 "ID": 21,
-                "cause": "Jean",
+                "cause": "Ruben",
                 "effect": ["", "<b>being</b> met"]
         },
         {
                 "ID": 22,
-                "cause": "Beth",
+                "cause": "Megan",
                 "effect": ["", "<b>being</b> met"]
         },
         {
                 "ID": 23,
-                "cause": "Amanda",
-                "effect": ["", "<b>being</b> met"]
-        },
-        {
-                "ID": 24,
-                "cause": "Floyd",
+                "cause": "Fay",
                 "effect": ["", "<b>being</b> met"]
         }
         ],

@@ -63,6 +63,7 @@ var STATE;
         }
         if (x == 2) {
             slide.fadeIn($c.fade);
+            $(".tutorial").attr("src",'/static/images/instructions/tutorial11.png');
 
             slide.find('#start').click(function () {
                 CURRENTVIEW = new Comprehension();
@@ -493,8 +494,8 @@ this.finish = function() {
     STATE = new State();
     // Begin the experiment phase
     if (STATE.instructions) {
-        CURRENTVIEW = new JudgementPhase();
-        // CURRENTVIEW = new Instructions();
+        // CURRENTVIEW = new JudgementPhase();
+        CURRENTVIEW = new Instructions();
         // CURRENTVIEW = new PredictionPhase();
         // CURRENTVIEW = new Comprehension();
 
