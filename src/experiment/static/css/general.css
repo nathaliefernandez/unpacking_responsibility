@@ -184,7 +184,7 @@ span.consent {
 /*from 70% to 60%s
  *
  */ 
-.question_container{
+.question_container {
     display: inline-block;
     text-align:center;
     margin-top: 0%;
@@ -194,7 +194,7 @@ span.consent {
 /*    margin: 0 auto;*/
 }
 
-#response_container{
+#response_container {
     width:80%;
     margin: 0 auto;
 }

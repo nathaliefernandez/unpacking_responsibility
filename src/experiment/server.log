@@ -37776,3 +37776,2259 @@ IOError: [Errno 2] No such file or directory: 'templates/ad.html'
 [2017-08-01 16:13:27 +0000] [5238] [DEBUG] Closing connection. 
 [2017-08-01 16:13:27 +0000] [5238] [INFO] Parent changed, shutting down: <Worker 5238>
 [2017-08-01 16:13:27 +0000] [5238] [INFO] Worker exiting (pid: 5238)
+[2017-08-01 18:37:30 +0000] [2826] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  statsd_host: None
+  max_requests_jitter: 0
+  post_fork: <function post_fork at 0x7fe7b5735de8>
+  pythonpath: None
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 3
+  suppress_ragged_eofs: True
+  syslog: False
+  syslog_facility: user
+  when_ready: <function when_ready at 0x7fe7b5735b18>
+  pre_fork: <function pre_fork at 0x7fe7b5735c80>
+  cert_reqs: 0
+  preload_app: False
+  keepalive: 2
+  accesslog: None
+  group: 1000
+  graceful_timeout: 30
+  do_handshake_on_connect: False
+  spew: False
+  workers: 9
+  proc_name: psiturk_experiment_server
+  sendfile: None
+  pidfile: None
+  umask: 0
+  on_reload: <function on_reload at 0x7fe7b57359b0>
+  pre_exec: <function pre_exec at 0x7fe7b573e410>
+  worker_tmp_dir: None
+  post_worker_init: <function post_worker_init at 0x7fe7b5735f50>
+  limit_request_fields: 100
+  on_exit: <function on_exit at 0x7fe7b5791410>
+  config: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x7fe7b573e578>
+  post_request: <function post_request at 0x7fe7b573e668>
+  user: 1000
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x7fe7b573e140>
+  threads: 1
+  max_requests: 0
+  limit_request_line: 0
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  worker_exit: <function worker_exit at 0x7fe7b573e7d0>
+  chdir: /home/nathalie/Research/unpacking_responsibility/src/experiment
+  paste: None
+  default_proc_name: gunicorn
+  errorlog: server.log
+  loglevel: debug
+  logconfig: None
+  syslog_addr: udp://localhost:514
+  syslog_prefix: None
+  daemon: False
+  ciphers: TLSv1
+  on_starting: <function on_starting at 0x7fe7b5735848>
+  worker_abort: <function worker_abort at 0x7fe7b573e2a8>
+  bind: ['0.0.0.0:22362']
+  raw_env: []
+  reload: False
+  check_config: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x7fe7b573e938>
+  timeout: 30
+  ca_certs: None
+  django_settings: None
+  tmp_upload_dir: None
+  keyfile: None
+  backlog: 2048
+  logger_class: gunicorn.glogging.Logger
+  statsd_prefix: 
+[2017-08-01 18:37:30 +0000] [2826] [INFO] Starting gunicorn 19.4.5
+[2017-08-01 18:37:30 +0000] [2826] [DEBUG] Arbiter booted
+[2017-08-01 18:37:30 +0000] [2826] [INFO] Listening at: http://0.0.0.0:22362 (2826)
+[2017-08-01 18:37:30 +0000] [2826] [INFO] Using worker: sync
+[2017-08-01 18:37:30 +0000] [2831] [INFO] Booting worker with pid: 2831
+[2017-08-01 18:37:30 +0000] [2832] [INFO] Booting worker with pid: 2832
+[2017-08-01 18:37:30 +0000] [2833] [INFO] Booting worker with pid: 2833
+[2017-08-01 18:37:30 +0000] [2834] [INFO] Booting worker with pid: 2834
+[2017-08-01 18:37:30 +0000] [2835] [INFO] Booting worker with pid: 2835
+[2017-08-01 18:37:30 +0000] [2836] [INFO] Booting worker with pid: 2836
+[2017-08-01 18:37:30 +0000] [2837] [INFO] Booting worker with pid: 2837
+[2017-08-01 18:37:30 +0000] [2840] [INFO] Booting worker with pid: 2840
+[2017-08-01 18:37:30 +0000] [2826] [DEBUG] 9 workers
+[2017-08-01 18:37:30 +0000] [2843] [INFO] Booting worker with pid: 2843
+2017-08-01 18:37:31,413 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-01 18:37:31,413 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-01 18:37:31,413 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-01 18:37:31,414 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-01 18:37:31,414 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-01 18:37:31,414 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-01 18:37:31,417 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-08-01 18:37:31,417 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-01 18:37:31,420 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-08-01 18:37:31,420 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-08-01 18:37:31,420 Hmm... it seems no custom code (custom.py) associated                         with this project.
+[2017-08-01 18:37:31 +0000] [2833] [DEBUG] Closing connection. 
+2017-08-01 18:37:31,432 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-08-01 18:37:31,452 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-01 18:37:31,452 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-01 18:37:31,468 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-08-01 18:37:31,534 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-01 18:37:31,534 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-01 18:37:31,537 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-08-01 18:37:31,554 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-01 18:37:31,554 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-01 18:37:31,557 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-08-01 18:37:31,600 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-01 18:37:31,601 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-01 18:37:31,603 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-08-01 18:37:31,605 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-01 18:37:31,605 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-01 18:37:31,607 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+[2017-08-01 18:37:35 +0000] [2836] [DEBUG] Closing connection. 
+[2017-08-01 18:37:35 +0000] [2843] [DEBUG] Closing connection. 
+[2017-08-01 18:37:35 +0000] [2837] [DEBUG] Closing connection. 
+[2017-08-01 18:37:36 +0000] [2837] [DEBUG] GET /ad
+[2017-08-01 18:37:51 +0000] [2840] [DEBUG] Closing connection. 
+[2017-08-01 18:37:51 +0000] [2835] [DEBUG] Closing connection. 
+[2017-08-01 18:37:51 +0000] [2831] [DEBUG] Closing connection. 
+[2017-08-01 18:37:51 +0000] [2832] [DEBUG] Closing connection. 
+[2017-08-01 18:37:51 +0000] [2834] [DEBUG] Closing connection. 
+[2017-08-01 18:55:09 +0000] [2840] [DEBUG] Closing connection. 
+[2017-08-01 18:55:11 +0000] [2840] [DEBUG] Closing connection. 
+[2017-08-01 18:55:11 +0000] [2837] [DEBUG] Closing connection. 
+[2017-08-01 18:55:11 +0000] [2832] [DEBUG] GET /ppid
+[2017-08-01 18:55:11 +0000] [2832] [INFO] Parent changed, shutting down: <Worker 2832>
+[2017-08-01 18:55:11 +0000] [2840] [DEBUG] Closing connection. 
+[2017-08-01 18:55:11 +0000] [2832] [INFO] Worker exiting (pid: 2832)
+[2017-08-01 18:55:11 +0000] [2840] [INFO] Parent changed, shutting down: <Worker 2840>
+[2017-08-01 18:55:11 +0000] [2840] [INFO] Worker exiting (pid: 2840)
+[2017-08-01 18:55:11 +0000] [2837] [DEBUG] Closing connection. 
+[2017-08-01 18:55:11 +0000] [2837] [INFO] Parent changed, shutting down: <Worker 2837>
+[2017-08-01 18:55:11 +0000] [2837] [INFO] Worker exiting (pid: 2837)
+[2017-08-01 18:55:12 +0000] [2836] [DEBUG] Closing connection. 
+[2017-08-01 18:55:12 +0000] [2834] [INFO] Parent changed, shutting down: <Worker 2834>
+[2017-08-01 18:55:12 +0000] [2836] [INFO] Parent changed, shutting down: <Worker 2836>
+[2017-08-01 18:55:12 +0000] [2834] [INFO] Worker exiting (pid: 2834)
+[2017-08-01 18:55:12 +0000] [2836] [INFO] Worker exiting (pid: 2836)
+[2017-08-01 18:55:12 +0000] [2831] [DEBUG] Closing connection. 
+[2017-08-01 18:55:12 +0000] [2835] [INFO] Parent changed, shutting down: <Worker 2835>
+[2017-08-01 18:55:12 +0000] [2831] [INFO] Parent changed, shutting down: <Worker 2831>
+[2017-08-01 18:55:12 +0000] [2835] [INFO] Worker exiting (pid: 2835)
+[2017-08-01 18:55:12 +0000] [2831] [INFO] Worker exiting (pid: 2831)
+[2017-08-01 18:55:13 +0000] [2843] [DEBUG] Closing connection. 
+[2017-08-01 18:55:13 +0000] [2843] [INFO] Parent changed, shutting down: <Worker 2843>
+[2017-08-01 18:55:13 +0000] [2843] [INFO] Worker exiting (pid: 2843)
+[2017-08-01 18:55:13 +0000] [2833] [DEBUG] Closing connection. 
+[2017-08-01 18:55:13 +0000] [2833] [INFO] Parent changed, shutting down: <Worker 2833>
+[2017-08-01 18:55:13 +0000] [2833] [INFO] Worker exiting (pid: 2833)
+[2017-08-01 19:51:50 +0000] [4367] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  statsd_host: None
+  max_requests_jitter: 0
+  post_fork: <function post_fork at 0x7f8187637de8>
+  pythonpath: None
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 3
+  suppress_ragged_eofs: True
+  syslog: False
+  syslog_facility: user
+  when_ready: <function when_ready at 0x7f8187637b18>
+  pre_fork: <function pre_fork at 0x7f8187637c80>
+  cert_reqs: 0
+  preload_app: False
+  keepalive: 2
+  accesslog: None
+  group: 1000
+  graceful_timeout: 30
+  do_handshake_on_connect: False
+  spew: False
+  workers: 9
+  proc_name: psiturk_experiment_server
+  sendfile: None
+  pidfile: None
+  umask: 0
+  on_reload: <function on_reload at 0x7f81876379b0>
+  pre_exec: <function pre_exec at 0x7f8187640410>
+  worker_tmp_dir: None
+  post_worker_init: <function post_worker_init at 0x7f8187637f50>
+  limit_request_fields: 100
+  on_exit: <function on_exit at 0x7f8187695410>
+  config: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x7f8187640578>
+  post_request: <function post_request at 0x7f8187640668>
+  user: 1000
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x7f8187640140>
+  threads: 1
+  max_requests: 0
+  limit_request_line: 0
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  worker_exit: <function worker_exit at 0x7f81876407d0>
+  chdir: /home/nathalie/Research/unpacking_responsibility/src/experiment
+  paste: None
+  default_proc_name: gunicorn
+  errorlog: server.log
+  loglevel: debug
+  logconfig: None
+  syslog_addr: udp://localhost:514
+  syslog_prefix: None
+  daemon: False
+  ciphers: TLSv1
+  on_starting: <function on_starting at 0x7f8187637848>
+  worker_abort: <function worker_abort at 0x7f81876402a8>
+  bind: ['0.0.0.0:22362']
+  raw_env: []
+  reload: False
+  check_config: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x7f8187640938>
+  timeout: 30
+  ca_certs: None
+  django_settings: None
+  tmp_upload_dir: None
+  keyfile: None
+  backlog: 2048
+  logger_class: gunicorn.glogging.Logger
+  statsd_prefix: 
+[2017-08-01 19:51:50 +0000] [4367] [INFO] Starting gunicorn 19.4.5
+[2017-08-01 19:51:50 +0000] [4367] [DEBUG] Arbiter booted
+[2017-08-01 19:51:50 +0000] [4367] [INFO] Listening at: http://0.0.0.0:22362 (4367)
+[2017-08-01 19:51:50 +0000] [4367] [INFO] Using worker: sync
+[2017-08-01 19:51:50 +0000] [4372] [INFO] Booting worker with pid: 4372
+[2017-08-01 19:51:50 +0000] [4373] [INFO] Booting worker with pid: 4373
+[2017-08-01 19:51:50 +0000] [4376] [INFO] Booting worker with pid: 4376
+[2017-08-01 19:51:50 +0000] [4379] [INFO] Booting worker with pid: 4379
+[2017-08-01 19:51:50 +0000] [4380] [INFO] Booting worker with pid: 4380
+[2017-08-01 19:51:50 +0000] [4381] [INFO] Booting worker with pid: 4381
+[2017-08-01 19:51:50 +0000] [4382] [INFO] Booting worker with pid: 4382
+[2017-08-01 19:51:50 +0000] [4383] [INFO] Booting worker with pid: 4383
+[2017-08-01 19:51:50 +0000] [4384] [INFO] Booting worker with pid: 4384
+2017-08-01 19:51:50,412 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-01 19:51:50,412 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-01 19:51:50,415 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+[2017-08-01 19:51:50 +0000] [4367] [DEBUG] 9 workers
+2017-08-01 19:51:50,665 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-01 19:51:50,665 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-01 19:51:50,668 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-08-01 19:51:50,732 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-01 19:51:50,732 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-01 19:51:50,735 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-08-01 19:51:50,917 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-01 19:51:50,917 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-01 19:51:50,920 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-08-01 19:51:50,992 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-01 19:51:50,992 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-01 19:51:50,998 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-08-01 19:51:50,994 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-01 19:51:51,003 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-01 19:51:51,006 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-08-01 19:51:51,015 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-01 19:51:51,015 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-01 19:51:51,017 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-08-01 19:51:51,018 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-01 19:51:51,018 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-01 19:51:51,021 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-08-01 19:51:51,035 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-01 19:51:51,036 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-01 19:51:51,037 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+[2017-08-01 19:51:51 +0000] [4384] [DEBUG] Closing connection. 
+[2017-08-01 19:52:33 +0000] [4380] [DEBUG] Closing connection. 
+[2017-08-01 19:52:33 +0000] [4384] [DEBUG] Closing connection. 
+[2017-08-01 19:52:33 +0000] [4380] [DEBUG] Closing connection. 
+[2017-08-01 19:52:34 +0000] [4382] [DEBUG] GET /ad
+[2017-08-01 19:52:35 +0000] [4380] [DEBUG] GET /consent
+[2017-08-01 19:52:35 +0000] [4379] [DEBUG] GET /static/js/utils.js
+[2017-08-01 19:52:35 +0000] [4372] [DEBUG] GET /static/css/general.css
+[2017-08-01 19:52:36 +0000] [4376] [DEBUG] GET /exp
+2017-08-01 19:52:36,631 Accessing /exp: debugL7FUUO debug87F4WO debug7MJGKO 
+2017-08-01 19:52:36,639 given Counter({(0, 0): 4}) chose (0, 0)
+[2017-08-01 19:52:36 +0000] [4373] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-01 19:52:36 +0000] [4373] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-01 19:52:36 +0000] [4381] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-01 19:52:36 +0000] [4380] [DEBUG] GET /ad
+[2017-08-01 19:52:36 +0000] [4379] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-01 19:52:36 +0000] [4383] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-01 19:52:36 +0000] [4381] [DEBUG] GET /static/lib/mustache.js
+[2017-08-01 19:52:36 +0000] [4384] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-01 19:52:36 +0000] [4379] [DEBUG] GET /static/js/config.js
+[2017-08-01 19:52:36 +0000] [4373] [DEBUG] GET /static/js/psiturk.js
+[2017-08-01 19:52:36 +0000] [4379] [DEBUG] GET /static/js/task.js
+[2017-08-01 19:52:36 +0000] [4373] [DEBUG] GET /static/json/stim.json
+[2017-08-01 19:52:37 +0000] [4384] [DEBUG] GET /sync/debug7MJGKO%3Adebug87F4WO
+2017-08-01 19:52:37,000 GET /sync route with id: debug7MJGKO:debug87F4WO
+[2017-08-01 19:52:37 +0000] [4380] [DEBUG] GET /trial.html
+[2017-08-01 19:52:37 +0000] [4372] [DEBUG] GET /submit.html
+[2017-08-01 19:52:37 +0000] [4372] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-01 19:52:37 +0000] [4382] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-01 19:52:37 +0000] [4384] [DEBUG] GET /static/images/instructions/tutorial0.png
+[2017-08-01 19:52:38 +0000] [4373] [DEBUG] GET /static/images/instructions/tutorial1.png
+[2017-08-01 19:52:39 +0000] [4383] [DEBUG] GET /static/images/instructions/tutorial2.png
+[2017-08-01 19:52:40 +0000] [4379] [DEBUG] GET /static/images/instructions/tutorial3.png
+[2017-08-01 19:53:13 +0000] [4383] [DEBUG] GET /exp
+2017-08-01 19:53:13,651 Accessing /exp: debugL7FUUO debug87F4WO debug7MJGKO 
+[2017-08-01 19:53:13 +0000] [4373] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-01 19:53:13 +0000] [4384] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-01 19:53:13 +0000] [4372] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-01 19:53:13 +0000] [4379] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-01 19:53:13 +0000] [4381] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-01 19:53:13 +0000] [4382] [DEBUG] GET /static/lib/mustache.js
+[2017-08-01 19:53:13 +0000] [4373] [DEBUG] GET /static/css/general.css
+[2017-08-01 19:53:13 +0000] [4373] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-01 19:53:13 +0000] [4373] [DEBUG] GET /static/js/config.js
+[2017-08-01 19:53:13 +0000] [4373] [DEBUG] GET /static/js/utils.js
+[2017-08-01 19:53:13 +0000] [4373] [DEBUG] GET /static/js/psiturk.js
+[2017-08-01 19:53:13 +0000] [4373] [DEBUG] GET /static/js/task.js
+[2017-08-01 19:53:13 +0000] [4379] [DEBUG] GET /static/json/stim.json
+[2017-08-01 19:53:13 +0000] [4382] [DEBUG] GET /sync/debug7MJGKO%3Adebug87F4WO
+2017-08-01 19:53:13,898 GET /sync route with id: debug7MJGKO:debug87F4WO
+[2017-08-01 19:53:13 +0000] [4382] [DEBUG] GET /trial.html
+[2017-08-01 19:53:13 +0000] [4382] [DEBUG] GET /submit.html
+[2017-08-01 19:53:13 +0000] [4381] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-01 19:53:13 +0000] [4372] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-01 19:53:13 +0000] [4383] [DEBUG] GET /static/images/instructions/tutorial0.png
+[2017-08-01 19:53:13 +0000] [4379] [DEBUG] GET /favicon.ico
+[2017-08-01 19:53:15 +0000] [4383] [DEBUG] GET /static/images/instructions/tutorial1.png
+[2017-08-01 19:53:16 +0000] [4372] [DEBUG] GET /static/images/instructions/tutorial2.png
+[2017-08-01 19:53:17 +0000] [4381] [DEBUG] GET /static/images/instructions/tutorial3.png
+[2017-08-01 19:53:18 +0000] [4381] [DEBUG] GET /static/images/instructions/tutorial4.png
+[2017-08-01 19:53:18 +0000] [4372] [DEBUG] GET /static/images/instructions/tutorial5.png
+[2017-08-01 19:53:19 +0000] [4381] [DEBUG] GET /static/images/instructions/tutorial6.png
+[2017-08-01 19:53:19 +0000] [4376] [DEBUG] GET /static/images/instructions/tutorial7.png
+[2017-08-01 19:53:27 +0000] [4379] [DEBUG] GET /static/images/instructions/tutorial8.png
+[2017-08-01 19:53:27 +0000] [4376] [DEBUG] GET /static/images/instructions/tutorial9.png
+[2017-08-01 19:53:27 +0000] [4379] [DEBUG] GET /static/images/instructions/tutorial10.png
+[2017-08-01 19:53:28 +0000] [4379] [DEBUG] GET /static/images/instructions/tutorial11.png
+[2017-08-01 19:53:42 +0000] [4380] [DEBUG] GET /static/images/instructions/tutorial0.png
+[2017-08-01 19:53:43 +0000] [4384] [DEBUG] GET /static/images/instructions/tutorial1.png
+[2017-08-01 19:53:46 +0000] [4381] [DEBUG] GET /static/images/instructions/tutorial2.png
+[2017-08-01 19:53:46 +0000] [4372] [DEBUG] GET /static/images/instructions/tutorial3.png
+[2017-08-01 19:53:46 +0000] [4372] [DEBUG] GET /static/images/instructions/tutorial4.png
+[2017-08-01 19:53:46 +0000] [4376] [DEBUG] GET /static/images/instructions/tutorial5.png
+[2017-08-01 19:53:47 +0000] [4383] [DEBUG] GET /static/images/instructions/tutorial6.png
+[2017-08-01 19:53:47 +0000] [4381] [DEBUG] GET /static/images/instructions/tutorial7.png
+[2017-08-01 19:53:47 +0000] [4380] [DEBUG] GET /static/images/instructions/tutorial8.png
+[2017-08-01 19:53:47 +0000] [4380] [DEBUG] GET /static/images/instructions/tutorial9.png
+[2017-08-01 19:53:49 +0000] [4379] [DEBUG] GET /static/images/instructions/tutorial10.png
+[2017-08-01 19:53:50 +0000] [4384] [DEBUG] GET /static/images/instructions/tutorial11.png
+[2017-08-01 19:55:41 +0000] [4373] [DEBUG] GET /exp
+2017-08-01 19:55:41,943 Accessing /exp: debugL7FUUO debug87F4WO debug7MJGKO 
+[2017-08-01 19:55:41 +0000] [4372] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-01 19:55:41 +0000] [4376] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-01 19:55:41 +0000] [4379] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-01 19:55:41 +0000] [4384] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-01 19:55:41 +0000] [4382] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-01 19:55:41 +0000] [4381] [DEBUG] GET /static/lib/mustache.js
+[2017-08-01 19:55:41 +0000] [4376] [DEBUG] GET /static/css/general.css
+[2017-08-01 19:55:41 +0000] [4373] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-01 19:55:41 +0000] [4372] [DEBUG] GET /static/js/config.js
+[2017-08-01 19:55:41 +0000] [4379] [DEBUG] GET /static/js/psiturk.js
+[2017-08-01 19:55:41 +0000] [4376] [DEBUG] GET /static/js/task.js
+[2017-08-01 19:55:41 +0000] [4382] [DEBUG] GET /static/js/utils.js
+[2017-08-01 19:55:42 +0000] [4384] [DEBUG] GET /static/json/stim.json
+[2017-08-01 19:55:42 +0000] [4373] [DEBUG] GET /sync/debug7MJGKO%3Adebug87F4WO
+2017-08-01 19:55:42,073 GET /sync route with id: debug7MJGKO:debug87F4WO
+[2017-08-01 19:55:42 +0000] [4381] [DEBUG] GET /trial.html
+[2017-08-01 19:55:42 +0000] [4380] [DEBUG] GET /submit.html
+[2017-08-01 19:55:42 +0000] [4383] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-01 19:55:42 +0000] [4376] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-01 19:55:42 +0000] [4376] [DEBUG] GET /static/images/instructions/tutorial0.png
+[2017-08-01 19:55:42 +0000] [4376] [DEBUG] GET /favicon.ico
+[2017-08-01 19:55:43 +0000] [4382] [DEBUG] GET /static/images/instructions/tutorial1.png
+[2017-08-01 19:55:44 +0000] [4380] [DEBUG] GET /static/images/instructions/tutorial2.png
+[2017-08-01 19:55:45 +0000] [4373] [DEBUG] GET /static/images/instructions/tutorial3.png
+[2017-08-01 19:55:45 +0000] [4383] [DEBUG] GET /static/images/instructions/tutorial4.png
+[2017-08-01 19:55:45 +0000] [4376] [DEBUG] GET /static/images/instructions/tutorial5.png
+[2017-08-01 19:55:46 +0000] [4380] [DEBUG] GET /static/images/instructions/tutorial6.png
+[2017-08-01 19:55:46 +0000] [4384] [DEBUG] GET /static/images/instructions/tutorial7.png
+[2017-08-01 19:55:53 +0000] [4381] [DEBUG] GET /static/images/instructions/tutorial8.png
+[2017-08-01 19:55:54 +0000] [4372] [DEBUG] GET /static/images/instructions/tutorial9.png
+[2017-08-01 19:56:11 +0000] [4384] [DEBUG] GET /exp
+2017-08-01 19:56:11,370 Accessing /exp: debugL7FUUO debug87F4WO debug7MJGKO 
+[2017-08-01 19:56:11 +0000] [4382] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-01 19:56:11 +0000] [4383] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-01 19:56:11 +0000] [4380] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-01 19:56:11 +0000] [4376] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-01 19:56:11 +0000] [4379] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-01 19:56:11 +0000] [4381] [DEBUG] GET /static/lib/mustache.js
+[2017-08-01 19:56:11 +0000] [4380] [DEBUG] GET /static/css/general.css
+[2017-08-01 19:56:11 +0000] [4383] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-01 19:56:11 +0000] [4382] [DEBUG] GET /static/js/config.js
+[2017-08-01 19:56:11 +0000] [4379] [DEBUG] GET /static/js/utils.js
+[2017-08-01 19:56:11 +0000] [4380] [DEBUG] GET /static/js/psiturk.js
+[2017-08-01 19:56:11 +0000] [4373] [DEBUG] GET /static/js/task.js
+[2017-08-01 19:56:11 +0000] [4382] [DEBUG] GET /static/json/stim.json
+[2017-08-01 19:56:11 +0000] [4379] [DEBUG] GET /sync/debug7MJGKO%3Adebug87F4WO
+2017-08-01 19:56:11,498 GET /sync route with id: debug7MJGKO:debug87F4WO
+[2017-08-01 19:56:11 +0000] [4373] [DEBUG] GET /trial.html
+[2017-08-01 19:56:11 +0000] [4382] [DEBUG] GET /submit.html
+[2017-08-01 19:56:11 +0000] [4380] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-01 19:56:11 +0000] [4381] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-01 19:56:11 +0000] [4380] [DEBUG] GET /static/images/instructions/tutorial0.png
+[2017-08-01 19:56:11 +0000] [4382] [DEBUG] GET /favicon.ico
+[2017-08-01 19:56:12 +0000] [4382] [DEBUG] GET /static/images/instructions/tutorial1.png
+[2017-08-01 19:56:18 +0000] [4372] [DEBUG] GET /static/lib/underscore-min.map
+[2017-08-01 19:56:23 +0000] [4384] [DEBUG] GET /static/images/instructions/tutorial2.png
+[2017-08-01 19:56:24 +0000] [4379] [DEBUG] GET /static/images/instructions/tutorial3.png
+[2017-08-01 19:56:27 +0000] [4384] [DEBUG] GET /static/images/instructions/tutorial1.png
+[2017-08-01 19:56:46 +0000] [4382] [DEBUG] GET /static/images/instructions/tutorial4.png
+[2017-08-01 19:56:47 +0000] [4381] [DEBUG] GET /static/images/instructions/tutorial5.png
+[2017-08-01 19:56:47 +0000] [4379] [DEBUG] GET /static/images/instructions/tutorial6.png
+[2017-08-01 19:58:36 +0000] [4372] [DEBUG] GET /exp
+2017-08-01 19:58:36,492 Accessing /exp: debugL7FUUO debug87F4WO debug7MJGKO 
+[2017-08-01 19:58:36 +0000] [4373] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-01 19:58:36 +0000] [4379] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-01 19:58:36 +0000] [4381] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-01 19:58:36 +0000] [4384] [DEBUG] GET /static/lib/mustache.js
+[2017-08-01 19:58:36 +0000] [4373] [DEBUG] GET /static/css/general.css
+[2017-08-01 19:58:36 +0000] [4380] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-01 19:58:36 +0000] [4372] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-01 19:58:36 +0000] [4379] [DEBUG] GET /static/js/config.js
+[2017-08-01 19:58:36 +0000] [4382] [DEBUG] GET /static/js/utils.js
+[2017-08-01 19:58:36 +0000] [4376] [DEBUG] GET /static/js/task.js
+[2017-08-01 19:58:36 +0000] [4380] [DEBUG] GET /static/js/psiturk.js
+[2017-08-01 19:58:36 +0000] [4381] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-01 19:58:36 +0000] [4379] [DEBUG] GET /static/json/stim.json
+[2017-08-01 19:58:36 +0000] [4380] [DEBUG] GET /static/lib/underscore-min.map
+[2017-08-01 19:58:36 +0000] [4382] [DEBUG] GET /sync/debug7MJGKO%3Adebug87F4WO
+2017-08-01 19:58:36,677 GET /sync route with id: debug7MJGKO:debug87F4WO
+[2017-08-01 19:58:36 +0000] [4383] [DEBUG] GET /trial.html
+[2017-08-01 19:58:36 +0000] [4379] [DEBUG] GET /submit.html
+[2017-08-01 19:58:36 +0000] [4383] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-01 19:58:36 +0000] [4373] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-01 19:58:36 +0000] [4384] [DEBUG] GET /static/images/instructions/tutorial0.png
+[2017-08-01 19:58:38 +0000] [4379] [DEBUG] GET /static/images/instructions/tutorial1.png
+[2017-08-01 19:58:38 +0000] [4372] [DEBUG] GET /static/images/instructions/tutorial2.png
+[2017-08-01 19:58:38 +0000] [4372] [DEBUG] GET /static/images/instructions/tutorial3.png
+[2017-08-01 19:58:39 +0000] [4372] [DEBUG] GET /static/images/instructions/tutorial4.png
+[2017-08-01 19:58:42 +0000] [4381] [DEBUG] GET /static/images/instructions/tutorial5.png
+[2017-08-01 19:58:42 +0000] [4381] [DEBUG] GET /static/images/instructions/tutorial6.png
+[2017-08-01 19:58:42 +0000] [4382] [DEBUG] GET /static/images/instructions/tutorial7.png
+[2017-08-01 19:58:43 +0000] [4381] [DEBUG] GET /static/images/instructions/tutorial8.png
+[2017-08-01 19:58:43 +0000] [4373] [DEBUG] GET /static/images/instructions/tutorial9.png
+[2017-08-01 19:58:43 +0000] [4383] [DEBUG] GET /static/images/instructions/tutorial10.png
+[2017-08-01 19:58:44 +0000] [4383] [DEBUG] GET /static/images/instructions/tutorial11.png
+[2017-08-01 19:58:59 +0000] [4379] [DEBUG] GET /static/images/instructions/tutorial0.png
+[2017-08-01 19:59:01 +0000] [4373] [DEBUG] GET /static/images/instructions/tutorial1.png
+[2017-08-01 19:59:24 +0000] [4372] [DEBUG] GET /exp
+2017-08-01 19:59:24,970 Accessing /exp: debugL7FUUO debug87F4WO debug7MJGKO 
+[2017-08-01 19:59:25 +0000] [4373] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-01 19:59:25 +0000] [4380] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-01 19:59:25 +0000] [4384] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-01 19:59:25 +0000] [4376] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-01 19:59:25 +0000] [4372] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-01 19:59:25 +0000] [4381] [DEBUG] GET /static/lib/mustache.js
+[2017-08-01 19:59:25 +0000] [4384] [DEBUG] GET /static/css/general.css
+[2017-08-01 19:59:25 +0000] [4383] [DEBUG] GET /static/js/config.js
+[2017-08-01 19:59:25 +0000] [4373] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-01 19:59:25 +0000] [4373] [DEBUG] GET /static/js/utils.js
+[2017-08-01 19:59:25 +0000] [4383] [DEBUG] GET /static/js/psiturk.js
+[2017-08-01 19:59:25 +0000] [4380] [DEBUG] GET /static/js/task.js
+[2017-08-01 19:59:25 +0000] [4381] [DEBUG] GET /static/lib/underscore-min.map
+[2017-08-01 19:59:47 +0000] [4379] [DEBUG] GET /exp
+2017-08-01 19:59:47,232 Accessing /exp: debugL7FUUO debug87F4WO debug7MJGKO 
+[2017-08-01 19:59:47 +0000] [4379] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-01 19:59:47 +0000] [4382] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-01 19:59:47 +0000] [4380] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-01 19:59:47 +0000] [4373] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-01 19:59:47 +0000] [4379] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-01 19:59:47 +0000] [4384] [DEBUG] GET /static/lib/mustache.js
+[2017-08-01 19:59:47 +0000] [4372] [DEBUG] GET /static/css/general.css
+[2017-08-01 19:59:47 +0000] [4381] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-01 19:59:47 +0000] [4380] [DEBUG] GET /static/js/config.js
+[2017-08-01 19:59:47 +0000] [4384] [DEBUG] GET /static/js/utils.js
+[2017-08-01 19:59:47 +0000] [4376] [DEBUG] GET /static/js/psiturk.js
+[2017-08-01 19:59:47 +0000] [4373] [DEBUG] GET /static/js/task.js
+[2017-08-01 19:59:47 +0000] [4383] [DEBUG] GET /static/json/stim.json
+[2017-08-01 19:59:47 +0000] [4382] [DEBUG] GET /static/lib/underscore-min.map
+[2017-08-01 19:59:47 +0000] [4381] [DEBUG] GET /sync/debug7MJGKO%3Adebug87F4WO
+2017-08-01 19:59:47,401 GET /sync route with id: debug7MJGKO:debug87F4WO
+[2017-08-01 19:59:47 +0000] [4383] [DEBUG] GET /trial.html
+[2017-08-01 19:59:47 +0000] [4376] [DEBUG] GET /submit.html
+[2017-08-01 19:59:47 +0000] [4376] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-01 19:59:47 +0000] [4379] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-01 19:59:47 +0000] [4372] [DEBUG] GET /static/images/instructions/tutorial0.png
+[2017-08-01 19:59:48 +0000] [4376] [DEBUG] GET /static/images/instructions/tutorial1.png
+[2017-08-01 19:59:49 +0000] [4380] [DEBUG] GET /static/images/instructions/tutorial2.png
+[2017-08-01 19:59:50 +0000] [4372] [DEBUG] GET /static/images/instructions/tutorial3.png
+[2017-08-01 19:59:50 +0000] [4379] [DEBUG] GET /static/images/instructions/tutorial4.png
+[2017-08-01 19:59:51 +0000] [4379] [DEBUG] GET /static/images/instructions/tutorial5.png
+[2017-08-01 19:59:51 +0000] [4376] [DEBUG] GET /static/images/instructions/tutorial6.png
+[2017-08-01 19:59:56 +0000] [4372] [DEBUG] GET /static/images/instructions/tutorial7.png
+[2017-08-01 19:59:57 +0000] [4372] [DEBUG] GET /static/images/instructions/tutorial8.png
+[2017-08-01 19:59:57 +0000] [4380] [DEBUG] GET /static/images/instructions/tutorial9.png
+[2017-08-01 19:59:58 +0000] [4382] [DEBUG] GET /static/images/instructions/tutorial10.png
+[2017-08-01 19:59:58 +0000] [4372] [DEBUG] GET /static/images/instructions/tutorial11.png
+[2017-08-01 20:00:09 +0000] [4383] [DEBUG] GET /static/images/highlighted/highlighted11.png
+[2017-08-01 20:00:09 +0000] [4372] [DEBUG] GET /static/css/images/ui-bg_highlight-soft_100_eeeeee_1x100.png
+[2017-08-01 20:00:09 +0000] [4379] [DEBUG] GET /static/css/images/ui-bg_glass_100_f6f6f6_1x400.png
+[2017-08-01 20:00:15 +0000] [4383] [DEBUG] GET /static/css/images/ui-bg_glass_65_ffffff_1x400.png
+[2017-08-01 20:00:15 +0000] [4381] [DEBUG] GET /static/css/images/ui-bg_glass_100_fdf5ce_1x400.png
+[2017-08-01 20:00:16 +0000] [4381] [DEBUG] GET /static/images/situations/situation11.png
+[2017-08-01 20:00:19 +0000] [4372] [DEBUG] GET /static/images/highlighted/highlighted16.png
+[2017-08-01 20:00:22 +0000] [4373] [DEBUG] GET /static/images/situations/situation16.png
+[2017-08-01 20:00:24 +0000] [4376] [DEBUG] GET /static/images/highlighted/highlighted12.png
+[2017-08-01 20:00:41 +0000] [4384] [DEBUG] GET /static/images/situations/situation12.png
+[2017-08-01 20:00:44 +0000] [4376] [DEBUG] GET /static/images/highlighted/highlighted4.png
+[2017-08-01 20:00:46 +0000] [4382] [DEBUG] GET /static/images/situations/situation4.png
+[2017-08-01 20:00:48 +0000] [4380] [DEBUG] GET /static/images/highlighted/highlighted21.png
+[2017-08-01 20:06:14 +0000] [4384] [DEBUG] GET /exp
+2017-08-01 20:06:14,964 Accessing /exp: debugL7FUUO debug87F4WO debug7MJGKO 
+[2017-08-01 20:06:14 +0000] [4376] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-01 20:06:14 +0000] [4380] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-01 20:06:14 +0000] [4379] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-01 20:06:14 +0000] [4384] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-01 20:06:14 +0000] [4383] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-01 20:06:15 +0000] [4382] [DEBUG] GET /static/lib/mustache.js
+[2017-08-01 20:06:15 +0000] [4373] [DEBUG] GET /static/css/general.css
+[2017-08-01 20:06:15 +0000] [4381] [DEBUG] GET /static/js/config.js
+[2017-08-01 20:06:15 +0000] [4372] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-01 20:06:15 +0000] [4383] [DEBUG] GET /static/js/utils.js
+[2017-08-01 20:06:15 +0000] [4376] [DEBUG] GET /static/js/psiturk.js
+[2017-08-01 20:06:15 +0000] [4381] [DEBUG] GET /static/js/task.js
+[2017-08-01 20:06:15 +0000] [4381] [DEBUG] GET /static/lib/underscore-min.map
+[2017-08-01 20:06:15 +0000] [4381] [DEBUG] GET /static/json/stim.json
+[2017-08-01 20:06:15 +0000] [4383] [DEBUG] GET /sync/debug7MJGKO%3Adebug87F4WO
+2017-08-01 20:06:15,132 GET /sync route with id: debug7MJGKO:debug87F4WO
+[2017-08-01 20:06:15 +0000] [4372] [DEBUG] GET /trial.html
+[2017-08-01 20:06:15 +0000] [4379] [DEBUG] GET /submit.html
+[2017-08-01 20:06:15 +0000] [4373] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-01 20:06:15 +0000] [4379] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-01 20:06:15 +0000] [4382] [DEBUG] GET /static/images/instructions/tutorial0.png
+[2017-08-01 20:06:16 +0000] [4380] [DEBUG] GET /static/images/instructions/tutorial1.png
+[2017-08-01 20:06:18 +0000] [4379] [DEBUG] GET /static/images/instructions/tutorial-1.png
+[2017-08-01 20:06:22 +0000] [4379] [DEBUG] GET /static/images/instructions/tutorial-1.png
+[2017-08-01 20:06:46 +0000] [4373] [DEBUG] GET /exp
+2017-08-01 20:06:46,084 Accessing /exp: debugL7FUUO debug87F4WO debug7MJGKO 
+[2017-08-01 20:06:46 +0000] [4372] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-01 20:06:46 +0000] [4383] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-01 20:06:46 +0000] [4382] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-01 20:06:46 +0000] [4376] [DEBUG] GET /static/lib/mustache.js
+[2017-08-01 20:06:46 +0000] [4380] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-01 20:06:46 +0000] [4381] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-01 20:06:46 +0000] [4383] [DEBUG] GET /static/css/general.css
+[2017-08-01 20:06:46 +0000] [4382] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-01 20:06:46 +0000] [4376] [DEBUG] GET /static/js/config.js
+[2017-08-01 20:06:46 +0000] [4372] [DEBUG] GET /static/js/utils.js
+[2017-08-01 20:06:46 +0000] [4383] [DEBUG] GET /static/js/psiturk.js
+[2017-08-01 20:06:46 +0000] [4382] [DEBUG] GET /static/js/task.js
+[2017-08-01 20:06:46 +0000] [4372] [DEBUG] GET /static/lib/underscore-min.map
+[2017-08-01 20:06:46 +0000] [4380] [DEBUG] GET /static/json/stim.json
+[2017-08-01 20:06:46 +0000] [4372] [DEBUG] GET /sync/debug7MJGKO%3Adebug87F4WO
+2017-08-01 20:06:46,257 GET /sync route with id: debug7MJGKO:debug87F4WO
+[2017-08-01 20:06:46 +0000] [4381] [DEBUG] GET /trial.html
+[2017-08-01 20:06:46 +0000] [4372] [DEBUG] GET /submit.html
+[2017-08-01 20:06:46 +0000] [4380] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-01 20:06:46 +0000] [4382] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-01 20:06:46 +0000] [4382] [DEBUG] GET /static/images/instructions/tutorial0.png
+[2017-08-01 20:06:47 +0000] [4372] [DEBUG] GET /static/images/instructions/tutorial1.png
+[2017-08-01 20:07:12 +0000] [4381] [DEBUG] GET /exp
+2017-08-01 20:07:12,666 Accessing /exp: debugL7FUUO debug87F4WO debug7MJGKO 
+[2017-08-01 20:07:12 +0000] [4384] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-01 20:07:12 +0000] [4373] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-01 20:07:12 +0000] [4379] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-01 20:07:12 +0000] [4384] [DEBUG] GET /static/css/general.css
+[2017-08-01 20:07:12 +0000] [4380] [DEBUG] GET /static/lib/mustache.js
+[2017-08-01 20:07:12 +0000] [4376] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-01 20:07:12 +0000] [4372] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-01 20:07:12 +0000] [4373] [DEBUG] GET /static/js/config.js
+[2017-08-01 20:07:12 +0000] [4382] [DEBUG] GET /static/js/utils.js
+[2017-08-01 20:07:12 +0000] [4384] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-01 20:07:12 +0000] [4376] [DEBUG] GET /static/js/psiturk.js
+[2017-08-01 20:07:12 +0000] [4379] [DEBUG] GET /static/js/task.js
+[2017-08-01 20:07:12 +0000] [4382] [DEBUG] GET /static/json/stim.json
+[2017-08-01 20:07:12 +0000] [4379] [DEBUG] GET /static/lib/underscore-min.map
+[2017-08-01 20:07:12 +0000] [4383] [DEBUG] GET /sync/debug7MJGKO%3Adebug87F4WO
+2017-08-01 20:07:12,833 GET /sync route with id: debug7MJGKO:debug87F4WO
+[2017-08-01 20:07:12 +0000] [4373] [DEBUG] GET /trial.html
+[2017-08-01 20:07:12 +0000] [4380] [DEBUG] GET /submit.html
+[2017-08-01 20:07:12 +0000] [4380] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-01 20:07:12 +0000] [4382] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-01 20:07:12 +0000] [4382] [DEBUG] GET /static/images/instructions/tutorial0.png
+[2017-08-01 20:07:14 +0000] [4380] [DEBUG] GET /static/images/instructions/tutorial1.png
+[2017-08-01 20:07:15 +0000] [4382] [DEBUG] GET /static/images/instructions/tutorial2.png
+[2017-08-01 20:07:16 +0000] [4384] [DEBUG] GET /static/images/instructions/tutorial3.png
+[2017-08-01 20:07:22 +0000] [4381] [DEBUG] GET /static/images/instructions/tutorial4.png
+[2017-08-01 20:07:22 +0000] [4382] [DEBUG] GET /static/images/instructions/tutorial5.png
+[2017-08-01 20:07:22 +0000] [4382] [DEBUG] GET /static/images/instructions/tutorial6.png
+[2017-08-01 20:07:22 +0000] [4383] [DEBUG] GET /static/images/instructions/tutorial7.png
+[2017-08-01 20:07:22 +0000] [4376] [DEBUG] GET /static/images/instructions/tutorial8.png
+[2017-08-01 20:07:23 +0000] [4372] [DEBUG] GET /static/images/instructions/tutorial9.png
+[2017-08-01 20:07:23 +0000] [4379] [DEBUG] GET /static/images/instructions/tutorial10.png
+[2017-08-01 20:07:23 +0000] [4376] [DEBUG] GET /static/images/instructions/tutorial11.png
+[2017-08-01 20:07:33 +0000] [4380] [DEBUG] GET /static/images/instructions/tutorial0.png
+[2017-08-01 20:07:34 +0000] [4372] [DEBUG] GET /static/images/instructions/tutorial1.png
+[2017-08-01 20:08:13 +0000] [4383] [DEBUG] GET /exp
+2017-08-01 20:08:13,622 Accessing /exp: debugL7FUUO debug87F4WO debug7MJGKO 
+[2017-08-01 20:08:13 +0000] [4380] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-01 20:08:13 +0000] [4379] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-01 20:08:13 +0000] [4373] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-01 20:08:13 +0000] [4382] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-01 20:08:13 +0000] [4380] [DEBUG] GET /static/css/general.css
+[2017-08-01 20:08:13 +0000] [4381] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-01 20:08:13 +0000] [4384] [DEBUG] GET /static/lib/mustache.js
+[2017-08-01 20:08:13 +0000] [4380] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-01 20:08:13 +0000] [4379] [DEBUG] GET /static/js/config.js
+[2017-08-01 20:08:13 +0000] [4372] [DEBUG] GET /static/js/utils.js
+[2017-08-01 20:08:13 +0000] [4373] [DEBUG] GET /static/js/psiturk.js
+[2017-08-01 20:08:13 +0000] [4384] [DEBUG] GET /static/js/task.js
+[2017-08-01 20:08:13 +0000] [4382] [DEBUG] GET /static/lib/underscore-min.map
+[2017-08-01 20:08:13 +0000] [4383] [DEBUG] GET /static/json/stim.json
+[2017-08-01 20:08:13 +0000] [4376] [DEBUG] GET /sync/debug7MJGKO%3Adebug87F4WO
+2017-08-01 20:08:13,783 GET /sync route with id: debug7MJGKO:debug87F4WO
+[2017-08-01 20:08:13 +0000] [4380] [DEBUG] GET /trial.html
+[2017-08-01 20:08:13 +0000] [4380] [DEBUG] GET /submit.html
+[2017-08-01 20:08:13 +0000] [4379] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-01 20:08:13 +0000] [4381] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-01 20:08:13 +0000] [4372] [DEBUG] GET /static/images/instructions/tutorial0.png
+[2017-08-01 20:08:14 +0000] [4380] [DEBUG] GET /static/images/instructions/tutorial1.png
+[2017-08-01 20:08:15 +0000] [4379] [DEBUG] GET /static/images/instructions/tutorial2.png
+[2017-08-01 20:08:15 +0000] [4380] [DEBUG] GET /static/images/instructions/tutorial3.png
+[2017-08-01 20:08:15 +0000] [4383] [DEBUG] GET /static/images/instructions/tutorial4.png
+[2017-08-01 20:08:16 +0000] [4373] [DEBUG] GET /static/images/instructions/tutorial5.png
+[2017-08-01 20:08:16 +0000] [4376] [DEBUG] GET /static/images/instructions/tutorial6.png
+[2017-08-01 20:08:16 +0000] [4381] [DEBUG] GET /static/images/instructions/tutorial7.png
+[2017-08-01 20:08:16 +0000] [4372] [DEBUG] GET /static/images/instructions/tutorial8.png
+[2017-08-01 20:08:17 +0000] [4372] [DEBUG] GET /static/images/instructions/tutorial9.png
+[2017-08-01 20:08:17 +0000] [4384] [DEBUG] GET /static/images/instructions/tutorial10.png
+[2017-08-01 20:08:17 +0000] [4383] [DEBUG] GET /static/images/instructions/tutorial11.png
+[2017-08-01 20:08:43 +0000] [4384] [INFO] Worker exiting (pid: 4384)
+[2017-08-01 20:08:43 +0000] [4382] [INFO] Worker exiting (pid: 4382)
+[2017-08-01 20:08:43 +0000] [4381] [INFO] Worker exiting (pid: 4381)
+[2017-08-01 20:08:43 +0000] [4367] [INFO] Handling signal: term
+[2017-08-01 20:08:43 +0000] [4379] [INFO] Worker exiting (pid: 4379)
+[2017-08-01 20:08:43 +0000] [4380] [INFO] Worker exiting (pid: 4380)
+[2017-08-01 20:08:43 +0000] [4373] [INFO] Worker exiting (pid: 4373)
+[2017-08-01 20:08:43 +0000] [4367] [INFO] Shutting down: Master
+[2017-08-02 00:54:20 +0000] [2088] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  statsd_host: None
+  max_requests_jitter: 0
+  post_fork: <function post_fork at 0x7fa323ab7de8>
+  pythonpath: None
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 3
+  suppress_ragged_eofs: True
+  syslog: False
+  syslog_facility: user
+  when_ready: <function when_ready at 0x7fa323ab7b18>
+  pre_fork: <function pre_fork at 0x7fa323ab7c80>
+  cert_reqs: 0
+  preload_app: False
+  keepalive: 2
+  accesslog: None
+  group: 1000
+  graceful_timeout: 30
+  do_handshake_on_connect: False
+  spew: False
+  workers: 9
+  proc_name: psiturk_experiment_server
+  sendfile: None
+  pidfile: None
+  umask: 0
+  on_reload: <function on_reload at 0x7fa323ab79b0>
+  pre_exec: <function pre_exec at 0x7fa323aca410>
+  worker_tmp_dir: None
+  post_worker_init: <function post_worker_init at 0x7fa323ab7f50>
+  limit_request_fields: 100
+  on_exit: <function on_exit at 0x7fa323b22410>
+  config: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x7fa323aca578>
+  post_request: <function post_request at 0x7fa323aca668>
+  user: 1000
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x7fa323aca140>
+  threads: 1
+  max_requests: 0
+  limit_request_line: 0
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  worker_exit: <function worker_exit at 0x7fa323aca7d0>
+  chdir: /home/nathalie/Research/unpacking_responsibility/src/experiment
+  paste: None
+  default_proc_name: gunicorn
+  errorlog: server.log
+  loglevel: debug
+  logconfig: None
+  syslog_addr: udp://localhost:514
+  syslog_prefix: None
+  daemon: False
+  ciphers: TLSv1
+  on_starting: <function on_starting at 0x7fa323ab7848>
+  worker_abort: <function worker_abort at 0x7fa323aca2a8>
+  bind: ['0.0.0.0:22362']
+  raw_env: []
+  reload: False
+  check_config: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x7fa323aca938>
+  timeout: 30
+  ca_certs: None
+  django_settings: None
+  tmp_upload_dir: None
+  keyfile: None
+  backlog: 2048
+  logger_class: gunicorn.glogging.Logger
+  statsd_prefix: 
+[2017-08-02 00:54:20 +0000] [2088] [INFO] Starting gunicorn 19.4.5
+[2017-08-02 00:54:20 +0000] [2088] [DEBUG] Arbiter booted
+[2017-08-02 00:54:20 +0000] [2088] [INFO] Listening at: http://0.0.0.0:22362 (2088)
+[2017-08-02 00:54:20 +0000] [2088] [INFO] Using worker: sync
+[2017-08-02 00:54:20 +0000] [2101] [INFO] Booting worker with pid: 2101
+[2017-08-02 00:54:20 +0000] [2102] [INFO] Booting worker with pid: 2102
+[2017-08-02 00:54:20 +0000] [2110] [INFO] Booting worker with pid: 2110
+[2017-08-02 00:54:20 +0000] [2113] [INFO] Booting worker with pid: 2113
+[2017-08-02 00:54:20 +0000] [2114] [INFO] Booting worker with pid: 2114
+[2017-08-02 00:54:20 +0000] [2115] [INFO] Booting worker with pid: 2115
+2017-08-02 00:54:20,645 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 00:54:20,646 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 00:54:20,661 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+[2017-08-02 00:54:20 +0000] [2118] [INFO] Booting worker with pid: 2118
+[2017-08-02 00:54:20 +0000] [2101] [DEBUG] Closing connection. 
+2017-08-02 00:54:20,699 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 00:54:20,700 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 00:54:20,707 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+[2017-08-02 00:54:20 +0000] [2121] [INFO] Booting worker with pid: 2121
+[2017-08-02 00:54:20 +0000] [2122] [INFO] Booting worker with pid: 2122
+[2017-08-02 00:54:20 +0000] [2088] [DEBUG] 9 workers
+2017-08-02 00:54:20,972 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 00:54:20,973 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 00:54:20,975 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 00:54:21,140 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 00:54:21,140 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 00:54:21,143 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 00:54:21,180 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 00:54:21,181 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 00:54:21,184 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 00:54:21,196 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 00:54:21,197 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 00:54:21,199 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 00:54:21,247 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 00:54:21,248 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 00:54:21,250 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 00:54:21,254 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 00:54:21,254 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 00:54:21,257 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 00:54:21,299 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 00:54:21,299 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 00:54:21,301 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+[2017-08-02 00:54:24 +0000] [2121] [DEBUG] Closing connection. 
+[2017-08-02 00:54:24 +0000] [2121] [DEBUG] Closing connection. 
+[2017-08-02 00:54:24 +0000] [2122] [DEBUG] Closing connection. 
+[2017-08-02 00:54:40 +0000] [2101] [DEBUG] GET /ad
+[2017-08-02 00:54:49 +0000] [2122] [DEBUG] Closing connection. 
+[2017-08-02 00:54:49 +0000] [2110] [DEBUG] Closing connection. 
+[2017-08-02 00:54:49 +0000] [2102] [DEBUG] GET /consent
+[2017-08-02 00:54:49 +0000] [2115] [DEBUG] Closing connection. 
+[2017-08-02 00:54:49 +0000] [2118] [DEBUG] Closing connection. 
+[2017-08-02 00:54:50 +0000] [2113] [DEBUG] GET /static/css/general.css
+[2017-08-02 00:54:50 +0000] [2115] [DEBUG] GET /static/js/utils.js
+[2017-08-02 00:55:01 +0000] [2122] [DEBUG] GET /exp
+2017-08-02 00:55:01,117 Accessing /exp: debug5VPXJP debugWGCVOL debug3D1DNY 
+2017-08-02 00:55:01,128 given Counter({(0, 0): 4}) chose (0, 0)
+[2017-08-02 00:55:01 +0000] [2114] [DEBUG] GET /static/css/general.css
+[2017-08-02 00:55:01 +0000] [2121] [DEBUG] GET /static/js/config.js
+[2017-08-02 00:55:01 +0000] [2115] [DEBUG] GET /static/js/utils.js
+[2017-08-02 00:55:01 +0000] [2110] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 00:55:01 +0000] [2118] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 00:55:01 +0000] [2115] [DEBUG] GET /ad
+[2017-08-02 00:55:01 +0000] [2118] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 00:55:01 +0000] [2110] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 00:55:01 +0000] [2114] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 00:55:01 +0000] [2114] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 00:55:01 +0000] [2115] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 00:55:01 +0000] [2115] [DEBUG] GET /static/js/task.js
+[2017-08-02 00:55:01 +0000] [2121] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 00:55:01 +0000] [2110] [DEBUG] GET /static/json/stim.json
+[2017-08-02 00:55:01 +0000] [2110] [DEBUG] GET /sync/debug3D1DNY%3AdebugWGCVOL
+2017-08-02 00:55:01,508 GET /sync route with id: debug3D1DNY:debugWGCVOL
+[2017-08-02 00:55:01 +0000] [2115] [DEBUG] GET /trial.html
+[2017-08-02 00:55:01 +0000] [2113] [DEBUG] GET /submit.html
+[2017-08-02 00:55:01 +0000] [2113] [DEBUG] GET /static/images/instructions/tutorial0.png
+[2017-08-02 00:55:01 +0000] [2121] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 00:55:01 +0000] [2113] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 00:55:04 +0000] [2122] [DEBUG] GET /static/images/instructions/tutorial1.png
+[2017-08-02 00:55:08 +0000] [2102] [DEBUG] GET /static/images/instructions/tutorial2.png
+[2017-08-02 00:55:09 +0000] [2121] [DEBUG] GET /static/images/instructions/tutorial3.png
+[2017-08-02 00:55:10 +0000] [2114] [DEBUG] GET /static/images/instructions/tutorial4.png
+[2017-08-02 00:55:10 +0000] [2114] [DEBUG] GET /static/images/instructions/tutorial5.png
+[2017-08-02 00:55:11 +0000] [2114] [DEBUG] GET /static/images/instructions/tutorial6.png
+[2017-08-02 00:55:11 +0000] [2101] [DEBUG] GET /static/images/instructions/tutorial7.png
+[2017-08-02 00:55:11 +0000] [2118] [DEBUG] GET /static/images/instructions/tutorial8.png
+[2017-08-02 00:55:11 +0000] [2118] [DEBUG] GET /static/images/instructions/tutorial9.png
+[2017-08-02 00:55:12 +0000] [2122] [DEBUG] GET /static/images/instructions/tutorial10.png
+[2017-08-02 00:55:12 +0000] [2102] [DEBUG] GET /static/images/instructions/tutorial11.png
+[2017-08-02 00:55:22 +0000] [2122] [DEBUG] GET /static/images/highlighted/highlighted3.png
+[2017-08-02 00:55:22 +0000] [2113] [DEBUG] GET /static/css/images/ui-bg_glass_100_f6f6f6_1x400.png
+[2017-08-02 00:55:22 +0000] [2101] [DEBUG] GET /static/css/images/ui-bg_highlight-soft_100_eeeeee_1x100.png
+[2017-08-02 00:55:25 +0000] [2102] [DEBUG] GET /static/css/images/ui-bg_glass_65_ffffff_1x400.png
+[2017-08-02 00:55:25 +0000] [2102] [DEBUG] GET /static/css/images/ui-bg_glass_100_fdf5ce_1x400.png
+[2017-08-02 00:55:26 +0000] [2122] [DEBUG] GET /static/images/situations/situation3.png
+[2017-08-02 00:55:29 +0000] [2113] [DEBUG] GET /static/images/highlighted/highlighted12.png
+[2017-08-02 00:55:55 +0000] [2121] [DEBUG] GET /static/images/situations/situation12.png
+[2017-08-02 00:55:58 +0000] [2122] [DEBUG] GET /static/images/highlighted/highlighted21.png
+[2017-08-02 00:56:00 +0000] [2121] [DEBUG] GET /static/images/situations/situation21.png
+[2017-08-02 00:56:23 +0000] [2110] [DEBUG] GET /exp
+2017-08-02 00:56:23,868 Accessing /exp: debug5VPXJP debugWGCVOL debug3D1DNY 
+[2017-08-02 00:56:23 +0000] [2121] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 00:56:23 +0000] [2102] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 00:56:23 +0000] [2101] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 00:56:23 +0000] [2115] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 00:56:23 +0000] [2118] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 00:56:23 +0000] [2122] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 00:56:23 +0000] [2113] [DEBUG] GET /static/css/general.css
+[2017-08-02 00:56:23 +0000] [2121] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 00:56:23 +0000] [2121] [DEBUG] GET /static/js/config.js
+[2017-08-02 00:56:23 +0000] [2113] [DEBUG] GET /static/js/utils.js
+[2017-08-02 00:56:23 +0000] [2115] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 00:56:23 +0000] [2115] [DEBUG] GET /static/js/task.js
+[2017-08-02 00:56:24 +0000] [2113] [DEBUG] GET /static/json/stim.json
+[2017-08-02 00:56:24 +0000] [2113] [DEBUG] GET /sync/debug3D1DNY%3AdebugWGCVOL
+2017-08-02 00:56:24,061 GET /sync route with id: debug3D1DNY:debugWGCVOL
+[2017-08-02 00:56:24 +0000] [2113] [DEBUG] GET /trial.html
+[2017-08-02 00:56:24 +0000] [2113] [DEBUG] GET /submit.html
+[2017-08-02 00:56:24 +0000] [2113] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 00:56:24 +0000] [2102] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 00:56:24 +0000] [2113] [DEBUG] GET /static/images/instructions/tutorial0.png
+[2017-08-02 00:56:24 +0000] [2114] [DEBUG] GET /favicon.ico
+[2017-08-02 00:56:25 +0000] [2114] [DEBUG] GET /static/images/instructions/tutorial1.png
+[2017-08-02 00:56:25 +0000] [2113] [DEBUG] GET /static/images/instructions/tutorial2.png
+[2017-08-02 00:56:26 +0000] [2102] [DEBUG] GET /static/images/instructions/tutorial3.png
+[2017-08-02 00:56:27 +0000] [2122] [DEBUG] GET /static/images/instructions/tutorial4.png
+[2017-08-02 00:56:27 +0000] [2114] [DEBUG] GET /static/images/instructions/tutorial5.png
+[2017-08-02 00:56:29 +0000] [2102] [DEBUG] GET /static/images/instructions/tutorial6.png
+[2017-08-02 00:56:29 +0000] [2121] [DEBUG] GET /static/images/instructions/tutorial7.png
+[2017-08-02 00:56:30 +0000] [2102] [DEBUG] GET /static/images/instructions/tutorial8.png
+[2017-08-02 00:56:31 +0000] [2102] [DEBUG] GET /static/images/instructions/tutorial9.png
+[2017-08-02 00:56:32 +0000] [2102] [DEBUG] GET /static/images/instructions/tutorial10.png
+[2017-08-02 00:56:33 +0000] [2115] [DEBUG] GET /static/images/instructions/tutorial11.png
+[2017-08-02 00:57:18 +0000] [2118] [DEBUG] GET /exp
+2017-08-02 00:57:18,573 Accessing /exp: debug5VPXJP debugWGCVOL debug3D1DNY 
+[2017-08-02 00:57:18 +0000] [2121] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 00:57:18 +0000] [2122] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 00:57:18 +0000] [2102] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 00:57:18 +0000] [2118] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 00:57:18 +0000] [2110] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 00:57:18 +0000] [2101] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 00:57:18 +0000] [2101] [DEBUG] GET /static/css/general.css
+[2017-08-02 00:57:18 +0000] [2113] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 00:57:18 +0000] [2121] [DEBUG] GET /static/js/config.js
+[2017-08-02 00:57:18 +0000] [2122] [DEBUG] GET /static/js/utils.js
+[2017-08-02 00:57:18 +0000] [2114] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 00:57:18 +0000] [2115] [DEBUG] GET /static/js/task.js
+[2017-08-02 00:57:18 +0000] [2102] [DEBUG] GET /static/json/stim.json
+[2017-08-02 00:57:18 +0000] [2122] [DEBUG] GET /sync/debug3D1DNY%3AdebugWGCVOL
+2017-08-02 00:57:18,706 GET /sync route with id: debug3D1DNY:debugWGCVOL
+[2017-08-02 00:57:18 +0000] [2122] [DEBUG] GET /trial.html
+[2017-08-02 00:57:18 +0000] [2102] [DEBUG] GET /submit.html
+[2017-08-02 00:57:18 +0000] [2110] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 00:57:18 +0000] [2121] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 00:57:18 +0000] [2101] [DEBUG] GET /static/images/instructions/tutorial0.png
+[2017-08-02 00:57:18 +0000] [2113] [DEBUG] GET /favicon.ico
+[2017-08-02 00:57:19 +0000] [2110] [DEBUG] GET /static/images/instructions/tutorial1.png
+[2017-08-02 00:57:20 +0000] [2113] [DEBUG] GET /static/images/instructions/tutorial2.png
+[2017-08-02 00:57:20 +0000] [2113] [DEBUG] GET /static/images/instructions/tutorial3.png
+[2017-08-02 00:57:21 +0000] [2115] [DEBUG] GET /static/images/instructions/tutorial4.png
+[2017-08-02 00:57:21 +0000] [2121] [DEBUG] GET /static/images/instructions/tutorial5.png
+[2017-08-02 00:57:21 +0000] [2114] [DEBUG] GET /static/images/instructions/tutorial6.png
+[2017-08-02 00:57:21 +0000] [2121] [DEBUG] GET /static/images/instructions/tutorial7.png
+[2017-08-02 00:57:21 +0000] [2118] [DEBUG] GET /static/images/instructions/tutorial8.png
+[2017-08-02 00:57:22 +0000] [2110] [DEBUG] GET /static/images/instructions/tutorial9.png
+[2017-08-02 00:57:22 +0000] [2118] [DEBUG] GET /static/images/instructions/tutorial10.png
+[2017-08-02 00:57:23 +0000] [2118] [DEBUG] GET /static/images/instructions/tutorial11.png
+[2017-08-02 00:57:45 +0000] [2110] [DEBUG] GET /exp
+2017-08-02 00:57:45,184 Accessing /exp: debug5VPXJP debugWGCVOL debug3D1DNY 
+[2017-08-02 00:57:45 +0000] [2122] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 00:57:45 +0000] [2121] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 00:57:45 +0000] [2102] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 00:57:45 +0000] [2115] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 00:57:45 +0000] [2101] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 00:57:45 +0000] [2118] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 00:57:45 +0000] [2115] [DEBUG] GET /static/css/general.css
+[2017-08-02 00:57:45 +0000] [2113] [DEBUG] GET /static/js/config.js
+[2017-08-02 00:57:45 +0000] [2102] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 00:57:45 +0000] [2114] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 00:57:45 +0000] [2122] [DEBUG] GET /static/js/utils.js
+[2017-08-02 00:57:45 +0000] [2101] [DEBUG] GET /static/js/task.js
+[2017-08-02 00:57:45 +0000] [2110] [DEBUG] GET /static/json/stim.json
+[2017-08-02 00:57:45 +0000] [2110] [DEBUG] GET /sync/debug3D1DNY%3AdebugWGCVOL
+2017-08-02 00:57:45,308 GET /sync route with id: debug3D1DNY:debugWGCVOL
+[2017-08-02 00:57:45 +0000] [2110] [DEBUG] GET /trial.html
+[2017-08-02 00:57:45 +0000] [2114] [DEBUG] GET /submit.html
+[2017-08-02 00:57:45 +0000] [2114] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 00:57:45 +0000] [2110] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 00:57:45 +0000] [2102] [DEBUG] GET /static/images/instructions/tutorial0.png
+[2017-08-02 00:57:45 +0000] [2101] [DEBUG] GET /favicon.ico
+[2017-08-02 00:57:46 +0000] [2122] [DEBUG] GET /static/images/instructions/tutorial1.png
+[2017-08-02 00:57:47 +0000] [2122] [DEBUG] GET /static/images/instructions/tutorial2.png
+[2017-08-02 00:57:47 +0000] [2121] [DEBUG] GET /static/images/instructions/tutorial3.png
+[2017-08-02 00:57:48 +0000] [2102] [DEBUG] GET /static/images/instructions/tutorial4.png
+[2017-08-02 00:57:48 +0000] [2113] [DEBUG] GET /static/images/instructions/tutorial5.png
+[2017-08-02 00:57:48 +0000] [2122] [DEBUG] GET /static/images/instructions/tutorial6.png
+[2017-08-02 00:57:48 +0000] [2115] [DEBUG] GET /static/images/instructions/tutorial7.png
+[2017-08-02 00:57:49 +0000] [2118] [DEBUG] GET /static/images/instructions/tutorial8.png
+[2017-08-02 00:57:49 +0000] [2115] [DEBUG] GET /static/images/instructions/tutorial9.png
+[2017-08-02 00:57:50 +0000] [2115] [DEBUG] GET /static/images/instructions/tutorial10.png
+[2017-08-02 00:57:50 +0000] [2118] [DEBUG] GET /static/images/instructions/tutorial11.png
+[2017-08-02 00:58:15 +0000] [2102] [DEBUG] GET /exp
+2017-08-02 00:58:15,272 Accessing /exp: debug5VPXJP debugWGCVOL debug3D1DNY 
+[2017-08-02 00:58:15 +0000] [2118] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 00:58:15 +0000] [2121] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 00:58:15 +0000] [2113] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 00:58:15 +0000] [2101] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 00:58:15 +0000] [2110] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 00:58:15 +0000] [2115] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 00:58:15 +0000] [2118] [DEBUG] GET /static/css/general.css
+[2017-08-02 00:58:15 +0000] [2114] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 00:58:15 +0000] [2121] [DEBUG] GET /static/js/config.js
+[2017-08-02 00:58:15 +0000] [2118] [DEBUG] GET /static/js/utils.js
+[2017-08-02 00:58:15 +0000] [2114] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 00:58:15 +0000] [2115] [DEBUG] GET /static/js/task.js
+[2017-08-02 00:58:15 +0000] [2102] [DEBUG] GET /static/json/stim.json
+[2017-08-02 00:58:15 +0000] [2101] [DEBUG] GET /sync/debug3D1DNY%3AdebugWGCVOL
+2017-08-02 00:58:15,398 GET /sync route with id: debug3D1DNY:debugWGCVOL
+[2017-08-02 00:58:15 +0000] [2115] [DEBUG] GET /trial.html
+[2017-08-02 00:58:15 +0000] [2121] [DEBUG] GET /submit.html
+[2017-08-02 00:58:15 +0000] [2101] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 00:58:15 +0000] [2114] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 00:58:15 +0000] [2121] [DEBUG] GET /static/images/instructions/tutorial0.png
+[2017-08-02 00:58:15 +0000] [2101] [DEBUG] GET /favicon.ico
+[2017-08-02 00:58:17 +0000] [2113] [DEBUG] GET /static/images/instructions/tutorial1.png
+[2017-08-02 00:58:18 +0000] [2113] [DEBUG] GET /static/images/instructions/tutorial2.png
+[2017-08-02 00:58:18 +0000] [2113] [DEBUG] GET /static/images/instructions/tutorial3.png
+[2017-08-02 00:58:19 +0000] [2115] [DEBUG] GET /static/images/instructions/tutorial4.png
+[2017-08-02 00:58:19 +0000] [2110] [DEBUG] GET /static/images/instructions/tutorial5.png
+[2017-08-02 00:58:20 +0000] [2110] [DEBUG] GET /static/images/instructions/tutorial6.png
+[2017-08-02 00:58:20 +0000] [2114] [DEBUG] GET /static/images/instructions/tutorial7.png
+[2017-08-02 00:58:21 +0000] [2101] [DEBUG] GET /static/images/instructions/tutorial8.png
+[2017-08-02 00:58:22 +0000] [2101] [DEBUG] GET /static/images/instructions/tutorial9.png
+[2017-08-02 00:58:22 +0000] [2122] [DEBUG] GET /static/images/instructions/tutorial10.png
+[2017-08-02 00:58:23 +0000] [2122] [DEBUG] GET /static/images/instructions/tutorial11.png
+[2017-08-02 00:58:36 +0000] [2118] [DEBUG] GET /exp
+2017-08-02 00:58:36,115 Accessing /exp: debug5VPXJP debugWGCVOL debug3D1DNY 
+[2017-08-02 00:58:36 +0000] [2101] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 00:58:36 +0000] [2121] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 00:58:36 +0000] [2114] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 00:58:36 +0000] [2110] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 00:58:36 +0000] [2115] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 00:58:36 +0000] [2102] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 00:58:36 +0000] [2121] [DEBUG] GET /static/css/general.css
+[2017-08-02 00:58:36 +0000] [2110] [DEBUG] GET /static/js/config.js
+[2017-08-02 00:58:36 +0000] [2115] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 00:58:36 +0000] [2102] [DEBUG] GET /static/js/utils.js
+[2017-08-02 00:58:36 +0000] [2122] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 00:58:36 +0000] [2113] [DEBUG] GET /static/js/task.js
+[2017-08-02 00:58:36 +0000] [2121] [DEBUG] GET /static/json/stim.json
+[2017-08-02 00:58:36 +0000] [2115] [DEBUG] GET /sync/debug3D1DNY%3AdebugWGCVOL
+2017-08-02 00:58:36,243 GET /sync route with id: debug3D1DNY:debugWGCVOL
+[2017-08-02 00:58:36 +0000] [2114] [DEBUG] GET /trial.html
+[2017-08-02 00:58:36 +0000] [2101] [DEBUG] GET /submit.html
+[2017-08-02 00:58:36 +0000] [2101] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 00:58:36 +0000] [2114] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 00:58:36 +0000] [2121] [DEBUG] GET /static/images/instructions/tutorial0.png
+[2017-08-02 00:58:36 +0000] [2118] [DEBUG] GET /favicon.ico
+[2017-08-02 00:58:37 +0000] [2114] [DEBUG] GET /static/images/instructions/tutorial1.png
+[2017-08-02 00:58:38 +0000] [2113] [DEBUG] GET /static/images/instructions/tutorial2.png
+[2017-08-02 00:58:39 +0000] [2110] [DEBUG] GET /static/images/instructions/tutorial3.png
+[2017-08-02 00:58:39 +0000] [2110] [DEBUG] GET /static/images/instructions/tutorial4.png
+[2017-08-02 00:58:39 +0000] [2121] [DEBUG] GET /static/images/instructions/tutorial5.png
+[2017-08-02 00:58:39 +0000] [2102] [DEBUG] GET /static/images/instructions/tutorial6.png
+[2017-08-02 00:58:39 +0000] [2121] [DEBUG] GET /static/images/instructions/tutorial7.png
+[2017-08-02 00:58:40 +0000] [2101] [DEBUG] GET /static/images/instructions/tutorial8.png
+[2017-08-02 00:58:40 +0000] [2101] [DEBUG] GET /static/images/instructions/tutorial9.png
+[2017-08-02 00:58:40 +0000] [2118] [DEBUG] GET /static/images/instructions/tutorial10.png
+[2017-08-02 00:58:41 +0000] [2118] [DEBUG] GET /static/images/instructions/tutorial11.png
+[2017-08-02 00:59:26 +0000] [2113] [DEBUG] GET /exp
+2017-08-02 00:59:26,241 Accessing /exp: debug5VPXJP debugWGCVOL debug3D1DNY 
+[2017-08-02 00:59:26 +0000] [2121] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 00:59:26 +0000] [2102] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 00:59:26 +0000] [2122] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 00:59:26 +0000] [2101] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 00:59:26 +0000] [2121] [DEBUG] GET /static/css/general.css
+[2017-08-02 00:59:26 +0000] [2115] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 00:59:26 +0000] [2118] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 00:59:26 +0000] [2102] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 00:59:26 +0000] [2122] [DEBUG] GET /static/js/utils.js
+[2017-08-02 00:59:26 +0000] [2115] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 00:59:26 +0000] [2121] [DEBUG] GET /static/js/config.js
+[2017-08-02 00:59:26 +0000] [2102] [DEBUG] GET /static/js/task.js
+[2017-08-02 00:59:26 +0000] [2115] [DEBUG] GET /static/json/stim.json
+[2017-08-02 00:59:26 +0000] [2114] [DEBUG] GET /sync/debug3D1DNY%3AdebugWGCVOL
+2017-08-02 00:59:26,380 GET /sync route with id: debug3D1DNY:debugWGCVOL
+[2017-08-02 00:59:26 +0000] [2122] [DEBUG] GET /trial.html
+[2017-08-02 00:59:26 +0000] [2121] [DEBUG] GET /submit.html
+[2017-08-02 00:59:26 +0000] [2101] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 00:59:26 +0000] [2113] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 00:59:26 +0000] [2110] [DEBUG] GET /static/images/instructions/tutorial0.png
+[2017-08-02 00:59:26 +0000] [2110] [DEBUG] GET /favicon.ico
+[2017-08-02 00:59:47 +0000] [2110] [DEBUG] GET /exp
+2017-08-02 00:59:47,433 Accessing /exp: debug5VPXJP debugWGCVOL debug3D1DNY 
+[2017-08-02 00:59:47 +0000] [2118] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 00:59:47 +0000] [2102] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 00:59:47 +0000] [2101] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 00:59:47 +0000] [2113] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 00:59:47 +0000] [2121] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 00:59:47 +0000] [2122] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 00:59:47 +0000] [2118] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 00:59:47 +0000] [2115] [DEBUG] GET /static/js/config.js
+[2017-08-02 00:59:47 +0000] [2121] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 00:59:47 +0000] [2102] [DEBUG] GET /static/css/general.css
+[2017-08-02 00:59:47 +0000] [2110] [DEBUG] GET /static/js/utils.js
+[2017-08-02 00:59:47 +0000] [2118] [DEBUG] GET /static/js/task.js
+[2017-08-02 00:59:47 +0000] [2114] [DEBUG] GET /static/json/stim.json
+[2017-08-02 00:59:47 +0000] [2118] [DEBUG] GET /sync/debug3D1DNY%3AdebugWGCVOL
+2017-08-02 00:59:47,561 GET /sync route with id: debug3D1DNY:debugWGCVOL
+[2017-08-02 00:59:47 +0000] [2115] [DEBUG] GET /trial.html
+[2017-08-02 00:59:47 +0000] [2115] [DEBUG] GET /submit.html
+[2017-08-02 00:59:47 +0000] [2113] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 00:59:47 +0000] [2110] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 00:59:47 +0000] [2115] [DEBUG] GET /favicon.ico
+[2017-08-02 01:00:21 +0000] [2101] [DEBUG] GET /exp
+2017-08-02 01:00:21,315 Accessing /exp: debug5VPXJP debugWGCVOL debug3D1DNY 
+[2017-08-02 01:00:21 +0000] [2101] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 01:00:21 +0000] [2113] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 01:00:21 +0000] [2114] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 01:00:21 +0000] [2115] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 01:00:21 +0000] [2102] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 01:00:21 +0000] [2118] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 01:00:21 +0000] [2113] [DEBUG] GET /static/css/general.css
+[2017-08-02 01:00:21 +0000] [2114] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 01:00:21 +0000] [2110] [DEBUG] GET /static/js/utils.js
+[2017-08-02 01:00:21 +0000] [2115] [DEBUG] GET /static/js/config.js
+[2017-08-02 01:00:21 +0000] [2122] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 01:00:21 +0000] [2113] [DEBUG] GET /static/js/task.js
+[2017-08-02 01:00:21 +0000] [2114] [DEBUG] GET /static/json/stim.json
+[2017-08-02 01:00:21 +0000] [2122] [DEBUG] GET /sync/debug3D1DNY%3AdebugWGCVOL
+2017-08-02 01:00:21,440 GET /sync route with id: debug3D1DNY:debugWGCVOL
+[2017-08-02 01:00:21 +0000] [2113] [DEBUG] GET /trial.html
+[2017-08-02 01:00:21 +0000] [2110] [DEBUG] GET /submit.html
+[2017-08-02 01:00:21 +0000] [2110] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 01:00:21 +0000] [2115] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 01:00:21 +0000] [2121] [DEBUG] GET /favicon.ico
+[2017-08-02 01:00:38 +0000] [2122] [DEBUG] GET /exp
+2017-08-02 01:00:38,963 Accessing /exp: debug5VPXJP debugWGCVOL debug3D1DNY 
+[2017-08-02 01:00:38 +0000] [2110] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 01:00:38 +0000] [2101] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 01:00:38 +0000] [2118] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 01:00:38 +0000] [2122] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 01:00:38 +0000] [2114] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 01:00:38 +0000] [2101] [DEBUG] GET /static/css/general.css
+[2017-08-02 01:00:38 +0000] [2121] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 01:00:38 +0000] [2102] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 01:00:38 +0000] [2114] [DEBUG] GET /static/js/config.js
+[2017-08-02 01:00:38 +0000] [2113] [DEBUG] GET /static/js/utils.js
+[2017-08-02 01:00:38 +0000] [2102] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 01:00:39 +0000] [2113] [DEBUG] GET /static/js/task.js
+[2017-08-02 01:00:39 +0000] [2115] [DEBUG] GET /static/json/stim.json
+[2017-08-02 01:00:39 +0000] [2102] [DEBUG] GET /sync/debug3D1DNY%3AdebugWGCVOL
+2017-08-02 01:00:39,089 GET /sync route with id: debug3D1DNY:debugWGCVOL
+[2017-08-02 01:00:39 +0000] [2115] [DEBUG] GET /trial.html
+[2017-08-02 01:00:39 +0000] [2121] [DEBUG] GET /submit.html
+[2017-08-02 01:00:39 +0000] [2121] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 01:00:39 +0000] [2115] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 01:00:39 +0000] [2101] [DEBUG] GET /favicon.ico
+[2017-08-02 01:01:01 +0000] [2102] [DEBUG] GET /exp
+2017-08-02 01:01:01,270 Accessing /exp: debug5VPXJP debugWGCVOL debug3D1DNY 
+[2017-08-02 01:01:01 +0000] [2121] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 01:01:01 +0000] [2114] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 01:01:01 +0000] [2101] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 01:01:01 +0000] [2110] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 01:01:01 +0000] [2122] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 01:01:01 +0000] [2114] [DEBUG] GET /static/css/general.css
+[2017-08-02 01:01:01 +0000] [2101] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 01:01:01 +0000] [2102] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 01:01:01 +0000] [2118] [DEBUG] GET /static/js/config.js
+[2017-08-02 01:01:01 +0000] [2101] [DEBUG] GET /static/js/utils.js
+[2017-08-02 01:01:01 +0000] [2114] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 01:01:01 +0000] [2115] [DEBUG] GET /static/js/task.js
+[2017-08-02 01:01:01 +0000] [2101] [DEBUG] GET /static/json/stim.json
+[2017-08-02 01:01:01 +0000] [2122] [DEBUG] GET /sync/debug3D1DNY%3AdebugWGCVOL
+2017-08-02 01:01:01,395 GET /sync route with id: debug3D1DNY:debugWGCVOL
+[2017-08-02 01:01:01 +0000] [2121] [DEBUG] GET /trial.html
+[2017-08-02 01:01:01 +0000] [2102] [DEBUG] GET /submit.html
+[2017-08-02 01:01:01 +0000] [2121] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 01:01:01 +0000] [2110] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 01:01:01 +0000] [2122] [DEBUG] GET /favicon.ico
+[2017-08-02 01:01:09 +0000] [2101] [DEBUG] GET /exp
+2017-08-02 01:01:09,544 Accessing /exp: debug5VPXJP debugWGCVOL debug3D1DNY 
+[2017-08-02 01:01:09 +0000] [2102] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 01:01:09 +0000] [2110] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 01:01:09 +0000] [2113] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 01:01:09 +0000] [2118] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 01:01:09 +0000] [2122] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 01:01:09 +0000] [2114] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 01:01:09 +0000] [2113] [DEBUG] GET /static/css/general.css
+[2017-08-02 01:01:09 +0000] [2102] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 01:01:09 +0000] [2110] [DEBUG] GET /static/js/config.js
+[2017-08-02 01:01:09 +0000] [2113] [DEBUG] GET /static/js/utils.js
+[2017-08-02 01:01:09 +0000] [2102] [DEBUG] GET /static/js/task.js
+[2017-08-02 01:01:09 +0000] [2115] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 01:01:09 +0000] [2102] [DEBUG] GET /static/json/stim.json
+[2017-08-02 01:01:09 +0000] [2121] [DEBUG] GET /sync/debug3D1DNY%3AdebugWGCVOL
+2017-08-02 01:01:09,643 GET /sync route with id: debug3D1DNY:debugWGCVOL
+[2017-08-02 01:01:09 +0000] [2102] [DEBUG] GET /trial.html
+[2017-08-02 01:01:09 +0000] [2110] [DEBUG] GET /submit.html
+[2017-08-02 01:01:09 +0000] [2118] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 01:01:09 +0000] [2115] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 01:01:09 +0000] [2121] [DEBUG] GET /favicon.ico
+[2017-08-02 01:02:54 +0000] [2114] [DEBUG] GET /exp
+2017-08-02 01:02:54,841 Accessing /exp: debug5VPXJP debugWGCVOL debug3D1DNY 
+[2017-08-02 01:02:54 +0000] [2118] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 01:02:54 +0000] [2122] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 01:02:54 +0000] [2114] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 01:02:54 +0000] [2101] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 01:02:54 +0000] [2121] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 01:02:54 +0000] [2110] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 01:02:54 +0000] [2114] [DEBUG] GET /static/css/general.css
+[2017-08-02 01:02:54 +0000] [2121] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 01:02:54 +0000] [2101] [DEBUG] GET /static/js/config.js
+[2017-08-02 01:02:54 +0000] [2122] [DEBUG] GET /static/js/utils.js
+[2017-08-02 01:02:54 +0000] [2102] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 01:02:54 +0000] [2122] [DEBUG] GET /static/js/task.js
+[2017-08-02 01:02:54 +0000] [2122] [DEBUG] GET /static/json/stim.json
+[2017-08-02 01:02:54 +0000] [2113] [DEBUG] GET /sync/debug3D1DNY%3AdebugWGCVOL
+2017-08-02 01:02:54,942 GET /sync route with id: debug3D1DNY:debugWGCVOL
+[2017-08-02 01:02:54 +0000] [2118] [DEBUG] GET /trial.html
+[2017-08-02 01:02:54 +0000] [2102] [DEBUG] GET /submit.html
+[2017-08-02 01:02:54 +0000] [2102] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 01:02:54 +0000] [2101] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 01:02:54 +0000] [2118] [DEBUG] GET /favicon.ico
+[2017-08-02 01:03:11 +0000] [2115] [DEBUG] GET /exp
+2017-08-02 01:03:11,570 Accessing /exp: debug5VPXJP debugWGCVOL debug3D1DNY 
+[2017-08-02 01:03:11 +0000] [2101] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 01:03:11 +0000] [2113] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 01:03:11 +0000] [2110] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 01:03:11 +0000] [2114] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 01:03:11 +0000] [2102] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 01:03:11 +0000] [2115] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 01:03:11 +0000] [2110] [DEBUG] GET /static/css/general.css
+[2017-08-02 01:03:11 +0000] [2113] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 01:03:11 +0000] [2122] [DEBUG] GET /static/js/config.js
+[2017-08-02 01:03:11 +0000] [2118] [DEBUG] GET /static/js/utils.js
+[2017-08-02 01:03:11 +0000] [2118] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 01:03:11 +0000] [2122] [DEBUG] GET /static/js/task.js
+[2017-08-02 01:03:11 +0000] [2122] [DEBUG] GET /static/json/stim.json
+[2017-08-02 01:03:11 +0000] [2121] [DEBUG] GET /sync/debug3D1DNY%3AdebugWGCVOL
+2017-08-02 01:03:11,701 GET /sync route with id: debug3D1DNY:debugWGCVOL
+[2017-08-02 01:03:11 +0000] [2121] [DEBUG] GET /trial.html
+[2017-08-02 01:03:11 +0000] [2118] [DEBUG] GET /submit.html
+[2017-08-02 01:03:11 +0000] [2118] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 01:03:11 +0000] [2102] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 01:03:11 +0000] [2122] [DEBUG] GET /favicon.ico
+[2017-08-02 01:03:23 +0000] [2114] [DEBUG] GET /exp
+2017-08-02 01:03:23,287 Accessing /exp: debug5VPXJP debugWGCVOL debug3D1DNY 
+[2017-08-02 01:03:23 +0000] [2122] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 01:03:23 +0000] [2115] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 01:03:23 +0000] [2101] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 01:03:23 +0000] [2113] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 01:03:23 +0000] [2122] [DEBUG] GET /static/css/general.css
+[2017-08-02 01:03:23 +0000] [2110] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 01:03:23 +0000] [2118] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 01:03:23 +0000] [2101] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 01:03:23 +0000] [2110] [DEBUG] GET /static/js/config.js
+[2017-08-02 01:03:23 +0000] [2121] [DEBUG] GET /static/js/utils.js
+[2017-08-02 01:03:23 +0000] [2115] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 01:03:23 +0000] [2110] [DEBUG] GET /static/js/task.js
+[2017-08-02 01:03:23 +0000] [2102] [DEBUG] GET /static/json/stim.json
+[2017-08-02 01:03:23 +0000] [2122] [DEBUG] GET /sync/debug3D1DNY%3AdebugWGCVOL
+2017-08-02 01:03:23,414 GET /sync route with id: debug3D1DNY:debugWGCVOL
+[2017-08-02 01:03:23 +0000] [2115] [DEBUG] GET /trial.html
+[2017-08-02 01:03:23 +0000] [2115] [DEBUG] GET /submit.html
+[2017-08-02 01:03:23 +0000] [2113] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 01:03:23 +0000] [2122] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 01:03:23 +0000] [2113] [DEBUG] GET /favicon.ico
+[2017-08-02 01:09:12 +0000] [2101] [DEBUG] GET /exp
+2017-08-02 01:09:12,011 Accessing /exp: debug5VPXJP debugWGCVOL debug3D1DNY 
+[2017-08-02 01:09:12 +0000] [2113] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 01:09:12 +0000] [2121] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 01:09:12 +0000] [2115] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 01:09:12 +0000] [2110] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 01:09:12 +0000] [2114] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 01:09:12 +0000] [2122] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 01:09:12 +0000] [2113] [DEBUG] GET /static/css/general.css
+[2017-08-02 01:09:12 +0000] [2102] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 01:09:12 +0000] [2115] [DEBUG] GET /static/js/config.js
+[2017-08-02 01:09:12 +0000] [2102] [DEBUG] GET /static/js/utils.js
+[2017-08-02 01:09:12 +0000] [2113] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 01:09:12 +0000] [2101] [DEBUG] GET /static/js/task.js
+[2017-08-02 01:09:12 +0000] [2114] [DEBUG] GET /static/json/stim.json
+[2017-08-02 01:09:12 +0000] [2113] [DEBUG] GET /sync/debug3D1DNY%3AdebugWGCVOL
+2017-08-02 01:09:12,155 GET /sync route with id: debug3D1DNY:debugWGCVOL
+[2017-08-02 01:09:12 +0000] [2114] [DEBUG] GET /trial.html
+[2017-08-02 01:09:12 +0000] [2118] [DEBUG] GET /submit.html
+[2017-08-02 01:09:12 +0000] [2118] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 01:09:12 +0000] [2122] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 01:09:12 +0000] [2113] [DEBUG] GET /favicon.ico
+[2017-08-02 01:10:36 +0000] [2121] [DEBUG] GET /exp
+2017-08-02 01:10:36,315 Accessing /exp: debug5VPXJP debugWGCVOL debug3D1DNY 
+[2017-08-02 01:10:36 +0000] [2113] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 01:10:36 +0000] [2121] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 01:10:36 +0000] [2122] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 01:10:36 +0000] [2110] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 01:10:36 +0000] [2115] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 01:10:36 +0000] [2113] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 01:10:36 +0000] [2110] [DEBUG] GET /static/css/general.css
+[2017-08-02 01:10:36 +0000] [2118] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 01:10:36 +0000] [2115] [DEBUG] GET /static/js/config.js
+[2017-08-02 01:10:36 +0000] [2110] [DEBUG] GET /static/js/utils.js
+[2017-08-02 01:10:36 +0000] [2101] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 01:10:36 +0000] [2122] [DEBUG] GET /static/js/task.js
+[2017-08-02 01:10:36 +0000] [2101] [DEBUG] GET /static/json/stim.json
+[2017-08-02 01:10:36 +0000] [2114] [DEBUG] GET /sync/debug3D1DNY%3AdebugWGCVOL
+2017-08-02 01:10:36,444 GET /sync route with id: debug3D1DNY:debugWGCVOL
+[2017-08-02 01:10:36 +0000] [2118] [DEBUG] GET /trial.html
+[2017-08-02 01:10:36 +0000] [2115] [DEBUG] GET /submit.html
+[2017-08-02 01:10:36 +0000] [2102] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 01:10:36 +0000] [2115] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 01:10:36 +0000] [2114] [DEBUG] GET /favicon.ico
+[2017-08-02 01:11:30 +0000] [2114] [DEBUG] GET /exp
+2017-08-02 01:11:30,737 Accessing /exp: debug5VPXJP debugWGCVOL debug3D1DNY 
+[2017-08-02 01:11:30 +0000] [2115] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 01:11:30 +0000] [2110] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 01:11:30 +0000] [2113] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 01:11:30 +0000] [2115] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 01:11:30 +0000] [2102] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 01:11:30 +0000] [2118] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 01:11:30 +0000] [2110] [DEBUG] GET /static/css/general.css
+[2017-08-02 01:11:30 +0000] [2122] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 01:11:30 +0000] [2113] [DEBUG] GET /static/js/config.js
+[2017-08-02 01:11:30 +0000] [2102] [DEBUG] GET /static/js/utils.js
+[2017-08-02 01:11:30 +0000] [2110] [DEBUG] GET /static/js/task.js
+[2017-08-02 01:11:30 +0000] [2121] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 01:11:30 +0000] [2113] [DEBUG] GET /static/json/stim.json
+[2017-08-02 01:11:30 +0000] [2114] [DEBUG] GET /sync/debug3D1DNY%3AdebugWGCVOL
+2017-08-02 01:11:30,864 GET /sync route with id: debug3D1DNY:debugWGCVOL
+[2017-08-02 01:11:30 +0000] [2102] [DEBUG] GET /trial.html
+[2017-08-02 01:11:30 +0000] [2113] [DEBUG] GET /submit.html
+[2017-08-02 01:11:30 +0000] [2110] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 01:11:30 +0000] [2122] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 01:11:30 +0000] [2114] [DEBUG] GET /favicon.ico
+[2017-08-02 01:17:15 +0000] [2122] [DEBUG] GET /exp
+2017-08-02 01:17:15,130 Accessing /exp: debug5VPXJP debugWGCVOL debug3D1DNY 
+[2017-08-02 01:17:15 +0000] [2102] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 01:17:15 +0000] [2110] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 01:17:15 +0000] [2121] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 01:17:15 +0000] [2114] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 01:17:15 +0000] [2115] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 01:17:15 +0000] [2118] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 01:17:15 +0000] [2121] [DEBUG] GET /static/css/general.css
+[2017-08-02 01:17:15 +0000] [2115] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 01:17:15 +0000] [2113] [DEBUG] GET /static/js/config.js
+[2017-08-02 01:17:15 +0000] [2110] [DEBUG] GET /static/js/utils.js
+[2017-08-02 01:17:15 +0000] [2114] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 01:17:15 +0000] [2102] [DEBUG] GET /static/js/task.js
+[2017-08-02 01:17:15 +0000] [2113] [DEBUG] GET /static/json/stim.json
+[2017-08-02 01:17:15 +0000] [2110] [DEBUG] GET /sync/debug3D1DNY%3AdebugWGCVOL
+2017-08-02 01:17:15,254 GET /sync route with id: debug3D1DNY:debugWGCVOL
+[2017-08-02 01:17:15 +0000] [2113] [DEBUG] GET /trial.html
+[2017-08-02 01:17:15 +0000] [2101] [DEBUG] GET /submit.html
+[2017-08-02 01:17:15 +0000] [2122] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 01:17:15 +0000] [2101] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 01:17:15 +0000] [2101] [DEBUG] GET /favicon.ico
+[2017-08-02 01:17:37 +0000] [2114] [DEBUG] GET /exp
+2017-08-02 01:17:37,863 Accessing /exp: debug5VPXJP debugWGCVOL debug3D1DNY 
+[2017-08-02 01:17:37 +0000] [2101] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 01:17:37 +0000] [2118] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 01:17:37 +0000] [2113] [DEBUG] GET /static/css/general.css
+[2017-08-02 01:17:37 +0000] [2115] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 01:17:37 +0000] [2114] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 01:17:37 +0000] [2122] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 01:17:37 +0000] [2121] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 01:17:37 +0000] [2110] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 01:17:37 +0000] [2118] [DEBUG] GET /static/js/config.js
+[2017-08-02 01:17:37 +0000] [2122] [DEBUG] GET /static/js/utils.js
+[2017-08-02 01:17:37 +0000] [2102] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 01:17:37 +0000] [2118] [DEBUG] GET /static/js/task.js
+[2017-08-02 01:17:37 +0000] [2115] [DEBUG] GET /static/json/stim.json
+[2017-08-02 01:17:37 +0000] [2113] [DEBUG] GET /sync/debug3D1DNY%3AdebugWGCVOL
+2017-08-02 01:17:37,985 GET /sync route with id: debug3D1DNY:debugWGCVOL
+[2017-08-02 01:17:37 +0000] [2121] [DEBUG] GET /trial.html
+[2017-08-02 01:17:37 +0000] [2113] [DEBUG] GET /submit.html
+[2017-08-02 01:17:38 +0000] [2101] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 01:17:38 +0000] [2113] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 01:17:38 +0000] [2113] [DEBUG] GET /favicon.ico
+[2017-08-02 01:17:50 +0000] [2113] [DEBUG] GET /exp
+2017-08-02 01:17:50,289 Accessing /exp: debug5VPXJP debugWGCVOL debug3D1DNY 
+[2017-08-02 01:17:50 +0000] [2115] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 01:17:50 +0000] [2110] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 01:17:50 +0000] [2101] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 01:17:50 +0000] [2114] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 01:17:50 +0000] [2122] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 01:17:50 +0000] [2121] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 01:17:50 +0000] [2110] [DEBUG] GET /static/css/general.css
+[2017-08-02 01:17:50 +0000] [2101] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 01:17:50 +0000] [2115] [DEBUG] GET /static/js/config.js
+[2017-08-02 01:17:50 +0000] [2114] [DEBUG] GET /static/js/utils.js
+[2017-08-02 01:17:50 +0000] [2102] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 01:17:50 +0000] [2115] [DEBUG] GET /static/js/task.js
+[2017-08-02 01:17:50 +0000] [2122] [DEBUG] GET /static/json/stim.json
+[2017-08-02 01:17:50 +0000] [2102] [DEBUG] GET /sync/debug3D1DNY%3AdebugWGCVOL
+2017-08-02 01:17:50,414 GET /sync route with id: debug3D1DNY:debugWGCVOL
+[2017-08-02 01:17:50 +0000] [2101] [DEBUG] GET /trial.html
+[2017-08-02 01:17:50 +0000] [2113] [DEBUG] GET /submit.html
+[2017-08-02 01:17:50 +0000] [2122] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 01:17:50 +0000] [2101] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 01:17:50 +0000] [2118] [DEBUG] GET /favicon.ico
+[2017-08-02 01:18:11 +0000] [2122] [DEBUG] GET /exp
+2017-08-02 01:18:11,269 Accessing /exp: debug5VPXJP debugWGCVOL debug3D1DNY 
+[2017-08-02 01:18:11 +0000] [2114] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 01:18:11 +0000] [2101] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 01:18:11 +0000] [2102] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 01:18:11 +0000] [2110] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 01:18:11 +0000] [2115] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 01:18:11 +0000] [2122] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 01:18:11 +0000] [2110] [DEBUG] GET /static/css/general.css
+[2017-08-02 01:18:11 +0000] [2102] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 01:18:11 +0000] [2121] [DEBUG] GET /static/js/config.js
+[2017-08-02 01:18:11 +0000] [2115] [DEBUG] GET /static/js/utils.js
+[2017-08-02 01:18:11 +0000] [2115] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 01:18:11 +0000] [2110] [DEBUG] GET /static/js/task.js
+[2017-08-02 01:18:11 +0000] [2114] [DEBUG] GET /static/json/stim.json
+[2017-08-02 01:18:11 +0000] [2118] [DEBUG] GET /sync/debug3D1DNY%3AdebugWGCVOL
+2017-08-02 01:18:11,390 GET /sync route with id: debug3D1DNY:debugWGCVOL
+[2017-08-02 01:18:11 +0000] [2113] [DEBUG] GET /trial.html
+[2017-08-02 01:18:11 +0000] [2115] [DEBUG] GET /submit.html
+[2017-08-02 01:18:11 +0000] [2113] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 01:18:11 +0000] [2122] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 01:18:11 +0000] [2121] [DEBUG] GET /favicon.ico
+[2017-08-02 01:23:16 +0000] [2121] [DEBUG] GET /exp
+2017-08-02 01:23:16,051 Accessing /exp: debug5VPXJP debugWGCVOL debug3D1DNY 
+[2017-08-02 01:23:16 +0000] [2118] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 01:23:16 +0000] [2101] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 01:23:16 +0000] [2114] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 01:23:16 +0000] [2122] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 01:23:16 +0000] [2101] [DEBUG] GET /static/css/general.css
+[2017-08-02 01:23:16 +0000] [2113] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 01:23:16 +0000] [2121] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 01:23:16 +0000] [2118] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 01:23:16 +0000] [2101] [DEBUG] GET /static/js/utils.js
+[2017-08-02 01:23:16 +0000] [2122] [DEBUG] GET /static/js/config.js
+[2017-08-02 01:23:16 +0000] [2102] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 01:23:16 +0000] [2118] [DEBUG] GET /static/js/task.js
+[2017-08-02 01:23:16 +0000] [2122] [DEBUG] GET /static/json/stim.json
+[2017-08-02 01:23:16 +0000] [2121] [DEBUG] GET /sync/debug3D1DNY%3AdebugWGCVOL
+2017-08-02 01:23:16,172 GET /sync route with id: debug3D1DNY:debugWGCVOL
+[2017-08-02 01:23:16 +0000] [2114] [DEBUG] GET /trial.html
+[2017-08-02 01:23:16 +0000] [2118] [DEBUG] GET /submit.html
+[2017-08-02 01:23:16 +0000] [2114] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 01:23:16 +0000] [2121] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 01:23:16 +0000] [2110] [DEBUG] GET /favicon.ico
+[2017-08-02 01:23:20 +0000] [2113] [DEBUG] GET /exp
+2017-08-02 01:23:20,566 Accessing /exp: debug5VPXJP debugWGCVOL debug3D1DNY 
+[2017-08-02 01:23:20 +0000] [2121] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 01:23:20 +0000] [2110] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 01:23:20 +0000] [2114] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 01:23:20 +0000] [2101] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 01:23:20 +0000] [2115] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 01:23:20 +0000] [2102] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 01:23:20 +0000] [2115] [DEBUG] GET /static/css/general.css
+[2017-08-02 01:23:20 +0000] [2113] [DEBUG] GET /static/js/config.js
+[2017-08-02 01:23:20 +0000] [2110] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 01:23:20 +0000] [2121] [DEBUG] GET /static/js/utils.js
+[2017-08-02 01:23:20 +0000] [2115] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 01:23:20 +0000] [2114] [DEBUG] GET /static/js/task.js
+[2017-08-02 01:23:20 +0000] [2114] [DEBUG] GET /static/json/stim.json
+[2017-08-02 01:23:20 +0000] [2110] [DEBUG] GET /sync/debug3D1DNY%3AdebugWGCVOL
+2017-08-02 01:23:20,658 GET /sync route with id: debug3D1DNY:debugWGCVOL
+[2017-08-02 01:23:20 +0000] [2102] [DEBUG] GET /trial.html
+[2017-08-02 01:23:20 +0000] [2110] [DEBUG] GET /submit.html
+[2017-08-02 01:23:20 +0000] [2114] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 01:23:20 +0000] [2113] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 01:23:20 +0000] [2113] [DEBUG] GET /favicon.ico
+[2017-08-02 01:23:35 +0000] [2110] [DEBUG] Closing connection. 
+[2017-08-02 01:23:37 +0000] [2101] [DEBUG] Closing connection. 
+[2017-08-02 01:23:37 +0000] [2114] [DEBUG] Closing connection. 
+[2017-08-02 01:23:37 +0000] [2114] [DEBUG] GET /ppid
+[2017-08-02 01:23:37 +0000] [2101] [INFO] Parent changed, shutting down: <Worker 2101>
+[2017-08-02 01:23:37 +0000] [2102] [INFO] Parent changed, shutting down: <Worker 2102>
+[2017-08-02 01:23:37 +0000] [2114] [DEBUG] Closing connection. 
+[2017-08-02 01:23:37 +0000] [2101] [INFO] Worker exiting (pid: 2101)
+[2017-08-02 01:23:37 +0000] [2102] [INFO] Worker exiting (pid: 2102)
+[2017-08-02 01:23:37 +0000] [2114] [INFO] Parent changed, shutting down: <Worker 2114>
+[2017-08-02 01:23:37 +0000] [2114] [INFO] Worker exiting (pid: 2114)
+[2017-08-02 01:23:38 +0000] [2121] [INFO] Parent changed, shutting down: <Worker 2121>
+[2017-08-02 01:23:38 +0000] [2115] [DEBUG] Closing connection. 
+[2017-08-02 01:23:38 +0000] [2121] [INFO] Worker exiting (pid: 2121)
+[2017-08-02 01:23:38 +0000] [2115] [INFO] Parent changed, shutting down: <Worker 2115>
+[2017-08-02 01:23:38 +0000] [2115] [INFO] Worker exiting (pid: 2115)
+[2017-08-02 01:23:38 +0000] [2122] [DEBUG] Closing connection. 
+[2017-08-02 01:23:38 +0000] [2118] [INFO] Parent changed, shutting down: <Worker 2118>
+[2017-08-02 01:23:38 +0000] [2118] [INFO] Worker exiting (pid: 2118)
+[2017-08-02 01:23:38 +0000] [2122] [INFO] Parent changed, shutting down: <Worker 2122>
+[2017-08-02 01:23:38 +0000] [2122] [INFO] Worker exiting (pid: 2122)
+[2017-08-02 01:23:39 +0000] [2110] [INFO] Parent changed, shutting down: <Worker 2110>
+[2017-08-02 01:23:39 +0000] [2113] [DEBUG] Closing connection. 
+[2017-08-02 01:23:39 +0000] [2110] [INFO] Worker exiting (pid: 2110)
+[2017-08-02 01:23:39 +0000] [2113] [INFO] Parent changed, shutting down: <Worker 2113>
+[2017-08-02 01:23:39 +0000] [2113] [INFO] Worker exiting (pid: 2113)
+[2017-08-02 01:23:43 +0000] [3188] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  statsd_host: None
+  max_requests_jitter: 0
+  post_fork: <function post_fork at 0x7f80f0feade8>
+  pythonpath: None
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 3
+  suppress_ragged_eofs: True
+  syslog: False
+  syslog_facility: user
+  when_ready: <function when_ready at 0x7f80f0feab18>
+  pre_fork: <function pre_fork at 0x7f80f0feac80>
+  cert_reqs: 0
+  preload_app: False
+  keepalive: 2
+  accesslog: None
+  group: 1000
+  graceful_timeout: 30
+  do_handshake_on_connect: False
+  spew: False
+  workers: 9
+  proc_name: psiturk_experiment_server
+  sendfile: None
+  pidfile: None
+  umask: 0
+  on_reload: <function on_reload at 0x7f80f0fea9b0>
+  pre_exec: <function pre_exec at 0x7f80f0ff3410>
+  worker_tmp_dir: None
+  post_worker_init: <function post_worker_init at 0x7f80f0feaf50>
+  limit_request_fields: 100
+  on_exit: <function on_exit at 0x7f80f1048410>
+  config: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x7f80f0ff3578>
+  post_request: <function post_request at 0x7f80f0ff3668>
+  user: 1000
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x7f80f0ff3140>
+  threads: 1
+  max_requests: 0
+  limit_request_line: 0
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  worker_exit: <function worker_exit at 0x7f80f0ff37d0>
+  chdir: /home/nathalie/Research/unpacking_responsibility/src/experiment
+  paste: None
+  default_proc_name: gunicorn
+  errorlog: server.log
+  loglevel: debug
+  logconfig: None
+  syslog_addr: udp://localhost:514
+  syslog_prefix: None
+  daemon: False
+  ciphers: TLSv1
+  on_starting: <function on_starting at 0x7f80f0fea848>
+  worker_abort: <function worker_abort at 0x7f80f0ff32a8>
+  bind: ['0.0.0.0:22362']
+  raw_env: []
+  reload: False
+  check_config: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x7f80f0ff3938>
+  timeout: 30
+  ca_certs: None
+  django_settings: None
+  tmp_upload_dir: None
+  keyfile: None
+  backlog: 2048
+  logger_class: gunicorn.glogging.Logger
+  statsd_prefix: 
+[2017-08-02 01:23:43 +0000] [3188] [INFO] Starting gunicorn 19.4.5
+[2017-08-02 01:23:43 +0000] [3188] [DEBUG] Arbiter booted
+[2017-08-02 01:23:43 +0000] [3188] [INFO] Listening at: http://0.0.0.0:22362 (3188)
+[2017-08-02 01:23:43 +0000] [3188] [INFO] Using worker: sync
+[2017-08-02 01:23:43 +0000] [3193] [INFO] Booting worker with pid: 3193
+[2017-08-02 01:23:43 +0000] [3196] [INFO] Booting worker with pid: 3196
+[2017-08-02 01:23:43 +0000] [3197] [INFO] Booting worker with pid: 3197
+2017-08-02 01:23:43,882 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 01:23:43,882 Hmm... it seems no custom code (custom.py) associated                         with this project.
+[2017-08-02 01:23:43 +0000] [3199] [INFO] Booting worker with pid: 3199
+2017-08-02 01:23:43,885 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+[2017-08-02 01:23:43 +0000] [3203] [INFO] Booting worker with pid: 3203
+[2017-08-02 01:23:43 +0000] [3204] [INFO] Booting worker with pid: 3204
+[2017-08-02 01:23:43 +0000] [3205] [INFO] Booting worker with pid: 3205
+[2017-08-02 01:23:44 +0000] [3206] [INFO] Booting worker with pid: 3206
+[2017-08-02 01:23:44 +0000] [3188] [DEBUG] 9 workers
+[2017-08-02 01:23:44 +0000] [3207] [INFO] Booting worker with pid: 3207
+2017-08-02 01:23:44,109 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 01:23:44,109 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 01:23:44,112 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 01:23:44,316 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 01:23:44,316 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 01:23:44,319 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 01:23:44,482 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 01:23:44,482 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 01:23:44,485 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 01:23:44,596 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 01:23:44,596 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 01:23:44,599 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 01:23:44,600 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 01:23:44,601 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 01:23:44,603 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 01:23:44,614 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 01:23:44,614 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 01:23:44,617 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 01:23:44,623 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 01:23:44,623 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 01:23:44,625 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 01:23:44,629 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 01:23:44,629 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 01:23:44,631 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+[2017-08-02 01:23:45 +0000] [3204] [DEBUG] Closing connection. 
+[2017-08-02 01:23:47 +0000] [3206] [DEBUG] Closing connection. 
+[2017-08-02 01:23:47 +0000] [3206] [DEBUG] Closing connection. 
+[2017-08-02 01:23:47 +0000] [3206] [DEBUG] Closing connection. 
+[2017-08-02 01:23:47 +0000] [3207] [DEBUG] GET /ad
+[2017-08-02 01:23:48 +0000] [3206] [DEBUG] GET /consent
+[2017-08-02 01:23:48 +0000] [3207] [DEBUG] GET /static/js/utils.js
+[2017-08-02 01:23:48 +0000] [3196] [DEBUG] GET /static/css/general.css
+[2017-08-02 01:23:49 +0000] [3206] [DEBUG] GET /exp
+2017-08-02 01:23:49,500 Accessing /exp: debugUNWK91 debugTI0XAP debug7E9TYD 
+2017-08-02 01:23:49,508 given Counter({(0, 0): 5}) chose (0, 0)
+[2017-08-02 01:23:49 +0000] [3206] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 01:23:49 +0000] [3203] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 01:23:49 +0000] [3197] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 01:23:49 +0000] [3205] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 01:23:49 +0000] [3199] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 01:23:49 +0000] [3207] [DEBUG] GET /static/js/config.js
+[2017-08-02 01:23:49 +0000] [3206] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 01:23:49 +0000] [3207] [DEBUG] GET /static/js/task.js
+[2017-08-02 01:23:49 +0000] [3204] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 01:23:49 +0000] [3196] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 01:23:49 +0000] [3193] [DEBUG] GET /ad
+[2017-08-02 01:23:49 +0000] [3204] [DEBUG] GET /static/json/stim.json
+[2017-08-02 01:23:49 +0000] [3204] [DEBUG] GET /sync/debug7E9TYD%3AdebugTI0XAP
+2017-08-02 01:23:49,800 GET /sync route with id: debug7E9TYD:debugTI0XAP
+[2017-08-02 01:23:49 +0000] [3204] [DEBUG] GET /trial.html
+[2017-08-02 01:23:49 +0000] [3207] [DEBUG] GET /submit.html
+[2017-08-02 01:23:49 +0000] [3196] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 01:23:49 +0000] [3205] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 01:26:07 +0000] [3197] [DEBUG] GET /exp
+2017-08-02 01:26:07,542 Accessing /exp: debugUNWK91 debugTI0XAP debug7E9TYD 
+[2017-08-02 01:26:07 +0000] [3203] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 01:26:07 +0000] [3206] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 01:26:07 +0000] [3204] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 01:26:07 +0000] [3199] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 01:26:07 +0000] [3205] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 01:26:07 +0000] [3207] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 01:26:07 +0000] [3196] [DEBUG] GET /static/css/general.css
+[2017-08-02 01:26:07 +0000] [3207] [DEBUG] GET /static/js/config.js
+[2017-08-02 01:26:07 +0000] [3205] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 01:26:07 +0000] [3199] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 01:26:07 +0000] [3206] [DEBUG] GET /static/js/utils.js
+[2017-08-02 01:26:07 +0000] [3207] [DEBUG] GET /static/js/task.js
+[2017-08-02 01:26:07 +0000] [3204] [DEBUG] GET /static/json/stim.json
+[2017-08-02 01:26:07 +0000] [3204] [DEBUG] GET /sync/debug7E9TYD%3AdebugTI0XAP
+2017-08-02 01:26:07,701 GET /sync route with id: debug7E9TYD:debugTI0XAP
+[2017-08-02 01:26:07 +0000] [3203] [DEBUG] GET /trial.html
+[2017-08-02 01:26:07 +0000] [3206] [DEBUG] GET /submit.html
+[2017-08-02 01:26:07 +0000] [3196] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 01:26:07 +0000] [3193] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 01:26:07 +0000] [3193] [DEBUG] GET /favicon.ico
+[2017-08-02 01:28:08 +0000] [3207] [DEBUG] GET /exp
+2017-08-02 01:28:08,323 Accessing /exp: debugUNWK91 debugTI0XAP debug7E9TYD 
+[2017-08-02 01:28:08 +0000] [3205] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 01:28:08 +0000] [3193] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 01:28:08 +0000] [3203] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 01:28:08 +0000] [3206] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 01:28:08 +0000] [3205] [DEBUG] GET /static/css/general.css
+[2017-08-02 01:28:08 +0000] [3196] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 01:28:08 +0000] [3203] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 01:28:08 +0000] [3204] [DEBUG] GET /static/js/config.js
+[2017-08-02 01:28:08 +0000] [3205] [DEBUG] GET /static/js/utils.js
+[2017-08-02 01:28:08 +0000] [3203] [DEBUG] GET /static/js/task.js
+[2017-08-02 01:28:08 +0000] [3197] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 01:28:08 +0000] [3207] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 01:28:08 +0000] [3193] [DEBUG] GET /static/json/stim.json
+[2017-08-02 01:28:08 +0000] [3203] [DEBUG] GET /sync/debug7E9TYD%3AdebugTI0XAP
+2017-08-02 01:28:08,470 GET /sync route with id: debug7E9TYD:debugTI0XAP
+[2017-08-02 01:28:08 +0000] [3206] [DEBUG] GET /trial.html
+[2017-08-02 01:28:08 +0000] [3199] [DEBUG] GET /submit.html
+[2017-08-02 01:28:08 +0000] [3204] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 01:28:08 +0000] [3203] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 01:28:08 +0000] [3199] [DEBUG] GET /favicon.ico
+[2017-08-02 01:28:26 +0000] [3199] [DEBUG] GET /exp
+2017-08-02 01:28:26,166 Accessing /exp: debugUNWK91 debugTI0XAP debug7E9TYD 
+[2017-08-02 01:28:26 +0000] [3196] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 01:28:26 +0000] [3197] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 01:28:26 +0000] [3204] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 01:28:26 +0000] [3203] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 01:28:26 +0000] [3205] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 01:28:26 +0000] [3206] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 01:28:26 +0000] [3193] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 01:28:26 +0000] [3204] [DEBUG] GET /static/css/general.css
+[2017-08-02 01:28:26 +0000] [3203] [DEBUG] GET /static/js/config.js
+[2017-08-02 01:28:26 +0000] [3193] [DEBUG] GET /static/js/utils.js
+[2017-08-02 01:28:26 +0000] [3206] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 01:28:26 +0000] [3196] [DEBUG] GET /static/js/task.js
+[2017-08-02 01:28:26 +0000] [3204] [DEBUG] GET /static/json/stim.json
+[2017-08-02 01:28:26 +0000] [3196] [DEBUG] GET /sync/debug7E9TYD%3AdebugTI0XAP
+2017-08-02 01:28:26,294 GET /sync route with id: debug7E9TYD:debugTI0XAP
+[2017-08-02 01:28:26 +0000] [3193] [DEBUG] GET /trial.html
+[2017-08-02 01:28:26 +0000] [3205] [DEBUG] GET /submit.html
+[2017-08-02 01:28:26 +0000] [3196] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 01:28:26 +0000] [3205] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 01:28:26 +0000] [3205] [DEBUG] GET /favicon.ico
+[2017-08-02 01:28:52 +0000] [3193] [DEBUG] GET /exp
+2017-08-02 01:28:52,522 Accessing /exp: debugUNWK91 debugTI0XAP debug7E9TYD 
+[2017-08-02 01:28:52 +0000] [3199] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 01:28:52 +0000] [3197] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 01:28:52 +0000] [3204] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 01:28:52 +0000] [3206] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 01:28:52 +0000] [3205] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 01:28:52 +0000] [3203] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 01:28:52 +0000] [3199] [DEBUG] GET /static/css/general.css
+[2017-08-02 01:28:52 +0000] [3206] [DEBUG] GET /static/js/utils.js
+[2017-08-02 01:28:52 +0000] [3204] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 01:28:52 +0000] [3207] [DEBUG] GET /static/js/config.js
+[2017-08-02 01:28:52 +0000] [3199] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 01:28:52 +0000] [3204] [DEBUG] GET /static/js/task.js
+[2017-08-02 01:28:52 +0000] [3199] [DEBUG] GET /static/json/stim.json
+[2017-08-02 01:28:52 +0000] [3199] [DEBUG] GET /sync/debug7E9TYD%3AdebugTI0XAP
+2017-08-02 01:28:52,651 GET /sync route with id: debug7E9TYD:debugTI0XAP
+[2017-08-02 01:28:52 +0000] [3199] [DEBUG] GET /trial.html
+[2017-08-02 01:28:52 +0000] [3193] [DEBUG] GET /submit.html
+[2017-08-02 01:28:52 +0000] [3193] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 01:28:52 +0000] [3197] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 01:28:52 +0000] [3197] [DEBUG] GET /favicon.ico
+[2017-08-02 01:29:06 +0000] [3196] [DEBUG] GET /exp
+2017-08-02 01:29:06,490 Accessing /exp: debugUNWK91 debugTI0XAP debug7E9TYD 
+[2017-08-02 01:29:06 +0000] [3203] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 01:29:06 +0000] [3205] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 01:29:06 +0000] [3206] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 01:29:06 +0000] [3199] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 01:29:06 +0000] [3196] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 01:29:06 +0000] [3193] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 01:29:06 +0000] [3196] [DEBUG] GET /static/css/general.css
+[2017-08-02 01:29:06 +0000] [3205] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 01:29:06 +0000] [3206] [DEBUG] GET /static/js/config.js
+[2017-08-02 01:29:06 +0000] [3199] [DEBUG] GET /static/js/utils.js
+[2017-08-02 01:29:06 +0000] [3197] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 01:29:06 +0000] [3203] [DEBUG] GET /static/js/task.js
+[2017-08-02 01:29:06 +0000] [3206] [DEBUG] GET /static/json/stim.json
+[2017-08-02 01:29:06 +0000] [3193] [DEBUG] GET /sync/debug7E9TYD%3AdebugTI0XAP
+2017-08-02 01:29:06,623 GET /sync route with id: debug7E9TYD:debugTI0XAP
+[2017-08-02 01:29:06 +0000] [3203] [DEBUG] GET /trial.html
+[2017-08-02 01:29:06 +0000] [3205] [DEBUG] GET /submit.html
+[2017-08-02 01:29:06 +0000] [3205] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 01:29:06 +0000] [3203] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 01:29:06 +0000] [3199] [DEBUG] GET /favicon.ico
+[2017-08-02 01:29:18 +0000] [3199] [DEBUG] GET /exp
+2017-08-02 01:29:18,160 Accessing /exp: debugUNWK91 debugTI0XAP debug7E9TYD 
+[2017-08-02 01:29:18 +0000] [3204] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 01:29:18 +0000] [3206] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 01:29:18 +0000] [3196] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 01:29:18 +0000] [3204] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 01:29:18 +0000] [3205] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 01:29:18 +0000] [3206] [DEBUG] GET /static/css/general.css
+[2017-08-02 01:29:18 +0000] [3203] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 01:29:18 +0000] [3207] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 01:29:18 +0000] [3196] [DEBUG] GET /static/js/config.js
+[2017-08-02 01:29:18 +0000] [3193] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 01:29:18 +0000] [3197] [DEBUG] GET /static/js/task.js
+[2017-08-02 01:29:18 +0000] [3199] [DEBUG] GET /static/js/utils.js
+[2017-08-02 01:29:18 +0000] [3196] [DEBUG] GET /static/json/stim.json
+[2017-08-02 01:29:18 +0000] [3196] [DEBUG] GET /sync/debug7E9TYD%3AdebugTI0XAP
+2017-08-02 01:29:18,285 GET /sync route with id: debug7E9TYD:debugTI0XAP
+[2017-08-02 01:29:18 +0000] [3207] [DEBUG] GET /trial.html
+[2017-08-02 01:29:18 +0000] [3196] [DEBUG] GET /submit.html
+[2017-08-02 01:29:18 +0000] [3207] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 01:29:18 +0000] [3197] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 01:29:18 +0000] [3205] [DEBUG] GET /favicon.ico
+[2017-08-02 01:29:31 +0000] [3206] [DEBUG] GET /exp
+2017-08-02 01:29:31,518 Accessing /exp: debugUNWK91 debugTI0XAP debug7E9TYD 
+[2017-08-02 01:29:31 +0000] [3207] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 01:29:31 +0000] [3196] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 01:29:31 +0000] [3199] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 01:29:31 +0000] [3204] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 01:29:31 +0000] [3206] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 01:29:31 +0000] [3193] [DEBUG] GET /static/css/general.css
+[2017-08-02 01:29:31 +0000] [3203] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 01:29:31 +0000] [3205] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 01:29:31 +0000] [3207] [DEBUG] GET /static/js/config.js
+[2017-08-02 01:29:31 +0000] [3204] [DEBUG] GET /static/js/utils.js
+[2017-08-02 01:29:31 +0000] [3206] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 01:29:31 +0000] [3196] [DEBUG] GET /static/js/task.js
+[2017-08-02 01:29:31 +0000] [3206] [DEBUG] GET /static/json/stim.json
+[2017-08-02 01:29:31 +0000] [3204] [DEBUG] GET /sync/debug7E9TYD%3AdebugTI0XAP
+2017-08-02 01:29:31,643 GET /sync route with id: debug7E9TYD:debugTI0XAP
+[2017-08-02 01:29:31 +0000] [3197] [DEBUG] GET /trial.html
+[2017-08-02 01:29:31 +0000] [3199] [DEBUG] GET /submit.html
+[2017-08-02 01:29:31 +0000] [3199] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 01:29:31 +0000] [3197] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 01:29:31 +0000] [3199] [DEBUG] GET /favicon.ico
+[2017-08-02 01:40:19 +0000] [3196] [DEBUG] GET /static/css/images/ui-bg_highlight-soft_100_eeeeee_1x100.png
+[2017-08-02 01:40:19 +0000] [3203] [DEBUG] GET /static/css/images/ui-bg_glass_100_f6f6f6_1x400.png
+[2017-08-02 01:40:19 +0000] [3199] [DEBUG] GET /static/images/highlighted/highlighted21.png
+[2017-08-02 01:41:25 +0000] [3199] [DEBUG] GET /exp
+2017-08-02 01:41:25,795 Accessing /exp: debugUNWK91 debugTI0XAP debug7E9TYD 
+[2017-08-02 01:41:25 +0000] [3196] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 01:41:25 +0000] [3197] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 01:41:25 +0000] [3205] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 01:41:25 +0000] [3206] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 01:41:25 +0000] [3199] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 01:41:25 +0000] [3203] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 01:41:25 +0000] [3207] [DEBUG] GET /static/css/general.css
+[2017-08-02 01:41:25 +0000] [3203] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 01:41:25 +0000] [3193] [DEBUG] GET /static/js/utils.js
+[2017-08-02 01:41:25 +0000] [3204] [DEBUG] GET /static/js/config.js
+[2017-08-02 01:41:25 +0000] [3197] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 01:41:25 +0000] [3205] [DEBUG] GET /static/js/task.js
+[2017-08-02 01:41:25 +0000] [3203] [DEBUG] GET /static/json/stim.json
+[2017-08-02 01:41:25 +0000] [3197] [DEBUG] GET /sync/debug7E9TYD%3AdebugTI0XAP
+2017-08-02 01:41:25,923 GET /sync route with id: debug7E9TYD:debugTI0XAP
+[2017-08-02 01:41:25 +0000] [3196] [DEBUG] GET /trial.html
+[2017-08-02 01:41:25 +0000] [3207] [DEBUG] GET /submit.html
+[2017-08-02 01:41:25 +0000] [3204] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 01:41:25 +0000] [3196] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 01:41:25 +0000] [3193] [DEBUG] GET /favicon.ico
+[2017-08-02 01:43:55 +0000] [3207] [DEBUG] GET /exp
+2017-08-02 01:43:55,679 Accessing /exp: debugUNWK91 debugTI0XAP debug7E9TYD 
+[2017-08-02 01:43:55 +0000] [3205] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 01:43:55 +0000] [3193] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 01:43:55 +0000] [3207] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 01:43:55 +0000] [3203] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 01:43:55 +0000] [3206] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 01:43:55 +0000] [3204] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 01:43:55 +0000] [3207] [DEBUG] GET /static/css/general.css
+[2017-08-02 01:43:55 +0000] [3193] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 01:43:55 +0000] [3203] [DEBUG] GET /static/js/config.js
+[2017-08-02 01:43:55 +0000] [3206] [DEBUG] GET /static/js/utils.js
+[2017-08-02 01:43:55 +0000] [3196] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 01:43:55 +0000] [3204] [DEBUG] GET /static/js/task.js
+[2017-08-02 01:43:55 +0000] [3193] [DEBUG] GET /static/json/stim.json
+[2017-08-02 01:43:55 +0000] [3205] [DEBUG] GET /sync/debug7E9TYD%3AdebugTI0XAP
+2017-08-02 01:43:55,805 GET /sync route with id: debug7E9TYD:debugTI0XAP
+[2017-08-02 01:43:55 +0000] [3206] [DEBUG] GET /trial.html
+[2017-08-02 01:43:55 +0000] [3203] [DEBUG] GET /submit.html
+[2017-08-02 01:43:55 +0000] [3204] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 01:43:55 +0000] [3207] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 01:43:55 +0000] [3193] [DEBUG] GET /static/css/images/ui-bg_highlight-soft_100_eeeeee_1x100.png
+[2017-08-02 01:43:55 +0000] [3199] [DEBUG] GET /static/images/highlighted/highlighted21.png
+[2017-08-02 01:43:55 +0000] [3203] [DEBUG] GET /static/css/images/ui-bg_glass_100_f6f6f6_1x400.png
+[2017-08-02 01:43:55 +0000] [3203] [DEBUG] GET /favicon.ico
+[2017-08-02 01:44:07 +0000] [3205] [DEBUG] GET /exp
+2017-08-02 01:44:07,543 Accessing /exp: debugUNWK91 debugTI0XAP debug7E9TYD 
+[2017-08-02 01:44:07 +0000] [3197] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 01:44:07 +0000] [3199] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 01:44:07 +0000] [3193] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 01:44:07 +0000] [3207] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 01:44:07 +0000] [3205] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 01:44:07 +0000] [3196] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 01:44:07 +0000] [3197] [DEBUG] GET /static/css/general.css
+[2017-08-02 01:44:07 +0000] [3193] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 01:44:07 +0000] [3204] [DEBUG] GET /static/js/config.js
+[2017-08-02 01:44:07 +0000] [3206] [DEBUG] GET /static/js/utils.js
+[2017-08-02 01:44:07 +0000] [3204] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 01:44:07 +0000] [3203] [DEBUG] GET /static/js/task.js
+[2017-08-02 01:44:07 +0000] [3199] [DEBUG] GET /static/json/stim.json
+[2017-08-02 01:44:07 +0000] [3206] [DEBUG] GET /sync/debug7E9TYD%3AdebugTI0XAP
+2017-08-02 01:44:07,672 GET /sync route with id: debug7E9TYD:debugTI0XAP
+[2017-08-02 01:44:07 +0000] [3204] [DEBUG] GET /trial.html
+[2017-08-02 01:44:07 +0000] [3199] [DEBUG] GET /submit.html
+[2017-08-02 01:44:07 +0000] [3204] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 01:44:07 +0000] [3199] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 01:44:07 +0000] [3199] [DEBUG] GET /static/images/highlighted/highlighted21.png
+[2017-08-02 01:44:07 +0000] [3206] [DEBUG] GET /static/css/images/ui-bg_highlight-soft_100_eeeeee_1x100.png
+[2017-08-02 01:44:07 +0000] [3199] [DEBUG] GET /static/css/images/ui-bg_glass_100_f6f6f6_1x400.png
+[2017-08-02 01:44:07 +0000] [3199] [DEBUG] GET /favicon.ico
+[2017-08-02 01:45:16 +0000] [3206] [DEBUG] GET /exp
+2017-08-02 01:45:16,649 Accessing /exp: debugUNWK91 debugTI0XAP debug7E9TYD 
+[2017-08-02 01:45:16 +0000] [3193] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 01:45:16 +0000] [3196] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 01:45:16 +0000] [3197] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 01:45:16 +0000] [3203] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 01:45:16 +0000] [3204] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 01:45:16 +0000] [3206] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 01:45:16 +0000] [3197] [DEBUG] GET /static/css/general.css
+[2017-08-02 01:45:16 +0000] [3205] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 01:45:16 +0000] [3193] [DEBUG] GET /static/js/config.js
+[2017-08-02 01:45:16 +0000] [3205] [DEBUG] GET /static/js/utils.js
+[2017-08-02 01:45:16 +0000] [3196] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 01:45:16 +0000] [3205] [DEBUG] GET /static/js/task.js
+[2017-08-02 01:45:16 +0000] [3205] [DEBUG] GET /static/json/stim.json
+[2017-08-02 01:45:16 +0000] [3203] [DEBUG] GET /sync/debug7E9TYD%3AdebugTI0XAP
+2017-08-02 01:45:16,772 GET /sync route with id: debug7E9TYD:debugTI0XAP
+[2017-08-02 01:45:16 +0000] [3197] [DEBUG] GET /trial.html
+[2017-08-02 01:45:16 +0000] [3207] [DEBUG] GET /submit.html
+[2017-08-02 01:45:16 +0000] [3207] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 01:45:16 +0000] [3197] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 01:45:16 +0000] [3197] [DEBUG] GET /static/images/highlighted/highlighted21.png
+[2017-08-02 01:45:16 +0000] [3197] [DEBUG] GET /static/css/images/ui-bg_highlight-soft_100_eeeeee_1x100.png
+[2017-08-02 01:45:16 +0000] [3207] [DEBUG] GET /static/css/images/ui-bg_glass_100_f6f6f6_1x400.png
+[2017-08-02 01:45:16 +0000] [3193] [DEBUG] GET /favicon.ico
+[2017-08-02 01:49:49 +0000] [3204] [DEBUG] GET /exp
+2017-08-02 01:49:49,766 Accessing /exp: debugUNWK91 debugTI0XAP debug7E9TYD 
+[2017-08-02 01:49:49 +0000] [3207] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 01:49:49 +0000] [3199] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 01:49:49 +0000] [3197] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 01:49:49 +0000] [3196] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 01:49:49 +0000] [3205] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 01:49:49 +0000] [3203] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 01:49:49 +0000] [3207] [DEBUG] GET /static/css/general.css
+[2017-08-02 01:49:49 +0000] [3196] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 01:49:49 +0000] [3204] [DEBUG] GET /static/js/utils.js
+[2017-08-02 01:49:49 +0000] [3197] [DEBUG] GET /static/js/config.js
+[2017-08-02 01:49:49 +0000] [3203] [DEBUG] GET /static/js/task.js
+[2017-08-02 01:49:49 +0000] [3196] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 01:49:49 +0000] [3199] [DEBUG] GET /static/json/stim.json
+[2017-08-02 01:49:49 +0000] [3206] [DEBUG] GET /sync/debug7E9TYD%3AdebugTI0XAP
+2017-08-02 01:49:49,894 GET /sync route with id: debug7E9TYD:debugTI0XAP
+[2017-08-02 01:49:49 +0000] [3204] [DEBUG] GET /trial.html
+[2017-08-02 01:49:49 +0000] [3199] [DEBUG] GET /submit.html
+[2017-08-02 01:49:49 +0000] [3204] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 01:49:49 +0000] [3203] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 01:49:49 +0000] [3205] [DEBUG] GET /static/images/highlighted/highlighted21.png
+[2017-08-02 01:49:49 +0000] [3206] [DEBUG] GET /static/css/images/ui-bg_highlight-soft_100_eeeeee_1x100.png
+[2017-08-02 01:49:49 +0000] [3205] [DEBUG] GET /static/css/images/ui-bg_glass_100_f6f6f6_1x400.png
+[2017-08-02 01:49:49 +0000] [3193] [DEBUG] GET /favicon.ico
+[2017-08-02 01:50:07 +0000] [3199] [DEBUG] GET /static/css/images/ui-bg_glass_65_ffffff_1x400.png
+[2017-08-02 01:50:07 +0000] [3193] [DEBUG] GET /static/css/images/ui-bg_glass_100_fdf5ce_1x400.png
+[2017-08-02 01:50:08 +0000] [3193] [DEBUG] GET /static/images/situations/situation21.png
+[2017-08-02 01:52:01 +0000] [3193] [DEBUG] GET /exp
+2017-08-02 01:52:01,018 Accessing /exp: debugUNWK91 debugTI0XAP debug7E9TYD 
+[2017-08-02 01:52:01 +0000] [3204] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 01:52:01 +0000] [3207] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 01:52:01 +0000] [3199] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 01:52:01 +0000] [3196] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 01:52:01 +0000] [3206] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 01:52:01 +0000] [3203] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 01:52:01 +0000] [3203] [DEBUG] GET /static/css/general.css
+[2017-08-02 01:52:01 +0000] [3196] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 01:52:01 +0000] [3203] [DEBUG] GET /static/js/utils.js
+[2017-08-02 01:52:01 +0000] [3207] [DEBUG] GET /static/js/config.js
+[2017-08-02 01:52:01 +0000] [3199] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 01:52:01 +0000] [3203] [DEBUG] GET /static/js/task.js
+[2017-08-02 01:52:01 +0000] [3199] [DEBUG] GET /static/json/stim.json
+[2017-08-02 01:52:01 +0000] [3204] [DEBUG] GET /sync/debug7E9TYD%3AdebugTI0XAP
+2017-08-02 01:52:01,141 GET /sync route with id: debug7E9TYD:debugTI0XAP
+[2017-08-02 01:52:01 +0000] [3196] [DEBUG] GET /trial.html
+[2017-08-02 01:52:01 +0000] [3196] [DEBUG] GET /submit.html
+[2017-08-02 01:52:01 +0000] [3205] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 01:52:01 +0000] [3199] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 01:52:01 +0000] [3205] [DEBUG] GET /static/images/highlighted/highlighted21.png
+[2017-08-02 01:52:01 +0000] [3196] [DEBUG] GET /static/css/images/ui-bg_highlight-soft_100_eeeeee_1x100.png
+[2017-08-02 01:52:01 +0000] [3207] [DEBUG] GET /static/css/images/ui-bg_glass_100_f6f6f6_1x400.png
+[2017-08-02 01:52:01 +0000] [3197] [DEBUG] GET /favicon.ico
+[2017-08-02 01:52:49 +0000] [3204] [DEBUG] GET /exp
+2017-08-02 01:52:49,536 Accessing /exp: debugUNWK91 debugTI0XAP debug7E9TYD 
+[2017-08-02 01:52:49 +0000] [3197] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 01:52:49 +0000] [3193] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 01:52:49 +0000] [3205] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 01:52:49 +0000] [3206] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 01:52:49 +0000] [3196] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 01:52:49 +0000] [3204] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 01:52:49 +0000] [3206] [DEBUG] GET /static/css/general.css
+[2017-08-02 01:52:49 +0000] [3203] [DEBUG] GET /static/js/config.js
+[2017-08-02 01:52:49 +0000] [3193] [DEBUG] GET /static/js/utils.js
+[2017-08-02 01:52:49 +0000] [3206] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 01:52:49 +0000] [3197] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 01:52:49 +0000] [3203] [DEBUG] GET /static/js/task.js
+[2017-08-02 01:52:49 +0000] [3205] [DEBUG] GET /static/json/stim.json
+[2017-08-02 01:52:49 +0000] [3207] [DEBUG] GET /sync/debug7E9TYD%3AdebugTI0XAP
+2017-08-02 01:52:49,661 GET /sync route with id: debug7E9TYD:debugTI0XAP
+[2017-08-02 01:52:49 +0000] [3197] [DEBUG] GET /trial.html
+[2017-08-02 01:52:49 +0000] [3205] [DEBUG] GET /submit.html
+[2017-08-02 01:52:49 +0000] [3207] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 01:52:49 +0000] [3204] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 01:52:49 +0000] [3197] [DEBUG] GET /static/images/highlighted/highlighted21.png
+[2017-08-02 01:52:49 +0000] [3199] [DEBUG] GET /static/css/images/ui-bg_glass_100_f6f6f6_1x400.png
+[2017-08-02 01:52:49 +0000] [3207] [DEBUG] GET /static/css/images/ui-bg_highlight-soft_100_eeeeee_1x100.png
+[2017-08-02 01:52:49 +0000] [3197] [DEBUG] GET /favicon.ico
+[2017-08-02 01:55:35 +0000] [3204] [DEBUG] GET /exp
+2017-08-02 01:55:35,695 Accessing /exp: debugUNWK91 debugTI0XAP debug7E9TYD 
+[2017-08-02 01:55:35 +0000] [3197] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 01:55:35 +0000] [3203] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 01:55:35 +0000] [3206] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 01:55:35 +0000] [3199] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 01:55:35 +0000] [3193] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 01:55:35 +0000] [3196] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 01:55:35 +0000] [3203] [DEBUG] GET /static/css/general.css
+[2017-08-02 01:55:35 +0000] [3205] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 01:55:35 +0000] [3193] [DEBUG] GET /static/js/config.js
+[2017-08-02 01:55:35 +0000] [3205] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 01:55:35 +0000] [3196] [DEBUG] GET /static/js/utils.js
+[2017-08-02 01:55:35 +0000] [3197] [DEBUG] GET /static/js/task.js
+[2017-08-02 01:55:35 +0000] [3199] [DEBUG] GET /static/json/stim.json
+[2017-08-02 01:55:35 +0000] [3193] [DEBUG] GET /sync/debug7E9TYD%3AdebugTI0XAP
+2017-08-02 01:55:35,828 GET /sync route with id: debug7E9TYD:debugTI0XAP
+[2017-08-02 01:55:35 +0000] [3196] [DEBUG] GET /trial.html
+[2017-08-02 01:55:35 +0000] [3205] [DEBUG] GET /submit.html
+[2017-08-02 01:55:35 +0000] [3206] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 01:55:35 +0000] [3199] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 01:55:35 +0000] [3196] [DEBUG] GET /static/images/highlighted/highlighted21.png
+[2017-08-02 01:55:35 +0000] [3203] [DEBUG] GET /static/css/images/ui-bg_highlight-soft_100_eeeeee_1x100.png
+[2017-08-02 01:55:35 +0000] [3196] [DEBUG] GET /static/css/images/ui-bg_glass_100_f6f6f6_1x400.png
+[2017-08-02 01:55:35 +0000] [3205] [DEBUG] GET /favicon.ico
+[2017-08-02 01:55:54 +0000] [3196] [DEBUG] GET /exp
+2017-08-02 01:55:54,004 Accessing /exp: debugUNWK91 debugTI0XAP debug7E9TYD 
+[2017-08-02 01:55:54 +0000] [3207] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 01:55:54 +0000] [3199] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 01:55:54 +0000] [3204] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 01:55:54 +0000] [3205] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 01:55:54 +0000] [3196] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 01:55:54 +0000] [3203] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 01:55:54 +0000] [3193] [DEBUG] GET /static/css/general.css
+[2017-08-02 01:55:54 +0000] [3205] [DEBUG] GET /static/js/config.js
+[2017-08-02 01:55:54 +0000] [3199] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 01:55:54 +0000] [3206] [DEBUG] GET /static/js/utils.js
+[2017-08-02 01:55:54 +0000] [3207] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 01:55:54 +0000] [3203] [DEBUG] GET /static/js/task.js
+[2017-08-02 01:55:54 +0000] [3197] [DEBUG] GET /static/json/stim.json
+[2017-08-02 01:55:54 +0000] [3206] [DEBUG] GET /sync/debug7E9TYD%3AdebugTI0XAP
+2017-08-02 01:55:54,133 GET /sync route with id: debug7E9TYD:debugTI0XAP
+[2017-08-02 01:55:54 +0000] [3193] [DEBUG] GET /trial.html
+[2017-08-02 01:55:54 +0000] [3193] [DEBUG] GET /submit.html
+[2017-08-02 01:55:54 +0000] [3199] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 01:55:54 +0000] [3193] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 01:55:54 +0000] [3197] [DEBUG] GET /static/images/highlighted/highlighted21.png
+[2017-08-02 01:55:54 +0000] [3197] [DEBUG] GET /static/css/images/ui-bg_glass_100_f6f6f6_1x400.png
+[2017-08-02 01:55:54 +0000] [3199] [DEBUG] GET /static/css/images/ui-bg_highlight-soft_100_eeeeee_1x100.png
+[2017-08-02 01:55:54 +0000] [3197] [DEBUG] GET /favicon.ico
+[2017-08-02 02:20:00 +0000] [3197] [DEBUG] GET /consent
+[2017-08-02 02:20:00 +0000] [3206] [DEBUG] GET /static/css/general.css
+[2017-08-02 02:20:00 +0000] [3207] [DEBUG] GET /static/js/utils.js
+[2017-08-02 02:20:00 +0000] [3193] [DEBUG] GET /ad
+[2017-08-02 02:20:01 +0000] [3207] [DEBUG] GET /exp
+2017-08-02 02:20:01,175 Accessing /exp: debugUNWK91 debugTI0XAP debug7E9TYD 
+[2017-08-02 02:20:01 +0000] [3196] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 02:20:01 +0000] [3199] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 02:20:01 +0000] [3204] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 02:20:01 +0000] [3207] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 02:20:01 +0000] [3205] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 02:20:01 +0000] [3204] [DEBUG] GET /static/js/config.js
+[2017-08-02 02:20:01 +0000] [3199] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 02:20:01 +0000] [3193] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 02:20:01 +0000] [3196] [DEBUG] GET /static/js/task.js
+[2017-08-02 02:20:01 +0000] [3205] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 02:20:01 +0000] [3199] [DEBUG] GET /static/json/stim.json
+[2017-08-02 02:20:01 +0000] [3205] [DEBUG] GET /sync/debug7E9TYD%3AdebugTI0XAP
+2017-08-02 02:20:01,307 GET /sync route with id: debug7E9TYD:debugTI0XAP
+[2017-08-02 02:20:01 +0000] [3203] [DEBUG] GET /trial.html
+[2017-08-02 02:20:01 +0000] [3206] [DEBUG] GET /submit.html
+[2017-08-02 02:20:01 +0000] [3196] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 02:20:01 +0000] [3199] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 02:20:01 +0000] [3206] [DEBUG] GET /static/images/highlighted/highlighted21.png
+[2017-08-02 02:20:01 +0000] [3207] [DEBUG] GET /static/css/images/ui-bg_highlight-soft_100_eeeeee_1x100.png
+[2017-08-02 02:20:01 +0000] [3196] [DEBUG] GET /static/css/images/ui-bg_glass_100_f6f6f6_1x400.png
+[2017-08-02 02:20:03 +0000] [3193] [DEBUG] GET /static/css/images/ui-bg_glass_65_ffffff_1x400.png
+[2017-08-02 02:20:03 +0000] [3197] [DEBUG] GET /static/css/images/ui-bg_glass_100_fdf5ce_1x400.png
+[2017-08-02 02:20:07 +0000] [3193] [DEBUG] GET /static/images/situations/situation21.png
+[2017-08-02 02:24:04 +0000] [3199] [DEBUG] GET /exp
+2017-08-02 02:24:04,391 Accessing /exp: debugUNWK91 debugTI0XAP debug7E9TYD 
+[2017-08-02 02:24:04 +0000] [3197] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 02:24:04 +0000] [3203] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 02:24:04 +0000] [3204] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 02:24:04 +0000] [3196] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 02:24:04 +0000] [3205] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 02:24:04 +0000] [3199] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 02:24:04 +0000] [3193] [DEBUG] GET /static/css/general.css
+[2017-08-02 02:24:04 +0000] [3204] [DEBUG] GET /static/js/config.js
+[2017-08-02 02:24:04 +0000] [3197] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 02:24:04 +0000] [3203] [DEBUG] GET /static/js/utils.js
+[2017-08-02 02:24:04 +0000] [3207] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 02:24:04 +0000] [3205] [DEBUG] GET /static/js/task.js
+[2017-08-02 02:24:04 +0000] [3196] [DEBUG] GET /static/json/stim.json
+[2017-08-02 02:24:04 +0000] [3206] [DEBUG] GET /sync/debug7E9TYD%3AdebugTI0XAP
+2017-08-02 02:24:04,517 GET /sync route with id: debug7E9TYD:debugTI0XAP
+[2017-08-02 02:24:04 +0000] [3204] [DEBUG] GET /trial.html
+[2017-08-02 02:24:04 +0000] [3199] [DEBUG] GET /submit.html
+[2017-08-02 02:24:04 +0000] [3193] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 02:24:04 +0000] [3204] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 02:24:04 +0000] [3197] [DEBUG] GET /static/css/images/ui-bg_highlight-soft_100_eeeeee_1x100.png
+[2017-08-02 02:24:04 +0000] [3204] [DEBUG] GET /static/css/images/ui-bg_glass_100_f6f6f6_1x400.png
+[2017-08-02 02:24:04 +0000] [3199] [DEBUG] GET /static/images/highlighted/highlighted21.png
+[2017-08-02 02:24:04 +0000] [3206] [DEBUG] GET /favicon.ico
+[2017-08-02 02:24:11 +0000] [3199] [DEBUG] GET /static/css/images/ui-bg_glass_65_ffffff_1x400.png
+[2017-08-02 02:24:11 +0000] [3206] [DEBUG] GET /static/css/images/ui-bg_glass_100_fdf5ce_1x400.png
+[2017-08-02 02:24:12 +0000] [3196] [DEBUG] GET /static/images/situations/situation21.png
+[2017-08-02 02:24:31 +0000] [3193] [DEBUG] GET /exp
+2017-08-02 02:24:31,181 Accessing /exp: debugUNWK91 debugTI0XAP debug7E9TYD 
+[2017-08-02 02:24:31 +0000] [3206] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 02:24:31 +0000] [3203] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 02:24:31 +0000] [3196] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 02:24:31 +0000] [3205] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 02:24:31 +0000] [3204] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 02:24:31 +0000] [3193] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 02:24:31 +0000] [3199] [DEBUG] GET /static/css/general.css
+[2017-08-02 02:24:31 +0000] [3204] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 02:24:31 +0000] [3207] [DEBUG] GET /static/js/utils.js
+[2017-08-02 02:24:31 +0000] [3197] [DEBUG] GET /static/js/config.js
+[2017-08-02 02:24:31 +0000] [3205] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 02:24:31 +0000] [3203] [DEBUG] GET /static/js/task.js
+[2017-08-02 02:24:31 +0000] [3199] [DEBUG] GET /static/json/stim.json
+[2017-08-02 02:24:31 +0000] [3207] [DEBUG] GET /sync/debug7E9TYD%3AdebugTI0XAP
+2017-08-02 02:24:31,308 GET /sync route with id: debug7E9TYD:debugTI0XAP
+[2017-08-02 02:24:31 +0000] [3196] [DEBUG] GET /trial.html
+[2017-08-02 02:24:31 +0000] [3197] [DEBUG] GET /submit.html
+[2017-08-02 02:24:31 +0000] [3207] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 02:24:31 +0000] [3196] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 02:24:31 +0000] [3206] [DEBUG] GET /static/css/images/ui-bg_highlight-soft_100_eeeeee_1x100.png
+[2017-08-02 02:24:31 +0000] [3197] [DEBUG] GET /static/images/highlighted/highlighted21.png
+[2017-08-02 02:24:31 +0000] [3199] [DEBUG] GET /static/css/images/ui-bg_glass_100_f6f6f6_1x400.png
+[2017-08-02 02:24:31 +0000] [3196] [DEBUG] GET /favicon.ico
+[2017-08-02 02:24:34 +0000] [3207] [DEBUG] GET /static/css/images/ui-bg_glass_65_ffffff_1x400.png
+[2017-08-02 02:24:34 +0000] [3193] [DEBUG] GET /static/css/images/ui-bg_glass_100_fdf5ce_1x400.png
+[2017-08-02 02:24:35 +0000] [3206] [DEBUG] GET /static/images/situations/situation21.png
+[2017-08-02 02:24:40 +0000] [3203] [DEBUG] GET /static/images/highlighted/highlighted5.png
+[2017-08-02 02:24:43 +0000] [3199] [DEBUG] GET /exp
+2017-08-02 02:24:43,046 Accessing /exp: debugUNWK91 debugTI0XAP debug7E9TYD 
+[2017-08-02 02:24:43 +0000] [3206] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 02:24:43 +0000] [3204] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 02:24:43 +0000] [3193] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 02:24:43 +0000] [3196] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 02:24:43 +0000] [3199] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 02:24:43 +0000] [3205] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 02:24:43 +0000] [3206] [DEBUG] GET /static/css/general.css
+[2017-08-02 02:24:43 +0000] [3205] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 02:24:43 +0000] [3206] [DEBUG] GET /static/js/config.js
+[2017-08-02 02:24:43 +0000] [3196] [DEBUG] GET /static/js/utils.js
+[2017-08-02 02:24:43 +0000] [3204] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 02:24:43 +0000] [3193] [DEBUG] GET /static/js/task.js
+[2017-08-02 02:24:43 +0000] [3206] [DEBUG] GET /static/json/stim.json
+[2017-08-02 02:24:43 +0000] [3197] [DEBUG] GET /sync/debug7E9TYD%3AdebugTI0XAP
+2017-08-02 02:24:43,172 GET /sync route with id: debug7E9TYD:debugTI0XAP
+[2017-08-02 02:24:43 +0000] [3196] [DEBUG] GET /trial.html
+[2017-08-02 02:24:43 +0000] [3199] [DEBUG] GET /submit.html
+[2017-08-02 02:24:43 +0000] [3203] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 02:24:43 +0000] [3207] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 02:24:43 +0000] [3203] [DEBUG] GET /static/css/images/ui-bg_highlight-soft_100_eeeeee_1x100.png
+[2017-08-02 02:24:43 +0000] [3207] [DEBUG] GET /static/css/images/ui-bg_glass_100_f6f6f6_1x400.png
+[2017-08-02 02:24:43 +0000] [3197] [DEBUG] GET /static/images/highlighted/highlighted21.png
+[2017-08-02 02:24:43 +0000] [3196] [DEBUG] GET /favicon.ico
+[2017-08-02 02:31:55 +0000] [3203] [DEBUG] GET /static/css/images/ui-bg_glass_65_ffffff_1x400.png
+[2017-08-02 02:31:55 +0000] [3207] [DEBUG] GET /static/css/images/ui-bg_glass_100_fdf5ce_1x400.png
+[2017-08-02 02:31:56 +0000] [3196] [DEBUG] GET /static/images/situations/situation21.png
+[2017-08-02 02:32:01 +0000] [3206] [DEBUG] GET /static/images/highlighted/highlighted5.png
+[2017-08-02 02:32:03 +0000] [3205] [DEBUG] GET /static/images/situations/situation5.png
+[2017-08-02 02:32:07 +0000] [3204] [DEBUG] GET /static/images/highlighted/highlighted10.png
+[2017-08-02 02:32:10 +0000] [3197] [DEBUG] GET /static/images/situations/situation10.png
+[2017-08-02 02:33:26 +0000] [3204] [DEBUG] GET /exp
+2017-08-02 02:33:26,414 Accessing /exp: debugUNWK91 debugTI0XAP debug7E9TYD 
+[2017-08-02 02:33:26 +0000] [3203] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 02:33:26 +0000] [3206] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 02:33:26 +0000] [3199] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 02:33:26 +0000] [3205] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 02:33:26 +0000] [3197] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 02:33:26 +0000] [3196] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 02:33:26 +0000] [3207] [DEBUG] GET /static/css/general.css
+[2017-08-02 02:33:26 +0000] [3199] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 02:33:26 +0000] [3196] [DEBUG] GET /static/js/config.js
+[2017-08-02 02:33:26 +0000] [3205] [DEBUG] GET /static/js/utils.js
+[2017-08-02 02:33:26 +0000] [3203] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 02:33:26 +0000] [3193] [DEBUG] GET /static/js/task.js
+[2017-08-02 02:33:26 +0000] [3203] [DEBUG] GET /static/json/stim.json
+[2017-08-02 02:33:26 +0000] [3193] [DEBUG] GET /sync/debug7E9TYD%3AdebugTI0XAP
+2017-08-02 02:33:26,546 GET /sync route with id: debug7E9TYD:debugTI0XAP
+[2017-08-02 02:33:26 +0000] [3205] [DEBUG] GET /trial.html
+[2017-08-02 02:33:26 +0000] [3207] [DEBUG] GET /submit.html
+[2017-08-02 02:33:26 +0000] [3205] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 02:33:26 +0000] [3206] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 02:33:26 +0000] [3205] [DEBUG] GET /static/css/images/ui-bg_highlight-soft_100_eeeeee_1x100.png
+[2017-08-02 02:33:26 +0000] [3193] [DEBUG] GET /static/css/images/ui-bg_glass_100_f6f6f6_1x400.png
+[2017-08-02 02:33:26 +0000] [3199] [DEBUG] GET /static/images/highlighted/highlighted21.png
+[2017-08-02 02:33:26 +0000] [3193] [DEBUG] GET /favicon.ico
+[2017-08-02 02:33:28 +0000] [3197] [DEBUG] GET /static/css/images/ui-bg_glass_65_ffffff_1x400.png
+[2017-08-02 02:33:28 +0000] [3207] [DEBUG] GET /static/css/images/ui-bg_glass_100_fdf5ce_1x400.png
+[2017-08-02 02:33:29 +0000] [3203] [DEBUG] GET /static/images/situations/situation21.png
+[2017-08-02 02:38:01 +0000] [3205] [DEBUG] GET /exp
+2017-08-02 02:38:01,137 Accessing /exp: debugUNWK91 debugTI0XAP debug7E9TYD 
+[2017-08-02 02:38:01 +0000] [3193] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 02:38:01 +0000] [3197] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 02:38:01 +0000] [3193] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 02:38:01 +0000] [3199] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 02:38:01 +0000] [3206] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 02:38:01 +0000] [3203] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 02:38:01 +0000] [3207] [DEBUG] GET /static/css/general.css
+[2017-08-02 02:38:01 +0000] [3204] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 02:38:01 +0000] [3199] [DEBUG] GET /static/js/config.js
+[2017-08-02 02:38:01 +0000] [3204] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 02:38:01 +0000] [3196] [DEBUG] GET /static/js/utils.js
+[2017-08-02 02:38:01 +0000] [3206] [DEBUG] GET /static/js/task.js
+[2017-08-02 02:38:01 +0000] [3193] [DEBUG] GET /static/json/stim.json
+[2017-08-02 02:38:01 +0000] [3197] [DEBUG] GET /sync/debug7E9TYD%3AdebugTI0XAP
+2017-08-02 02:38:01,270 GET /sync route with id: debug7E9TYD:debugTI0XAP
+[2017-08-02 02:38:01 +0000] [3197] [DEBUG] GET /trial.html
+[2017-08-02 02:38:01 +0000] [3207] [DEBUG] GET /submit.html
+[2017-08-02 02:38:01 +0000] [3207] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 02:38:01 +0000] [3193] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 02:38:01 +0000] [3196] [DEBUG] GET /favicon.ico
+[2017-08-02 02:38:43 +0000] [3193] [DEBUG] GET /exp
+2017-08-02 02:38:43,246 Accessing /exp: debugUNWK91 debugTI0XAP debug7E9TYD 
+[2017-08-02 02:38:43 +0000] [3207] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 02:38:43 +0000] [3196] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 02:38:43 +0000] [3205] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 02:38:43 +0000] [3204] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 02:38:43 +0000] [3193] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 02:38:43 +0000] [3206] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 02:38:43 +0000] [3199] [DEBUG] GET /static/css/general.css
+[2017-08-02 02:38:43 +0000] [3196] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 02:38:43 +0000] [3205] [DEBUG] GET /static/js/config.js
+[2017-08-02 02:38:43 +0000] [3203] [DEBUG] GET /static/js/utils.js
+[2017-08-02 02:38:43 +0000] [3193] [DEBUG] GET /static/js/task.js
+[2017-08-02 02:38:43 +0000] [3199] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 02:38:43 +0000] [3196] [DEBUG] GET /static/json/stim.json
+[2017-08-02 02:38:43 +0000] [3203] [DEBUG] GET /sync/debug7E9TYD%3AdebugTI0XAP
+2017-08-02 02:38:43,369 GET /sync route with id: debug7E9TYD:debugTI0XAP
+[2017-08-02 02:38:43 +0000] [3196] [DEBUG] GET /trial.html
+[2017-08-02 02:38:43 +0000] [3203] [DEBUG] GET /submit.html
+[2017-08-02 02:38:43 +0000] [3197] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 02:38:43 +0000] [3199] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 02:38:43 +0000] [3207] [DEBUG] GET /favicon.ico
+[2017-08-02 02:38:59 +0000] [3204] [DEBUG] GET /exp
+2017-08-02 02:38:59,364 Accessing /exp: debugUNWK91 debugTI0XAP debug7E9TYD 
+[2017-08-02 02:38:59 +0000] [3197] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 02:38:59 +0000] [3206] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 02:38:59 +0000] [3196] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 02:38:59 +0000] [3207] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 02:38:59 +0000] [3205] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 02:38:59 +0000] [3203] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 02:38:59 +0000] [3199] [DEBUG] GET /static/css/general.css
+[2017-08-02 02:38:59 +0000] [3196] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 02:38:59 +0000] [3207] [DEBUG] GET /static/js/config.js
+[2017-08-02 02:38:59 +0000] [3193] [DEBUG] GET /static/js/utils.js
+[2017-08-02 02:38:59 +0000] [3206] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 02:38:59 +0000] [3203] [DEBUG] GET /static/js/task.js
+[2017-08-02 02:38:59 +0000] [3204] [DEBUG] GET /static/json/stim.json
+[2017-08-02 02:38:59 +0000] [3203] [DEBUG] GET /sync/debug7E9TYD%3AdebugTI0XAP
+2017-08-02 02:38:59,491 GET /sync route with id: debug7E9TYD:debugTI0XAP
+[2017-08-02 02:38:59 +0000] [3203] [DEBUG] GET /trial.html
+[2017-08-02 02:38:59 +0000] [3205] [DEBUG] GET /submit.html
+[2017-08-02 02:38:59 +0000] [3205] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 02:38:59 +0000] [3199] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 02:38:59 +0000] [3197] [DEBUG] GET /static/css/images/ui-bg_highlight-soft_100_eeeeee_1x100.png
+[2017-08-02 02:38:59 +0000] [3199] [DEBUG] GET /static/css/images/ui-bg_glass_100_f6f6f6_1x400.png
+[2017-08-02 02:38:59 +0000] [3207] [DEBUG] GET /static/images/highlighted/highlighted21.png
+[2017-08-02 02:38:59 +0000] [3193] [DEBUG] GET /favicon.ico
+[2017-08-02 02:39:28 +0000] [3197] [DEBUG] GET /exp
+2017-08-02 02:39:28,612 Accessing /exp: debugUNWK91 debugTI0XAP debug7E9TYD 
+[2017-08-02 02:39:28 +0000] [3203] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 02:39:28 +0000] [3199] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 02:39:28 +0000] [3204] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 02:39:28 +0000] [3193] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 02:39:28 +0000] [3197] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 02:39:28 +0000] [3207] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 02:39:28 +0000] [3199] [DEBUG] GET /static/css/general.css
+[2017-08-02 02:39:28 +0000] [3196] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 02:39:28 +0000] [3197] [DEBUG] GET /static/js/config.js
+[2017-08-02 02:39:28 +0000] [3206] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 02:39:28 +0000] [3199] [DEBUG] GET /static/js/utils.js
+[2017-08-02 02:39:28 +0000] [3196] [DEBUG] GET /static/js/task.js
+[2017-08-02 02:39:28 +0000] [3193] [DEBUG] GET /static/json/stim.json
+[2017-08-02 02:39:28 +0000] [3206] [DEBUG] GET /sync/debug7E9TYD%3AdebugTI0XAP
+2017-08-02 02:39:28,737 GET /sync route with id: debug7E9TYD:debugTI0XAP
+[2017-08-02 02:39:28 +0000] [3193] [DEBUG] GET /trial.html
+[2017-08-02 02:39:28 +0000] [3206] [DEBUG] GET /submit.html
+[2017-08-02 02:39:28 +0000] [3193] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 02:39:28 +0000] [3205] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 02:39:28 +0000] [3206] [DEBUG] GET /static/images/highlighted/highlighted21.png
+[2017-08-02 02:39:28 +0000] [3193] [DEBUG] GET /static/css/images/ui-bg_highlight-soft_100_eeeeee_1x100.png
+[2017-08-02 02:39:28 +0000] [3205] [DEBUG] GET /static/css/images/ui-bg_glass_100_f6f6f6_1x400.png
+[2017-08-02 02:39:28 +0000] [3205] [DEBUG] GET /favicon.ico
+[2017-08-02 02:39:30 +0000] [3197] [DEBUG] GET /static/css/images/ui-bg_glass_65_ffffff_1x400.png
+[2017-08-02 02:39:30 +0000] [3205] [DEBUG] GET /static/css/images/ui-bg_glass_100_fdf5ce_1x400.png
+[2017-08-02 02:39:31 +0000] [3196] [DEBUG] GET /static/images/situations/situation21.png
+[2017-08-02 02:40:00 +0000] [3205] [DEBUG] GET /exp
+2017-08-02 02:40:00,668 Accessing /exp: debugUNWK91 debugTI0XAP debug7E9TYD 
+[2017-08-02 02:40:00 +0000] [3204] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 02:40:00 +0000] [3205] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 02:40:00 +0000] [3199] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 02:40:00 +0000] [3193] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 02:40:00 +0000] [3206] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 02:40:00 +0000] [3196] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 02:40:00 +0000] [3205] [DEBUG] GET /static/css/general.css
+[2017-08-02 02:40:00 +0000] [3199] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 02:40:00 +0000] [3204] [DEBUG] GET /static/js/config.js
+[2017-08-02 02:40:00 +0000] [3206] [DEBUG] GET /static/js/utils.js
+[2017-08-02 02:40:00 +0000] [3199] [DEBUG] GET /static/js/task.js
+[2017-08-02 02:40:00 +0000] [3197] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 02:40:00 +0000] [3196] [DEBUG] GET /static/json/stim.json
+[2017-08-02 02:40:00 +0000] [3206] [DEBUG] GET /sync/debug7E9TYD%3AdebugTI0XAP
+2017-08-02 02:40:00,796 GET /sync route with id: debug7E9TYD:debugTI0XAP
+[2017-08-02 02:40:00 +0000] [3206] [DEBUG] GET /trial.html
+[2017-08-02 02:40:00 +0000] [3207] [DEBUG] GET /submit.html
+[2017-08-02 02:40:00 +0000] [3197] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 02:40:00 +0000] [3203] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 02:40:00 +0000] [3203] [DEBUG] GET /static/css/images/ui-bg_highlight-soft_100_eeeeee_1x100.png
+[2017-08-02 02:40:00 +0000] [3207] [DEBUG] GET /static/images/highlighted/highlighted21.png
+[2017-08-02 02:40:00 +0000] [3196] [DEBUG] GET /static/css/images/ui-bg_glass_100_f6f6f6_1x400.png
+[2017-08-02 02:40:00 +0000] [3206] [DEBUG] GET /favicon.ico
+[2017-08-02 02:40:02 +0000] [3203] [DEBUG] GET /static/css/images/ui-bg_glass_65_ffffff_1x400.png
+[2017-08-02 02:40:03 +0000] [3196] [DEBUG] GET /static/css/images/ui-bg_glass_100_fdf5ce_1x400.png
+[2017-08-02 02:40:03 +0000] [3193] [DEBUG] GET /static/images/situations/situation21.png
+[2017-08-02 02:42:02 +0000] [3206] [DEBUG] GET /exp
+2017-08-02 02:42:02,906 Accessing /exp: debugUNWK91 debugTI0XAP debug7E9TYD 
+[2017-08-02 02:42:02 +0000] [3203] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 02:42:02 +0000] [3204] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 02:42:02 +0000] [3197] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 02:42:02 +0000] [3196] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 02:42:02 +0000] [3206] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 02:42:02 +0000] [3207] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 02:42:02 +0000] [3204] [DEBUG] GET /static/css/general.css
+[2017-08-02 02:42:02 +0000] [3196] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 02:42:02 +0000] [3199] [DEBUG] GET /static/js/config.js
+[2017-08-02 02:42:02 +0000] [3203] [DEBUG] GET /static/js/utils.js
+[2017-08-02 02:42:02 +0000] [3204] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 02:42:02 +0000] [3197] [DEBUG] GET /static/js/task.js
+[2017-08-02 02:42:03 +0000] [3196] [DEBUG] GET /static/json/stim.json
+[2017-08-02 02:42:03 +0000] [3199] [DEBUG] GET /sync/debug7E9TYD%3AdebugTI0XAP
+2017-08-02 02:42:03,038 GET /sync route with id: debug7E9TYD:debugTI0XAP
+[2017-08-02 02:42:03 +0000] [3196] [DEBUG] GET /trial.html
+[2017-08-02 02:42:03 +0000] [3203] [DEBUG] GET /submit.html
+[2017-08-02 02:42:03 +0000] [3196] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 02:42:03 +0000] [3203] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 02:42:03 +0000] [3196] [DEBUG] GET /static/css/images/ui-bg_highlight-soft_100_eeeeee_1x100.png
+[2017-08-02 02:42:03 +0000] [3203] [DEBUG] GET /static/css/images/ui-bg_glass_100_f6f6f6_1x400.png
+[2017-08-02 02:42:03 +0000] [3205] [DEBUG] GET /static/images/highlighted/highlighted21.png
+[2017-08-02 02:42:03 +0000] [3193] [DEBUG] GET /favicon.ico
+[2017-08-02 02:42:04 +0000] [3197] [DEBUG] GET /static/css/images/ui-bg_glass_65_ffffff_1x400.png
+[2017-08-02 02:42:04 +0000] [3193] [DEBUG] GET /static/css/images/ui-bg_glass_100_fdf5ce_1x400.png
+[2017-08-02 02:42:06 +0000] [3206] [DEBUG] GET /static/images/situations/situation21.png
+[2017-08-02 02:42:07 +0000] [3205] [DEBUG] GET /static/images/highlighted/highlighted5.png
+[2017-08-02 02:42:09 +0000] [3196] [DEBUG] GET /static/images/situations/situation5.png
+[2017-08-02 02:42:11 +0000] [3199] [DEBUG] GET /static/images/highlighted/highlighted10.png
+[2017-08-02 02:42:12 +0000] [3207] [DEBUG] GET /static/images/situations/situation10.png
+[2017-08-02 02:46:38 +0000] [3206] [DEBUG] Closing connection. 
+[2017-08-02 02:46:41 +0000] [3199] [DEBUG] Closing connection. 
+[2017-08-02 02:46:41 +0000] [3203] [DEBUG] GET /ppid
+[2017-08-02 02:46:41 +0000] [3206] [DEBUG] Closing connection. 
+[2017-08-02 02:46:41 +0000] [3199] [DEBUG] Closing connection. 
+[2017-08-02 02:46:41 +0000] [3203] [INFO] Parent changed, shutting down: <Worker 3203>
+[2017-08-02 02:46:41 +0000] [3193] [INFO] Parent changed, shutting down: <Worker 3193>
+[2017-08-02 02:46:41 +0000] [3203] [INFO] Worker exiting (pid: 3203)
+[2017-08-02 02:46:41 +0000] [3193] [INFO] Worker exiting (pid: 3193)
+[2017-08-02 02:46:41 +0000] [3199] [INFO] Parent changed, shutting down: <Worker 3199>
+[2017-08-02 02:46:41 +0000] [3199] [INFO] Worker exiting (pid: 3199)
+[2017-08-02 02:46:42 +0000] [3206] [INFO] Parent changed, shutting down: <Worker 3206>
+[2017-08-02 02:46:42 +0000] [3197] [DEBUG] Closing connection. 
+[2017-08-02 02:46:42 +0000] [3206] [INFO] Worker exiting (pid: 3206)
+[2017-08-02 02:46:42 +0000] [3197] [INFO] Parent changed, shutting down: <Worker 3197>
+[2017-08-02 02:46:42 +0000] [3197] [INFO] Worker exiting (pid: 3197)
+[2017-08-02 02:46:42 +0000] [3207] [INFO] Parent changed, shutting down: <Worker 3207>
+[2017-08-02 02:46:42 +0000] [3204] [DEBUG] Closing connection. 
+[2017-08-02 02:46:42 +0000] [3205] [INFO] Parent changed, shutting down: <Worker 3205>
+[2017-08-02 02:46:42 +0000] [3207] [INFO] Worker exiting (pid: 3207)
+[2017-08-02 02:46:42 +0000] [3205] [INFO] Worker exiting (pid: 3205)
+[2017-08-02 02:46:42 +0000] [3204] [INFO] Parent changed, shutting down: <Worker 3204>
+[2017-08-02 02:46:42 +0000] [3204] [INFO] Worker exiting (pid: 3204)
+[2017-08-02 02:46:43 +0000] [3196] [DEBUG] Closing connection. 
+[2017-08-02 02:46:43 +0000] [3196] [INFO] Parent changed, shutting down: <Worker 3196>
+[2017-08-02 02:46:43 +0000] [3196] [INFO] Worker exiting (pid: 3196)

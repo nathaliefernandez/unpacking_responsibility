@@ -6,141 +6,141 @@
         {
                 "ID": 0,
                 "cause": "Wayne",
-                "effect": ["", "failure</b> to meet"]
+                "effect": ["", "<b>not being</b> met"]
         },
         {
                 "ID": 1,
                 "cause": "Lillie",
-                "effect": ["", "failure</b> to meet"]
+                "effect": ["", "<b>not being</b> met"]
         },
         {
                 "ID": 2,
                 "cause": "Wilma",
-                "effect": ["", "failure</b> to meet"]
+                "effect": ["", "<b>not being</b> met"]
         },
         {
                 "ID": 3,
                 "cause": "Robert",
-                "effect": ["", "failure</b> to meet"]
+                "effect": ["", "<b>not being</b> met"]
         },
         {
                 "ID": 4,
                 "cause": "Eddie",
-                "effect": ["", "success</b> in meeting"]
+                "effect": ["", "<b>being</b> met"]
         },
         {
                 "ID": 5,
                 "cause": "Nancey",
-                "effect": ["", "success</b> in meeting"]
+                "effect": ["", "<b>being</b> met"]
         },
         {
                 "ID": 6,
                 "cause": "Ruby",
-                "effect": ["", "success</b> in meeting"]
+                "effect": ["", "<b>being</b> met"]
         },
         {
                 "ID": 7,
                 "cause": "Sharon",
-                "effect": ["", "success</b> in meeting"]
+                "effect": ["", "<b>being</b> met"]
         },
         {
                 "ID": 8,
                 "cause": "Kathy",
-                "effect": ["", "failure</b> to meet"]
+                "effect": ["", "<b>not being</b> met"]
         },
         {
                 "ID": 9,
                 "cause": "Beryl",
-                "effect": ["", "failure</b> to meet"]
+                "effect": ["", "<b>not being</b> met"]
         },
         {
                 "ID": 10,
                 "cause": "Cindy",
-                "effect": ["", "failure</b> to meet"]
+                "effect": ["", "<b>not being</b> met"]
         },
         {
                 "ID": 11,
                 "cause": "Janet",
-                "effect": ["", "failure</b> to meet"]
+                "effect": ["", "<b>not being</b> met"]
         },
         {
                 "ID": 12,
                 "cause": "Myra",
-                "effect": ["", "failure</b> to meet"]
+                "effect": ["", "<b>not being</b> met"]
         },
         {
                 "ID": 13,
                 "cause": "Eric",
-                "effect": ["", "success</b> in meeting"]
+                "effect": ["", "<b>being</b> met"]
         },
         {
                 "ID": 14,
                 "cause": "Lee",
-                "effect": ["", "success</b> in meeting"]
+                "effect": ["", "<b>being</b> met"]
         },
         {
                 "ID": 15,
                 "cause": "Helena",
-                "effect": ["", "success</b> in meeting"]
+                "effect": ["", "<b>being</b> met"]
         },
         {
                 "ID": 16,
                 "cause": "Ronald",
-                "effect": ["", "success</b> in meeting"]
+                "effect": ["", "<b>being</b> met"]
         },
         {
                 "ID": 17,
                 "cause": "Bruce",
-                "effect": ["", "success</b> in meeting"]
+                "effect": ["", "<b>being</b> met"]
         },
         {
                 "ID": 18,
                 "cause": "Brenna",
-                "effect": ["", "success</b> in meeting"]
+                "effect": ["", "<b>being</b> met"]
         },
         {
                 "ID": 19,
                 "cause": "Tawana",
-                "effect": ["", "success</b> in meeting"]
+                "effect": ["", "<b>being</b> met"]
         },
         {
                 "ID": 20,
                 "cause": "Jose",
-                "effect": ["", "success</b> in meeting"]
+                "effect": ["", "<b>being</b> met"]
         },
         {
                 "ID": 21,
                 "cause": "Jean",
-                "effect": ["", "success</b> in meeting"]
+                "effect": ["", "<b>being</b> met"]
         },
         {
                 "ID": 22,
                 "cause": "Beth",
-                "effect": ["", "success</b> in meeting"]
+                "effect": ["", "<b>being</b> met"]
         },
         {
                 "ID": 23,
                 "cause": "Amanda",
-                "effect": ["", "success</b> in meeting"]
+                "effect": ["", "<b>being</b> met"]
         },
         {
                 "ID": 24,
                 "cause": "Floyd",
-                "effect": ["", "success</b> in meeting"]
+                "effect": ["", "<b>being</b> met"]
         }
         ],
-        "predict_text": "<p style = 'color:red'><b>Prediction task</b></p><p>You will see several situations. To the left of the Teams and Outcome are the thresholds needed to succeed.",
-        "judgement_text": "<p style = 'color:red'><b>Judgment task</b></p><p>You will now see the outcomes of several situations. To the left of the teams and Office Goal are the thresholds that are needed to succeed.",
+        "predict_text": "<p style = 'color:red'><b>Prediction task</b></p><p>You will see several situations. To the left of the Teams and Office Goal, is the minimum number of employees or teams that need to succeed for the team to succeed or the Office Goal to be met.",
+        "judgement_text": "<p style = 'color:red'><b>Task</b></p><p>You will see several situations. To the left of the Teams and Office Goal, is the minimum number of employees or teams that need to succeed for the team to succeed or the Office Goal to be met.",
         "questions": [{
-                "q1": ["How important will <b>"],
-                "q2": ["</b> be for the "],
-                "q3": ["office's success?"],
+                "q1": ["How important is <b>"],
+                "q2": ["</b> for meeting the "],
+                "q3": ["Office Goal?"],
                 "l": ["<b>not</b> important at all", "<b>very</b> important"]
         },
         {
                 "q1": ["To what extent was <b>"],
-                "q2": ["</b> responsible for the <b>"], 
-                "q3": [" the Office Goal?"],
+                "q2": ["</b> responsible for the Office Goal "], 
+                "q3": ["?"],
                 "l": ["<b>not</b> at all", "<b>very</b> much"]
         }]
 }

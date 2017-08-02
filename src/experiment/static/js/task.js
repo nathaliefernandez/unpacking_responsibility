@@ -35,28 +35,27 @@ var STATE;
         var slide = $("#instructions-training-" + x);
 
         $("#goback").hide();
-
+        // $("#goback").show();
         if (x == 1){
             $(".tutorial").attr("src",'/static/images/instructions/tutorial0.png');
 
             slide.fadeIn($c.fade);
-
+            console.log(i)
             slide.find('#goback').click(function () {
                 // this.i--;
-                i = inc_i(-1);
                 if (i == 1) {
                     $("#goback").hide();
                 }
+                i = inc_i(-1);
             });
 
             slide.find('#continue').click(function () {
                 // this.i++;
                 i = inc_i(1);
-                if (i == 1) {
-                    $("#goback").show();
-                }
+                $("#goback").show();
 
                 if (i > 10) {
+                    i = 0;
                     slide.fadeOut($c.fade);
                     slideshow(2);
                 };
@@ -494,8 +493,8 @@ this.finish = function() {
     STATE = new State();
     // Begin the experiment phase
     if (STATE.instructions) {
-        // CURRENTVIEW = new JudgementPhase();
-        CURRENTVIEW = new Instructions();
+        CURRENTVIEW = new JudgementPhase();
+        // CURRENTVIEW = new Instructions();
         // CURRENTVIEW = new PredictionPhase();
         // CURRENTVIEW = new Comprehension();
 
