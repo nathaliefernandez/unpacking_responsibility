@@ -54,7 +54,7 @@ var STATE;
                 i = inc_i(1);
                 $("#goback").show();
 
-                if (i > 10) {
+                if (i > 11) {
                     i = 0;
                     slide.fadeOut($c.fade);
                     slideshow(2);
@@ -63,7 +63,7 @@ var STATE;
         }
         if (x == 2) {
             slide.fadeIn($c.fade);
-            $(".tutorial").attr("src",'/static/images/instructions/tutorial11.png');
+            $(".tutorial").attr("src",'/static/images/instructions/tutorial12.png');
 
             slide.find('#start').click(function () {
                 CURRENTVIEW = new Comprehension();
@@ -271,7 +271,7 @@ $('#comprehension_fail').click(function () {
  var JudgementPhase = function(){
     var that = this;
     this.trialinfo;    
-    this.init_trial = function () {
+    this.init_trial = function (i) {
         if (STATE.index >= $c.judgement.length) { //change here for debugging
             this.finish();
             return false;
@@ -279,14 +279,16 @@ $('#comprehension_fail').click(function () {
 
         // Load the new trialinfo
         this.trialinfo = $c.judgement[STATE.index];
+
         // Update progress bar
-        
         update_progress(STATE.index, $c.judgement.length);
+
+
         return true;
     }; 
 
     this.trial = function(that, i){
-        if (that.init_trial()) {
+        if (that.init_trial(i)) {
             $('.prompt-text').html($c.judgement_text);
 
             $('#trial_next1').prop('disabled', true);
@@ -302,7 +304,6 @@ $('#comprehension_fail').click(function () {
                 
             }
             else {
-                console.log(i)
                 $('#trial_next1').hide() ;
                 $('#trial_next2').show()
                 flip = ['left','right']
@@ -362,6 +363,7 @@ $('#comprehension_fail').click(function () {
             'counterbalance', flipped, 
             'judgement',response]);
 
+
             STATE.set_index(STATE.index + 1);
             
         
@@ -381,15 +383,15 @@ $('#comprehension_fail').click(function () {
     var that = this; 
     $("#judgement").fadeIn($c.fade);
 
-    $('#trial_next2.next').click(function () {
+    $('#trial_next2.next').off().on('click', function () {
         that.record_response(1);
     });
-    $('#trial_next1.next').click(function () {
+    $('#trial_next1.next').off().on('click', function () {
         that.record_response(0);
     });
 
     // Initialize the current trial
-    if (this.init_trial()) {
+    if (this.init_trial(0)) {
         // Start the test
         this.trial(this, 0) ;
         // this.display_stim(this) ;

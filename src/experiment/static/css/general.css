@@ -37,7 +37,30 @@ hr {
 /* buttons                                                          */
 /********************************************************************/
 
-button, .next {
+button, .goback {
+    float: left;
+    background-color: white;
+    box-shadow: 1px 1px 3px;
+    border: 1px solid black;
+    margin: 1%;
+    padding: 1% 2% 1% 2%;
+    font-family: Georgia, serif; 
+    font-size: 1em;
+}
+
+.continue button.cont {
+    float: right;
+    background-color: white;
+    box-shadow: 1px 1px 3px;
+    border: 1px solid black;
+    margin: 1%;
+    padding: 1% 2% 1% 2%;
+    font-family: Georgia, serif; 
+    font-size: 1em;
+}
+
+.continue button.next {
+    float: none;
     background-color: white;
     box-shadow: 1px 1px 3px;
     border: 1px solid black;
@@ -83,15 +106,9 @@ div.blue {
 div.continue {
     text-align: center;
     width: 100%;
-    /*margin-top: 1%;*/
+/*    display: flex;
+*/    /*margin-top: 1%;*/
 }
-
-div.goback {
-    text-align: center;
-    width: 100%;
-    /*margin-top: 1%;*/
-}
-
 span.warn {
     font-weight: bold;
     color: blue;
