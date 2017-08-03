@@ -37,7 +37,7 @@ var STATE;
         $("#goback").hide();
         // $("#goback").show();
         if (x == 1){
-            $(".tutorial").attr("src",'/static/images/instructions/tutorial0.png');
+            $(".tutorial").attr("src",'/static/images/instructions/img0.png');
 
             slide.fadeIn($c.fade);
             console.log(i)
@@ -63,7 +63,7 @@ var STATE;
         }
         if (x == 2) {
             slide.fadeIn($c.fade);
-            $(".tutorial").attr("src",'/static/images/instructions/tutorial12.png');
+            $(".tutorial").attr("src",'/static/images/instructions/img12.png');
 
             slide.find('#start').click(function () {
                 CURRENTVIEW = new Comprehension();
@@ -76,7 +76,7 @@ var STATE;
 
     var inc_i = function(x) {
         i += x;
-        $(".tutorial").attr("src",'/static/images/instructions/tutorial' + i + '.png');
+        $(".tutorial").attr("src",'/static/images/instructions/img' + i + '.png');
         return i
     }
 
