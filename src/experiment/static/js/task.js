@@ -51,24 +51,34 @@ var STATE;
 
             slide.find('#continue').click(function () {
                 // this.i++;
+                if (i == 11) {
+                    CURRENTVIEW = new Comprehension();
+                }
                 i = inc_i(1);
                 $("#goback").show();
 
-                if (i > 11) {
+                if (i > 15) {
                     i = 0;
                     slide.fadeOut($c.fade);
                     slideshow(2);
                 };
             });
         }
-        if (x == 2) {
-            slide.fadeIn($c.fade);
-            $(".tutorial").attr("src",'/static/images/instructions/img12.png');
-
-            slide.find('#start').click(function () {
-                CURRENTVIEW = new Comprehension();
-            });
-        }
+        // if (x == 2) {
+        //     // slide.fadeIn($c.fade);
+        //     $(".tutorial").attr("src",'/static/images/instructions/img11.png');
+        //     slide.find('#goback').click(function () {
+        //         // this.i--;
+        //         if (i == 1) {
+        //             $("#goback").hide();
+        //         }
+        //         slideshow(1);
+        //         i = inc_i(-1);
+        //     });
+        //     slide.find('#start').click(function () {
+        //         CURRENTVIEW = new Comprehension();
+        //     });
+        // }
 
 
     };
