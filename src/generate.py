@@ -222,12 +222,8 @@ def sample(d, n):
 				s.evaluate(s.outcome())
 				cause = np.random.choice(leaves)
 
-				j=0
-				while pivotality(s, cause, s.outcome()) == 0:
+				while s.node[cause]['value'] != s.node[s.outcome()]['value']:
 					cause = np.random.choice(leaves)
-					j+=1
-					if j > len(leaves):
-						break
 
 				if (pivotality(s, cause, s.outcome()) - pivotality(s, cause, s.outcome(), root=True)) == 0 and len(none) < 4:
 					used.append((experiment, values, thresholds))
