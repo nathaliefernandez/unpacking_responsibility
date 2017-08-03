@@ -43,6 +43,7 @@ button, .goback {
     box-shadow: 1px 1px 3px;
     border: 1px solid black;
     margin: 1%;
+    margin-left: 40px;
     padding: 1% 2% 1% 2%;
     font-family: Georgia, serif; 
     font-size: 1em;
@@ -54,6 +55,7 @@ button, .goback {
     box-shadow: 1px 1px 3px;
     border: 1px solid black;
     margin: 1%;
+    margin-right: 0px;
     padding: 1% 2% 1% 2%;
     font-family: Georgia, serif; 
     font-size: 1em;
@@ -83,8 +85,11 @@ button:active, .next:active {
  *
  */
 div.slide {
-    /*width: 550px;*/
-    width: 1050px;
+/*    width: 550px;
+*//*    width: 1050px;
+
+*/  
+    width: 55%;
     position: relative;
     padding: 1% 2% 1% 2%;
     margin: 0 auto;
@@ -97,6 +102,8 @@ div.slide {
 div.spacer { clear: both; }
 
 div.blue {
+    height: 100%;
+    width: 100%;
     background-color: #CEECF5;
     padding: .01em 1em .01em 1em;
     border: 1px sowqlid #CEECF5;
@@ -106,6 +113,8 @@ div.blue {
 div.continue {
     text-align: center;
     width: 100%;
+    position: relative;
+
 /*    display: flex;
 */    /*margin-top: 1%;*/
 }
@@ -136,6 +145,12 @@ th, td {
 /********************************************************************/
 
 img.logo { height: 6.25em; }
+
+.img {
+    resize: both;
+    height: 100vh;
+    width: 100vw;
+}
 
 #consent {
     font-size: 0.95em;
@@ -169,6 +184,8 @@ span.consent {
 
 #container {
     display: inline-block;
+    height: 100%;
+    width: 100%;
 }
 /*from 25% 25% -> 50% 0%
  *
