@@ -198,6 +198,9 @@ def sample(d, n):
 	length = len(list(product(*[(0, 1) for v in xrange(len(leaves))])))
 
 	used = []
+	extreme = []
+	slight = []
+	none = []
 	samples = {'experiments' : []}
 	for i in xrange(n):
 		
@@ -208,24 +211,36 @@ def sample(d, n):
 
 
 			if (experiment, values, thresholds) not in used and len(d['experiments'][experiment]['situation']['thresholds'][thresholds]) < 4:
-				used.append((experiment, values, thresholds))
 
-		hierarchy = d['experiments'][experiment]['hierarchy']
-		situation = {}
-		situation['thresholds'] = d['experiments'][experiment]['situation']['thresholds'][thresholds]
-		situation['values'] = d['experiments'][experiment]['situation']['values'][values]
+				hierarchy = d['experiments'][experiment]['hierarchy']
+				situation = {}
+				situation['thresholds'] = d['experiments'][experiment]['situation']['thresholds'][thresholds]
+				situation['values'] = d['experiments'][experiment]['situation']['values'][values]
 
-		s = Situation(hierarchy=hierarchy, situation=situation) 
+				s = Situation(hierarchy=hierarchy, situation=situation) 
 
-		s.evaluate(s.outcome())
-		cause = np.random.choice(leaves)
+				s.evaluate(s.outcome())
+				cause = np.random.choice(leaves)
 
-		while pivotality(s, cause, s.outcome()) == 0:
-			cause = np.random.choice(leaves)
+				while s.node[cause]['value'] != s.node[s.outcome()]['value']:
+					cause = np.random.choice(leaves)
+
+				if (pivotality(s, cause, s.outcome()) - pivotality(s, cause, s.outcome(), root=True)) == 0 and len(none) < 4:
+					used.append((experiment, values, thresholds))
+					none.append((experiment, values, thresholds))
+				
+				if (pivotality(s, cause, s.outcome()) - pivotality(s, cause, s.outcome(), root=True)) > 0:
+					if (pivotality(s, cause, s.outcome()) - pivotality(s, cause, s.outcome(), root=True)) > .25 and len(extreme) < 4:
+						used.append((experiment, values, thresholds))
+						extreme.append((experiment, values, thresholds))
+					elif len(slight) < 4:
+						used.append((experiment, values, thresholds))
+						slight.append((experiment, values, thresholds))
+
 
 		situation['cause'] = cause
 
-		sample = {'ID' : i+8}
+		sample = {'ID' : i+12}
 		sample['hierarchy'] = hierarchy
 		sample['situation'] = situation
 
@@ -243,4 +258,4 @@ def sample(d, n):
 
 
 
-sample(experiments(generate(NODES)), 16)
+sample(experiments(generate(NODES)), 12)

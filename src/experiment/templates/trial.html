@@ -9,11 +9,10 @@
 </div>
 
   </div>
+
   <div class="continue">
-    <button type="button" class="next" id ="goback">Go back</button>
-  </div>
-  <div class="continue">
-    <button type="button" class="next" id="continue">Continue</button>
+    <button type="button" class="goback" id ="goback">Go back</button>
+    <button type="button" class="cont" id="continue">Continue</button>
   </div>
 </div>
 
@@ -22,14 +21,16 @@
   <div class="blue">
     <div class="main_block">
     <div class="container" >
+      <img class="tutorial" src=""/>
     </div>
 </div>
 <div class="spacer"></div>
     <br>
-    <p style="text-align: center;">Please press Start to begin with the experiment. </p>
+<!--     <hr>
+    <p style="text-align: center;">Please press Start to begin with the experiment. </p> -->
   </div>
   <div class="continue">
-    <button type="button" class="next" id ="start">Start</button>
+    <button type="button" class="cont" id ="start">Continue</button>
   </div>
 </div>
 
@@ -39,68 +40,75 @@
   <h1>Check questions</h1>
   <div class="blue">
     <p><b>Please answer the following questions</b>:</p>
-
+    <hr>
+    <hr>
      <br/>
 
     <p>1. Based on the example below, evaluate the following. <br/> <br/>
-      <img src='static/images/instructions/comprehension1.png' style="width:40%;border: 1px solid black;">
+      <img src='static/images/instructions/comprehension1.png' style="width:41%;border: 1px solid black;">
       <br/><br/> 
+      <hr width="50%">
       &nbsp;
       Team A:
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <input class = "demoQ" type="radio" name="teama" value="succeeded"> succeeded
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <input class = "demoQ" type="radio" name="teama" value="failed"> failed<br/> 
+      <hr width="50%">
       &nbsp;
       Office Goal:
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <input class = "demoQ" type="radio" name="outcome1" value="succeeded"> succeeded
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <input class = "demoQ" type="radio" name="outcome1" value="failed"> failed<br/><br/> 
+      <input class = "demoQ" type="radio" name="outcome1" value="succeeded"> was met
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input class = "demoQ" type="radio" name="outcome1" value="failed"> wasn't met
+    <hr width="50%">
+    <br/><br/> 
     </p>
 
     <br/>
 
       <p>2. Based on the example below, evaluate the following. <br/> <br/>
-      <img src='static/images/instructions/comprehension2.png' style="width:40%;border: 1px solid black;">
+      <img src='static/images/instructions/comprehension2.png' style="width:41%;border: 1px solid black;">
       <br/><br/> 
+      <hr width="50%">
       &nbsp;
       Team B:
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <input class = "demoQ" type="radio" name="teamb" value="succeeded"> succeeded
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <input class = "demoQ" type="radio" name="teamb" value="failed"> failed<br/> 
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input class = "demoQ" type="radio" name="teamb" value="failed"> failed
+      <hr width="50%">
+      <br/> 
       &nbsp;
       Team C:
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
       <input class = "demoQ" type="radio" name="teamc" value="succeeded"> succeeded
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <input class = "demoQ" type="radio" name="teamc" value="failed"> failed<br/> 
+      <hr width="50%">
       &nbsp;
       Office Goal:
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <input class = "demoQ" type="radio" name="outcome2" value="succeeded"> succeeded
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <input class = "demoQ" type="radio" name="outcome2" value="failed"> failed<br/><br/> 
-    </p>
+      <input class = "demoQ" type="radio" name="outcome2" value="succeeded"> was met
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input class = "demoQ" type="radio" name="outcome2" value="failed"> wasn't met
+      <hr width="50%">
+      <br/><br/> 
 
-<!--     <p>2. In the example below, is the Outcome more likely to succeed or fail?<br/> <br/>
-      <img src='static/images/instructions/comprehension2.png' style="width:40%;border: 1px solid black;">
-      <br/><br/>
-      &nbsp;
-      <input class = "demoQ" type="radio" name="goal" value="succeed"> succeed <br/>
-      &nbsp;
-      <input class = "demoQ" type="radio" name="goal" value="fail"> fail <br/>
-    </p> -->
- 
+    </p>
+    <br>
+    <hr>
+    <hr>
+    <p style="text-align: center;">Please press Start to begin with the experiment. </p> 
  
     
     <br/>
 
     </div>
+  
 
     <div class="continue">
-      <button type="button" class="next" id="comprehension">Continue</button>
+      <button type="button" class="next" id="comprehension">Start</button>
     </div>
 </div>   
 
@@ -113,6 +121,7 @@
 <p>Please have another close look at the instructions! </p>
 
 </div>
+
 <div class="continue" >
     <button type="button" class="next" id="comprehension_fail">Continue</button>
   </div>

@@ -17,25 +17,25 @@ ABC = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O'
 
 # Trials
 abc = ABC[:]
-# FIGSIZE = (15, 10)
-# FONTSIZE = 20
-# SIZE = .05
-# LW = 3
-# MW = .011
-# ARROW_L = .015
-# ARROW_W = .0125
-# NAME_H = 1.8
+FIGSIZE = (15, 10)
+FONTSIZE = 20
+SIZE = .05
+LW = 3
+MW = .011
+ARROW_L = .015
+ARROW_W = .0125
+NAME_H = 1.8
 
 # Tutorial and Comprehension
-FIGSIZE = (7.5, 5)
-FONTSIZE = 16
-SIZE = .09
-LW = 3
-MW = .02
-# + .05
-ARROW_L = .02
-ARROW_W = .0175
-NAME_H = 1.5
+# FIGSIZE = (7.5, 5)
+# FONTSIZE = 16
+# SIZE = .09
+# LW = 3
+# MW = .02
+# # + .05
+# ARROW_L = .02
+# ARROW_W = .0175
+# NAME_H = 1.5
 
 
 '''
