@@ -37776,3 +37776,1885 @@ IOError: [Errno 2] No such file or directory: 'templates/ad.html'
 [2017-08-01 16:13:27 +0000] [5238] [DEBUG] Closing connection. 
 [2017-08-01 16:13:27 +0000] [5238] [INFO] Parent changed, shutting down: <Worker 5238>
 [2017-08-01 16:13:27 +0000] [5238] [INFO] Worker exiting (pid: 5238)
+[2017-08-02 00:51:52 +0200] [4527] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  statsd_host: None
+  max_requests_jitter: 0
+  post_fork: <function post_fork at 0x10b4c58c0>
+  pythonpath: None
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 3
+  suppress_ragged_eofs: True
+  syslog: False
+  syslog_facility: user
+  when_ready: <function when_ready at 0x10b4c55f0>
+  pre_fork: <function pre_fork at 0x10b4c5758>
+  cert_reqs: 0
+  preload_app: False
+  keepalive: 2
+  accesslog: None
+  group: 20
+  graceful_timeout: 30
+  do_handshake_on_connect: False
+  spew: False
+  workers: 9
+  proc_name: psiturk_experiment_server
+  sendfile: None
+  pidfile: None
+  umask: 0
+  on_reload: <function on_reload at 0x10b4c5488>
+  pre_exec: <function pre_exec at 0x10b4c5e60>
+  worker_tmp_dir: None
+  post_worker_init: <function post_worker_init at 0x10b4c5a28>
+  limit_request_fields: 100
+  on_exit: <function on_exit at 0x10b507320>
+  config: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x10b4c8050>
+  post_request: <function post_request at 0x10b4c8140>
+  user: 501
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x10b4c5b90>
+  threads: 1
+  max_requests: 0
+  limit_request_line: 0
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  worker_exit: <function worker_exit at 0x10b4c82a8>
+  chdir: /Users/tobi/Documents/work/projects_git/unpacking_responsibility/src/experiment
+  paste: None
+  default_proc_name: gunicorn
+  errorlog: server.log
+  loglevel: debug
+  logconfig: None
+  syslog_addr: unix:///var/run/syslog
+  syslog_prefix: None
+  daemon: False
+  ciphers: TLSv1
+  on_starting: <function on_starting at 0x10b4c5320>
+  worker_abort: <function worker_abort at 0x10b4c5cf8>
+  bind: ['0.0.0.0:22362']
+  raw_env: []
+  reload: False
+  check_config: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x10b4c8410>
+  timeout: 30
+  ca_certs: None
+  django_settings: None
+  tmp_upload_dir: None
+  keyfile: None
+  backlog: 2048
+  logger_class: gunicorn.glogging.Logger
+  statsd_prefix: 
+[2017-08-02 00:51:52 +0200] [4527] [INFO] Starting gunicorn 19.4.5
+[2017-08-02 00:51:52 +0200] [4527] [DEBUG] Arbiter booted
+[2017-08-02 00:51:52 +0200] [4527] [INFO] Listening at: http://0.0.0.0:22362 (4527)
+[2017-08-02 00:51:52 +0200] [4527] [INFO] Using worker: sync
+[2017-08-02 00:51:52 +0200] [4531] [INFO] Booting worker with pid: 4531
+[2017-08-02 00:51:52 +0200] [4532] [INFO] Booting worker with pid: 4532
+[2017-08-02 00:51:52 +0200] [4533] [INFO] Booting worker with pid: 4533
+[2017-08-02 00:51:52 +0200] [4534] [INFO] Booting worker with pid: 4534
+[2017-08-02 00:51:53 +0200] [4535] [INFO] Booting worker with pid: 4535
+[2017-08-02 00:51:53 +0200] [4536] [INFO] Booting worker with pid: 4536
+[2017-08-02 00:51:53 +0200] [4537] [INFO] Booting worker with pid: 4537
+[2017-08-02 00:51:53 +0200] [4538] [INFO] Booting worker with pid: 4538
+[2017-08-02 00:51:53 +0200] [4539] [INFO] Booting worker with pid: 4539
+[2017-08-02 00:51:53 +0200] [4527] [DEBUG] 9 workers
+2017-08-02 00:51:54,978 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 00:51:54,979 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 00:51:55,029 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2017-08-02 00:51:55 +0200] [4531] [DEBUG] Closing connection. 
+2017-08-02 00:51:55,172 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 00:51:55,173 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 00:51:55,212 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 00:51:55,422 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 00:51:55,423 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 00:51:55,426 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 00:51:55,555 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 00:51:55,556 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 00:51:55,565 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 00:51:55,578 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 00:51:55,578 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 00:51:55,581 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 00:51:55,610 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 00:51:55,611 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 00:51:55,615 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 00:51:55,767 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 00:51:55,768 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 00:51:55,771 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 00:51:55,782 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 00:51:55,783 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 00:51:55,787 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 00:51:55,799 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 00:51:55,800 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 00:51:55,804 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2017-08-02 00:51:55 +0200] [4531] [DEBUG] Closing connection. 
+[2017-08-02 00:51:55 +0200] [4532] [DEBUG] Closing connection. 
+[2017-08-02 00:51:56 +0200] [4539] [DEBUG] Closing connection. 
+[2017-08-02 00:51:56 +0200] [4532] [DEBUG] GET /ad
+[2017-08-02 00:51:59 +0200] [4533] [DEBUG] GET /consent
+[2017-08-02 00:51:59 +0200] [4531] [DEBUG] GET /static/js/utils.js
+[2017-08-02 00:51:59 +0200] [4537] [DEBUG] GET /static/css/general.css
+[2017-08-02 00:52:01 +0200] [4538] [DEBUG] GET /exp
+2017-08-02 00:52:01,301 Accessing /exp: debugUDBVYZ debugQO92FA debug9QMF4S 
+2017-08-02 00:52:01,310 given Counter({(0, 0): 4}) chose (0, 0)
+[2017-08-02 00:52:01 +0200] [4535] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 00:52:01 +0200] [4531] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 00:52:01 +0200] [4536] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 00:52:01 +0200] [4533] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 00:52:01 +0200] [4537] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 00:52:01 +0200] [4532] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 00:52:01 +0200] [4537] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 00:52:01 +0200] [4539] [DEBUG] GET /ad
+[2017-08-02 00:52:01 +0200] [4534] [DEBUG] GET /static/js/config.js
+[2017-08-02 00:52:01 +0200] [4531] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 00:52:01 +0200] [4536] [DEBUG] GET /static/js/task.js
+[2017-08-02 00:52:02 +0200] [4536] [DEBUG] GET /static/json/stim.json
+[2017-08-02 00:52:02 +0200] [4536] [DEBUG] GET /sync/debug9QMF4S%3AdebugQO92FA
+2017-08-02 00:52:02,514 GET /sync route with id: debug9QMF4S:debugQO92FA
+[2017-08-02 00:52:02 +0200] [4535] [DEBUG] GET /trial.html
+[2017-08-02 00:52:02 +0200] [4535] [DEBUG] GET /submit.html
+[2017-08-02 00:52:02 +0200] [4539] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 00:52:02 +0200] [4537] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 00:52:02 +0200] [4532] [DEBUG] GET /static/images/instructions/tutorial0.png
+[2017-08-02 00:53:13 +0200] [4539] [DEBUG] GET /static/images/instructions/tutorial1.png
+[2017-08-02 00:54:22 +0200] [4538] [DEBUG] GET /static/images/instructions/tutorial2.png
+[2017-08-02 00:54:27 +0200] [4537] [DEBUG] GET /static/images/instructions/tutorial3.png
+[2017-08-02 00:54:27 +0200] [4531] [DEBUG] GET /static/images/instructions/tutorial4.png
+[2017-08-02 00:54:30 +0200] [4531] [DEBUG] GET /static/images/instructions/tutorial5.png
+[2017-08-02 00:54:31 +0200] [4538] [DEBUG] GET /static/images/instructions/tutorial6.png
+[2017-08-02 00:54:32 +0200] [4538] [DEBUG] GET /static/images/instructions/tutorial7.png
+[2017-08-02 00:54:34 +0200] [4536] [DEBUG] GET /static/images/instructions/tutorial8.png
+[2017-08-02 00:54:35 +0200] [4536] [DEBUG] GET /static/images/instructions/tutorial9.png
+[2017-08-02 00:54:35 +0200] [4536] [DEBUG] GET /static/images/instructions/tutorial10.png
+[2017-08-02 00:54:38 +0200] [4533] [DEBUG] GET /exp
+2017-08-02 00:54:38,238 Accessing /exp: debugUDBVYZ debugQO92FA debug9QMF4S 
+[2017-08-02 00:54:38 +0200] [4536] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 00:54:38 +0200] [4537] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 00:54:38 +0200] [4538] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 00:54:38 +0200] [4535] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 00:54:38 +0200] [4531] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 00:54:38 +0200] [4533] [DEBUG] GET /static/css/general.css
+[2017-08-02 00:54:38 +0200] [4532] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 00:54:38 +0200] [4534] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 00:54:38 +0200] [4532] [DEBUG] GET /static/js/config.js
+[2017-08-02 00:54:39 +0200] [4536] [DEBUG] GET /static/js/utils.js
+[2017-08-02 00:54:39 +0200] [4537] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 00:54:39 +0200] [4534] [DEBUG] GET /static/js/task.js
+[2017-08-02 00:54:43 +0200] [4534] [DEBUG] GET /static/json/stim.json
+[2017-08-02 00:54:43 +0200] [4534] [DEBUG] GET /sync/debug9QMF4S%3AdebugQO92FA
+2017-08-02 00:54:43,322 GET /sync route with id: debug9QMF4S:debugQO92FA
+[2017-08-02 00:54:43 +0200] [4536] [DEBUG] GET /trial.html
+[2017-08-02 00:54:43 +0200] [4538] [DEBUG] GET /submit.html
+[2017-08-02 00:54:44 +0200] [4535] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 00:54:44 +0200] [4531] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 00:54:44 +0200] [4534] [DEBUG] GET /static/images/instructions/tutorial0.png
+[2017-08-02 00:54:46 +0200] [4535] [DEBUG] GET /static/images/instructions/tutorial1.png
+[2017-08-02 00:54:49 +0200] [4535] [DEBUG] GET /static/images/instructions/tutorial2.png
+[2017-08-02 00:54:55 +0200] [4532] [DEBUG] GET /exp
+2017-08-02 00:54:55,892 Accessing /exp: debugUDBVYZ debugQO92FA debug9QMF4S 
+[2017-08-02 00:54:56 +0200] [4535] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 00:54:56 +0200] [4534] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 00:54:56 +0200] [4533] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 00:54:56 +0200] [4537] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 00:54:56 +0200] [4531] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 00:54:56 +0200] [4532] [DEBUG] GET /static/css/general.css
+[2017-08-02 00:54:56 +0200] [4536] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 00:54:56 +0200] [4533] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 00:54:56 +0200] [4537] [DEBUG] GET /static/js/config.js
+[2017-08-02 00:54:56 +0200] [4535] [DEBUG] GET /static/js/utils.js
+[2017-08-02 00:54:56 +0200] [4537] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 00:54:56 +0200] [4533] [DEBUG] GET /static/js/task.js
+[2017-08-02 00:54:58 +0200] [4533] [DEBUG] GET /static/json/stim.json
+[2017-08-02 00:54:58 +0200] [4536] [DEBUG] GET /sync/debug9QMF4S%3AdebugQO92FA
+2017-08-02 00:54:59,001 GET /sync route with id: debug9QMF4S:debugQO92FA
+[2017-08-02 00:54:59 +0200] [4537] [DEBUG] GET /trial.html
+[2017-08-02 00:54:59 +0200] [4533] [DEBUG] GET /submit.html
+[2017-08-02 00:54:59 +0200] [4536] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 00:54:59 +0200] [4538] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 00:54:59 +0200] [4533] [DEBUG] GET /static/images/instructions/tutorial0.png
+[2017-08-02 00:55:01 +0200] [4533] [DEBUG] GET /static/images/instructions/tutorial1.png
+[2017-08-02 00:55:02 +0200] [4535] [DEBUG] GET /static/images/instructions/tutorial2.png
+[2017-08-02 00:55:04 +0200] [4535] [DEBUG] GET /static/images/instructions/tutorial3.png
+[2017-08-02 00:55:05 +0200] [4535] [DEBUG] GET /static/images/instructions/tutorial4.png
+[2017-08-02 00:55:17 +0200] [4538] [DEBUG] GET /exp
+2017-08-02 00:55:17,270 Accessing /exp: debugUDBVYZ debugQO92FA debug9QMF4S 
+[2017-08-02 00:55:17 +0200] [4536] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 00:55:17 +0200] [4533] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 00:55:17 +0200] [4535] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 00:55:17 +0200] [4539] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 00:55:17 +0200] [4534] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 00:55:18 +0200] [4537] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 00:55:18 +0200] [4537] [DEBUG] GET /static/css/general.css
+[2017-08-02 00:55:19 +0200] [4531] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 00:55:19 +0200] [4534] [DEBUG] GET /static/js/config.js
+[2017-08-02 00:55:19 +0200] [4532] [DEBUG] GET /static/js/utils.js
+[2017-08-02 00:55:19 +0200] [4538] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 00:55:19 +0200] [4531] [DEBUG] GET /static/js/task.js
+[2017-08-02 00:55:21 +0200] [4531] [DEBUG] GET /static/json/stim.json
+[2017-08-02 00:55:22 +0200] [4531] [DEBUG] GET /sync/debug9QMF4S%3AdebugQO92FA
+2017-08-02 00:55:22,117 GET /sync route with id: debug9QMF4S:debugQO92FA
+[2017-08-02 00:55:22 +0200] [4532] [DEBUG] GET /trial.html
+[2017-08-02 00:55:22 +0200] [4539] [DEBUG] GET /submit.html
+[2017-08-02 00:55:22 +0200] [4534] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 00:55:22 +0200] [4532] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 00:55:22 +0200] [4535] [DEBUG] GET /static/images/instructions/tutorial0.png
+[2017-08-02 00:55:24 +0200] [4532] [DEBUG] GET /static/images/instructions/tutorial1.png
+[2017-08-02 00:55:26 +0200] [4537] [DEBUG] GET /static/images/instructions/tutorial2.png
+[2017-08-02 00:55:32 +0200] [4531] [DEBUG] GET /static/css/general.css
+[2017-08-02 00:55:32 +0200] [4532] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 00:55:34 +0200] [4532] [DEBUG] GET /exp
+2017-08-02 00:55:34,269 Accessing /exp: debugUDBVYZ debugQO92FA debug9QMF4S 
+[2017-08-02 00:55:34 +0200] [4532] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 00:55:34 +0200] [4537] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 00:55:34 +0200] [4539] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 00:55:34 +0200] [4531] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 00:55:34 +0200] [4539] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 00:55:34 +0200] [4538] [DEBUG] GET /static/css/general.css
+[2017-08-02 00:55:34 +0200] [4534] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 00:55:34 +0200] [4533] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 00:55:34 +0200] [4534] [DEBUG] GET /static/js/config.js
+[2017-08-02 00:55:34 +0200] [4536] [DEBUG] GET /static/js/utils.js
+[2017-08-02 00:55:34 +0200] [4533] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 00:55:34 +0200] [4537] [DEBUG] GET /static/js/task.js
+[2017-08-02 00:55:36 +0200] [4533] [DEBUG] GET /static/lib/underscore-min.map
+[2017-08-02 00:55:36 +0200] [4531] [DEBUG] GET /static/json/stim.json
+[2017-08-02 00:55:36 +0200] [4531] [DEBUG] GET /sync/debug9QMF4S%3AdebugQO92FA
+2017-08-02 00:55:36,111 GET /sync route with id: debug9QMF4S:debugQO92FA
+[2017-08-02 00:55:36 +0200] [4533] [DEBUG] GET /trial.html
+[2017-08-02 00:55:36 +0200] [4539] [DEBUG] GET /submit.html
+[2017-08-02 00:55:36 +0200] [4531] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 00:55:36 +0200] [4539] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 00:55:36 +0200] [4532] [DEBUG] GET /static/images/instructions/tutorial0.png
+[2017-08-02 00:55:37 +0200] [4532] [DEBUG] GET /static/images/instructions/tutorial1.png
+[2017-08-02 00:55:39 +0200] [4535] [DEBUG] GET /static/images/instructions/tutorial2.png
+[2017-08-02 00:56:48 +0200] [4535] [DEBUG] GET /static/images/instructions/tutorial3.png
+[2017-08-02 00:57:28 +0200] [4539] [DEBUG] GET /static/images/instructions/tutorial4.png
+[2017-08-02 00:57:34 +0200] [4536] [DEBUG] GET /static/images/instructions/tutorial5.png
+[2017-08-02 00:57:41 +0200] [4538] [DEBUG] GET /static/images/instructions/tutorial6.png
+[2017-08-02 00:57:52 +0200] [4533] [DEBUG] GET /static/images/instructions/tutorial7.png
+[2017-08-02 00:58:00 +0200] [4539] [DEBUG] GET /static/images/instructions/tutorial8.png
+[2017-08-02 00:59:15 +0200] [4538] [DEBUG] GET /static/images/instructions/tutorial9.png
+[2017-08-02 01:00:06 +0200] [4536] [DEBUG] GET /static/images/instructions/tutorial10.png
+[2017-08-02 01:00:57 +0200] [4537] [DEBUG] GET /static/images/instructions/tutorial11.png
+[2017-08-02 01:05:33 +0200] [4531] [DEBUG] GET /static/images/instructions/tutorial1.png
+[2017-08-02 01:05:57 +0200] [4534] [DEBUG] GET /exp
+2017-08-02 01:05:57,578 Accessing /exp: debugUDBVYZ debugQO92FA debug9QMF4S 
+[2017-08-02 01:05:57 +0200] [4536] [DEBUG] GET /static/lib/seedrandom.js
+[2017-08-02 01:05:57 +0200] [4537] [DEBUG] GET /static/lib/jquery.min.js
+[2017-08-02 01:05:58 +0200] [4539] [DEBUG] GET /static/lib/underscore-min.js
+[2017-08-02 01:05:58 +0200] [4537] [DEBUG] GET /static/lib/jquery-ui.min.js
+[2017-08-02 01:05:58 +0200] [4535] [DEBUG] GET /static/lib/backbone-min.js
+[2017-08-02 01:05:58 +0200] [4537] [DEBUG] GET /static/lib/mustache.js
+[2017-08-02 01:05:58 +0200] [4532] [DEBUG] GET /static/css/general.css
+[2017-08-02 01:05:58 +0200] [4534] [DEBUG] GET /static/css/jquery-ui.min.css
+[2017-08-02 01:05:58 +0200] [4534] [DEBUG] GET /static/js/config.js
+[2017-08-02 01:05:58 +0200] [4534] [DEBUG] GET /static/js/utils.js
+[2017-08-02 01:05:58 +0200] [4535] [DEBUG] GET /static/js/psiturk.js
+[2017-08-02 01:05:58 +0200] [4538] [DEBUG] GET /static/js/task.js
+[2017-08-02 01:06:00 +0200] [4538] [DEBUG] GET /static/lib/underscore-min.map
+[2017-08-02 01:06:00 +0200] [4535] [DEBUG] GET /static/json/stim.json
+[2017-08-02 01:06:00 +0200] [4538] [DEBUG] GET /sync/debug9QMF4S%3AdebugQO92FA
+2017-08-02 01:06:00,795 GET /sync route with id: debug9QMF4S:debugQO92FA
+[2017-08-02 01:06:00 +0200] [4534] [DEBUG] GET /trial.html
+[2017-08-02 01:06:00 +0200] [4534] [DEBUG] GET /submit.html
+[2017-08-02 01:06:01 +0200] [4534] [DEBUG] GET /static/images/instructions/comprehension1.png
+[2017-08-02 01:06:01 +0200] [4533] [DEBUG] GET /static/images/instructions/tutorial0.png
+[2017-08-02 01:06:01 +0200] [4536] [DEBUG] GET /static/images/instructions/comprehension2.png
+[2017-08-02 01:06:04 +0200] [4533] [DEBUG] GET /static/images/instructions/tutorial1.png
+[2017-08-02 01:06:05 +0200] [4533] [DEBUG] GET /static/images/instructions/tutorial2.png
+[2017-08-02 01:06:06 +0200] [4536] [DEBUG] GET /static/images/instructions/tutorial3.png
+[2017-08-02 01:06:06 +0200] [4532] [DEBUG] GET /static/images/instructions/tutorial4.png
+[2017-08-02 01:06:06 +0200] [4536] [DEBUG] GET /static/images/instructions/tutorial5.png
+[2017-08-02 01:06:07 +0200] [4536] [DEBUG] GET /static/images/instructions/tutorial6.png
+[2017-08-02 01:06:07 +0200] [4535] [DEBUG] GET /static/images/instructions/tutorial7.png
+[2017-08-02 01:06:07 +0200] [4539] [DEBUG] GET /static/images/instructions/tutorial8.png
+[2017-08-02 01:06:07 +0200] [4536] [DEBUG] GET /static/images/instructions/tutorial9.png
+[2017-08-02 01:06:08 +0200] [4536] [DEBUG] GET /static/images/instructions/tutorial10.png
+[2017-08-02 01:06:09 +0200] [4536] [DEBUG] GET /static/images/instructions/tutorial11.png
+[2017-08-02 01:07:01 +0200] [4536] [DEBUG] GET /static/images/instructions/tutorial0.png
+[2017-08-02 01:07:03 +0200] [4538] [DEBUG] GET /static/images/instructions/tutorial1.png
+[2017-08-02 01:07:38 +0200] [4533] [DEBUG] GET /static/css/images/ui-bg_highlight-soft_100_eeeeee_1x100.png
+[2017-08-02 01:07:38 +0200] [4539] [DEBUG] GET /static/css/images/ui-bg_glass_100_f6f6f6_1x400.png
+[2017-08-02 01:07:38 +0200] [4531] [DEBUG] GET /static/images/highlighted/highlighted2.png
+[2017-08-02 01:11:20 +0200] [4537] [DEBUG] GET /static/css/images/ui-bg_glass_65_ffffff_1x400.png
+[2017-08-02 01:11:20 +0200] [4535] [DEBUG] GET /static/css/images/ui-bg_glass_100_fdf5ce_1x400.png
+[2017-08-02 01:11:21 +0200] [4531] [DEBUG] GET /static/images/situations/situation2.png
+[2017-08-02 01:11:30 +0200] [4536] [DEBUG] GET /static/images/highlighted/highlighted23.png
+[2017-08-02 01:12:00 +0200] [4538] [DEBUG] GET /static/images/situations/situation23.png
+[2017-08-02 01:12:03 +0200] [4536] [DEBUG] GET /static/images/highlighted/highlighted4.png
+[2017-08-02 01:12:32 +0200] [4532] [DEBUG] GET /static/images/situations/situation4.png
+[2017-08-02 01:12:33 +0200] [4533] [DEBUG] GET /static/images/highlighted/highlighted0.png
+[2017-08-02 01:12:35 +0200] [4533] [DEBUG] GET /static/images/situations/situation0.png
+[2017-08-02 01:12:37 +0200] [4539] [DEBUG] GET /static/images/highlighted/highlighted17.png
+[2017-08-02 01:12:39 +0200] [4534] [DEBUG] GET /static/images/situations/situation17.png
+[2017-08-02 01:12:40 +0200] [4531] [DEBUG] GET /static/images/highlighted/highlighted3.png
+[2017-08-02 01:12:50 +0200] [4534] [DEBUG] GET /static/images/situations/situation3.png
+[2017-08-02 01:12:52 +0200] [4537] [DEBUG] GET /static/images/highlighted/highlighted8.png
+[2017-08-02 01:12:54 +0200] [4531] [DEBUG] GET /static/images/situations/situation8.png
+[2017-08-02 01:12:56 +0200] [4535] [DEBUG] GET /static/images/highlighted/highlighted1.png
+[2017-08-02 01:12:58 +0200] [4535] [DEBUG] GET /static/images/situations/situation1.png
+[2017-08-02 01:12:59 +0200] [4533] [DEBUG] GET /static/images/highlighted/highlighted14.png
+[2017-08-02 01:13:03 +0200] [4535] [DEBUG] GET /static/images/situations/situation14.png
+[2017-08-02 01:13:04 +0200] [4531] [DEBUG] GET /static/images/highlighted/highlighted13.png
+[2017-08-02 01:13:07 +0200] [4536] [DEBUG] GET /static/images/situations/situation13.png
+[2017-08-02 01:13:09 +0200] [4533] [DEBUG] GET /static/images/highlighted/highlighted11.png
+[2017-08-02 01:13:13 +0200] [4539] [DEBUG] GET /static/images/situations/situation11.png
+[2017-08-02 01:13:15 +0200] [4532] [DEBUG] GET /static/images/highlighted/highlighted19.png
+[2017-08-02 01:13:22 +0200] [4535] [DEBUG] GET /static/images/situations/situation19.png
+[2017-08-02 01:13:24 +0200] [4533] [DEBUG] GET /static/images/highlighted/highlighted18.png
+[2017-08-02 01:13:31 +0200] [4532] [DEBUG] GET /static/images/situations/situation18.png
+[2017-08-02 01:59:32 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4531)
+[2017-08-02 01:59:32 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4532)
+[2017-08-02 01:59:32 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4533)
+[2017-08-02 01:59:32 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4534)
+[2017-08-02 01:59:32 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4536)
+[2017-08-02 01:59:32 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4539)
+[2017-08-02 01:59:32 +0200] [4531] [INFO] Worker exiting (pid: 4531)
+[2017-08-02 01:59:32 +0200] [4533] [INFO] Worker exiting (pid: 4533)
+[2017-08-02 01:59:32 +0200] [4534] [INFO] Worker exiting (pid: 4534)
+[2017-08-02 01:59:32 +0200] [4536] [INFO] Worker exiting (pid: 4536)
+[2017-08-02 01:59:32 +0200] [4539] [INFO] Worker exiting (pid: 4539)
+[2017-08-02 01:59:32 +0200] [4532] [INFO] Worker exiting (pid: 4532)
+[2017-08-02 01:59:32 +0200] [4804] [INFO] Booting worker with pid: 4804
+[2017-08-02 01:59:32 +0200] [4805] [INFO] Booting worker with pid: 4805
+[2017-08-02 01:59:32 +0200] [4527] [DEBUG] 7 workers
+[2017-08-02 01:59:32 +0200] [4806] [INFO] Booting worker with pid: 4806
+[2017-08-02 01:59:32 +0200] [4807] [INFO] Booting worker with pid: 4807
+[2017-08-02 01:59:32 +0200] [4527] [DEBUG] 8 workers
+[2017-08-02 01:59:32 +0200] [4808] [INFO] Booting worker with pid: 4808
+[2017-08-02 01:59:32 +0200] [4809] [INFO] Booting worker with pid: 4809
+[2017-08-02 01:59:32 +0200] [4527] [DEBUG] 9 workers
+2017-08-02 01:59:33,611 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 01:59:33,612 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 01:59:33,612 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 01:59:33,613 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 01:59:33,614 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 01:59:33,614 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 01:59:33,615 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 01:59:33,615 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 01:59:33,621 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 01:59:33,621 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 01:59:33,630 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 01:59:33,630 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 01:59:33,642 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 01:59:33,642 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 01:59:33,643 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 01:59:33,644 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 01:59:33,644 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 01:59:33,652 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2017-08-02 04:00:22 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4804)
+[2017-08-02 04:00:22 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4805)
+[2017-08-02 04:00:22 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4806)
+[2017-08-02 04:00:22 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4807)
+[2017-08-02 04:00:22 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4808)
+[2017-08-02 04:00:22 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4809)
+[2017-08-02 04:00:22 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4535)
+[2017-08-02 04:00:22 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4537)
+[2017-08-02 04:00:22 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4538)
+[2017-08-02 04:00:22 +0200] [4804] [INFO] Worker exiting (pid: 4804)
+[2017-08-02 04:00:22 +0200] [4805] [INFO] Worker exiting (pid: 4805)
+[2017-08-02 04:00:22 +0200] [4806] [INFO] Worker exiting (pid: 4806)
+[2017-08-02 04:00:22 +0200] [4807] [INFO] Worker exiting (pid: 4807)
+[2017-08-02 04:00:22 +0200] [4808] [INFO] Worker exiting (pid: 4808)
+[2017-08-02 04:00:22 +0200] [4809] [INFO] Worker exiting (pid: 4809)
+[2017-08-02 04:00:22 +0200] [4535] [INFO] Worker exiting (pid: 4535)
+[2017-08-02 04:00:22 +0200] [4537] [INFO] Worker exiting (pid: 4537)
+[2017-08-02 04:00:22 +0200] [4538] [INFO] Worker exiting (pid: 4538)
+[2017-08-02 04:00:22 +0200] [4527] [DEBUG] 7 workers
+[2017-08-02 04:00:22 +0200] [4818] [INFO] Booting worker with pid: 4818
+[2017-08-02 04:00:22 +0200] [4819] [INFO] Booting worker with pid: 4819
+[2017-08-02 04:00:22 +0200] [4820] [INFO] Booting worker with pid: 4820
+[2017-08-02 04:00:22 +0200] [4821] [INFO] Booting worker with pid: 4821
+[2017-08-02 04:00:22 +0200] [4527] [DEBUG] 5 workers
+[2017-08-02 04:00:22 +0200] [4822] [INFO] Booting worker with pid: 4822
+[2017-08-02 04:00:22 +0200] [4823] [INFO] Booting worker with pid: 4823
+[2017-08-02 04:00:22 +0200] [4824] [INFO] Booting worker with pid: 4824
+[2017-08-02 04:00:22 +0200] [4825] [INFO] Booting worker with pid: 4825
+[2017-08-02 04:00:22 +0200] [4527] [DEBUG] 9 workers
+[2017-08-02 04:00:22 +0200] [4826] [INFO] Booting worker with pid: 4826
+2017-08-02 04:00:23,452 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 04:00:23,453 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 04:00:23,455 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 04:00:23,466 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 04:00:23,466 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 04:00:23,468 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 04:00:23,468 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 04:00:23,469 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 04:00:23,471 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 04:00:23,471 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 04:00:23,471 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 04:00:23,474 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 04:00:23,475 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 04:00:23,475 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 04:00:23,477 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 04:00:23,478 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 04:00:23,479 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 04:00:23,481 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 04:00:23,483 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 04:00:23,484 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 04:00:23,486 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 04:00:23,491 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 04:00:23,492 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 04:00:23,495 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 04:00:23,497 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 04:00:23,498 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 04:00:23,503 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2017-08-02 06:01:12 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4818)
+[2017-08-02 06:01:12 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4819)
+[2017-08-02 06:01:12 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4820)
+[2017-08-02 06:01:12 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4821)
+[2017-08-02 06:01:12 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4822)
+[2017-08-02 06:01:12 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4823)
+[2017-08-02 06:01:12 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4824)
+[2017-08-02 06:01:12 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4825)
+[2017-08-02 06:01:12 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4826)
+[2017-08-02 06:01:12 +0200] [4818] [INFO] Worker exiting (pid: 4818)
+[2017-08-02 06:01:12 +0200] [4820] [INFO] Worker exiting (pid: 4820)
+[2017-08-02 06:01:12 +0200] [4821] [INFO] Worker exiting (pid: 4821)
+[2017-08-02 06:01:12 +0200] [4822] [INFO] Worker exiting (pid: 4822)
+[2017-08-02 06:01:12 +0200] [4823] [INFO] Worker exiting (pid: 4823)
+[2017-08-02 06:01:12 +0200] [4824] [INFO] Worker exiting (pid: 4824)
+[2017-08-02 06:01:12 +0200] [4825] [INFO] Worker exiting (pid: 4825)
+[2017-08-02 06:01:12 +0200] [4819] [INFO] Worker exiting (pid: 4819)
+[2017-08-02 06:01:12 +0200] [4826] [INFO] Worker exiting (pid: 4826)
+[2017-08-02 06:01:12 +0200] [4832] [INFO] Booting worker with pid: 4832
+[2017-08-02 06:01:12 +0200] [4833] [INFO] Booting worker with pid: 4833
+[2017-08-02 06:01:12 +0200] [4834] [INFO] Booting worker with pid: 4834
+[2017-08-02 06:01:12 +0200] [4527] [DEBUG] 3 workers
+[2017-08-02 06:01:12 +0200] [4835] [INFO] Booting worker with pid: 4835
+[2017-08-02 06:01:12 +0200] [4839] [INFO] Booting worker with pid: 4839
+[2017-08-02 06:01:12 +0200] [4840] [INFO] Booting worker with pid: 4840
+[2017-08-02 06:01:12 +0200] [4841] [INFO] Booting worker with pid: 4841
+[2017-08-02 06:01:12 +0200] [4842] [INFO] Booting worker with pid: 4842
+[2017-08-02 06:01:12 +0200] [4843] [INFO] Booting worker with pid: 4843
+[2017-08-02 06:01:12 +0200] [4527] [DEBUG] 9 workers
+2017-08-02 06:01:13,277 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 06:01:13,278 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 06:01:13,281 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 06:01:13,281 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 06:01:13,282 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 06:01:13,284 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 06:01:13,285 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 06:01:13,285 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 06:01:13,286 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 06:01:13,287 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 06:01:13,289 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 06:01:13,290 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 06:01:13,565 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 06:01:13,567 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 06:01:13,580 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 06:01:13,617 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 06:01:13,617 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 06:01:13,620 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 06:01:13,621 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 06:01:13,621 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 06:01:13,625 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 06:01:13,635 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 06:01:13,635 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 06:01:13,637 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 06:01:13,656 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 06:01:13,656 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 06:01:13,658 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2017-08-02 08:02:02 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4832)
+[2017-08-02 08:02:02 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4833)
+[2017-08-02 08:02:02 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4834)
+[2017-08-02 08:02:02 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4835)
+[2017-08-02 08:02:02 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4839)
+[2017-08-02 08:02:02 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4840)
+[2017-08-02 08:02:02 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4841)
+[2017-08-02 08:02:02 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4842)
+[2017-08-02 08:02:02 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4843)
+[2017-08-02 08:02:02 +0200] [4833] [INFO] Worker exiting (pid: 4833)
+[2017-08-02 08:02:02 +0200] [4835] [INFO] Worker exiting (pid: 4835)
+[2017-08-02 08:02:02 +0200] [4839] [INFO] Worker exiting (pid: 4839)
+[2017-08-02 08:02:02 +0200] [4840] [INFO] Worker exiting (pid: 4840)
+[2017-08-02 08:02:02 +0200] [4843] [INFO] Worker exiting (pid: 4843)
+[2017-08-02 08:02:02 +0200] [4834] [INFO] Worker exiting (pid: 4834)
+[2017-08-02 08:02:02 +0200] [4841] [INFO] Worker exiting (pid: 4841)
+[2017-08-02 08:02:02 +0200] [4842] [INFO] Worker exiting (pid: 4842)
+[2017-08-02 08:02:02 +0200] [4832] [INFO] Worker exiting (pid: 4832)
+[2017-08-02 08:02:02 +0200] [4888] [INFO] Booting worker with pid: 4888
+[2017-08-02 08:02:02 +0200] [4527] [DEBUG] 7 workers
+[2017-08-02 08:02:02 +0200] [4889] [INFO] Booting worker with pid: 4889
+[2017-08-02 08:02:02 +0200] [4890] [INFO] Booting worker with pid: 4890
+[2017-08-02 08:02:02 +0200] [4891] [INFO] Booting worker with pid: 4891
+[2017-08-02 08:02:02 +0200] [4892] [INFO] Booting worker with pid: 4892
+[2017-08-02 08:02:02 +0200] [4527] [DEBUG] 8 workers
+[2017-08-02 08:02:02 +0200] [4893] [INFO] Booting worker with pid: 4893
+[2017-08-02 08:02:02 +0200] [4527] [DEBUG] 9 workers
+[2017-08-02 08:02:02 +0200] [4894] [INFO] Booting worker with pid: 4894
+[2017-08-02 08:02:02 +0200] [4895] [INFO] Booting worker with pid: 4895
+[2017-08-02 08:02:02 +0200] [4527] [DEBUG] 8 workers
+[2017-08-02 08:02:02 +0200] [4896] [INFO] Booting worker with pid: 4896
+[2017-08-02 08:02:02 +0200] [4527] [DEBUG] 9 workers
+2017-08-02 08:02:03,406 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 08:02:03,406 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 08:02:03,409 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 08:02:03,413 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 08:02:03,413 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 08:02:03,417 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 08:02:03,419 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 08:02:03,419 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 08:02:03,420 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 08:02:03,421 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 08:02:03,422 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 08:02:03,425 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 08:02:03,422 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 08:02:03,431 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 08:02:03,432 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 08:02:03,432 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 08:02:03,432 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 08:02:03,432 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 08:02:03,435 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 08:02:03,436 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 08:02:03,439 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 08:02:03,440 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 08:02:03,436 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 08:02:03,443 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 08:02:03,457 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 08:02:03,457 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 08:02:03,459 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2017-08-02 10:02:52 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4888)
+[2017-08-02 10:02:52 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4889)
+[2017-08-02 10:02:52 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4890)
+[2017-08-02 10:02:52 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4891)
+[2017-08-02 10:02:52 +0200] [4888] [INFO] Worker exiting (pid: 4888)
+[2017-08-02 10:02:52 +0200] [4889] [INFO] Worker exiting (pid: 4889)
+[2017-08-02 10:02:52 +0200] [4891] [INFO] Worker exiting (pid: 4891)
+[2017-08-02 10:02:52 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4892)
+[2017-08-02 10:02:52 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4893)
+[2017-08-02 10:02:52 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4894)
+[2017-08-02 10:02:52 +0200] [4890] [INFO] Worker exiting (pid: 4890)
+[2017-08-02 10:02:52 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4895)
+[2017-08-02 10:02:52 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4896)
+[2017-08-02 10:02:52 +0200] [4892] [INFO] Worker exiting (pid: 4892)
+[2017-08-02 10:02:52 +0200] [4893] [INFO] Worker exiting (pid: 4893)
+[2017-08-02 10:02:52 +0200] [4894] [INFO] Worker exiting (pid: 4894)
+[2017-08-02 10:02:52 +0200] [4895] [INFO] Worker exiting (pid: 4895)
+[2017-08-02 10:02:52 +0200] [4896] [INFO] Worker exiting (pid: 4896)
+[2017-08-02 10:02:52 +0200] [4902] [INFO] Booting worker with pid: 4902
+[2017-08-02 10:02:52 +0200] [4903] [INFO] Booting worker with pid: 4903
+[2017-08-02 10:02:52 +0200] [4905] [INFO] Booting worker with pid: 4905
+[2017-08-02 10:02:52 +0200] [4527] [DEBUG] 3 workers
+[2017-08-02 10:02:52 +0200] [4906] [INFO] Booting worker with pid: 4906
+[2017-08-02 10:02:52 +0200] [4907] [INFO] Booting worker with pid: 4907
+[2017-08-02 10:02:52 +0200] [4908] [INFO] Booting worker with pid: 4908
+[2017-08-02 10:02:52 +0200] [4909] [INFO] Booting worker with pid: 4909
+[2017-08-02 10:02:52 +0200] [4910] [INFO] Booting worker with pid: 4910
+[2017-08-02 10:02:52 +0200] [4911] [INFO] Booting worker with pid: 4911
+[2017-08-02 10:02:52 +0200] [4527] [DEBUG] 9 workers
+2017-08-02 10:02:53,997 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 10:02:53,998 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 10:02:54,000 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 10:02:54,008 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 10:02:54,009 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 10:02:54,009 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 10:02:54,009 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 10:02:54,019 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 10:02:54,022 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 10:02:54,026 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 10:02:54,026 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 10:02:54,029 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 10:02:54,045 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 10:02:54,046 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 10:02:54,052 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 10:02:54,072 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 10:02:54,072 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 10:02:54,075 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 10:02:54,076 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 10:02:54,076 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 10:02:54,080 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 10:02:54,090 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 10:02:54,090 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 10:02:54,093 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 10:02:54,106 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 10:02:54,107 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 10:02:54,110 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2017-08-02 10:36:34 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4902)
+[2017-08-02 10:36:34 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4903)
+[2017-08-02 10:36:34 +0200] [4902] [INFO] Worker exiting (pid: 4902)
+[2017-08-02 10:36:34 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4905)
+[2017-08-02 10:36:34 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4906)
+[2017-08-02 10:36:34 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4907)
+[2017-08-02 10:36:34 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4908)
+[2017-08-02 10:36:34 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4909)
+[2017-08-02 10:36:34 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4910)
+[2017-08-02 10:36:34 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4911)
+[2017-08-02 10:36:34 +0200] [4903] [INFO] Worker exiting (pid: 4903)
+[2017-08-02 10:36:34 +0200] [4905] [INFO] Worker exiting (pid: 4905)
+[2017-08-02 10:36:34 +0200] [4906] [INFO] Worker exiting (pid: 4906)
+[2017-08-02 10:36:34 +0200] [4908] [INFO] Worker exiting (pid: 4908)
+[2017-08-02 10:36:34 +0200] [4911] [INFO] Worker exiting (pid: 4911)
+[2017-08-02 10:36:34 +0200] [4907] [INFO] Worker exiting (pid: 4907)
+[2017-08-02 10:36:34 +0200] [4910] [INFO] Worker exiting (pid: 4910)
+[2017-08-02 10:36:34 +0200] [4909] [INFO] Worker exiting (pid: 4909)
+[2017-08-02 10:36:34 +0200] [4926] [INFO] Booting worker with pid: 4926
+[2017-08-02 10:36:34 +0200] [4527] [DEBUG] 8 workers
+[2017-08-02 10:36:34 +0200] [4927] [INFO] Booting worker with pid: 4927
+[2017-08-02 10:36:34 +0200] [4928] [INFO] Booting worker with pid: 4928
+[2017-08-02 10:36:34 +0200] [4527] [DEBUG] 4 workers
+[2017-08-02 10:36:34 +0200] [4929] [INFO] Booting worker with pid: 4929
+[2017-08-02 10:36:34 +0200] [4931] [INFO] Booting worker with pid: 4931
+[2017-08-02 10:36:34 +0200] [4932] [INFO] Booting worker with pid: 4932
+[2017-08-02 10:36:34 +0200] [4933] [INFO] Booting worker with pid: 4933
+[2017-08-02 10:36:34 +0200] [4934] [INFO] Booting worker with pid: 4934
+[2017-08-02 10:36:34 +0200] [4527] [DEBUG] 8 workers
+[2017-08-02 10:36:34 +0200] [4935] [INFO] Booting worker with pid: 4935
+[2017-08-02 10:36:34 +0200] [4527] [DEBUG] 9 workers
+2017-08-02 10:36:35,936 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 10:36:35,937 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 10:36:35,940 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 10:36:35,940 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 10:36:35,940 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 10:36:35,944 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 10:36:35,945 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 10:36:35,948 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 10:36:35,956 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 10:36:35,957 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 10:36:35,960 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 10:36:35,963 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 10:36:35,963 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 10:36:35,964 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 10:36:35,978 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 10:36:35,983 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 10:36:35,983 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 10:36:35,987 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 10:36:35,993 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 10:36:35,994 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 10:36:35,996 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 10:36:35,996 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 10:36:35,997 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 10:36:36,000 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 10:36:36,030 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 10:36:36,031 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 10:36:36,035 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2017-08-02 13:46:29 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4928)
+[2017-08-02 13:46:29 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4929)
+[2017-08-02 13:46:29 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4931)
+[2017-08-02 13:46:29 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4932)
+[2017-08-02 13:46:29 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4933)
+[2017-08-02 13:46:29 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4934)
+[2017-08-02 13:46:29 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4935)
+[2017-08-02 13:46:29 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4926)
+[2017-08-02 13:46:29 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:4927)
+[2017-08-02 13:46:29 +0200] [4928] [INFO] Worker exiting (pid: 4928)
+[2017-08-02 13:46:29 +0200] [4933] [INFO] Worker exiting (pid: 4933)
+[2017-08-02 13:46:29 +0200] [4929] [INFO] Worker exiting (pid: 4929)
+[2017-08-02 13:46:29 +0200] [4931] [INFO] Worker exiting (pid: 4931)
+[2017-08-02 13:46:29 +0200] [4934] [INFO] Worker exiting (pid: 4934)
+[2017-08-02 13:46:29 +0200] [4926] [INFO] Worker exiting (pid: 4926)
+[2017-08-02 13:46:29 +0200] [4935] [INFO] Worker exiting (pid: 4935)
+[2017-08-02 13:46:29 +0200] [4932] [INFO] Worker exiting (pid: 4932)
+[2017-08-02 13:46:29 +0200] [4927] [INFO] Worker exiting (pid: 4927)
+[2017-08-02 13:46:29 +0200] [4527] [DEBUG] 6 workers
+[2017-08-02 13:46:29 +0200] [5522] [INFO] Booting worker with pid: 5522
+[2017-08-02 13:46:29 +0200] [5523] [INFO] Booting worker with pid: 5523
+[2017-08-02 13:46:29 +0200] [5524] [INFO] Booting worker with pid: 5524
+[2017-08-02 13:46:29 +0200] [5525] [INFO] Booting worker with pid: 5525
+[2017-08-02 13:46:30 +0200] [4527] [DEBUG] 4 workers
+[2017-08-02 13:46:30 +0200] [5526] [INFO] Booting worker with pid: 5526
+[2017-08-02 13:46:30 +0200] [5527] [INFO] Booting worker with pid: 5527
+[2017-08-02 13:46:30 +0200] [5528] [INFO] Booting worker with pid: 5528
+[2017-08-02 13:46:30 +0200] [5529] [INFO] Booting worker with pid: 5529
+[2017-08-02 13:46:30 +0200] [5530] [INFO] Booting worker with pid: 5530
+[2017-08-02 13:46:30 +0200] [4527] [DEBUG] 9 workers
+2017-08-02 13:46:33,528 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 13:46:33,527 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 13:46:33,528 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 13:46:33,528 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 13:46:33,527 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 13:46:33,529 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 13:46:33,528 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 13:46:33,529 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 13:46:33,529 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 13:46:33,529 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 13:46:33,530 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 13:46:33,530 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 13:46:33,530 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 13:46:33,529 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 13:46:33,529 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 13:46:33,529 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 13:46:33,530 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 13:46:33,531 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 13:46:33,542 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 13:46:33,542 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 13:46:33,544 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 13:46:33,544 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 13:46:33,545 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 13:46:33,545 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 13:46:33,547 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 13:46:33,545 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 13:46:33,554 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2017-08-02 15:47:19 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5522)
+[2017-08-02 15:47:19 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5523)
+[2017-08-02 15:47:19 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5524)
+[2017-08-02 15:47:19 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5525)
+[2017-08-02 15:47:19 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5526)
+[2017-08-02 15:47:19 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5527)
+[2017-08-02 15:47:19 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5528)
+[2017-08-02 15:47:19 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5529)
+[2017-08-02 15:47:19 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5530)
+[2017-08-02 15:47:19 +0200] [5523] [INFO] Worker exiting (pid: 5523)
+[2017-08-02 15:47:19 +0200] [5524] [INFO] Worker exiting (pid: 5524)
+[2017-08-02 15:47:19 +0200] [5525] [INFO] Worker exiting (pid: 5525)
+[2017-08-02 15:47:19 +0200] [5527] [INFO] Worker exiting (pid: 5527)
+[2017-08-02 15:47:19 +0200] [5529] [INFO] Worker exiting (pid: 5529)
+[2017-08-02 15:47:19 +0200] [5522] [INFO] Worker exiting (pid: 5522)
+[2017-08-02 15:47:19 +0200] [5526] [INFO] Worker exiting (pid: 5526)
+[2017-08-02 15:47:19 +0200] [5528] [INFO] Worker exiting (pid: 5528)
+[2017-08-02 15:47:19 +0200] [5530] [INFO] Worker exiting (pid: 5530)
+[2017-08-02 15:47:19 +0200] [5546] [INFO] Booting worker with pid: 5546
+[2017-08-02 15:47:19 +0200] [4527] [DEBUG] 1 workers
+[2017-08-02 15:47:19 +0200] [5548] [INFO] Booting worker with pid: 5548
+[2017-08-02 15:47:19 +0200] [5549] [INFO] Booting worker with pid: 5549
+[2017-08-02 15:47:19 +0200] [5550] [INFO] Booting worker with pid: 5550
+[2017-08-02 15:47:19 +0200] [5551] [INFO] Booting worker with pid: 5551
+[2017-08-02 15:47:19 +0200] [5552] [INFO] Booting worker with pid: 5552
+[2017-08-02 15:47:20 +0200] [5553] [INFO] Booting worker with pid: 5553
+[2017-08-02 15:47:20 +0200] [5554] [INFO] Booting worker with pid: 5554
+[2017-08-02 15:47:20 +0200] [5555] [INFO] Booting worker with pid: 5555
+[2017-08-02 15:47:20 +0200] [4527] [DEBUG] 9 workers
+2017-08-02 15:47:21,408 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 15:47:21,408 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 15:47:21,411 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 15:47:21,451 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 15:47:21,451 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 15:47:21,456 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 15:47:21,456 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 15:47:21,456 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 15:47:21,459 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 15:47:21,465 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 15:47:21,466 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 15:47:21,469 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 15:47:21,470 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 15:47:21,470 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 15:47:21,473 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 15:47:21,505 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 15:47:21,506 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 15:47:21,508 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 15:47:21,532 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 15:47:21,532 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 15:47:21,535 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 15:47:21,568 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 15:47:21,568 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 15:47:21,574 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 15:47:21,585 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 15:47:21,585 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 15:47:21,589 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2017-08-02 17:48:09 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5546)
+[2017-08-02 17:48:09 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5548)
+[2017-08-02 17:48:09 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5549)
+[2017-08-02 17:48:09 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5550)
+[2017-08-02 17:48:09 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5551)
+[2017-08-02 17:48:09 +0200] [5546] [INFO] Worker exiting (pid: 5546)
+[2017-08-02 17:48:09 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5552)
+[2017-08-02 17:48:09 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5553)
+[2017-08-02 17:48:09 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5554)
+[2017-08-02 17:48:09 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5555)
+[2017-08-02 17:48:09 +0200] [5549] [INFO] Worker exiting (pid: 5549)
+[2017-08-02 17:48:09 +0200] [5548] [INFO] Worker exiting (pid: 5548)
+[2017-08-02 17:48:09 +0200] [5550] [INFO] Worker exiting (pid: 5550)
+[2017-08-02 17:48:09 +0200] [5551] [INFO] Worker exiting (pid: 5551)
+[2017-08-02 17:48:09 +0200] [5553] [INFO] Worker exiting (pid: 5553)
+[2017-08-02 17:48:09 +0200] [5554] [INFO] Worker exiting (pid: 5554)
+[2017-08-02 17:48:09 +0200] [5552] [INFO] Worker exiting (pid: 5552)
+[2017-08-02 17:48:09 +0200] [5555] [INFO] Worker exiting (pid: 5555)
+[2017-08-02 17:48:09 +0200] [4527] [DEBUG] 6 workers
+[2017-08-02 17:48:09 +0200] [5569] [INFO] Booting worker with pid: 5569
+[2017-08-02 17:48:09 +0200] [5570] [INFO] Booting worker with pid: 5570
+[2017-08-02 17:48:09 +0200] [5571] [INFO] Booting worker with pid: 5571
+[2017-08-02 17:48:09 +0200] [5572] [INFO] Booting worker with pid: 5572
+[2017-08-02 17:48:09 +0200] [4527] [DEBUG] 4 workers
+[2017-08-02 17:48:09 +0200] [5573] [INFO] Booting worker with pid: 5573
+[2017-08-02 17:48:09 +0200] [5574] [INFO] Booting worker with pid: 5574
+[2017-08-02 17:48:09 +0200] [5575] [INFO] Booting worker with pid: 5575
+[2017-08-02 17:48:10 +0200] [5576] [INFO] Booting worker with pid: 5576
+[2017-08-02 17:48:10 +0200] [5577] [INFO] Booting worker with pid: 5577
+[2017-08-02 17:48:10 +0200] [4527] [DEBUG] 9 workers
+2017-08-02 17:48:10,867 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 17:48:10,868 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 17:48:10,870 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 17:48:10,926 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 17:48:10,927 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 17:48:10,933 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 17:48:10,934 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 17:48:10,935 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 17:48:10,941 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 17:48:10,942 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 17:48:10,944 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 17:48:10,945 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 17:48:10,956 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 17:48:10,957 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 17:48:10,960 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 17:48:11,000 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 17:48:11,000 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 17:48:11,003 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 17:48:11,020 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 17:48:11,020 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 17:48:11,025 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 17:48:11,048 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 17:48:11,048 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 17:48:11,048 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 17:48:11,048 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 17:48:11,051 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 17:48:11,051 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2017-08-02 19:44:18 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5569)
+[2017-08-02 19:44:18 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5570)
+[2017-08-02 19:44:18 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5571)
+[2017-08-02 19:44:18 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5572)
+[2017-08-02 19:44:18 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5573)
+[2017-08-02 19:44:18 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5574)
+[2017-08-02 19:44:18 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5575)
+[2017-08-02 19:44:18 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5576)
+[2017-08-02 19:44:18 +0200] [5569] [INFO] Worker exiting (pid: 5569)
+[2017-08-02 19:44:18 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5577)
+[2017-08-02 19:44:18 +0200] [5570] [INFO] Worker exiting (pid: 5570)
+[2017-08-02 19:44:18 +0200] [5571] [INFO] Worker exiting (pid: 5571)
+[2017-08-02 19:44:18 +0200] [5572] [INFO] Worker exiting (pid: 5572)
+[2017-08-02 19:44:18 +0200] [5573] [INFO] Worker exiting (pid: 5573)
+[2017-08-02 19:44:18 +0200] [5574] [INFO] Worker exiting (pid: 5574)
+[2017-08-02 19:44:18 +0200] [5575] [INFO] Worker exiting (pid: 5575)
+[2017-08-02 19:44:18 +0200] [5576] [INFO] Worker exiting (pid: 5576)
+[2017-08-02 19:44:18 +0200] [5577] [INFO] Worker exiting (pid: 5577)
+[2017-08-02 19:44:18 +0200] [5585] [INFO] Booting worker with pid: 5585
+[2017-08-02 19:44:18 +0200] [4527] [DEBUG] 6 workers
+[2017-08-02 19:44:18 +0200] [5586] [INFO] Booting worker with pid: 5586
+[2017-08-02 19:44:18 +0200] [5587] [INFO] Booting worker with pid: 5587
+[2017-08-02 19:44:18 +0200] [5589] [INFO] Booting worker with pid: 5589
+[2017-08-02 19:44:18 +0200] [5590] [INFO] Booting worker with pid: 5590
+[2017-08-02 19:44:18 +0200] [5591] [INFO] Booting worker with pid: 5591
+[2017-08-02 19:44:18 +0200] [5592] [INFO] Booting worker with pid: 5592
+[2017-08-02 19:44:18 +0200] [4527] [DEBUG] 7 workers
+[2017-08-02 19:44:18 +0200] [5593] [INFO] Booting worker with pid: 5593
+[2017-08-02 19:44:18 +0200] [5594] [INFO] Booting worker with pid: 5594
+[2017-08-02 19:44:19 +0200] [4527] [DEBUG] 9 workers
+2017-08-02 19:44:20,478 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 19:44:20,479 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 19:44:20,486 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 19:44:20,487 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 19:44:20,491 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 19:44:20,508 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 19:44:20,512 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 19:44:20,512 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 19:44:20,515 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 19:44:20,526 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 19:44:20,527 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 19:44:20,530 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 19:44:20,552 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 19:44:20,553 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 19:44:20,555 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 19:44:20,556 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 19:44:20,556 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 19:44:20,559 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 19:44:20,559 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 19:44:20,560 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 19:44:20,562 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 19:44:20,568 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 19:44:20,568 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 19:44:20,571 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 19:44:20,586 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 19:44:20,587 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 19:44:20,590 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2017-08-02 19:53:05 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5585)
+[2017-08-02 19:53:05 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5586)
+[2017-08-02 19:53:05 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5587)
+[2017-08-02 19:53:05 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5589)
+[2017-08-02 19:53:05 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5590)
+[2017-08-02 19:53:05 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5591)
+[2017-08-02 19:53:05 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5592)
+[2017-08-02 19:53:05 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5593)
+[2017-08-02 19:53:05 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5594)
+[2017-08-02 19:53:05 +0200] [5585] [INFO] Worker exiting (pid: 5585)
+[2017-08-02 19:53:05 +0200] [5586] [INFO] Worker exiting (pid: 5586)
+[2017-08-02 19:53:05 +0200] [5587] [INFO] Worker exiting (pid: 5587)
+[2017-08-02 19:53:05 +0200] [5589] [INFO] Worker exiting (pid: 5589)
+[2017-08-02 19:53:05 +0200] [5590] [INFO] Worker exiting (pid: 5590)
+[2017-08-02 19:53:05 +0200] [5591] [INFO] Worker exiting (pid: 5591)
+[2017-08-02 19:53:05 +0200] [5592] [INFO] Worker exiting (pid: 5592)
+[2017-08-02 19:53:05 +0200] [5593] [INFO] Worker exiting (pid: 5593)
+[2017-08-02 19:53:05 +0200] [5594] [INFO] Worker exiting (pid: 5594)
+[2017-08-02 19:53:05 +0200] [4527] [DEBUG] 7 workers
+[2017-08-02 19:53:05 +0200] [5633] [INFO] Booting worker with pid: 5633
+[2017-08-02 19:53:05 +0200] [5634] [INFO] Booting worker with pid: 5634
+[2017-08-02 19:53:05 +0200] [5635] [INFO] Booting worker with pid: 5635
+[2017-08-02 19:53:05 +0200] [5636] [INFO] Booting worker with pid: 5636
+[2017-08-02 19:53:05 +0200] [4527] [DEBUG] 4 workers
+[2017-08-02 19:53:05 +0200] [5637] [INFO] Booting worker with pid: 5637
+[2017-08-02 19:53:05 +0200] [5638] [INFO] Booting worker with pid: 5638
+[2017-08-02 19:53:05 +0200] [5639] [INFO] Booting worker with pid: 5639
+[2017-08-02 19:53:05 +0200] [5640] [INFO] Booting worker with pid: 5640
+[2017-08-02 19:53:05 +0200] [5641] [INFO] Booting worker with pid: 5641
+[2017-08-02 19:53:05 +0200] [4527] [DEBUG] 9 workers
+2017-08-02 19:53:06,647 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 19:53:06,647 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 19:53:06,651 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 19:53:06,722 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 19:53:06,722 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 19:53:06,723 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 19:53:06,723 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 19:53:06,729 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 19:53:06,735 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 19:53:06,743 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 19:53:06,743 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 19:53:06,747 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 19:53:06,747 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 19:53:06,747 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 19:53:06,752 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 19:53:06,753 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 19:53:06,753 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 19:53:06,756 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 19:53:06,756 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 19:53:06,757 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 19:53:06,761 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 19:53:06,762 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 19:53:06,763 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 19:53:06,766 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 19:53:06,771 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 19:53:06,772 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 19:53:06,775 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2017-08-02 22:36:27 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5633)
+[2017-08-02 22:36:27 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5634)
+[2017-08-02 22:36:27 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5635)
+[2017-08-02 22:36:27 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5636)
+[2017-08-02 22:36:27 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5637)
+[2017-08-02 22:36:27 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5638)
+[2017-08-02 22:36:27 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5639)
+[2017-08-02 22:36:27 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5640)
+[2017-08-02 22:36:27 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5641)
+[2017-08-02 22:36:27 +0200] [5633] [INFO] Worker exiting (pid: 5633)
+[2017-08-02 22:36:27 +0200] [5634] [INFO] Worker exiting (pid: 5634)
+[2017-08-02 22:36:27 +0200] [5636] [INFO] Worker exiting (pid: 5636)
+[2017-08-02 22:36:27 +0200] [5635] [INFO] Worker exiting (pid: 5635)
+[2017-08-02 22:36:27 +0200] [5639] [INFO] Worker exiting (pid: 5639)
+[2017-08-02 22:36:27 +0200] [5641] [INFO] Worker exiting (pid: 5641)
+[2017-08-02 22:36:27 +0200] [5638] [INFO] Worker exiting (pid: 5638)
+[2017-08-02 22:36:27 +0200] [5637] [INFO] Worker exiting (pid: 5637)
+[2017-08-02 22:36:27 +0200] [5640] [INFO] Worker exiting (pid: 5640)
+[2017-08-02 22:36:27 +0200] [5823] [INFO] Booting worker with pid: 5823
+[2017-08-02 22:36:27 +0200] [4527] [DEBUG] 7 workers
+[2017-08-02 22:36:27 +0200] [5824] [INFO] Booting worker with pid: 5824
+[2017-08-02 22:36:27 +0200] [4527] [DEBUG] 4 workers
+[2017-08-02 22:36:27 +0200] [5825] [INFO] Booting worker with pid: 5825
+[2017-08-02 22:36:27 +0200] [5826] [INFO] Booting worker with pid: 5826
+[2017-08-02 22:36:27 +0200] [5827] [INFO] Booting worker with pid: 5827
+[2017-08-02 22:36:28 +0200] [5828] [INFO] Booting worker with pid: 5828
+[2017-08-02 22:36:28 +0200] [5829] [INFO] Booting worker with pid: 5829
+[2017-08-02 22:36:28 +0200] [5830] [INFO] Booting worker with pid: 5830
+[2017-08-02 22:36:28 +0200] [4527] [DEBUG] 8 workers
+[2017-08-02 22:36:28 +0200] [5831] [INFO] Booting worker with pid: 5831
+[2017-08-02 22:36:28 +0200] [4527] [DEBUG] 9 workers
+2017-08-02 22:36:30,700 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 22:36:30,701 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 22:36:30,701 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 22:36:30,702 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 22:36:30,703 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 22:36:30,703 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 22:36:30,704 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 22:36:30,707 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 22:36:30,708 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 22:36:30,712 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 22:36:30,712 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 22:36:30,712 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 22:36:30,712 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 22:36:30,712 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 22:36:30,713 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 22:36:30,713 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 22:36:30,713 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 22:36:30,717 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 22:36:30,717 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-02 22:36:30,717 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 22:36:30,718 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-02 22:36:30,719 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 22:36:30,720 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 22:36:30,725 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 22:36:30,726 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 22:36:30,728 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-02 22:36:30,736 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2017-08-03 00:37:17 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5824)
+[2017-08-03 00:37:17 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5825)
+[2017-08-03 00:37:17 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5826)
+[2017-08-03 00:37:17 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5827)
+[2017-08-03 00:37:17 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5828)
+[2017-08-03 00:37:17 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5829)
+[2017-08-03 00:37:17 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5830)
+[2017-08-03 00:37:17 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5831)
+[2017-08-03 00:37:17 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5823)
+[2017-08-03 00:37:17 +0200] [5824] [INFO] Worker exiting (pid: 5824)
+[2017-08-03 00:37:17 +0200] [5828] [INFO] Worker exiting (pid: 5828)
+[2017-08-03 00:37:17 +0200] [5827] [INFO] Worker exiting (pid: 5827)
+[2017-08-03 00:37:17 +0200] [5830] [INFO] Worker exiting (pid: 5830)
+[2017-08-03 00:37:17 +0200] [5823] [INFO] Worker exiting (pid: 5823)
+[2017-08-03 00:37:17 +0200] [5825] [INFO] Worker exiting (pid: 5825)
+[2017-08-03 00:37:17 +0200] [5826] [INFO] Worker exiting (pid: 5826)
+[2017-08-03 00:37:17 +0200] [5829] [INFO] Worker exiting (pid: 5829)
+[2017-08-03 00:37:17 +0200] [5831] [INFO] Worker exiting (pid: 5831)
+[2017-08-03 00:37:17 +0200] [5886] [INFO] Booting worker with pid: 5886
+[2017-08-03 00:37:17 +0200] [5887] [INFO] Booting worker with pid: 5887
+[2017-08-03 00:37:17 +0200] [4527] [DEBUG] 2 workers
+[2017-08-03 00:37:17 +0200] [5888] [INFO] Booting worker with pid: 5888
+[2017-08-03 00:37:17 +0200] [5889] [INFO] Booting worker with pid: 5889
+[2017-08-03 00:37:17 +0200] [5890] [INFO] Booting worker with pid: 5890
+[2017-08-03 00:37:17 +0200] [5891] [INFO] Booting worker with pid: 5891
+[2017-08-03 00:37:17 +0200] [5892] [INFO] Booting worker with pid: 5892
+[2017-08-03 00:37:17 +0200] [5893] [INFO] Booting worker with pid: 5893
+[2017-08-03 00:37:17 +0200] [5894] [INFO] Booting worker with pid: 5894
+[2017-08-03 00:37:17 +0200] [4527] [DEBUG] 9 workers
+2017-08-03 00:37:19,141 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 00:37:19,141 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 00:37:19,144 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 00:37:19,211 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 00:37:19,211 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 00:37:19,215 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 00:37:19,285 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 00:37:19,286 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 00:37:19,290 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 00:37:19,338 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 00:37:19,342 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 00:37:19,362 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 00:37:19,422 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 00:37:19,423 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 00:37:19,426 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 00:37:19,472 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 00:37:19,472 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 00:37:19,475 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 00:37:19,505 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 00:37:19,505 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 00:37:19,506 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 00:37:19,507 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 00:37:19,508 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 00:37:19,514 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 00:37:19,530 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 00:37:19,531 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 00:37:19,535 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2017-08-03 02:18:58 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5888)
+[2017-08-03 02:18:58 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5889)
+[2017-08-03 02:18:58 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5890)
+[2017-08-03 02:18:58 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5891)
+[2017-08-03 02:18:58 +0200] [5888] [INFO] Worker exiting (pid: 5888)
+[2017-08-03 02:18:58 +0200] [5889] [INFO] Worker exiting (pid: 5889)
+[2017-08-03 02:18:58 +0200] [5890] [INFO] Worker exiting (pid: 5890)
+[2017-08-03 02:18:58 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5892)
+[2017-08-03 02:18:58 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5893)
+[2017-08-03 02:18:58 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5894)
+[2017-08-03 02:18:58 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5886)
+[2017-08-03 02:18:58 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5887)
+[2017-08-03 02:18:58 +0200] [5891] [INFO] Worker exiting (pid: 5891)
+[2017-08-03 02:18:58 +0200] [5892] [INFO] Worker exiting (pid: 5892)
+[2017-08-03 02:18:58 +0200] [5893] [INFO] Worker exiting (pid: 5893)
+[2017-08-03 02:18:58 +0200] [5894] [INFO] Worker exiting (pid: 5894)
+[2017-08-03 02:18:58 +0200] [5886] [INFO] Worker exiting (pid: 5886)
+[2017-08-03 02:18:58 +0200] [5887] [INFO] Worker exiting (pid: 5887)
+[2017-08-03 02:18:58 +0200] [5980] [INFO] Booting worker with pid: 5980
+[2017-08-03 02:18:58 +0200] [4527] [DEBUG] 7 workers
+[2017-08-03 02:18:58 +0200] [5981] [INFO] Booting worker with pid: 5981
+[2017-08-03 02:18:58 +0200] [5982] [INFO] Booting worker with pid: 5982
+[2017-08-03 02:18:58 +0200] [4527] [DEBUG] 3 workers
+[2017-08-03 02:18:58 +0200] [5983] [INFO] Booting worker with pid: 5983
+[2017-08-03 02:18:59 +0200] [5984] [INFO] Booting worker with pid: 5984
+[2017-08-03 02:18:59 +0200] [5985] [INFO] Booting worker with pid: 5985
+[2017-08-03 02:18:59 +0200] [5986] [INFO] Booting worker with pid: 5986
+[2017-08-03 02:18:59 +0200] [5987] [INFO] Booting worker with pid: 5987
+[2017-08-03 02:18:59 +0200] [5988] [INFO] Booting worker with pid: 5988
+[2017-08-03 02:18:59 +0200] [4527] [DEBUG] 9 workers
+2017-08-03 02:19:00,316 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 02:19:00,318 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 02:19:00,321 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 02:19:00,357 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 02:19:00,358 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 02:19:00,360 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 02:19:00,373 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 02:19:00,374 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 02:19:00,374 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 02:19:00,374 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 02:19:00,395 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 02:19:00,398 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 02:19:00,413 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 02:19:00,413 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 02:19:00,416 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 02:19:00,422 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 02:19:00,422 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 02:19:00,425 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 02:19:00,429 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 02:19:00,430 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 02:19:00,433 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 02:19:00,444 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 02:19:00,444 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 02:19:00,449 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 02:19:00,506 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 02:19:00,508 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 02:19:00,511 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2017-08-03 02:22:53 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5980)
+[2017-08-03 02:22:53 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5981)
+[2017-08-03 02:22:53 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5982)
+[2017-08-03 02:22:53 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5983)
+[2017-08-03 02:22:53 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5984)
+[2017-08-03 02:22:53 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5985)
+[2017-08-03 02:22:53 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5986)
+[2017-08-03 02:22:53 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5987)
+[2017-08-03 02:22:53 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:5988)
+[2017-08-03 02:22:53 +0200] [5980] [INFO] Worker exiting (pid: 5980)
+[2017-08-03 02:22:53 +0200] [5983] [INFO] Worker exiting (pid: 5983)
+[2017-08-03 02:22:53 +0200] [5982] [INFO] Worker exiting (pid: 5982)
+[2017-08-03 02:22:53 +0200] [5981] [INFO] Worker exiting (pid: 5981)
+[2017-08-03 02:22:53 +0200] [5984] [INFO] Worker exiting (pid: 5984)
+[2017-08-03 02:22:53 +0200] [5985] [INFO] Worker exiting (pid: 5985)
+[2017-08-03 02:22:53 +0200] [5987] [INFO] Worker exiting (pid: 5987)
+[2017-08-03 02:22:53 +0200] [5988] [INFO] Worker exiting (pid: 5988)
+[2017-08-03 02:22:53 +0200] [5986] [INFO] Worker exiting (pid: 5986)
+[2017-08-03 02:22:53 +0200] [4527] [DEBUG] 8 workers
+[2017-08-03 02:22:53 +0200] [6107] [INFO] Booting worker with pid: 6107
+[2017-08-03 02:22:53 +0200] [6108] [INFO] Booting worker with pid: 6108
+[2017-08-03 02:22:53 +0200] [4527] [DEBUG] 3 workers
+[2017-08-03 02:22:53 +0200] [6109] [INFO] Booting worker with pid: 6109
+[2017-08-03 02:22:53 +0200] [6110] [INFO] Booting worker with pid: 6110
+[2017-08-03 02:22:53 +0200] [6111] [INFO] Booting worker with pid: 6111
+[2017-08-03 02:22:54 +0200] [6112] [INFO] Booting worker with pid: 6112
+[2017-08-03 02:22:54 +0200] [6113] [INFO] Booting worker with pid: 6113
+[2017-08-03 02:22:54 +0200] [6114] [INFO] Booting worker with pid: 6114
+[2017-08-03 02:22:54 +0200] [4527] [DEBUG] 8 workers
+[2017-08-03 02:22:54 +0200] [6115] [INFO] Booting worker with pid: 6115
+[2017-08-03 02:22:54 +0200] [4527] [DEBUG] 9 workers
+2017-08-03 02:22:55,110 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 02:22:55,110 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 02:22:55,111 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 02:22:55,111 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 02:22:55,119 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 02:22:55,119 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 02:22:55,200 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 02:22:55,201 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 02:22:55,202 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 02:22:55,204 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 02:22:55,203 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 02:22:55,209 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 02:22:55,243 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 02:22:55,243 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 02:22:55,246 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 02:22:55,243 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 02:22:55,248 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 02:22:55,252 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 02:22:55,334 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 02:22:55,334 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 02:22:55,337 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 02:22:55,352 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 02:22:55,352 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 02:22:55,353 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 02:22:55,355 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 02:22:55,364 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 02:22:55,364 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2017-08-03 02:44:18 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6107)
+[2017-08-03 02:44:18 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6108)
+[2017-08-03 02:44:18 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6109)
+[2017-08-03 02:44:18 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6110)
+[2017-08-03 02:44:18 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6111)
+[2017-08-03 02:44:18 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6112)
+[2017-08-03 02:44:18 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6113)
+[2017-08-03 02:44:18 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6114)
+[2017-08-03 02:44:18 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6115)
+[2017-08-03 02:44:18 +0200] [6107] [INFO] Worker exiting (pid: 6107)
+[2017-08-03 02:44:18 +0200] [6108] [INFO] Worker exiting (pid: 6108)
+[2017-08-03 02:44:18 +0200] [6112] [INFO] Worker exiting (pid: 6112)
+[2017-08-03 02:44:18 +0200] [6113] [INFO] Worker exiting (pid: 6113)
+[2017-08-03 02:44:18 +0200] [6114] [INFO] Worker exiting (pid: 6114)
+[2017-08-03 02:44:18 +0200] [6110] [INFO] Worker exiting (pid: 6110)
+[2017-08-03 02:44:18 +0200] [6115] [INFO] Worker exiting (pid: 6115)
+[2017-08-03 02:44:18 +0200] [6111] [INFO] Worker exiting (pid: 6111)
+[2017-08-03 02:44:18 +0200] [6109] [INFO] Worker exiting (pid: 6109)
+[2017-08-03 02:44:18 +0200] [6199] [INFO] Booting worker with pid: 6199
+[2017-08-03 02:44:18 +0200] [4527] [DEBUG] 6 workers
+[2017-08-03 02:44:18 +0200] [6200] [INFO] Booting worker with pid: 6200
+[2017-08-03 02:44:18 +0200] [6201] [INFO] Booting worker with pid: 6201
+[2017-08-03 02:44:18 +0200] [6202] [INFO] Booting worker with pid: 6202
+[2017-08-03 02:44:18 +0200] [4527] [DEBUG] 4 workers
+[2017-08-03 02:44:18 +0200] [6203] [INFO] Booting worker with pid: 6203
+[2017-08-03 02:44:18 +0200] [6204] [INFO] Booting worker with pid: 6204
+[2017-08-03 02:44:18 +0200] [6206] [INFO] Booting worker with pid: 6206
+[2017-08-03 02:44:19 +0200] [6207] [INFO] Booting worker with pid: 6207
+[2017-08-03 02:44:19 +0200] [6208] [INFO] Booting worker with pid: 6208
+[2017-08-03 02:44:19 +0200] [4527] [DEBUG] 9 workers
+2017-08-03 02:44:20,102 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 02:44:20,103 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 02:44:20,104 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 02:44:20,104 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 02:44:20,107 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 02:44:20,107 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 02:44:20,150 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 02:44:20,150 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 02:44:20,150 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 02:44:20,150 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 02:44:20,153 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 02:44:20,157 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 02:44:20,159 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 02:44:20,160 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 02:44:20,161 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 02:44:20,161 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 02:44:20,163 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 02:44:20,164 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 02:44:20,172 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 02:44:20,173 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 02:44:20,174 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 02:44:20,175 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 02:44:20,177 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 02:44:20,179 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 02:44:20,180 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 02:44:20,180 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 02:44:20,183 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2017-08-03 02:45:26 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6208)
+[2017-08-03 02:45:26 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6199)
+[2017-08-03 02:45:26 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6200)
+[2017-08-03 02:45:26 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6201)
+[2017-08-03 02:45:26 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6202)
+[2017-08-03 02:45:26 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6203)
+[2017-08-03 02:45:26 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6204)
+[2017-08-03 02:45:26 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6206)
+[2017-08-03 02:45:26 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6207)
+[2017-08-03 02:45:26 +0200] [6208] [INFO] Worker exiting (pid: 6208)
+[2017-08-03 02:45:26 +0200] [6199] [INFO] Worker exiting (pid: 6199)
+[2017-08-03 02:45:26 +0200] [6200] [INFO] Worker exiting (pid: 6200)
+[2017-08-03 02:45:26 +0200] [6201] [INFO] Worker exiting (pid: 6201)
+[2017-08-03 02:45:26 +0200] [6202] [INFO] Worker exiting (pid: 6202)
+[2017-08-03 02:45:26 +0200] [6203] [INFO] Worker exiting (pid: 6203)
+[2017-08-03 02:45:26 +0200] [6204] [INFO] Worker exiting (pid: 6204)
+[2017-08-03 02:45:26 +0200] [6206] [INFO] Worker exiting (pid: 6206)
+[2017-08-03 02:45:26 +0200] [6207] [INFO] Worker exiting (pid: 6207)
+[2017-08-03 02:45:26 +0200] [6211] [INFO] Booting worker with pid: 6211
+[2017-08-03 02:45:26 +0200] [6214] [INFO] Booting worker with pid: 6214
+[2017-08-03 02:45:26 +0200] [4527] [DEBUG] 7 workers
+[2017-08-03 02:45:26 +0200] [6215] [INFO] Booting worker with pid: 6215
+[2017-08-03 02:45:26 +0200] [6216] [INFO] Booting worker with pid: 6216
+[2017-08-03 02:45:26 +0200] [6217] [INFO] Booting worker with pid: 6217
+[2017-08-03 02:45:26 +0200] [4527] [DEBUG] 5 workers
+[2017-08-03 02:45:26 +0200] [6218] [INFO] Booting worker with pid: 6218
+[2017-08-03 02:45:26 +0200] [6219] [INFO] Booting worker with pid: 6219
+[2017-08-03 02:45:26 +0200] [6220] [INFO] Booting worker with pid: 6220
+[2017-08-03 02:45:26 +0200] [6221] [INFO] Booting worker with pid: 6221
+[2017-08-03 02:45:26 +0200] [4527] [DEBUG] 9 workers
+2017-08-03 02:45:28,808 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 02:45:28,809 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 02:45:28,818 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 02:45:28,818 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 02:45:28,820 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 02:45:28,821 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 02:45:28,884 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 02:45:28,885 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 02:45:28,909 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 02:45:28,915 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 02:45:28,945 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 02:45:28,945 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 02:45:28,946 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 02:45:28,947 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 02:45:29,012 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 02:45:29,021 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 02:45:29,023 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 02:45:29,024 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 02:45:29,027 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 02:45:29,027 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 02:45:29,028 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 02:45:29,033 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 02:45:29,033 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 02:45:29,036 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 02:45:29,159 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 02:45:29,160 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 02:45:29,163 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2017-08-03 06:06:53 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6211)
+[2017-08-03 06:06:53 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6214)
+[2017-08-03 06:06:53 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6215)
+[2017-08-03 06:06:53 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6216)
+[2017-08-03 06:06:53 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6217)
+[2017-08-03 06:06:53 +0200] [6211] [INFO] Worker exiting (pid: 6211)
+[2017-08-03 06:06:53 +0200] [6214] [INFO] Worker exiting (pid: 6214)
+[2017-08-03 06:06:53 +0200] [6215] [INFO] Worker exiting (pid: 6215)
+[2017-08-03 06:06:53 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6218)
+[2017-08-03 06:06:53 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6219)
+[2017-08-03 06:06:53 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6220)
+[2017-08-03 06:06:53 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6221)
+[2017-08-03 06:06:53 +0200] [6218] [INFO] Worker exiting (pid: 6218)
+[2017-08-03 06:06:53 +0200] [6219] [INFO] Worker exiting (pid: 6219)
+[2017-08-03 06:06:53 +0200] [6220] [INFO] Worker exiting (pid: 6220)
+[2017-08-03 06:06:53 +0200] [6216] [INFO] Worker exiting (pid: 6216)
+[2017-08-03 06:06:53 +0200] [6217] [INFO] Worker exiting (pid: 6217)
+[2017-08-03 06:06:53 +0200] [6221] [INFO] Worker exiting (pid: 6221)
+[2017-08-03 06:06:53 +0200] [6318] [INFO] Booting worker with pid: 6318
+[2017-08-03 06:06:53 +0200] [4527] [DEBUG] 3 workers
+[2017-08-03 06:06:53 +0200] [6319] [INFO] Booting worker with pid: 6319
+[2017-08-03 06:06:53 +0200] [6320] [INFO] Booting worker with pid: 6320
+[2017-08-03 06:06:53 +0200] [6321] [INFO] Booting worker with pid: 6321
+[2017-08-03 06:06:53 +0200] [6322] [INFO] Booting worker with pid: 6322
+[2017-08-03 06:06:53 +0200] [6323] [INFO] Booting worker with pid: 6323
+[2017-08-03 06:06:53 +0200] [6324] [INFO] Booting worker with pid: 6324
+[2017-08-03 06:06:53 +0200] [4527] [DEBUG] 7 workers
+[2017-08-03 06:06:53 +0200] [6325] [INFO] Booting worker with pid: 6325
+[2017-08-03 06:06:54 +0200] [6326] [INFO] Booting worker with pid: 6326
+[2017-08-03 06:06:54 +0200] [4527] [DEBUG] 9 workers
+2017-08-03 06:06:56,109 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 06:06:56,110 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 06:06:56,113 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 06:06:56,119 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 06:06:56,120 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 06:06:56,128 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 06:06:56,129 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 06:06:56,129 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 06:06:56,129 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 06:06:56,119 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 06:06:56,131 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 06:06:56,131 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 06:06:56,131 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 06:06:56,131 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 06:06:56,132 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 06:06:56,132 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 06:06:56,132 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 06:06:56,133 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 06:06:56,133 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 06:06:56,135 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 06:06:56,136 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 06:06:56,135 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 06:06:56,138 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 06:06:56,143 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 06:06:56,144 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 06:06:56,145 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 06:06:56,153 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2017-08-03 12:35:57 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6320)
+[2017-08-03 12:35:57 +0200] [6320] [INFO] Worker exiting (pid: 6320)
+[2017-08-03 12:35:57 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6321)
+[2017-08-03 12:35:57 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6322)
+[2017-08-03 12:35:57 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6323)
+[2017-08-03 12:35:57 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6324)
+[2017-08-03 12:35:57 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6325)
+[2017-08-03 12:35:57 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6326)
+[2017-08-03 12:35:57 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6318)
+[2017-08-03 12:35:57 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6319)
+[2017-08-03 12:35:57 +0200] [6322] [INFO] Worker exiting (pid: 6322)
+[2017-08-03 12:35:57 +0200] [6323] [INFO] Worker exiting (pid: 6323)
+[2017-08-03 12:35:57 +0200] [6324] [INFO] Worker exiting (pid: 6324)
+[2017-08-03 12:35:57 +0200] [6321] [INFO] Worker exiting (pid: 6321)
+[2017-08-03 12:35:57 +0200] [6325] [INFO] Worker exiting (pid: 6325)
+[2017-08-03 12:35:57 +0200] [6319] [INFO] Worker exiting (pid: 6319)
+[2017-08-03 12:35:57 +0200] [6318] [INFO] Worker exiting (pid: 6318)
+[2017-08-03 12:35:57 +0200] [6326] [INFO] Worker exiting (pid: 6326)
+[2017-08-03 12:35:58 +0200] [6509] [INFO] Booting worker with pid: 6509
+[2017-08-03 12:35:58 +0200] [4527] [DEBUG] 8 workers
+[2017-08-03 12:35:58 +0200] [6510] [INFO] Booting worker with pid: 6510
+[2017-08-03 12:35:58 +0200] [4527] [DEBUG] 7 workers
+[2017-08-03 12:35:58 +0200] [6511] [INFO] Booting worker with pid: 6511
+[2017-08-03 12:35:58 +0200] [6512] [INFO] Booting worker with pid: 6512
+[2017-08-03 12:35:58 +0200] [4527] [DEBUG] 8 workers
+[2017-08-03 12:35:58 +0200] [6513] [INFO] Booting worker with pid: 6513
+[2017-08-03 12:35:58 +0200] [6514] [INFO] Booting worker with pid: 6514
+[2017-08-03 12:35:58 +0200] [6515] [INFO] Booting worker with pid: 6515
+[2017-08-03 12:35:58 +0200] [6516] [INFO] Booting worker with pid: 6516
+[2017-08-03 12:35:58 +0200] [6517] [INFO] Booting worker with pid: 6517
+[2017-08-03 12:35:58 +0200] [4527] [DEBUG] 9 workers
+2017-08-03 12:36:01,848 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 12:36:01,849 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 12:36:01,850 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 12:36:01,851 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 12:36:01,853 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 12:36:01,853 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 12:36:01,854 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 12:36:01,854 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 12:36:01,854 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 12:36:01,855 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 12:36:01,856 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 12:36:01,858 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 12:36:01,859 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 12:36:01,862 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 12:36:01,862 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 12:36:01,864 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 12:36:01,864 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 12:36:01,865 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 12:36:01,865 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 12:36:01,865 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 12:36:01,867 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 12:36:01,868 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 12:36:01,873 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 12:36:01,880 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 12:36:01,880 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 12:36:01,888 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 12:36:01,888 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2017-08-03 15:32:19 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6515)
+[2017-08-03 15:32:19 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6512)
+[2017-08-03 15:32:19 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6514)
+[2017-08-03 15:32:19 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6509)
+[2017-08-03 15:32:19 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6510)
+[2017-08-03 15:32:19 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6511)
+[2017-08-03 15:32:19 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6513)
+[2017-08-03 15:32:19 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6516)
+[2017-08-03 15:32:19 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6517)
+[2017-08-03 15:32:19 +0200] [6515] [INFO] Worker exiting (pid: 6515)
+[2017-08-03 15:32:19 +0200] [6512] [INFO] Worker exiting (pid: 6512)
+[2017-08-03 15:32:19 +0200] [6514] [INFO] Worker exiting (pid: 6514)
+[2017-08-03 15:32:19 +0200] [6509] [INFO] Worker exiting (pid: 6509)
+[2017-08-03 15:32:19 +0200] [6510] [INFO] Worker exiting (pid: 6510)
+[2017-08-03 15:32:19 +0200] [6511] [INFO] Worker exiting (pid: 6511)
+[2017-08-03 15:32:19 +0200] [6516] [INFO] Worker exiting (pid: 6516)
+[2017-08-03 15:32:19 +0200] [6517] [INFO] Worker exiting (pid: 6517)
+[2017-08-03 15:32:19 +0200] [6513] [INFO] Worker exiting (pid: 6513)
+[2017-08-03 15:32:19 +0200] [6568] [INFO] Booting worker with pid: 6568
+[2017-08-03 15:32:19 +0200] [4527] [DEBUG] 1 workers
+[2017-08-03 15:32:19 +0200] [6569] [INFO] Booting worker with pid: 6569
+[2017-08-03 15:32:19 +0200] [6570] [INFO] Booting worker with pid: 6570
+[2017-08-03 15:32:19 +0200] [6571] [INFO] Booting worker with pid: 6571
+[2017-08-03 15:32:19 +0200] [6572] [INFO] Booting worker with pid: 6572
+[2017-08-03 15:32:19 +0200] [6573] [INFO] Booting worker with pid: 6573
+[2017-08-03 15:32:19 +0200] [6574] [INFO] Booting worker with pid: 6574
+[2017-08-03 15:32:19 +0200] [6575] [INFO] Booting worker with pid: 6575
+[2017-08-03 15:32:20 +0200] [6576] [INFO] Booting worker with pid: 6576
+[2017-08-03 15:32:20 +0200] [4527] [DEBUG] 9 workers
+2017-08-03 15:32:22,325 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 15:32:22,325 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 15:32:22,339 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 15:32:22,340 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 15:32:22,380 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 15:32:22,380 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 15:32:22,381 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 15:32:22,423 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 15:32:22,424 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 15:32:22,430 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 15:32:22,430 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 15:32:22,441 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 15:32:22,446 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 15:32:22,447 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 15:32:22,454 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 15:32:22,454 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 15:32:22,458 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 15:32:22,459 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 15:32:22,459 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 15:32:22,459 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 15:32:22,463 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 15:32:22,456 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 15:32:22,488 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 15:32:22,494 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 15:32:22,564 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 15:32:22,565 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 15:32:22,568 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2017-08-03 16:52:03 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6568)
+[2017-08-03 16:52:03 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6569)
+[2017-08-03 16:52:03 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6570)
+[2017-08-03 16:52:03 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6571)
+[2017-08-03 16:52:03 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6572)
+[2017-08-03 16:52:03 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6573)
+[2017-08-03 16:52:03 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6574)
+[2017-08-03 16:52:03 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6575)
+[2017-08-03 16:52:03 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6576)
+[2017-08-03 16:52:03 +0200] [6569] [INFO] Worker exiting (pid: 6569)
+[2017-08-03 16:52:03 +0200] [6570] [INFO] Worker exiting (pid: 6570)
+[2017-08-03 16:52:03 +0200] [6571] [INFO] Worker exiting (pid: 6571)
+[2017-08-03 16:52:03 +0200] [6573] [INFO] Worker exiting (pid: 6573)
+[2017-08-03 16:52:03 +0200] [6572] [INFO] Worker exiting (pid: 6572)
+[2017-08-03 16:52:03 +0200] [6574] [INFO] Worker exiting (pid: 6574)
+[2017-08-03 16:52:03 +0200] [6576] [INFO] Worker exiting (pid: 6576)
+[2017-08-03 16:52:03 +0200] [6568] [INFO] Worker exiting (pid: 6568)
+[2017-08-03 16:52:03 +0200] [6575] [INFO] Worker exiting (pid: 6575)
+[2017-08-03 16:52:03 +0200] [6751] [INFO] Booting worker with pid: 6751
+[2017-08-03 16:52:03 +0200] [4527] [DEBUG] 7 workers
+[2017-08-03 16:52:03 +0200] [6752] [INFO] Booting worker with pid: 6752
+[2017-08-03 16:52:03 +0200] [6753] [INFO] Booting worker with pid: 6753
+[2017-08-03 16:52:03 +0200] [6754] [INFO] Booting worker with pid: 6754
+[2017-08-03 16:52:03 +0200] [6755] [INFO] Booting worker with pid: 6755
+[2017-08-03 16:52:03 +0200] [4527] [DEBUG] 5 workers
+[2017-08-03 16:52:03 +0200] [6756] [INFO] Booting worker with pid: 6756
+[2017-08-03 16:52:03 +0200] [6757] [INFO] Booting worker with pid: 6757
+[2017-08-03 16:52:03 +0200] [6758] [INFO] Booting worker with pid: 6758
+[2017-08-03 16:52:03 +0200] [6759] [INFO] Booting worker with pid: 6759
+[2017-08-03 16:52:03 +0200] [4527] [DEBUG] 9 workers
+2017-08-03 16:52:04,428 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 16:52:04,428 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 16:52:04,428 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 16:52:04,431 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 16:52:04,437 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 16:52:04,437 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 16:52:04,466 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 16:52:04,466 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 16:52:04,468 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 16:52:04,471 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 16:52:04,468 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 16:52:04,472 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 16:52:04,474 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 16:52:04,476 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 16:52:04,477 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 16:52:04,474 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 16:52:04,479 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 16:52:04,486 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 16:52:04,486 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 16:52:04,487 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 16:52:04,489 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 16:52:04,497 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 16:52:04,498 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 16:52:04,501 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 16:52:04,543 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 16:52:04,543 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 16:52:04,547 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2017-08-03 18:52:53 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6751)
+[2017-08-03 18:52:53 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6752)
+[2017-08-03 18:52:53 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6753)
+[2017-08-03 18:52:53 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6754)
+[2017-08-03 18:52:53 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6755)
+[2017-08-03 18:52:53 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6756)
+[2017-08-03 18:52:53 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6757)
+[2017-08-03 18:52:53 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6758)
+[2017-08-03 18:52:53 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6759)
+[2017-08-03 18:52:53 +0200] [6751] [INFO] Worker exiting (pid: 6751)
+[2017-08-03 18:52:53 +0200] [6752] [INFO] Worker exiting (pid: 6752)
+[2017-08-03 18:52:53 +0200] [6753] [INFO] Worker exiting (pid: 6753)
+[2017-08-03 18:52:53 +0200] [6754] [INFO] Worker exiting (pid: 6754)
+[2017-08-03 18:52:53 +0200] [6755] [INFO] Worker exiting (pid: 6755)
+[2017-08-03 18:52:53 +0200] [6756] [INFO] Worker exiting (pid: 6756)
+[2017-08-03 18:52:53 +0200] [6757] [INFO] Worker exiting (pid: 6757)
+[2017-08-03 18:52:53 +0200] [6758] [INFO] Worker exiting (pid: 6758)
+[2017-08-03 18:52:53 +0200] [6759] [INFO] Worker exiting (pid: 6759)
+[2017-08-03 18:52:53 +0200] [6771] [INFO] Booting worker with pid: 6771
+[2017-08-03 18:52:53 +0200] [4527] [DEBUG] 5 workers
+[2017-08-03 18:52:53 +0200] [6772] [INFO] Booting worker with pid: 6772
+[2017-08-03 18:52:53 +0200] [6773] [INFO] Booting worker with pid: 6773
+[2017-08-03 18:52:53 +0200] [6775] [INFO] Booting worker with pid: 6775
+[2017-08-03 18:52:53 +0200] [6776] [INFO] Booting worker with pid: 6776
+[2017-08-03 18:52:53 +0200] [6777] [INFO] Booting worker with pid: 6777
+[2017-08-03 18:52:53 +0200] [6778] [INFO] Booting worker with pid: 6778
+[2017-08-03 18:52:53 +0200] [6779] [INFO] Booting worker with pid: 6779
+[2017-08-03 18:52:53 +0200] [6780] [INFO] Booting worker with pid: 6780
+[2017-08-03 18:52:53 +0200] [4527] [DEBUG] 9 workers
+2017-08-03 18:52:54,410 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 18:52:54,410 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 18:52:54,414 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 18:52:54,488 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 18:52:54,489 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 18:52:54,491 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 18:52:54,491 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 18:52:54,492 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 18:52:54,502 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 18:52:54,502 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 18:52:54,516 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 18:52:54,530 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 18:52:54,530 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 18:52:54,531 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 18:52:54,534 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 18:52:54,543 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 18:52:54,544 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 18:52:54,545 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 18:52:54,546 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 18:52:54,547 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 18:52:54,548 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 18:52:54,551 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 18:52:54,558 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 18:52:54,559 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 18:52:54,563 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 18:52:54,564 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 18:52:54,567 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2017-08-03 20:53:43 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6771)
+[2017-08-03 20:53:43 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6772)
+[2017-08-03 20:53:43 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6773)
+[2017-08-03 20:53:43 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6775)
+[2017-08-03 20:53:43 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6776)
+[2017-08-03 20:53:43 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6777)
+[2017-08-03 20:53:43 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6778)
+[2017-08-03 20:53:43 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6779)
+[2017-08-03 20:53:43 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6780)
+[2017-08-03 20:53:43 +0200] [6771] [INFO] Worker exiting (pid: 6771)
+[2017-08-03 20:53:43 +0200] [6772] [INFO] Worker exiting (pid: 6772)
+[2017-08-03 20:53:43 +0200] [6773] [INFO] Worker exiting (pid: 6773)
+[2017-08-03 20:53:43 +0200] [6775] [INFO] Worker exiting (pid: 6775)
+[2017-08-03 20:53:43 +0200] [6776] [INFO] Worker exiting (pid: 6776)
+[2017-08-03 20:53:43 +0200] [6777] [INFO] Worker exiting (pid: 6777)
+[2017-08-03 20:53:43 +0200] [6778] [INFO] Worker exiting (pid: 6778)
+[2017-08-03 20:53:43 +0200] [6779] [INFO] Worker exiting (pid: 6779)
+[2017-08-03 20:53:43 +0200] [6780] [INFO] Worker exiting (pid: 6780)
+[2017-08-03 20:53:43 +0200] [4527] [DEBUG] 8 workers
+[2017-08-03 20:53:43 +0200] [6788] [INFO] Booting worker with pid: 6788
+[2017-08-03 20:53:43 +0200] [4527] [DEBUG] 7 workers
+[2017-08-03 20:53:43 +0200] [6789] [INFO] Booting worker with pid: 6789
+[2017-08-03 20:53:43 +0200] [6790] [INFO] Booting worker with pid: 6790
+[2017-08-03 20:53:43 +0200] [6791] [INFO] Booting worker with pid: 6791
+[2017-08-03 20:53:43 +0200] [6792] [INFO] Booting worker with pid: 6792
+[2017-08-03 20:53:43 +0200] [6793] [INFO] Booting worker with pid: 6793
+[2017-08-03 20:53:43 +0200] [6794] [INFO] Booting worker with pid: 6794
+[2017-08-03 20:53:43 +0200] [6795] [INFO] Booting worker with pid: 6795
+[2017-08-03 20:53:43 +0200] [4527] [DEBUG] 8 workers
+[2017-08-03 20:53:43 +0200] [6796] [INFO] Booting worker with pid: 6796
+[2017-08-03 20:53:43 +0200] [4527] [DEBUG] 9 workers
+2017-08-03 20:53:44,523 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 20:53:44,523 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 20:53:44,530 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 20:53:44,530 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 20:53:44,534 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 20:53:44,538 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 20:53:44,539 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 20:53:44,542 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 20:53:44,548 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 20:53:44,548 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 20:53:44,550 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 20:53:44,550 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 20:53:44,552 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 20:53:44,552 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 20:53:44,553 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 20:53:44,554 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 20:53:44,554 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 20:53:44,561 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 20:53:44,561 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 20:53:44,562 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 20:53:44,565 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 20:53:44,576 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 20:53:44,577 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 20:53:44,582 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 20:53:44,587 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 20:53:44,587 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 20:53:44,590 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2017-08-03 22:54:33 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6788)
+[2017-08-03 22:54:33 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6789)
+[2017-08-03 22:54:33 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6790)
+[2017-08-03 22:54:33 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6791)
+[2017-08-03 22:54:33 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6792)
+[2017-08-03 22:54:33 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6793)
+[2017-08-03 22:54:33 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6794)
+[2017-08-03 22:54:33 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6795)
+[2017-08-03 22:54:33 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6796)
+[2017-08-03 22:54:33 +0200] [6788] [INFO] Worker exiting (pid: 6788)
+[2017-08-03 22:54:33 +0200] [6789] [INFO] Worker exiting (pid: 6789)
+[2017-08-03 22:54:33 +0200] [6790] [INFO] Worker exiting (pid: 6790)
+[2017-08-03 22:54:33 +0200] [6791] [INFO] Worker exiting (pid: 6791)
+[2017-08-03 22:54:33 +0200] [6792] [INFO] Worker exiting (pid: 6792)
+[2017-08-03 22:54:33 +0200] [6793] [INFO] Worker exiting (pid: 6793)
+[2017-08-03 22:54:33 +0200] [6794] [INFO] Worker exiting (pid: 6794)
+[2017-08-03 22:54:33 +0200] [6795] [INFO] Worker exiting (pid: 6795)
+[2017-08-03 22:54:33 +0200] [6796] [INFO] Worker exiting (pid: 6796)
+[2017-08-03 22:54:33 +0200] [4527] [DEBUG] 6 workers
+[2017-08-03 22:54:33 +0200] [6811] [INFO] Booting worker with pid: 6811
+[2017-08-03 22:54:33 +0200] [6812] [INFO] Booting worker with pid: 6812
+[2017-08-03 22:54:33 +0200] [6813] [INFO] Booting worker with pid: 6813
+[2017-08-03 22:54:33 +0200] [6814] [INFO] Booting worker with pid: 6814
+[2017-08-03 22:54:33 +0200] [6815] [INFO] Booting worker with pid: 6815
+[2017-08-03 22:54:33 +0200] [6816] [INFO] Booting worker with pid: 6816
+[2017-08-03 22:54:33 +0200] [6817] [INFO] Booting worker with pid: 6817
+[2017-08-03 22:54:33 +0200] [4527] [DEBUG] 7 workers
+[2017-08-03 22:54:33 +0200] [6818] [INFO] Booting worker with pid: 6818
+[2017-08-03 22:54:33 +0200] [6819] [INFO] Booting worker with pid: 6819
+[2017-08-03 22:54:33 +0200] [4527] [DEBUG] 9 workers
+2017-08-03 22:54:34,401 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 22:54:34,401 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 22:54:34,415 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 22:54:34,415 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 22:54:34,415 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 22:54:34,418 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 22:54:34,441 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 22:54:34,442 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 22:54:34,445 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 22:54:34,446 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 22:54:34,446 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 22:54:34,449 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 22:54:34,453 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 22:54:34,454 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 22:54:34,458 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 22:54:34,475 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 22:54:34,476 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 22:54:34,476 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 22:54:34,477 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 22:54:34,478 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 22:54:34,480 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 22:54:34,481 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 22:54:34,481 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 22:54:34,484 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 22:54:34,484 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 22:54:34,485 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 22:54:34,487 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2017-08-03 23:56:17 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6811)
+[2017-08-03 23:56:17 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6812)
+[2017-08-03 23:56:17 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6813)
+[2017-08-03 23:56:17 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6814)
+[2017-08-03 23:56:17 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6815)
+[2017-08-03 23:56:17 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6816)
+[2017-08-03 23:56:17 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6817)
+[2017-08-03 23:56:17 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6818)
+[2017-08-03 23:56:17 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6819)
+[2017-08-03 23:56:17 +0200] [6811] [INFO] Worker exiting (pid: 6811)
+[2017-08-03 23:56:17 +0200] [6812] [INFO] Worker exiting (pid: 6812)
+[2017-08-03 23:56:17 +0200] [6813] [INFO] Worker exiting (pid: 6813)
+[2017-08-03 23:56:17 +0200] [6814] [INFO] Worker exiting (pid: 6814)
+[2017-08-03 23:56:17 +0200] [6815] [INFO] Worker exiting (pid: 6815)
+[2017-08-03 23:56:17 +0200] [6816] [INFO] Worker exiting (pid: 6816)
+[2017-08-03 23:56:17 +0200] [6817] [INFO] Worker exiting (pid: 6817)
+[2017-08-03 23:56:17 +0200] [6818] [INFO] Worker exiting (pid: 6818)
+[2017-08-03 23:56:17 +0200] [6819] [INFO] Worker exiting (pid: 6819)
+[2017-08-03 23:56:17 +0200] [4527] [DEBUG] 8 workers
+[2017-08-03 23:56:17 +0200] [6829] [INFO] Booting worker with pid: 6829
+[2017-08-03 23:56:17 +0200] [6830] [INFO] Booting worker with pid: 6830
+[2017-08-03 23:56:17 +0200] [6831] [INFO] Booting worker with pid: 6831
+[2017-08-03 23:56:17 +0200] [6832] [INFO] Booting worker with pid: 6832
+[2017-08-03 23:56:17 +0200] [6833] [INFO] Booting worker with pid: 6833
+[2017-08-03 23:56:17 +0200] [4527] [DEBUG] 7 workers
+[2017-08-03 23:56:17 +0200] [6834] [INFO] Booting worker with pid: 6834
+[2017-08-03 23:56:17 +0200] [6835] [INFO] Booting worker with pid: 6835
+[2017-08-03 23:56:17 +0200] [6836] [INFO] Booting worker with pid: 6836
+[2017-08-03 23:56:17 +0200] [4527] [DEBUG] 8 workers
+[2017-08-03 23:56:17 +0200] [6837] [INFO] Booting worker with pid: 6837
+[2017-08-03 23:56:17 +0200] [4527] [DEBUG] 9 workers
+2017-08-03 23:56:19,021 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 23:56:19,022 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 23:56:19,024 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 23:56:19,035 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 23:56:19,035 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 23:56:19,039 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 23:56:19,044 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 23:56:19,044 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 23:56:19,045 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 23:56:19,044 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 23:56:19,048 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 23:56:19,057 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 23:56:19,057 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 23:56:19,057 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 23:56:19,059 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 23:56:19,060 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 23:56:19,060 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 23:56:19,064 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 23:56:19,071 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 23:56:19,072 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 23:56:19,073 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 23:56:19,073 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 23:56:19,075 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 23:56:19,077 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-03 23:56:19,089 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-03 23:56:19,091 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-03 23:56:19,095 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2017-08-04 00:47:38 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6829)
+[2017-08-04 00:47:38 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6830)
+[2017-08-04 00:47:38 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6831)
+[2017-08-04 00:47:38 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6832)
+[2017-08-04 00:47:38 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6833)
+[2017-08-04 00:47:38 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6834)
+[2017-08-04 00:47:38 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6835)
+[2017-08-04 00:47:38 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6836)
+[2017-08-04 00:47:38 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:6837)
+[2017-08-04 00:47:38 +0200] [6830] [INFO] Worker exiting (pid: 6830)
+[2017-08-04 00:47:38 +0200] [6831] [INFO] Worker exiting (pid: 6831)
+[2017-08-04 00:47:38 +0200] [6834] [INFO] Worker exiting (pid: 6834)
+[2017-08-04 00:47:38 +0200] [6833] [INFO] Worker exiting (pid: 6833)
+[2017-08-04 00:47:38 +0200] [6836] [INFO] Worker exiting (pid: 6836)
+[2017-08-04 00:47:38 +0200] [6835] [INFO] Worker exiting (pid: 6835)
+[2017-08-04 00:47:38 +0200] [6837] [INFO] Worker exiting (pid: 6837)
+[2017-08-04 00:47:38 +0200] [6829] [INFO] Worker exiting (pid: 6829)
+[2017-08-04 00:47:38 +0200] [6832] [INFO] Worker exiting (pid: 6832)
+[2017-08-04 00:47:38 +0200] [7044] [INFO] Booting worker with pid: 7044
+[2017-08-04 00:47:38 +0200] [7045] [INFO] Booting worker with pid: 7045
+[2017-08-04 00:47:38 +0200] [7046] [INFO] Booting worker with pid: 7046
+[2017-08-04 00:47:38 +0200] [7047] [INFO] Booting worker with pid: 7047
+[2017-08-04 00:47:38 +0200] [7048] [INFO] Booting worker with pid: 7048
+[2017-08-04 00:47:38 +0200] [7049] [INFO] Booting worker with pid: 7049
+[2017-08-04 00:47:38 +0200] [7051] [INFO] Booting worker with pid: 7051
+[2017-08-04 00:47:39 +0200] [7052] [INFO] Booting worker with pid: 7052
+[2017-08-04 00:47:39 +0200] [7053] [INFO] Booting worker with pid: 7053
+2017-08-04 00:47:39,698 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-04 00:47:39,699 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-04 00:47:39,702 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-04 00:47:39,722 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-04 00:47:39,723 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-04 00:47:39,725 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-04 00:47:39,733 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-04 00:47:39,733 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-04 00:47:39,737 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-04 00:47:39,806 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-04 00:47:39,815 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-04 00:47:39,817 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-04 00:47:39,830 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-04 00:47:39,831 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-04 00:47:39,834 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-04 00:47:39,940 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-04 00:47:39,940 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-04 00:47:39,943 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-04 00:47:39,976 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-04 00:47:39,976 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-04 00:47:39,979 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-04 00:47:39,984 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-04 00:47:39,985 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-04 00:47:39,988 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-04 00:47:39,992 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-04 00:47:39,993 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-04 00:47:39,997 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2017-08-04 04:05:21 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:7044)
+[2017-08-04 04:05:21 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:7045)
+[2017-08-04 04:05:21 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:7046)
+[2017-08-04 04:05:21 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:7047)
+[2017-08-04 04:05:21 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:7048)
+[2017-08-04 04:05:21 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:7049)
+[2017-08-04 04:05:21 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:7051)
+[2017-08-04 04:05:21 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:7052)
+[2017-08-04 04:05:21 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:7053)
+[2017-08-04 04:05:21 +0200] [7044] [INFO] Worker exiting (pid: 7044)
+[2017-08-04 04:05:21 +0200] [7046] [INFO] Worker exiting (pid: 7046)
+[2017-08-04 04:05:21 +0200] [7047] [INFO] Worker exiting (pid: 7047)
+[2017-08-04 04:05:21 +0200] [7048] [INFO] Worker exiting (pid: 7048)
+[2017-08-04 04:05:21 +0200] [7049] [INFO] Worker exiting (pid: 7049)
+[2017-08-04 04:05:21 +0200] [7051] [INFO] Worker exiting (pid: 7051)
+[2017-08-04 04:05:21 +0200] [7052] [INFO] Worker exiting (pid: 7052)
+[2017-08-04 04:05:21 +0200] [7053] [INFO] Worker exiting (pid: 7053)
+[2017-08-04 04:05:21 +0200] [7045] [INFO] Worker exiting (pid: 7045)
+[2017-08-04 04:05:21 +0200] [7140] [INFO] Booting worker with pid: 7140
+[2017-08-04 04:05:21 +0200] [7141] [INFO] Booting worker with pid: 7141
+[2017-08-04 04:05:21 +0200] [7142] [INFO] Booting worker with pid: 7142
+[2017-08-04 04:05:21 +0200] [4527] [DEBUG] 3 workers
+[2017-08-04 04:05:21 +0200] [7143] [INFO] Booting worker with pid: 7143
+[2017-08-04 04:05:21 +0200] [7144] [INFO] Booting worker with pid: 7144
+[2017-08-04 04:05:21 +0200] [7145] [INFO] Booting worker with pid: 7145
+[2017-08-04 04:05:21 +0200] [7146] [INFO] Booting worker with pid: 7146
+[2017-08-04 04:05:21 +0200] [7147] [INFO] Booting worker with pid: 7147
+[2017-08-04 04:05:21 +0200] [7148] [INFO] Booting worker with pid: 7148
+[2017-08-04 04:05:21 +0200] [4527] [DEBUG] 9 workers
+2017-08-04 04:05:23,139 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-04 04:05:23,140 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-04 04:05:23,143 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-04 04:05:23,204 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-04 04:05:23,204 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-04 04:05:23,207 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-04 04:05:23,215 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-04 04:05:23,215 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-04 04:05:23,218 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-04 04:05:23,233 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-04 04:05:23,234 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-04 04:05:23,241 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-04 04:05:23,242 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-04 04:05:23,243 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-04 04:05:23,244 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-04 04:05:23,244 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-04 04:05:23,245 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-04 04:05:23,247 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-04 04:05:23,318 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-04 04:05:23,319 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-04 04:05:23,321 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-04 04:05:23,335 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-04 04:05:23,336 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-04 04:05:23,339 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2017-08-04 04:05:23,360 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-04 04:05:23,360 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-04 04:05:23,364 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2017-08-04 12:25:03 +0200] [4527] [CRITICAL] WORKER TIMEOUT (pid:7140)
+[2017-08-04 12:25:03 +0200] [7140] [INFO] Worker exiting (pid: 7140)
+[2017-08-04 12:25:05 +0200] [7157] [INFO] Booting worker with pid: 7157
+2017-08-04 12:25:06,391 Secret key: 'this is my secret key which is hard to guess, i should change this'
+2017-08-04 12:25:06,392 Hmm... it seems no custom code (custom.py) associated                         with this project.
+2017-08-04 12:25:07,373 /usr/local/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2017-08-04 12:42:51 +0200] [7147] [DEBUG] Closing connection. 
+[2017-08-04 12:42:51 +0200] [7147] [DEBUG] Closing connection. 
+[2017-08-04 12:42:51 +0200] [7157] [DEBUG] GET /ppid
+[2017-08-04 12:42:51 +0200] [7142] [DEBUG] Closing connection. 
+[2017-08-04 12:42:51 +0200] [7142] [INFO] Parent changed, shutting down: <Worker 7142>
+[2017-08-04 12:42:51 +0200] [7142] [INFO] Worker exiting (pid: 7142)
+[2017-08-04 12:42:51 +0200] [7157] [DEBUG] Closing connection. 
+[2017-08-04 12:42:51 +0200] [7157] [INFO] Parent changed, shutting down: <Worker 7157>
+[2017-08-04 12:42:51 +0200] [7157] [INFO] Worker exiting (pid: 7157)
+[2017-08-04 12:42:51 +0200] [7146] [INFO] Parent changed, shutting down: <Worker 7146>
+[2017-08-04 12:42:51 +0200] [7146] [INFO] Worker exiting (pid: 7146)
+[2017-08-04 12:42:52 +0200] [7144] [INFO] Parent changed, shutting down: <Worker 7144>
+[2017-08-04 12:42:52 +0200] [7141] [INFO] Parent changed, shutting down: <Worker 7141>
+[2017-08-04 12:42:52 +0200] [7148] [INFO] Parent changed, shutting down: <Worker 7148>
+[2017-08-04 12:42:52 +0200] [7144] [INFO] Worker exiting (pid: 7144)
+[2017-08-04 12:42:52 +0200] [7141] [INFO] Worker exiting (pid: 7141)
+[2017-08-04 12:42:52 +0200] [7148] [INFO] Worker exiting (pid: 7148)
+[2017-08-04 12:42:52 +0200] [7143] [DEBUG] Closing connection. 
+[2017-08-04 12:42:52 +0200] [7143] [INFO] Parent changed, shutting down: <Worker 7143>
+[2017-08-04 12:42:52 +0200] [7143] [INFO] Worker exiting (pid: 7143)
+[2017-08-04 12:42:52 +0200] [7147] [DEBUG] Closing connection. 
+[2017-08-04 12:42:52 +0200] [7147] [INFO] Parent changed, shutting down: <Worker 7147>
+[2017-08-04 12:42:52 +0200] [7147] [INFO] Worker exiting (pid: 7147)
+[2017-08-04 12:42:52 +0200] [7145] [INFO] Parent changed, shutting down: <Worker 7145>
+[2017-08-04 12:42:52 +0200] [7145] [INFO] Worker exiting (pid: 7145)
