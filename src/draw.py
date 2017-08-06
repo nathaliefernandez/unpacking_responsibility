@@ -12,7 +12,9 @@ from hierarchy import Hierarchy
 
 # list of color hue and saturation for each group
 # [red, blue, green, purple, orange]
+# COLOR = [(0, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0)]*50
 COLOR = [(0, 100), (220, 100), (120, 60), (280, 100), (24, 100)]
+
 ABC = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 
 # Trials
@@ -22,6 +24,7 @@ FONTSIZE = 20
 SIZE = .05
 LW = 3
 MW = .011
+ARROWLW = 1
 ARROW_L = .015
 ARROW_W = .0125
 NAME_H = 1.8
@@ -33,9 +36,30 @@ NAME_H = 1.8
 # LW = 3
 # MW = .02
 # # + .05
-# ARROW_L = .02
-# ARROW_W = .0175
+# ARROWLW = 1
+# ARROW_L = .021
+# ARROW_W = .018
 # NAME_H = 1.5
+
+# Presentation
+# abc = ABC[:]
+# FIGSIZE = (15, 10)
+# FONTSIZE = 20
+# SIZE = .06
+# LW = 5
+# ARROWLW = 1
+# MW = .015
+# ARROW_L = .016
+# ARROW_W = .015
+# NAME_H = 1.8
+# OUTCOME = 'Outcome'
+
+
+
+OUTCOME = 'Office Goal'
+
+
+
 
 
 '''
@@ -76,7 +100,9 @@ def draw(hierarchy, **attr):
     fig.subplots_adjust(left=0,bottom=0,right=1,top=1,wspace=0,hspace=0)
 
     if 'arrow' in attr:
-        draw_hierarchy(hierarchy, ax, 1.4, .1, .9, 0.1, arrow=attr['arrow'])
+        draw_hierarchy(hierarchy, ax, 1.4, .1, .9, 0.1, election=True, arrow=attr['arrow'])
+    elif 'threshold' in attr:
+        draw_hierarchy(hierarchy, ax, 1.4, .1, .9, 0.1, threshold=True)
     else:
         draw_hierarchy(hierarchy, ax, 1.4, .1, .9, 0.1)
 
@@ -120,10 +146,21 @@ def draw_hierarchy(hierarchy, ax, right, left, top, bottom, size=SIZE, **attr):
 
     add_node(hierarchy, ax, x, y, size, None, hierarchy.outcome(), None)
 
-    label_node(hierarchy, ax, x, y, size, hierarchy.outcome(), None)
 
-    label_threshold(hierarchy, ax, x, y, size, hierarchy.outcome(), None)
 
+    if 'threshold' not in attr:
+        label_threshold(hierarchy, ax, x, y, size, hierarchy.outcome(), None)
+        g=5
+    if 'election' in attr:
+        label_node(hierarchy, ax, x, y, size, hierarchy.outcome(), None, election=True)
+
+        if 'arrow' in attr:
+            __draw_hierarchy(hierarchy, ax, left, height-bottom, length/len(hierarchy.predecessors(hierarchy.outcome())), size, hierarchy.outcome(), (x, y), 0, COLOR, arrow=attr['arrow'], election=True)
+        else:
+            __draw_hierarchy(hierarchy, ax, left, height-bottom, length/len(hierarchy.predecessors(hierarchy.outcome())), size, hierarchy.outcome(), (x, y), 0, COLOR, election=True)
+        return None
+    else:
+        label_node(hierarchy, ax, x, y, size, hierarchy.outcome(), None)
     # node
     if 'arrow' in attr:
         __draw_hierarchy(hierarchy, ax, left, height-bottom, length/len(hierarchy.predecessors(hierarchy.outcome())), size, hierarchy.outcome(), (x, y), 0, COLOR, arrow=attr['arrow'])
@@ -167,8 +204,9 @@ def __draw_hierarchy(hierarchy, ax, left, height, length, size, node, pcoor, v, 
 
             label_node(hierarchy, ax, x, y, size, node, pred)
 
-            label_threshold(hierarchy, ax, x, y, size, node, pred)
-
+            if 'threshold' not in attr:
+                label_threshold(hierarchy, ax, x, y, size, node, pred)
+                g=5
             dx = pcoor[0] - x 
             dy = pcoor[1] - y 
 
@@ -186,6 +224,15 @@ def __draw_hierarchy(hierarchy, ax, left, height, length, size, node, pcoor, v, 
                     draw_arrow(ax, x, y, dx, dy)
             else: 
                 draw_arrow(ax, x, y, dx, dy)
+
+            if 'election' in attr:
+                label_node(hierarchy, ax, x, y, size, node, pred, election=True)
+                if hierarchy.predecessors(hierarchy.predecessors(node)[pred]) != []:
+                    __draw_hierarchy(hierarchy, ax, left + length*pred, height, length/len(hierarchy.predecessors(hierarchy.predecessors(node)[pred])),
+                                    size, hierarchy.predecessors(node)[pred], (x, y), v, color[pred] if type(color) != tuple else color, election=True)                
+                    return None
+            else:
+                label_node(hierarchy, ax, x, y, size, node, pred)
 
             if hierarchy.predecessors(hierarchy.predecessors(node)[pred]) != []:
                 __draw_hierarchy(hierarchy, ax, left + length*pred, height, length/len(hierarchy.predecessors(hierarchy.predecessors(node)[pred])),
@@ -206,7 +253,11 @@ return :
 '''
 def add_node(hierarchy, ax, x, y, size, color, node, pred):
     if pred == None and node == hierarchy.outcome():
-        circle = plt.Circle((x, y), radius=size, aa=True, lw=LW, color='.3', ec='k', zorder=4)
+        if 'color' in hierarchy.node[hierarchy.outcome()]:
+            print hierarchy.node[hierarchy.outcome()]
+            circle = plt.Circle((x, y), radius=size, aa=True, lw=LW, color=hierarchy.node[hierarchy.outcome()]['color'], ec=hierarchy.node[hierarchy.outcome()]['ec'], zorder=4)
+        else:
+            circle = plt.Circle((x, y), radius=size, aa=True, lw=LW, color='.3', ec='k', zorder=4)
         # add circle to 'axes' has to be added, it is an object of axes
         ax.add_artist(circle)
     else:
@@ -243,8 +294,6 @@ def get_color(hierarchy, color, node, pred):
 
             l = (levels - hierarchy.node[hierarchy.predecessors(node)[pred]]['level'])*lightness + 12
 
-            print 'h, %f, s %f, l %f' % (h, s, l-32)
-
             hierarchy.node[hierarchy.predecessors(node)[pred]]['color'] = hsl_to_rgb(h, s, l)
             if l > 32:
                 hierarchy.node[hierarchy.predecessors(node)[pred]]['ec'] = hsl_to_rgb(h, s, l-32)
@@ -266,9 +315,27 @@ parameters:
     node        str         succesor
     pred        int         index of node pred to be drawn
 '''
-def label_node(hierarchy, ax, x, y, size, node, pred):
+def label_node(hierarchy, ax, x, y, size, node, pred, **attr):
+
+    if 'election' in attr:
+        if pred == None:
+            ax.text(x, y+NAME_H*size, 'Outcome', fontsize=FONTSIZE, weight='medium', bbox=dict(boxstyle='round, pad=0.3, rounding_size=1.0', facecolor='w', ec='w', zorder=2), horizontalalignment='center', verticalalignment='center', zorder=2)
+        else:
+            # ax.text(x, y, hierarchy.outcome(), size=18, zorder=5)
+            if hierarchy.predecessors(hierarchy.predecessors(node)[pred]) == []:
+                ax.text(x, y+NAME_H*size, hierarchy.node[hierarchy.predecessors(node)[pred]]['name'], fontsize=FONTSIZE, weight='medium', horizontalalignment='center', verticalalignment='center', zorder=2)
+            else:
+                if 'team' in hierarchy.node[hierarchy.predecessors(node)[pred]]:
+                    ax.text(x, y+NAME_H*size, 'Team %s' % hierarchy.node[hierarchy.predecessors(node)[pred]]['team'], fontsize=FONTSIZE, weight='medium', bbox=dict(boxstyle='round, pad=0.3, rounding_size=1.0', facecolor='w', ec='w', zorder=2), horizontalalignment='center', verticalalignment='center', zorder=2)
+                else:
+                    groups = hierarchy.groups()
+                    i = groups.index(hierarchy.predecessors(node)[pred])
+                    hierarchy.node[hierarchy.predecessors(node)[pred]]['team'] = abc[i]
+                    ax.text(x, y+NAME_H*size, 'Team %s' % abc[i], fontsize=FONTSIZE, weight='medium', bbox=dict(boxstyle='round, pad=0.3, rounding_size=1.0', facecolor='w', ec='w', zorder=2), horizontalalignment='center', verticalalignment='center', zorder=2)
+        return None
+
     if pred == None:
-        ax.text(x, y+NAME_H*size, 'Office Goal', fontsize=FONTSIZE, weight='medium', bbox=dict(boxstyle='round, pad=0.3, rounding_size=1.0', facecolor='w', ec='w', zorder=2), horizontalalignment='center', verticalalignment='center', zorder=2)
+        ax.text(x, y+NAME_H*size, OUTCOME, fontsize=FONTSIZE, weight='medium', bbox=dict(boxstyle='round, pad=0.3, rounding_size=1.0', facecolor='w', ec='w', zorder=2), horizontalalignment='center', verticalalignment='center', zorder=2)
     else:
         # ax.text(x, y, hierarchy.outcome(), size=18, zorder=5)
         if hierarchy.predecessors(hierarchy.predecessors(node)[pred]) == []:
@@ -320,7 +387,7 @@ def draw_arrow(ax, x, y, dx, dy):
     newy = dy + y
     #arrow = patches.FancyArrowPatch(posA=(x, y), posB=(newx, newy), shrinkB=2, zorder=1)
 
-    arrow = ax.arrow(x, y, dx , dy, length_includes_head=True, head_width=ARROW_W, head_length=ARROW_L, fc='k', ec='k', zorder=1)
+    arrow = ax.arrow(x, y, dx , dy, lw=ARROWLW, length_includes_head=True, head_width=ARROW_W, head_length=ARROW_L, fc='k', ec='k', zorder=1)
     ax.add_artist(arrow)
     return None
 
@@ -341,8 +408,8 @@ def hsl_to_rgb(h, s, l):
     if(s == 0):
         # achromatic
         r = g = b = l 
-    else:
-        def hue_to_rgb(p, q, t):
+
+    def hue_to_rgb(p, q, t):
             if t < 0:
                 t += 1
             if t > 1:
@@ -398,7 +465,8 @@ parameters:
 return:
     None
 '''
-def positive(situation, ax, node, x, y, size):
+def positive(situation, ax, node, x, y, size, **attr):
+    
     check = patches.Rectangle((x - (.25*size*cos(pi/4)), y - (.5*size*sin(pi/4)) - (MW*sin(pi/4))), size, MW, color='w', angle=45, zorder=6)
     mark = patches.Rectangle((x - (.25*size*cos(pi/4)), y - (.5*size*sin(pi/4)) - (MW*sin(pi/4))), MW, .5*size, color='w', angle=45, zorder=6)
     # plt.plot(x+.5*size, y+.5*size, x-.5*size, y-.5*size, linewidth=5, color='w', linestyle='solid', zorder=1)
@@ -417,7 +485,7 @@ parameters:
 return:
     None
 '''
-def negative(situation, ax, node, x, y, size):
+def negative(situation, ax, node, x, y, size, **attr):
     right = patches.Rectangle((x - (.5*size*cos(pi/4)) + (.5*MW*cos(pi/4)), y - (.5*size*sin(pi/4)) - (.5*MW*sin(pi/4))), size, MW, color='w', angle=45, zorder=10)
     left = patches.Rectangle((x + (.5*size*cos(pi/4)) - (.5*MW*cos(pi/4)), y - (.5*size*sin(pi/4)) - (.5*MW*sin(pi/4))), MW, size, color='w', angle=45, zorder=10)
 
@@ -435,7 +503,7 @@ parameters:
     **attr:
 
 '''
-def highlight_cause_effect(hierarchy, fig, cause, effect, size=.05, **attr):
+def highlight_cause_effect(hierarchy, fig, cause, effect, size=SIZE, **attr):
 
     ax = fig.gca()
 

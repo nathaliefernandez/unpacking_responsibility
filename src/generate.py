@@ -198,10 +198,13 @@ def sample(d, n):
 	length = len(list(product(*[(0, 1) for v in xrange(len(leaves))])))
 
 	used = []
-	extreme = []
-	slight = []
-	none = []
+	pos = []
+	neg = []
+	first = []
+	second = []
+
 	samples = {'experiments' : []}
+
 	for i in xrange(n):
 		
 		while len(used) == i:
@@ -225,27 +228,38 @@ def sample(d, n):
 				while s.node[cause]['value'] != s.node[s.outcome()]['value']:
 					cause = np.random.choice(leaves)
 
-				if (pivotality(s, cause, s.outcome()) - pivotality(s, cause, s.outcome(), root=True)) == 0 and len(none) < 4:
-					used.append((experiment, values, thresholds))
-					none.append((experiment, values, thresholds))
-				
-				if (pivotality(s, cause, s.outcome()) - pivotality(s, cause, s.outcome(), root=True)) > 0:
-					if (pivotality(s, cause, s.outcome()) - pivotality(s, cause, s.outcome(), root=True)) > .25 and len(extreme) < 4:
+				if s.node[cause]['value'] != False and len(pos) < 4:
+					if (pivotality(s, cause, s.outcome()) - pivotality(s, cause, s.outcome(), root=True)) > .20 and len(first) < 4:
 						used.append((experiment, values, thresholds))
-						extreme.append((experiment, values, thresholds))
-					elif len(slight) < 4:
+						first.append((experiment, values, thresholds))
+						pos.append((experiment, values, thresholds))
+					elif len(second) < 4:
 						used.append((experiment, values, thresholds))
-						slight.append((experiment, values, thresholds))
-
+						second.append((experiment, values, thresholds))
+						pos.append((experiment, values, thresholds))
+				elif len(neg) < 4:
+					if (pivotality(s, cause, s.outcome()) - pivotality(s, cause, s.outcome(), root=True)) > .20 and len(first) < 4:
+						used.append((experiment, values, thresholds))
+						first.append((experiment, values, thresholds))
+						neg.append((experiment, values, thresholds))
+					elif len(second) < 4:
+						used.append((experiment, values, thresholds))
+						second.append((experiment, values, thresholds))
+						neg.append((experiment, values, thresholds))
 
 		situation['cause'] = cause
 
-		sample = {'ID' : i+12}
+		sample = {'ID' : i+8}
 		sample['hierarchy'] = hierarchy
 		sample['situation'] = situation
 
 		samples['experiments'].append(sample)
 
+	# print 'first', first
+	# print 
+	# print 'second', second
+	# print
+	# print 
 	for i in samples['experiments']:
 		print i
 
@@ -254,8 +268,4 @@ def sample(d, n):
 	return 
 
 
-
-
-
-
-sample(experiments(generate(NODES)), 12)
+sample(experiments(generate(NODES)), 8)

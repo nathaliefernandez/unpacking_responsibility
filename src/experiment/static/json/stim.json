@@ -5,123 +5,83 @@
         "judgement": [
         {
                 "ID": 0,
-                "cause": "Jane",
+                "cause": "Norman",
                 "effect": ["", "<b>not being</b> met"]
         },
         {
                 "ID": 1,
-                "cause": "Sonja",
+                "cause": "Keith",
                 "effect": ["", "<b>not being</b> met"]
         },
         {
                 "ID": 2,
-                "cause": "Denise",
+                "cause": "Martha",
                 "effect": ["", "<b>not being</b> met"]
         },
         {
                 "ID": 3,
-                "cause": "Sharon",
+                "cause": "Roy",
                 "effect": ["", "<b>not being</b> met"]
         },
         {
                 "ID": 4,
-                "cause": "Betty",
+                "cause": "Linda",
                 "effect": ["", "<b>being</b> met"]
         },
         {
                 "ID": 5,
-                "cause": "Robert",
+                "cause": "Cary",
                 "effect": ["", "<b>being</b> met"]
         },
         {
                 "ID": 6,
-                "cause": "Bertha",
+                "cause": "Rhonda",
                 "effect": ["", "<b>being</b> met"]
         },
         {
                 "ID": 7,
-                "cause": "Mary",
+                "cause": "Mitch",
                 "effect": ["", "<b>being</b> met"]
         },
         {
                 "ID": 8,
-                "cause": "Alesia",
+                "cause": "Jimmy",
                 "effect": ["", "<b>not being</b> met"]
         },
         {
                 "ID": 9,
-                "cause": "George",
-                "effect": ["", "<b>not being</b> met"]
+                "cause": "Helen",
+                "effect": ["", "<b>being</b> met"]
         },
         {
                 "ID": 10,
-                "cause": "Cheryl",
-                "effect": ["", "<b>not being</b> met"]
+                "cause": "Monica",
+                "effect": ["", "<b>being</b> met"]
         },
         {
                 "ID": 11,
-                "cause": "Joseph",
+                "cause": "Joyce",
                 "effect": ["", "<b>not being</b> met"]
         },
         {
                 "ID": 12,
-                "cause": "Diane",
+                "cause": "Mario",
                 "effect": ["", "<b>not being</b> met"]
         },
         {
                 "ID": 13,
-                "cause": "Manda",
-                "effect": ["", "<b>being</b> met"]
+                "cause": "Amanda",
+                "effect": ["", "<b>not being</b> met"]
         },
         {
                 "ID": 14,
-                "cause": "Jesus",
-                "effect": ["", "<b>not being</b> met"]
+                "cause": "David",
+                "effect": ["", "<b>being</b> met"]
         },
         {
                 "ID": 15,
-                "cause": "Kristi",
+                "cause": "Jamie",
                 "effect": ["", "<b>being</b> met"]
-        },
-        {
-                "ID": 16,
-                "cause": "Mike",
-                "effect": ["", "<b>being</b> met"]
-        },
-        {
-                "ID": 17,
-                "cause": "Yvonne",
-                "effect": ["", "<b>not being</b> met"]
-        },
-        {
-                "ID": 18,
-                "cause": "Joyce",
-                "effect": ["", "<b>being</b> met"]
-        },
-        {
-                "ID": 19,
-                "cause": "Rodney",
-                "effect": ["", "<b>being</b> met"]
-        },
-        {
-                "ID": 20,
-                "cause": "Linda",
-                "effect": ["", "<b>not being</b> met"]
-        },
-        {
-                "ID": 21,
-                "cause": "Dawn",
-                "effect": ["", "<b>being</b> met"]
-        },
-        {
-                "ID": 22,
-                "cause": "Anita",
-                "effect": ["", "<b>being</b> met"]
-        },
-        {
-                "ID": 23,
-                "cause": "Emily",
-                "effect": ["", "<b>not being</b> met"]
         }
         ],
         "predict_text": "<p style = 'color:red'><b>Prediction task</b></p><p>You will see several situations. To the left of the Teams and Office Goal, is the minimum number of employees or teams that need to succeed for the team to succeed or the Office Goal to be met.",

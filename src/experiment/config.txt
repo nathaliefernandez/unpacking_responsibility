@@ -1,6 +1,6 @@
 [HIT Configuration]
-title = 6min psychology experiment 
-description = The experiment takes ~6 minutes. Your task is to evaluate whether you think something almost happened.
+title = 10min psychology experiment 
+description = The experiment takes ~10 minutes. Your task is to judge the responsibility of workers for their contribution to the productivity of their workplace.
 amt_keywords = psychology, cognitive science
 lifetime = 48
 us_only = true
@@ -13,7 +13,7 @@ browser_exclude_rule = MSIE, mobile, tablet
 
 [Database Parameters]
 database_url = sqlite:///participants.db
-table_name = counterfactual_similarity 
+table_name = unpacking_responsibility
 
 [Server Parameters]
 host = 0.0.0.0
@@ -27,7 +27,7 @@ login_pw =
 threads = auto
 
 [Task Parameters]
-experiment_code_version = experiment_8
+experiment_code_version = experiment_1
 num_conds = 1
 num_counters = 1
 

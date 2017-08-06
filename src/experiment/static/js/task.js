@@ -52,12 +52,13 @@ var STATE;
             slide.find('#continue').click(function () {
                 // this.i++;
                 if (i == 11) {
+                    
                     CURRENTVIEW = new Comprehension();
                 }
                 i = inc_i(1);
                 $("#goback").show();
 
-                if (i > 15) {
+                if (i > 11) {
                     i = 0;
                     slide.fadeOut($c.fade);
                     slideshow(2);

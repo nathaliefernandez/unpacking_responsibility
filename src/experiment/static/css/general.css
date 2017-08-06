@@ -25,9 +25,16 @@ h1 {
 ul {
     margin: 1em 0;
 }
-hr {
+
+hr.style1 {
     width: 100%;
 }
+hr.style2 {
+    display: block;
+    width: 41%;
+    float: left;
+}
+
 
 /** {
     border: 1px dashed blue;

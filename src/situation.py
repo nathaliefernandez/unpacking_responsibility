@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-import matplotlib.patches as patches
+import numpy as np
 
 from hierarchy import Hierarchy
 from draw import COLOR
