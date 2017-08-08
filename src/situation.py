@@ -206,11 +206,8 @@ class Situation(Hierarchy):
 			value = self.evaluate(pred, **attr)
 			values[pred] = value*self.node[pred]['multiplier'] if 'multiplier' in self.node[pred] else value*1
 		
-		# print 
-		# print event
-		# print values
-		
+
 		self.node[event]['func'] = lambda values:sum(values.values()) >= self.node[event]['threshold']
 		self.node[event]['value'] = int(self.node[event].get('func')(values))
-		
+
 		return self.value(event)

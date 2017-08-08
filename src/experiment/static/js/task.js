@@ -40,7 +40,7 @@ var STATE;
             $(".tutorial").attr("src",'/static/images/instructions/img0.png');
 
             slide.fadeIn($c.fade);
-            console.log(i)
+
             slide.find('#goback').click(function () {
                 // this.i--;
                 if (i == 1) {

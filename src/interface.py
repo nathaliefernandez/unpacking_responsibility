@@ -50,22 +50,29 @@ for case in xrange(cases):
 
 
 
-	hierarchy = simulate(file['experiments'][case], cause=cause, effect=effect, names=names[index[case]:])
+	hierarchy = simulate(file['experiments'][case], cause=cause, effect=effect)
 
 
-	fig = draw(hierarchy, ID=case)
+	# fig = draw(hierarchy, ID=case)
 	
-	fig = highlight_cause_effect(hierarchy, fig, cause, effect, ID=case)
+	# fig = highlight_cause_effect(hierarchy, fig, cause, effect, ID=case)
 
-	situation = draw_outcomes(hierarchy, fig, ID=case)
+	# situation = draw_outcomes(hierarchy, fig, ID=case)
 
 
 	pivr = pivotality(hierarchy, cause, effect, root=True)
 	piv = pivotality(hierarchy, cause, effect)
 
-	crit = criticality(hierarchy, cause, effect)
+	crit = criticality(hierarchy, cause, effect, e_value=True)
 
+	print 'case', case
+	
+	print 'crit', crit
+	# print 'piv', pivr
+	# print 'piv*', piv
+	print
+	
 
-	predictions = show_predictions(hierarchy, fig, cause, effect, ID=case, pivotalityr=pivr, pivotality=piv, criticality=crit)
+	# predictions = show_predictions(hierarchy, fig, cause, effect, ID=case, pivotalityr=pivr, pivotality=piv, criticality=crit)
 
 	plt.close()

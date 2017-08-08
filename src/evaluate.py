@@ -133,6 +133,9 @@ NEW
 def pivotality(hierarchy, cause, effect, **attr):
     copy = hierarchy.copy()
 
+    if pivotal(hierarchy, cause, effect):
+        return 1
+
     exogenous = copy.nodes()
     if 'root' in attr:
         exogenous = filter(lambda a: copy.predecessors(a) == [], exogenous)
@@ -148,24 +151,18 @@ def pivotality(hierarchy, cause, effect, **attr):
             for c in combo:
                 sub.remove_edges_from([(e, c) for e in copy.predecessors(c)])
                 
-
-
             if attr.has_key('e_value'):
                 piv = pivotal(sub, cause, effect, combo=combo, e_value=attr.get('e_value'))
 
             else:
                 piv = pivotal(sub, cause, effect, combo=combo)
-            # print 'piv', piv
-            # print 'distance', i
-            # print
-            # print
+
             if piv:
                 return Fraction(1, i + 1)
     return 0
 
 def pivotal(hierarchy, cause, effect, **attr):
-    
-    # hierarchy.print_situation()
+
     if 'combo' in attr:
         copy = hierarchy.copy()
         for c in attr['combo']:
@@ -179,18 +176,20 @@ def pivotal(hierarchy, cause, effect, **attr):
 
     # set initial outcome
     outcome = copy.evaluate(effect)
+
+
     # copy.print_situation()
 
     if attr.has_key('e_value'):
         if outcome != attr['e_value']:
             return False
     
+
     copy.node[cause]['value'] = int(not hierarchy.node[cause]['value'])
-    
 
 
     new = copy.evaluate(effect)
-    # copy.print_situation()
+
 
     if outcome != new:
         return True
@@ -275,7 +274,7 @@ def criticality(hierarchy, cause, effect, **attr):
         if attr.has_key('e_value'):
             if outcome == attr['e_value']:
                 total += 1
-                if pivotal(copy, cause, effect, attr['e_value']):
+                if pivotal(copy, cause, effect, e_value=attr['e_value']):
                     count += 1
         else:
             total = len(list(product(*[(0, 1) for v in xrange(len(exogenous))])))

@@ -30,10 +30,16 @@ def simulate(file, **attr):
 		situation = {}
 		situation['values'] = [(str(u), int(v)) for u,v in file['situation']['values']]
 		situation['thresholds'] = [(str(u), int(v)) for u,v in file['situation']['thresholds']]
-			
-		hierarchy = Situation(hierarchy=data, situation=situation, names=attr['names'])
-
+		
+		if 'names' in attr:
+			hierarchy = Situation(hierarchy=data, situation=situation, names=attr['names'])
+		else:
+			hierarchy = Situation(hierarchy=data, situation=situation)
 	else: 
-		hierarchy = Situation(data, names=attr['names'])
+		if 'names' in attr:
+			hierarchy = Situation(data, names=attr['names'])
+		else:
+			hierarchy = Situation(data)
+
 
 	return hierarchy
