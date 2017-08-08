@@ -11,7 +11,6 @@ con = dbConnect(SQLite(),dbname = "../../data/participants.db");
 df.data = dbReadTable(con,"unpacking_responsibility")
 dbDisconnect(con)
 
-
 #filter out incompletes 
 df.data = df.data %>% 
   filter(status %in% 3:5) %>% 
