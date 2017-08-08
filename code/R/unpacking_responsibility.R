@@ -6,14 +6,16 @@ library(RSQLite)
 library(tidyverse)
 
 # Read in and structure data ------------------------------------------------------------------
-con = dbConnect(SQLite(),dbname = "../javascript/experiment_1/participants.db");
-df.data = dbReadTable(con,"counterfactual_similarity")
+con = dbConnect(SQLite(),dbname = "../../data/participants.db");
+# df.data = dbReadTable(con,"counterfactual_similarity")
+df.data = dbReadTable(con,"unpacking_responsibility")
 dbDisconnect(con)
-print(df.data)
+
+
 #filter out incompletes 
 df.data = df.data %>% 
-  stats::filter(status %in% 3:5) %>% 
-  stats::filter(!str_detect(uniqueid,'debug'))
+  filter(status %in% 3:5) %>% 
+  filter(!str_detect(uniqueid,'debug'))
 
 # demographic data 
 df.demographics = df.data$datastring %>% 
@@ -37,7 +39,7 @@ df.long = df.data$datastring %>%
   gather_array('index') %>% 
   append_values_string('values') %>% 
   as.data.frame() %>% 
-  stats::filter(!values %in% c('id','type','predict','prior','counterbalance','NA','right','left','judgement')) %>% 
+  filter(!values %in% c('id','type','predict','prior','counterbalance','NA','right','left','judgement')) %>% 
   spread(index,values) %>%
   select(-c(document.id,order)) %>% 
   setNames(c('participant','trial','rating')) %>% 
@@ -55,7 +57,7 @@ judgment_type = 'responsibility'
 # judgment_type = 'criticality'
 
 df.long %>% 
-  stats::filter(index == judgment_type) %>% 
+  filter(index == judgment_type) %>% 
   ggplot(aes(x=trial,y=rating))+
   stat_summary(fun.data = mean_cl_boot, geom = 'linerange', size = 0.5)+
   stat_summary(fun.y = mean, geom = 'line', size = 1)+
@@ -67,7 +69,7 @@ df.long %>%
   theme_bw()+
   theme(text = element_text(size = 20),
         panel.grid = element_blank())
-ggsave(paste0("../../figures/plots/",judgment_type,"_judgments.pdf"),width=12,height=4)
+# ggsave(paste0("../../figures/plots/",judgment_type,"_judgments.pdf"),width=12,height=4)
 
 
 
