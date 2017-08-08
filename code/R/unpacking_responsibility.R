@@ -6,7 +6,7 @@ library(RSQLite)
 library(tidyverse)
 
 # Read in and structure data ------------------------------------------------------------------
-con = dbConnect(SQLite(),dbname = "experiment/participants.db");
+con = dbConnect(SQLite(),dbname = "../javascript/experiment_1/participants.db");
 df.data = dbReadTable(con,"counterfactual_similarity")
 dbDisconnect(con)
 print(df.data)
