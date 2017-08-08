@@ -3,6 +3,7 @@ library(tidyjson)
 library(magrittr)
 library(stringr)
 library(RSQLite)
+library(Hmisc)
 library(tidyverse)
 
 # Read in and structure data ------------------------------------------------------------------
@@ -53,7 +54,7 @@ df.long = df.data$datastring %>%
 # Plot results  -------------------------------------------------------------------------------
 
 judgment_type = 'responsibility'
-# judgment_type = 'criticality'
+judgment_type = 'criticality'
 
 df.long %>% 
   filter(index == judgment_type) %>% 
