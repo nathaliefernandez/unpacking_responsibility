@@ -68,7 +68,7 @@ df.long %>%
   theme_bw()+
   theme(text = element_text(size = 20),
         panel.grid = element_blank())
-# ggsave(paste0("../../figures/plots/",judgment_type,"_judgments.pdf"),width=12,height=4)
+ggsave(paste0("../../figures/plots/",judgment_type,"_judgments.pdf"),width=12,height=4)
 
 
 
