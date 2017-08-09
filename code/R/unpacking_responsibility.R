@@ -51,6 +51,11 @@ df.long = df.data$datastring %>%
   select(participant,trial,index,rating) %>% 
   arrange(participant,trial)
 
+# Read in model predictions  ------------------------------------------------------------------
+
+df.model = read.csv("../../data/model.csv")
+
+
 # Plot results  -------------------------------------------------------------------------------
 
 judgment_type = 'responsibility'
