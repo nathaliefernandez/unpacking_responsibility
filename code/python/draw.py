@@ -67,29 +67,46 @@ ABC = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O'
 # EC = 32
 
 
-
-
 # Poster
 abc = ABC[:]
-FIGSIZE = (30, 20)
+FIGSIZE = (15, 10)
 FONTSIZE = 24
 WEIGHT = 500
 SIZE = .05
-LW = 6
-MW = .011
-ARROWLW = 3
-ARROW_L = .015
-ARROW_W = .01255
-NAME_H = 1.9
+LW = 3
+MW = SIZE*.19
+ARROWLW = .5
+ARROW_L = .014
+ARROW_W = .012
+NAME_H = -1.7
 # BACKGROUND = (225/255.0, 225/255.0, 225/255.0)
 BACKGROUND = 'w'
-OUTCOME = 'Outcome'
+OUTCOME = 'outcome'
 ALPHA = None
 EC = 15
 HIGHLIGHT = None
 
+# Introduction
+# abc = ABC[:]
+# FIGSIZE = (15, 10)
+# FONTSIZE = 12
+# WEIGHT = 500
+# SIZE = .09
+# LW = 2
+# MW = SIZE*.19
+# ARROWLW = .5
+# ARROW_L = .016
+# ARROW_W = .015
+# NAME_H = -1.7
+# # BACKGROUND = (225/255.0, 225/255.0, 225/255.0)
+# BACKGROUND = 'w'
+# OUTCOME = 'outcome'
+# ALPHA = None
+# EC = 15
+# HIGHLIGHT = None
 
-BBOX = dict(boxstyle='round, pad=0.35, rounding_size=1.0', facecolor=BACKGROUND, ec='k', lw=0, zorder=2)
+
+BBOX = dict(boxstyle='round, pad=0.3, rounding_size=1.0', facecolor=BACKGROUND, ec='k', lw=0, zorder=2)
 
 
 '''
@@ -111,7 +128,8 @@ def draw(hierarchy, **attr):
     # create figure
     if 'fig' in attr:
         if type(attr['fig']) == tuple:
-            fig = plt.figure(attr['fig'])
+            print 'hey'
+            fig = plt.figure(figsize=attr['fig'])
         else:
             fig = attr['fig']
     else:
@@ -234,7 +252,7 @@ def __draw_hierarchy(hierarchy, ax, left, height, length, size, node, pcoor, v, 
 
             add_node(hierarchy, ax, x, y, size, color[pred] if type(color) != tuple else color, node, pred)
 
-            label_node(hierarchy, ax, x, y, size, node, pred)
+            # label_node(hierarchy, ax, x, y, size, node, pred)
 
             if 'threshold' not in attr:
                 label_threshold(hierarchy, ax, x, y, size, node, pred)
@@ -264,7 +282,9 @@ def __draw_hierarchy(hierarchy, ax, left, height, length, size, node, pcoor, v, 
                                     size, hierarchy.predecessors(node)[pred], (x, y), v, color[pred] if type(color) != tuple else color, election=True)                
                     return None
             else:
-                label_node(hierarchy, ax, x, y, size, node, pred)
+                g=5
+
+                # label_node(hierarchy, ax, x, y, size, node, pred)
 
             if hierarchy.predecessors(hierarchy.predecessors(node)[pred]) != []:
                 __draw_hierarchy(hierarchy, ax, left + length*pred, height, length/len(hierarchy.predecessors(hierarchy.predecessors(node)[pred])),
@@ -353,19 +373,19 @@ def label_node(hierarchy, ax, x, y, size, node, pred, **attr):
 
     if 'election' in attr:
         if pred == None:
-            ax.text(x, y+NAME_H*size, 'Outcome', fontsize=FONTSIZE, weight=WEIGHT, bbox=BBOX, horizontalalignment='center', verticalalignment='center', zorder=2)
+            ax.text(x, y+NAME_H*size, 'outcome', fontsize=FONTSIZE, weight=WEIGHT, bbox=BBOX, horizontalalignment='center', verticalalignment='center', zorder=2)
         else:
             # ax.text(x, y, hierarchy.outcome(), size=18, zorder=5)
             if hierarchy.predecessors(hierarchy.predecessors(node)[pred]) == []:
                 ax.text(x, y+NAME_H*size, hierarchy.node[hierarchy.predecessors(node)[pred]]['name'], fontsize=FONTSIZE, weight=WEIGHT, horizontalalignment='center', verticalalignment='center', zorder=2)
             else:
                 if 'team' in hierarchy.node[hierarchy.predecessors(node)[pred]]:
-                    ax.text(x, y+NAME_H*size, 'Team %s' % hierarchy.node[hierarchy.predecessors(node)[pred]]['team'], fontsize=FONTSIZE, weight=WEIGHT, bbox=BBOX, horizontalalignment='center', verticalalignment='center', zorder=2)
+                    ax.text(x, y+NAME_H*(.9*size), 'Team %s' % hierarchy.node[hierarchy.predecessors(node)[pred]]['team'], fontsize=FONTSIZE, weight=WEIGHT, bbox=BBOX, horizontalalignment='center', verticalalignment='center', zorder=2)
                 else:
                     groups = hierarchy.groups()
                     i = groups.index(hierarchy.predecessors(node)[pred])
                     hierarchy.node[hierarchy.predecessors(node)[pred]]['team'] = abc[i]
-                    ax.text(x, y+NAME_H*size, 'Team %s' % abc[i], fontsize=FONTSIZE, weight=WEIGHT, bbox=BBOX, horizontalalignment='center', verticalalignment='center', zorder=2)
+                    ax.text(x, y+NAME_H*s(.9*size), 'Team %s' % abc[i], fontsize=FONTSIZE, weight=WEIGHT, bbox=BBOX, horizontalalignment='center', verticalalignment='center', zorder=2)
         return None
 
     if pred == None:
@@ -376,12 +396,12 @@ def label_node(hierarchy, ax, x, y, size, node, pred, **attr):
             ax.text(x, y+NAME_H*size, hierarchy.node[hierarchy.predecessors(node)[pred]]['name'], fontsize=FONTSIZE, weight=WEIGHT, horizontalalignment='center', verticalalignment='center', zorder=2)
         else:
             if 'team' in hierarchy.node[hierarchy.predecessors(node)[pred]]:
-                ax.text(x, y+NAME_H*size, 'Team %s' % hierarchy.node[hierarchy.predecessors(node)[pred]]['team'], fontsize=FONTSIZE, weight=WEIGHT, bbox=BBOX, horizontalalignment='center', verticalalignment='center', zorder=2)
+                ax.text(x, y+NAME_H*(.9*size), 'Team %s' % hierarchy.node[hierarchy.predecessors(node)[pred]]['team'], fontsize=FONTSIZE, weight=WEIGHT, bbox=BBOX, horizontalalignment='center', verticalalignment='center', zorder=2)
             else:
                 groups = hierarchy.groups()
                 i = groups.index(hierarchy.predecessors(node)[pred])
                 hierarchy.node[hierarchy.predecessors(node)[pred]]['team'] = abc[i]
-                ax.text(x, y+NAME_H*size, 'Team %s' % abc[i], fontsize=FONTSIZE, weight=WEIGHT, bbox=BBOX, horizontalalignment='center', verticalalignment='center', zorder=2)
+                ax.text(x, y+NAME_H*(.9*size), 'Team %s' % abc[i], fontsize=FONTSIZE, weight=WEIGHT, bbox=BBOX, horizontalalignment='center', verticalalignment='center', zorder=2)
 
     
     return None
@@ -401,9 +421,9 @@ return:
 '''
 def label_threshold(hierarchy, ax, x, y, size, node, pred):
     if pred == None:
-        ax.text(x-1.8*size, y-.005, '%d' % hierarchy.node[hierarchy.outcome()]['threshold'], size=FONTSIZE, bbox=BBOX, horizontalalignment='center', verticalalignment='center', zorder=2)
+        ax.text(x-1.8*size, y-.005, '%d' % hierarchy.node[hierarchy.outcome()]['threshold'], size=FONTSIZE-2, bbox=BBOX, horizontalalignment='center', verticalalignment='center', zorder=2)
     elif 'threshold' in hierarchy.node[hierarchy.predecessors(node)[pred]]:
-        ax.text(x-1.8*size, y-.005, '%d' % hierarchy.node[hierarchy.predecessors(node)[pred]]['threshold'], fontsize=FONTSIZE, bbox=BBOX, horizontalalignment='center', verticalalignment='center', zorder=2)
+        ax.text(x-1.8*size, y-.005, '%d' % hierarchy.node[hierarchy.predecessors(node)[pred]]['threshold'], fontsize=FONTSIZE-2, bbox=BBOX, horizontalalignment='center', verticalalignment='center', zorder=2)
     return None
 
 '''
@@ -540,16 +560,27 @@ parameters:
 def highlight_cause_effect(hierarchy, fig, cause, effect, size=SIZE, **attr):
 
     ax = fig.gca()
+    if 'highlight' in attr:
+        if cause != None:
+            coord = hierarchy.node[cause]['coord']
+            circle = patches.Circle((coord[0], coord[1]), radius=size*1.5, aa=True, color=attr['highlight'], alpha=.2, lw=0, ec='.2', zorder=3)
+            ax.add_patch(circle)
 
-    if cause != None:
-        coord = hierarchy.node[cause]['coord']
-        circle = patches.Circle((coord[0], coord[1]), radius=size+.023, aa=True, color=HIGHLIGHT, alpha=.2, lw=0, ec='.2', zorder=3)
-        ax.add_patch(circle)
+        if effect != None:
+            coord = hierarchy.node[effect]['coord']
+            effect = patches.Circle((coord[0], coord[1]), radius=size*1.5, aa=True, color=attr['highlight'], alpha=.2, lw=0, ec='.2', zorder=3)
+            ax.add_patch(effect)
 
-    if effect != None:
-        coord = hierarchy.node[effect]['coord']
-        effect = patches.Circle((coord[0], coord[1]), radius=size+.023, aa=True, color=HIGHLIGHT, alpha=.2, lw=0, ec='.2', zorder=3)
-        ax.add_patch(effect)
+    else:
+        if cause != None:
+            coord = hierarchy.node[cause]['coord']
+            circle = patches.Circle((coord[0], coord[1]), radius=size*1.5, aa=True, color=HIGHLIGHT, alpha=.2, lw=0, ec='.2', zorder=3)
+            ax.add_patch(circle)
+
+        if effect != None:
+            coord = hierarchy.node[effect]['coord']
+            effect = patches.Circle((coord[0], coord[1]), radius=size*1.5, aa=True, color=HIGHLIGHT, alpha=.2, lw=0, ec='.2', zorder=3)
+            ax.add_patch(effect)
 
     if 'file' in attr:
         fig.savefig(attr['file'], facecolor=BACKGROUND)

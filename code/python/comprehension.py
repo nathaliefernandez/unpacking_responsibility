@@ -11,7 +11,7 @@ COLOR = [(0, 100), (220, 100), (120, 60), (280, 100), (24, 100)]
 
 
 h = {} 
-h['structure'] = [['0n', 'o'], ['1n', '0g'], ['2n', '0g'], ['0g', 'o']]
+h['structure'] = [['0n', 'o'], ['1n', 'o'], ['2n', 'o']]
 
 s = {}
 s['thresholds'] = [['0g', 1], ['o', 2]]
@@ -20,7 +20,7 @@ s['values'] = [['0n', 1], ['1n', 1], ['2n', 0]]
 hierarchy = Situation(hierarchy=h, situation=s, comprehension=True, names=['', '', ''])
 hierarchy.node['0g']['team'] = 'A'
 
-fig = draw(hierarchy, size=True, fig=(7.5, 5), file='experiment/static/images/instructions/comprehension1.png')
+fig = draw(hierarchy, size=True, fig=(5, 3.333), file='experiment/static/images/instructions/comprehension1.png')
 situation = draw_outcomes(hierarchy, fig, file='experiment/static/images/instructions/comprehension1.png')
 
 h = {} 

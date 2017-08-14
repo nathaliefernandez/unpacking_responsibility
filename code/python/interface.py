@@ -13,7 +13,7 @@ import json
 '''
 open input file and save to a dict
 '''
-with open('pilot.json', 'r') as data:
+with open('../json/experiment1.json', 'r') as data:
 	file = json.load(data)
 data.close()
 
@@ -62,14 +62,18 @@ for case in xrange(cases):
 
 	pivr = pivotality(hierarchy, cause, effect, root=True)
 	piv = pivotality(hierarchy, cause, effect)
-
-	crit = criticality(hierarchy, cause, effect, e_value=True)
-
-	print 'case', case
 	
+	print case 
+	print
+	crit = criticality(hierarchy, cause, effect, e_value=True)
+	print 'prob', crit
+
+	crit = (1 - (criticality(hierarchy, cause, effect, e_value=False)/criticality(hierarchy, cause, effect, e_value=True))) + 100
 	print 'crit', crit
+
 	# print 'piv', pivr
 	# print 'piv*', piv
+	print
 	print
 	
 

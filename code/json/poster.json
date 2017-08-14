@@ -1,5 +1,25 @@
 {       "experiments": [
         {
+                "ID": 0,
+                "hierarchy" : {
+                        "structure": [["0n", "o"], ["1n", "o"], ["2n", "o"]] 
+                },
+                "situation" : {
+                        "values" : [["0n", 1], ["1n", 1], ["2n", 1]], 
+                        "thresholds" : [["o", 2]],
+                        "cause" : "2n"
+                }     
+        }, {
+                "ID": 1,
+                "hierarchy" : {
+                        "structure": [["0n", "o"], ["1n", "0g"], ["2n", "0g"], ["0g", "o"]] 
+                },
+                "situation" : {
+                        "values" : [["0n", 1], ["1n", 1], ["2n", 1]], 
+                        "thresholds" : [["0g", 2], ["o", 2]],
+                        "cause" : "0n"
+                }     
+        }, {
                 "hierarchy": {
                         "structure": [["2n", "o"], ["2g", "o"], ["3n", "2g"], ["1g", "2g"], ["0n", "1g"], ["1n", "1g"], ["4n", "1g"]]
                 }, 

@@ -7,29 +7,32 @@ from names import *
 import numpy as np
 import networkx as nx
 
-count = 0
+COLOR = [(0, 100), (220, 100), (120, 60), (280, 100), (24, 100)]
 
-while count < len(nodes):
-	name = get_first_name()
-
-	if len(name) < 7 and name not in names:
-		names.append(name)
-		count += 1
 
 h = {} 
-h.append(structure=[['0n', 'o'], ['1n', '0g'], ['2n', '0g'], ['0g', 'o']])
+h['structure'] = [['0n', 'o'], ['1n', 'o'], ['2n', 'o']]
 
 s = {}
-s.append(thresholds=[['0g', 1], ['o', 2]])
-s.append(values=[['0n', 0], ['1n', 1], ['2n', 1]])
+s['thresholds'] = [['o', 2]]
+s['values'] = [['0n', 1], ['1n', 1], ['2n', 1]]
 
-hierarchy = Situation(hierarchy=h, situation=s)
+hierarchy = Situation(hierarchy=h, situation=s, comprehension=True, names=['', '', ''])
+hierarchy.evaluate('o')
+fig = draw(hierarchy, size=True, fig=(7.5, 5), arrow=['0n', '1n', '2n'], file='../../../presentations/posters/unpacking_responsibility/criticality0.png')
+situation = draw_outcomes(hierarchy, fig, file='../../../presentations/posters/unpacking_responsibility/criticality0.png')
 
-fig = draw(hierarchy, ID=1, file='/instructions/comprehension1.png')
+# h = {} 
+# h['structure'] = [['0n', '0g'], ['1n', '0g'], ['2n', '1g'], ['3n', '1g'], ['0g', 'o'], ['1g', 'o']]
+
+# s = {}
+# s['thresholds'] = [['0g', 1], ['1g', 1], ['o', 2]]
+# s['values'] = [['0n', 1], ['1n', 1], ['2n', 0], ['3n', 0]]
+
+# hierarchy = Situation(hierarchy=h, situation=s, comprehension=True, names=['', '', '', ''])
+# hierarchy.node['0g']['team'] = 'B'
+# hierarchy.node['1g']['team'] = 'C'
 
 
-situation = draw_outcomes(hierarchy, fig, ID=case)
-
-
-
-plt.close()
+# fig = draw(hierarchy, size=True, fig=(7.5, 5), file='experiment/static/images/instructions/comprehension2.png')
+# situation = draw_outcomes(hierarchy, fig, file='experiment/static/images/instructions/comprehension2.png')
